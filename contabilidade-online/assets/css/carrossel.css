@@ -1,0 +1,67 @@
+/* Carousel */
+
+#quote-carousel {
+    padding: 0 10px 0px 10px;
+    margin:0;
+   
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel p {
+	font-size:0.9em;
+	line-height:1.6em;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 0.8em;
+    text-shadow: none;
+  	
+}
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: auto;
+    top: auto;
+    width:252px;
+	display:inline;
+	left:35%;
+}
+#quote-carousel .carousel-indicators li {
+    width: 40%;
+    height: 40%;
+    cursor: pointer;
+    border-radius: 0px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+    padding:0 5px;
+	
+}
+#quote-carousel .carousel-indicators .active {
+    width: 40%;
+    height: 40%;
+    border-radius: 0px;
+    opacity: 1;
+    overflow: hidden;
+}
+.carousel-inner {
+    min-height: 300px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}

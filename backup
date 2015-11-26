@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+	<head>
+		
+		<!-- Hotjar Tracking Code for www.contabilizei.com.br -->
+		<script>
+		    (function(f,b){
+		        var c;
+		        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+		        f._hjSettings={hjid:21654, hjsv:3};
+		        c=b.createElement("script");c.async=1;
+		        c.src="//static.hotjar.com/c/hotjar-21654.js?sv=3";
+		        b.getElementsByTagName("head")[0].appendChild(c); 
+		    })(window,document);
+		</script>
+		
+		<!-- Metatags -->
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="Escritório de Contabilidade Online a partir de R$49/mês. O contador online para você abrir sua empresa grátis e economizar tempo e dinheiro.">
+	    <meta name="keywords" content="contabilidade online, abertura de empresa, contabilidade, contador online, escritório contabilidade on-line, nfs-e, contador, assessoria contabil, abrir empresa">
+	    
+		<!-- Google author -->
+
+		<link rel="author" href="https://plus.google.com/u/0/110264168711669397191/" />
+		<link rel="publisher" href="https://plus.google.com/u/0/110264168711669397191/" >
+
+		<!-- Geral -->		
+		<meta property="og:locale" content="pt_BR" />
+		<meta property='og:type' content='website'/>
+		<meta property="og:site_name" content="Contabilizei">
+		<meta property="og:url" content="https://www.contabilizei.com.br">
+		<meta property='article:publisher' content='https://facebook.com/contabilizei'/>
+		<meta property="og:title" content="Contabilizei Contabilidade Inteligente">
+		<meta property="og:description" content="Contabilidade inteligente e online para micro e pequenas empresas a partir de R$ 49,00 por mês.">
+		<meta property="og:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/thumbhome.png">
+
+
+		<!-- Twitter -->
+ 
+		<meta name="twitter:card" content="product">
+		<meta name="twitter:site" content="@contabilizei">
+		<meta name="twitter:creator" content="@contabilizei">
+		<meta name="twitter:title" content="Contabilizei Contabilidade Online">
+		<meta name="twitter:description" content="Contabilidade inteligente e online para micro e pequenas empresas a partir de R$ 49,00 por mês.">
+		<meta name="twitter:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/thumbhome.png">
+		
+		
+	
+	    <title>Contabilidade Online | Abrir Empresa | Contabilizei Escritório</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/stylek.css">
+		
+		
+		<!-- Fontes Customizadas -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+		
+		
+		<!--  
+		<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","contabilizei.zendesk.com");/*]]>*/</script>
+		<!-- End of Contabilizei Contabilidade Online Zendesk Widget script -->
+		
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Fav and touch icons -->
+	    <link rel="shortcut icon" href="/assets/ico/contabilizei-favicon.ico">
+	     
+	</head>
+	
+	<body>
+	
+	
+	   	<!-- Google Tag Manager -->
+	  	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9X6Z2"
+	 	 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	  	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	  	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	  	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	  	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	  	})(window,document,'script','dataLayer','GTM-N9X6Z2');</script>
+	  	<!-- End Google Tag Manager -->
+	
+	  	<!-- CUPOM -->
+	  	<div class="splash">
+			<div class="carregando-cupom hide well" align="center">
+				<i class="fa fa-circle-o-notch fa-spin fa-2x"></i> <span style="font-size: 18px"> <strong>Validando código. Por favor, aguarde.</strong></span>
+			</div>
+			
+			<div class="cupom-indicacao well" style="display: none">
+				<div class="row" id="alert-cupom">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-1 img-indicacao">
+						<img>
+					</div>
+					<div class="col-sm-9 text-indicacao"></div>
+				</div>
+			</div>
+		</div>
+	  	<!-- FIM CUPOM -->
+	
+		<!-- Navbar e Jumbotron juntos -->
+		<div class="jumbotron">
+		
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Menu</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="https://www.contabilizei.com.br/"><img src="assets/img/logoc.png" style="margin-top:-5px;"></a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		     
+		     
+		      <ul class="nav navbar-nav navbar-right">
+		          <li class="dropdown hidden-sm">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false">Contabilizei&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		            <img class="visible-lg visible-md" src="assets/img/sobre.png" style="width:250px; padding-bottom:10px;">
+		            <li><a href="https://www.contabilizei.com.br/contabilizei-contabilidade-online/" target="_blank">Quem somos</a></li>
+		            <li><a href="https://www.contabilizei.com.br/midia/" target="_blank">Nós na mídia</a></li>
+		            <li><a href="https://www.contabilizei.com.br/contabilidade-online/" target="_blank">Nosso Blog</a></li>
+		            <li><a href="https://contabilizei.recruiterbox.com/" target="_blank">Trabalhe Conosco</a></li>
+		            <li><br></li>
+		          </ul>
+		        </li>
+		        
+		        <li class="dropdown">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false">Abrir Empresa&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		          	<img class="visible-lg visible-md" src="assets/img/sobre2.png" style="width:350px;">
+		            <p class="textodrop hidden-xs"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Sim, abrimos sua empresa de graça!</span><br> Você paga as taxas do governo, protocola a documentação nos órgãos públicos e deixa o <br class="hidden-xs">resto com a gente. Transforme a burocracia num<br class="hidden-xs">clique e tenha mais tempo para o seu negócio.</p>
+		            <li class="divider hidden-xs"></li>
+		            <li><a href="https://www.contabilizei.com.br/abrir-empresa/"><button class="botaosupremob">abra sua empresa de graça</button></a></li>
+		          </ul>
+		        </li>
+		        
+		          <li class="dropdown">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false">Já tem Empresa?&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		          	<img class="visible-lg visible-md" src="assets/img/sobre3.png" style="width:350px;">
+		            <p class="textodrop hidden-xs"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Contabilidade online e econômica</span><br>Todas as obrigações legais garantidas para sua empresa ficar 100% regular. Nossa equipe de contadores fanáticos estará sempre pronta para te atender e ajudar seu negócio a crescer.</p>
+		            <li class="divider hidden-xs"></li>
+		            <li><a href="https://www.contabilizei.com.br/escritorio-contabilidade-online/"><button class="botaosupremob">conheça nossos planos</button></a></li>
+		          </ul>
+			   	  </li>
+			   	  
+			   	  <!--  <li class="dropdown hidden-sm">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false">MEI para ME&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		          	<img class="visible-lg visible-md" src="assets/img/sobre4.png" style="width:350px;">
+		            <p class="textodrop hidden-xs"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Chegou a hora de crescer.</span><br> Alterar MEI para ME é um importante passo, conte conosco nessa nova etapa. Fazemos esta alteração de graça para você crescer o seu negócio com economia.</p>
+		            <li class="divider hidden-xs"></li>
+		            <li><a href="https://www.contabilizei.com.br/alterar-mei-para-me/"><button class="botaosupremob">altere MEI para ME de graça</button></a></li>
+		          </ul>
+			   	  </li> -->
+			   	  
+			   	   <li class="dropdown">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false" id="droprod">Área do Cliente&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		          	<br>
+		            <li><a href="https://www.contabilizei.com.br/escritorio-contabilidade-online/" target="_blank">Comece seu cadastro</a></li>
+		            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
+		            
+		            <li class="divider hidden-xs"></li>
+		            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
+		            <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
+		            <li><br></li>
+		            
+		          </ul>
+			   	  </li>
+			  </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+				
+			
+							
+			<!-- Modal do Vídeo -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Contabilizei - Contabilidade Online na prática</h4>
+				      </div>
+				      <div class="modal-body">
+				       <p><iframe class="embed-responsive-item" src="//fast.wistia.net/embed/iframe/9bddq9z2ql?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" name="wistia_embed" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="636" height="358" style="width: 636px; height: 358px;"></iframe><script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script></p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+				        
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				
+				
+		<!-- Dentro do Jumbo -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7">
+							<h1>Escritório de contabilidade online <br class="hidden-md">a partir de <strong> R$ 49 / mês</strong>
+							</h1>
+							<p>Todas obrigações legais para sua empresa<br class="hidden-xs"> estar regularizada com economia.</p>
+							
+							<div class="hidden-sm"><a href="#osmotivos"><button class="botao">saiba mais</button></a></div>
+							<br class="visible-sm"><br class="visible-sm"><br class="visible-sm">
+						</div>
+						<div class="col-md-5 visible-lg visible-md">
+							<a href="#myModal" data-toggle="modal"><img src="assets/img/topo.png" class="img-responsive" title="Assista nosso vídeo institucional."></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	
+	
+	
+		<!-- Abra / Migre / Altere -->
+		<div class="produtos">
+			<div class="container">
+				<div class="row">
+				
+					
+						<div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1 abrir">
+							<a href="https://www.contabilizei.com.br/abrir-empresa/"><h3>Abra empresa de graça</h3>
+							<p class="hidden-sm">Você paga as taxas do governo, protocola a documentação nos órgãos públicos e o <br>resto deixa com a gente.</p>
+							<button class="botaosupremoc">entenda como funciona</button></a>
+							
+						</div>
+					
+						
+					
+						<div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 migrar">
+							<div class="espaco visible-xs"><hr></div>
+							<a href="https://www.contabilizei.com.br/escritorio-contabilidade-online/"><h3>Já tem empresa?</h3>
+							<p class="hidden-sm">Migre sua contabilidade e você pode economizar <br class="visible-lg visible-sm">mais de <strong>R$ 4.000 / ano</strong>. Já pensou investir <br class="visible-lg visible-sm">mais no seu negócio?</p>
+							<button class="botaosupremoc">conheça nossa contabilidade</button></a>
+						</div>
+					
+					
+					
+						<!-- <div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 mei">
+							<div class="espaco visible-xs"><hr></div>
+							<a href="https://www.contabilizei.com.br/alterar-mei-para-me/"><h3><span class="hidden-sm">Altere</span> MEI para ME de graça</h3>
+							<p class="hidden-sm">Você paga as taxas do governo, protocola a documentação nos órgãos públicos e o <br>resto deixa com a gente.</p>
+							<button class="botaosupremoc">altere e cresça com economia</button></a>
+						</div>  -->
+					
+					
+				</div>
+			</div>
+		</div>
+	
+		
+		<!-- Os motivos -->
+		<section id="osmotivos">
+		<div class="osmotivos">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-10 col-xs-12 text-right chegoumob" style="padding-top:30px;">
+						<span class="chegouagora">Chegou agora e ainda <br class="visible-xs">não conhece a Contabilizei?</span>
+						
+						
+						<a href="https://www.contabilizei.com.br/contador-online/" target="_blank"><h2><span style="font-size:0.5em; font-weight:300; color:#666; letter-spacing:0.127em; line-height:2.6em;">Preparamos uma lista para mostrar porque</span><br>mais de 10.000 empresas<br><span style="font-size:0.5em; font-weight:300; color:#666; letter-spacing:0.097em;">querem economizar com contabilidade online</span></h2></a>	
+						
+						<img src="assets/img/setadir.png" class="hidden-xs hidden-sm">
+					</div>
+					<div class="col-md-6 col-xs-12 text-left hidden-sm">
+						<p class="underimg hidden-xs">GO!</p>
+						<a href="https://www.contabilizei.com.br/contador-online/" target="_blank"><img retina="true" src="/assets/img/pqcontsite.png" class="img-responsive"></a>
+					</div>
+					<div class="col-sm-12 text-center visible-sm" style="padding-top:30px;">
+						<a href="https://www.contabilizei.com.br/contador-online/" target="_blank"><img retina="true" src="/assets/img/pqcontsite.png" class="img-responsive center-block"></a>					
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		
+		
+		
+		<!-- A Contabilidade que vai facilotiar a sua vida  -->
+		
+		<section id="contabilidade">
+		<div class="menu2 ">
+			<div class="container">
+			
+				<h2>Contabilidade online para facilitar a sua vida:</h2>
+				<p class="hidden-xs">Combinamos contadores fanáticos e software inteligente<br class="visible-sm"> para você economizar tempo e dinheiro.</p>
+				
+			</div>
+		</div>
+		</section>
+		
+		<!-- 
+		<div class="menu3">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-4">
+						<img src="assets/img/numero1.png">
+						<h3>Quem somos</h3>
+						<p>e qual serviço prestamos?</p>
+					</div>
+					
+					<div class="col-md-4">
+						<img src="assets/img/numero2.png">
+						<h3>Por que cobramos</h3>
+						<p>a partir de R$ 49 / mês?</p>
+					</div>
+					
+					<div class="col-md-4">
+						<img src="assets/img/numero3.png">
+						<h3>Confiança e segurança</h3>
+						<p>é nosso compromisso com você</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		 -->
+		 
+		<div class="menu4">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-4 col-sm-6" style="border-right:1px solid #f2f2f2;">
+						<p><strong><span style="font-size:1.5em; color:#007dc5; ">Somos uma equipe fanática <br class="hidden-xs hidden-sm">por contabilidade.</span></strong>  <br><br> Cuidamos diariamente da contabilidade de pequenas empresas em todo Brasil.</p>
+						<a href="https://www.contabilizei.com.br/contabilizei-contabilidade-online/" target="_blank"><img src="assets/img/equipered.png" class="center-block"></a>
+						<br><p><strong>Atendemos exclusivamente empresas prestadoras de serviço. </strong>Tudo que envolva comércio, varejo e indústria não faz parte do nosso atendimento por enquanto.</p>
+					</div>
+				
+				
+					<div class="col-md-4 col-sm-6" style="border-right:1px solid #f2f2f2;">
+						<br class="visible-xs"><hr class="visible-xs"><br class="visible-xs">
+						<p><strong><span style="font-size:1.5em; color:#007dc5;">Nosso serviço é 100% <br class="visible-lg">online e inteligente.</span> </strong><br><br>Investimos constantemente em tecnologia e melhorias do negócio. Isso nos permite reduzir custos e oferecer uma mensalidade que cabe no seu bolso.</p>
+						<br class="hidden-md"><img src="assets/img/contoctopus.png" class="center-block">
+						
+						<p class="text-center"><em><small>Já disse que somos realmente fanáticos?</small></em></p>
+					</div>
+					
+					
+					
+					<div class="col-md-4 col-sm-12">
+						<br class="visible-xs visible-sm"><hr class="visible-xs visible-sm"><br class="visible-xs visible-sm">
+						
+					
+					
+						<p><strong><span style="font-size:1.5em; color:#007dc5;">Prezamos pela transparência.</span></strong> <br><br>Trabalhamos com compromisso e responsabilidade. Nosso número do CRC (Conselho Regional de Contabilidade) fica disponível para consulta aberta sempre que você quiser.</p>
+						<br class="visible-md"><a href="https://www.contabilizei.com.br/consulta.html" target="_blank"><img src="assets/img/certidaocrc.png" class="center-block"></a>
+						<br><p class="text-center" style="padding-top:7px;"><em><small>Quer saber mais? Acesse nossa página:<br><span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="color:#2ba5e5"></span>&nbsp;&nbsp;<a href="http://contabilizei.com.br/seguranca-contabilidade-online" target="_blank">Segurança na Contabilidade Online</a></small></em></p>
+					</div>
+					
+				</div>				
+			</div>
+		</div>
+		
+		<hr class="visible-xs visible-sm"><br class="visible-xs">
+		<div class="olha">
+			<div class="container">
+				<h2>O que estão falando da Contabilizei:</h2>
+			</div>
+		</div>
+		
+		<div class="sobrenos visible-md visible-lg">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-4">
+						<h4><img src="assets/img/midiaesp.png">&nbsp;&nbsp;&nbsp;A mídia</h4>
+						<img src="assets/img/setabaixo.png" style="margin-bottom:-9px;">
+					</div>
+					
+					<div class="col-md-4 col-md-offset-4">
+						<h4><img src="assets/img/nossosclientes.png">&nbsp;&nbsp;&nbsp;Nossos clientes</h4>
+						<img src="assets/img/setabaixo.png" style="margin-bottom:-11px;">
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		
+		<div class="logosmidia">
+			<div class="container">
+				<div class="row">
+					<p class="visible-sm visible-xs text-center"><span class="badge" style="font-size:0.9em; padding:8px 25px; border-radius:25px; background-color:#007dc5;">Na Mídia</span></p>
+					<br class="visible-sm visible-xs"><br class="visible-sm visible-xs"><br class="visible-sm visible-xs">
+					
+					<div class="col-md-2  col-xs-6">
+						<a href="https://www.youtube.com/watch?v=Q9m08YhkR4o&feature=youtu.be&t=67" target="_blank" title='"Pequenos empresários buscam alternativas para fugir da crise."'><img src="assets/img/logoredeglobo.png" onmouseover="this.src='assets/img/logoredegloboazul.png';" class="img-responsive"  onmouseout="this.src='assets/img/logoredeglobo.png';"></a>
+					</div>
+					
+					<div class="col-md-2  col-xs-6">
+						<a href="http://exame.abril.com.br/pme/noticias/contabilizei-recebe-investimento-da-kaszek-ventures" target="_blank" title='"Contabilizei recebe investimento da KaszeK Ventures."'><img src="assets/img/logoexame.png" onmouseover="this.src='assets/img/logoexameazul.png';" class="img-responsive"  onmouseout="this.src='assets/img/logoexame.png';"></a>
+					</div>
+					
+					
+					
+				</div>
+				
+				<div class="row">
+				
+					<div class="col-md-2 col-xs-6">
+						<a href="http://www.gazetadopovo.com.br/economia/startup-curitibana-quer-democratizar-contabilidade-para-pequenas-empresas-719wttgpqmibzksyirn3tcqrp" target="_blank" title='"Startup curitibana quer democratizar contabilidade para pequenas empresas."'><img src="assets/img/logogazetadopovo.png" class="img-responsive"  onmouseover="this.src='assets/img/logogazetadopovoazul.png';" onmouseout="this.src='assets/img/logogazetadopovo.png';"></a>
+					</div>
+					
+					<div class="col-md-2 col-xs-6">
+						<a href="http://startupi.com.br/2014/03/ferramenta-quer-substituir-contador/" target="_blank" title='"Eles são contadores, só que online."'><img src="assets/img/logostartupi.png" class="img-responsive"  onmouseover="this.src='assets/img/logostartupiazul.png';" onmouseout="this.src='assets/img/logostartupi.png';"></a>
+					</div>
+						
+					
+					
+				</div>
+				
+				<div class="row">
+						
+					<div class="col-md-2 col-xs-6">
+						<a href="http://revistapegn.globo.com/Noticias/noticia/2014/03/empreendedores-inovam-e-criam-servico-contabil-online.html" target="_blank" title='"Conseguiram inovar em uma das áreas mais tradicionais do mercado."'><img src="assets/img/logopegn.png" class="img-responsive" onmouseover="this.src='assets/img/logopegnazul.png';" onmouseout="this.src='assets/img/logopegn.png';"></a>
+					</div>
+					
+					<div class="col-md-2 col-xs-6">
+						<a href="https://queminova.catracalivre.com.br/inclui/startup-oferece-contabilidade-acessivel-a-micro-e-pequenas-empresas/" target="_blank" title='"Startup oferece contabilidade acessível a micro e pequenas empresas."'><img src="assets/img/logocatraca.png"  class="img-responsive" onmouseover="this.src='assets/img/logocatracaazul.png';" onmouseout="this.src='assets/img/logocatraca.png';"></a>
+					</div>
+				
+					
+				</div>
+				
+				<div class="row">
+				
+					<div class="col-md-2 col-xs-6">
+						<a href="http://oglobo.globo.com/economia/ferramentas-online-custo-baixo-ajudam-dar-mais-eficiencia-gestao-do-negocio-14976944" title='"Ferramentas online a custo baixo ajudam a dar mais eficiência à gestão do negócio."' target="_blank"><img src="assets/img/logoglobo.png" class="img-responsive"  onmouseover="this.src='assets/img/logogloboazul.png';" onmouseout="this.src='assets/img/logoglobo.png';"></a>
+					</div>
+					
+					
+					<div class="col-md-3 vejamais" style="margin-top:-15px;">
+						<a href="https://www.contabilizei.com.br/midia/" target="_blank">+ veja todas reportagens</a>
+					</div>
+					
+				</div>
+				
+					
+				
+				
+				
+			</div>
+		</div>
+		<div class="visible-sm"><p class="visible-sm visible-xs text-center"><span class="badge" style="font-size:0.9em; padding:8px 25px; border-radius:25px; background-color:#007dc5;">Nossos Clientes</span></p>
+					<p style="margin-top:520px"></p>
+		</div>
+		
+		<div class="nossosclientes">
+			<div class="container">
+				<div class="row">
+					<p class="visible-xs text-center"><br><span class="badge" style="font-size:1.1em; padding:8px 25px; border-radius:25px; background-color:#007dc5;">Nossos Clientes</span></p>
+					
+					<div class="col-md-5 pull-right">
+						
+						<div class="daniela">
+							
+							<h4><img src="assets/img/daniela.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Daniela P. da Silva<span style="font-size:0.8em; color:#a3a3a3;">&nbsp;&nbsp;&nbsp;R&D Informática</span></h4>
+							
+							<p>"Eu sou fã de ousadia, praticidade e principalmente da criatividade! Eu encontrei a Contabilizei numa busca feita pelo Google quando decidi abrir minha empresa. Agradeço a atenção da equipe e a organização com que tratam tudo, me deixa realmente muito tranquila e satisfeita!"</p>
+						</div>
+						<hr>
+						<div class="angelo">
+								
+								<h4><img src="assets/img/alessandro.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alessandro Tausz<span style="font-size:0.8em; color:#a3a3a3;"> &nbsp;&nbsp;&nbsp;Onfiak Solutions</h4>
+								
+								<p>"No início fiquei com receio de transferir minha empresa para uma contabilidade online e muito mais barata, mas após quase um ano com a Contabilizei estou muito tranquilo e feliz com a minha decisão. Atendimento sempre rápido e muito preciso. Uma das melhores decisões empresariais que tomei."</p>
+						</div>
+						
+						
+						<!-- Depoimentos expansíveis -->
+						<div class="collapse" id="collapseDepoimentos">
+							<hr>
+							<div class="angelo" class="hidden-xs">
+							
+								<h4><img src="assets/img/angelo.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Angelo Nunes<span style="font-size:0.8em; color:#a3a3a3;"> &nbsp;&nbsp;&nbsp;RedFire Tecnologia</h4>
+								
+								<p>"A Contabilizei proporcionou para nós uma drástica redução nos custos, suporte com uma qualidade significativa, atenção e cuidado com a minha empresa. Em resumo: é show!"</p>
+							</div>
+							
+							<hr>
+							<div class="angelo">
+								
+								<h4><img src="assets/img/arley.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arley Andrada Maria<span style="font-size:0.8em; color:#a3a3a3;"> &nbsp;&nbsp;&nbsp;Arlsoft Tecnologia</h4>
+								
+								<p>"Com a Contabilizei, além de redução do custo, agora conto com todo apoio não de um, mas de uma equipe de contadores fanáticos (ótimo atendimento) e de um sistema web simples que me permite acompanhar e controlar todas as obrigações contábeis, mantendo a mesma segurança e os mesmos serviços oferecidos pelo meu antigo escritório de contabilidade."</p>
+							</div>
+							<hr>
+							<div class="angelo">
+								
+								<h4><img src="assets/img/sergio.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sergio Moschioni<span style="font-size:0.8em; color:#a3a3a3;"> &nbsp;&nbsp;&nbsp;Visual Projects</h4>
+								
+								<p>"A Contabilizei inovou a contabilidade. Por intermédio de um canal simples permite que você atue de maneira participativa e colaborativa na contabilidade de uma empresa, possibilitando melhor gestão do negócio."</p>
+							</div>
+							<hr>
+							<div class="angelo">
+								
+								<h4><img src="assets/img/antoniojr.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Antonio Jr.<span style="font-size:0.8em; color:#a3a3a3;"> &nbsp;&nbsp;&nbsp;First Line Representações</h4>
+								
+								<p>"A Contabilizei foi a solução certa para minha empresa de representação comercial. O fato de ser uma contabilidade online me assustou inicialmente, mas tive grata surpresa, pois toda equipe da Contabilizei me deu amplo suporte na migração da minha empresa quando troquei de estado. Tenho total controle de toda as responsabilidades fiscais . O sistema é fácil e o contato é bem ágil. Certo dia fui surpreendido pela Contabilizei quando emiti nota e a mesma não estava conformidade e fui alertado pela equipe, que me deu suporte para pudesse fazer da forma correta. Preço é o menor dos atrativos da Contabilizei na minha visão, o maior atrativo é ter controle de forma sistêmica da contabilidade da minha empresa. Eu uso e indico."</p>
+							</div>
+						</div>
+						
+				
+					<div class="vejamais text-right">
+						<a data-toggle="collapse" href="#collapseDepoimentos" aria-expanded="false" aria-controls="collapseDepoimentos">+ veja mais depoimentos</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="hidden-xs" href="http://suporte.contabilizei.com.br/hc/pt-br/requests/new" target="_blank">+ é cliente? envie o seu :)</a>
+					</div>
+				
+				</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--  <div class="kaszek text-center">
+			<div class="container">
+				<h2>A Contabilizei é investida pela KaszeK Ventures</h2><p style="font-size:1.11em; font-weight:400;">eleita o melhor fundo de investimentos da América Latina em 2015 <a href="http://latam-founders.com/community/35/" target="_blank"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="padding-left:5px"></span></a></p>
+				
+				
+						<img src="assets/img/kaszekhome.png">
+					
+				</div>
+			</div>
+		</div> -->
+		
+	
+		
+	
+		<!-- Faça parte -->
+		<div class="facaparte">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Faça parte da <br><strong>revolução</strong> conosco!</h3>
+						<p>Uma legião de empreendedores que estão <strong>economizando tempo e dinheiro.</strong></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ultimocta">
+			<div class="container">
+				<div class="row">
+				
+					<div class="col-md-4 col-md-offset-2">
+						<img src="assets/img/abrirboneco.png"><br><a href="https://www.contabilizei.com.br/abrir-empresa/"><button class="botaosupremob">Abra sua empresa de graça</button></a>
+					</div>
+					
+					<div class="col-md-4">
+						<img src="assets/img/migrarboneco.png" class="hidden-xs hidden-sm"><br><a href="https://www.contabilizei.com.br/escritorio-contabilidade-online/"><button class="botaosupremob">Contrate nossa contabilidade</button></a>
+					</div>
+					
+					<!-- <div class="col-md-4">
+						<img src="assets/img/meiboneco.png" class="hidden-xs hidden-sm" style="margin-top:-76px;"><br><a href="https://www.contabilizei.com.br/alterar-mei-para-me/"><button class="botaosupremob">Altere MEI para ME de graça</button></a>
+					</div> -->
+					
+				</div>
+			</div>
+		</div>
+	
+			
+		
+		
+		<!-- Rodapé -->
+		<footer>
+		    <div class="footer" id="footer">
+		        <div class="container">
+		            <div class="row">
+		            
+		            	<div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+		                    <h3> Contabilizei </h3>
+		                    <ul>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilizei-contabilidade-online"> A empresa </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/midia"> Midia </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online" target="_blank"> Blog </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/reclame-aqui-contabilizei/" target="_blank"> Reclame aqui </a> </li>
+		                        <li> <a href="https://contabilizei.recruiterbox.com" target="_blank"> Trabalhe Conosco (Vagas) </a> </li>
+		                    </ul>
+		                </div>	
+		            
+		                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+		                    <h3> Contabilidade Online </h3>
+		                    <ul>
+		                        <li role="presentation"> <a href="https://www.contabilizei.com.br/contador-online/"> Como funciona</a> </li>
+		                        <li role="presentation"> <a href="https://www.contabilizei.com.br/contador-online/"> Quanto custa </a> </li>
+		                        <li role="presentation"> <a href="https://www.contabilizei.com.br/escritorio-contabilidade-online/"> Quais cidades atendemos </a> </li>
+		                        <li role="presentation"> <a href="https://www.contabilizei.com.br/seguranca-contabilidade-online/"> Segurança na Contabilidade Online </a> </li>
+		                        <li role="presentation"> <a href="http://suporte.contabilizei.com.br/hc/pt-br" target="_blank"> Central de Atendimento </a> </li>
+		                    </ul>
+		                </div>
+		                
+		               	<div class="col-lg-3  col-md-3 col-sm-4 col-xs-12">
+		                    <h3> Últimas no Blog </h3>
+		                    <ul>
+		                    	<li> <a href="https://www.contabilizei.com.br/contabilidade-online/alteracao-tabela-simples-nacional-2016/" target="_blank">Alteração Tabela Simples Nacional 2016</a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/como-abrir-empresa/" target="_blank">Como abrir empresa em 4 passos</a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/IRPF-2015-imposto-de-renda/" target="_blank">Declaração IR pessoa física 2015 </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/tabela-simples-nacional/" target="_blank"> Guia completo do simples nacional </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/como-solicitar-enquadramento-simples-nacional/" target="_blank"> Solicitando enquadramento no simples </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/artigos-contabilidade-online/super-simples-nacional-mudancas/" target="_blank"> As mudanças no super simples nacional </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/artigos-contabilidade-online/motivos-para-contabilidade-online/" target="_blank"> Motivos para usar contabilidade online </a> </li>
+		                    </ul>
+		                </div>
+		                
+		                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+		                    <h3> Conecte-se conosco </h3>
+		                   
+		                    <div class="fb-page" data-href="https://www.facebook.com/contabilizei" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" height="600"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/contabilizei"><a href="https://www.facebook.com/contabilizei"></a></blockquote></div></div>
+		                </div>
+		                
+		                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+		            	 	<h3> Somos investidos pelo grupo Kaszek </h3>
+		            	 	<a href="http://www.kaszek.com/" target="_blank"><img src="assets/img/kaszekhome.png"></a><span class="hidden-xs hidden-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br class="visible-xs"><small>* eleito o melhor grupo de investimentos<br class="visible-xs"> da América Latina em 2015 <a href="http://latam-founders.com/community/35/" target="_blank"><span class="glyphicon glyphicon-info-sign" style="padding-left:5px; color:#007dc5;" aria-hidden="true"></span></a></small>
+		            	</div>
+		                
+		            </div>
+		            <!--/.row--> 
+		            
+		        
+		            
+		            
+		        	<div class="row">
+		            	<div class="col-lg-12 col-md-12">
+		                    <h3> Sobre a Contabilizei </h3>
+			            	<p>Contabilizei é um escritório de Contabilidade Online a partir de R$49/mês. O contador online para você abrir sua empresa grátis e economizar tempo e dinheiro. Conosco você tem disponível sua contabilidade online, emite Notas fiscais eletrônicas (NFS-e), gerencia folha de pagamentos, impostos e relatórios gerenciais. Todas as exigências legais são realizadas e gerenciadas pela Contabilizei.</p>
+						    <br>
+						    <p>Endereço: Rua Francisco Rocha, 198 - Batel, Curitiba - PR, 80420-130</p>
+						    <p>CNPJ: 19.322.789/0001-25 - Contabilizei Contabilidade Ltda</p>
+						    <p>Conselho Regional de Contabilidade: PR-007940/O-0 e SP-258642/O-7 T-PR</p>
+						   
+						</div>
+					</div>
+
+		        </div>
+		        <!--/.container--> 
+		    </div>
+		    <!--/.footer-->
+		    
+		    <div class="footer-bottom">
+		        <div class="container" align="center">
+		            <p>©<a href="https://www.contabilizei.com.br"> Contabilizei Contabilidade Online</a>. Todos os direitos reservados.</p>
+		        </div>
+		    </div>
+		    <!--/.footer-bottom--> 
+		</footer>
+	
+		<!-- Load Bootstrap Js e jQuery -->
+	    <script type="text/javascript" src="assets/lib/jquery/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/scroll.js"></script>
+		
+		
+		<!-- BOTAO DE AJUDA -->
+		<div id="btn-ajuda-fixed">
+			<a class="botaoajuda" href="javascript:void(0);">
+				<p><i class="fa fa-question-circle" style="padding-right:10px; font-size:1.3em;"></i>Ajuda</p>
+			</a>
+			<div class="geralajuda">
+				<div class="boxajuda" style="display: none">
+					<span class="glyphicon glyphicon-search help-search-ajuda" style="padding-left:6%; padding-right:2%; color:#bbb;"></span>
+					<input autocapitalize="off" autocorrect="off" placeholder="Como podemos ajudá-lo?" type="search">
+					<div class="boxflecha"></div>
+				</div>
+				
+				<div class="fecharajuda" style="display: none">	
+					<a href="javascript:void(0)" class="boxx">
+						<i class="fa fa-times iconbox"></i>
+					</a>	
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--  
+		<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+		<style type="text/css" media="screen, projection">
+		  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
+		</style>
+		<script type="text/javascript">
+		  if (typeof(Zenbox) !== "undefined") {
+			Zenbox.init({
+			  dropboxID:   "20306696",
+			  url:         "https://contabilizei.zendesk.com",
+			  tabTooltip:  "Suporte",
+			  tabImageURL: "https://p1.zdassets.com/external/zenbox/images/tab_pt_support_right.png",
+			  tabColor:    "#0563AB",
+			  tabPosition: "Right",
+			  hide_tab: true
+			});
+		  }
+		</script> !-->
+		
+		<!-- 
+		<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0027/8049.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+		</script> !-->
+		
+		<!-- CSS Botão Ajuda -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/botao.css">
+		
+		
+	  	<!-- SCRIPTS DE FORMULARIOS E CONTEUDO DINÂMICO -->
+		<!-- <script type="text/javascript" src="assets/lib/jquery.mask/jquery.mask.min.js"></script> -->
+		<!-- <script type="text/javascript" src="assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script> -->
+		<!-- <script type="text/javascript" src="assets/lib/placeholders/placeholders.min.js"></script> -->
+	    <script type="text/javascript" src="assets/lib/jquery/jquery.cookie.js"></script>
+		<!-- <script type="text/javascript" src="assets/lib/jquery.validate/jquery.validate.min.js"></script> -->
+		<!-- <script type="text/javascript" src="assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script> -->
+		<!-- <script type="text/javascript" src="assets/lib/accounting/accounting.min.js"></script> -->
+
+		<script type="text/javascript" src="/parametros.js"></script>
+		<script type="text/javascript" src="assets/js/gapi.js"></script>
+	    <script type="text/javascript" src="assets/js/cupom.js"></script>
+	    <script type="text/javascript" src="assets/js/botao-ajuda.js"></script>
+	    <!-- <script type="text/javascript" src="assets/js/app.js"></script> -->
+		<script type="text/javascript" src="https://apis.google.com/js/client.js?onload=initGapi"></script>
+		
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=234390939943812";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		
+	
+	</body>
+	
+</html>

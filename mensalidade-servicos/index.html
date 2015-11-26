@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="SimuladorApp">
+	
+	<head>
+		
+		<!-- Hotjar Tracking Code for www.contabilizei.com.br -->
+		<script>
+		    (function(f,b){
+		        var c;
+		        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+		        f._hjSettings={hjid:21654, hjsv:3};
+		        c=b.createElement("script");c.async=1;
+		        c.src="//static.hotjar.com/c/hotjar-21654.js?sv=3";
+		        b.getElementsByTagName("head")[0].appendChild(c); 
+		    })(window,document);
+		</script>
+		<!-- Metatags -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Calculadora de mensalidade e economia Contabilizei.">
+		<meta name="keywords" content="contabilidade online, mensalidade, economia contabilidade online, mensalidade contabilidade online, economia contabilizei, contabilizei">
+		<!-- Google author -->
+
+		<link rel="author" href="https://plus.google.com/u/0/110264168711669397191/" />
+		<link rel="publisher" href="https://plus.google.com/u/0/110264168711669397191/" >
+
+		<!-- Geral -->		
+		<meta property="og:locale" content="pt_BR" />
+		<meta property='og:type' content='website'/>
+		<meta property="og:site_name" content="Contabilizei">
+		<meta property="og:url" content="https://www.contabilizei.com.br">
+		<meta property='article:publisher' content='https://facebook.com/contabilizei'/>
+		<meta property="og:title" content="Contabilizei Contabilidade Inteligente">
+		<meta property="og:description" content="Contabilidade inteligente e online para micro e pequenas empresas a partir de R$ 49,00 por mês.">
+		<meta property="og:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/thumbhome.png">
+
+
+		<!-- Twitter -->
+ 
+		<meta name="twitter:card" content="product">
+		<meta name="twitter:site" content="@contabilizei">
+		<meta name="twitter:creator" content="@contabilizei">
+		<meta name="twitter:title" content="Contabilizei Contabilidade Online">
+		<meta name="twitter:description" content="Contabilidade inteligente e online para micro e pequenas empresas a partir de R$ 49,00 por mês.">
+		<meta name="twitter:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/thumbhome.png">
+		
+		<title>Mensalidade contabilidade online para Serviços | Contabilizei Escritório</title>
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		
+		<link rel="stylesheet" href="css/style2.css">
+		
+		<!-- Fontes Customizadas -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		
+		<!-- Load Bootstrap Js e jQuery -->
+	    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+	    <script type="text/javascript" src="js/calculadora.js"></script>
+		
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Fav and touch icons -->
+	    <link rel="shortcut icon" href="../assets/ico/contabilizei-favicon.ico">
+		
+		<style rel="stylesheet">
+			input[type=number]::-webkit-inner-spin-button, 
+			input[type=number]::-webkit-outer-spin-button {  
+			
+			   opacity: 1;
+			
+			}
+		</style>
+		<script src="//my.hellobar.com/35f2e648daf45626e1931ec3683e451016af0994.js" type="text/javascript" charset="utf-8" async="async"></script>
+	</head>
+	
+	<body>
+	   	<!-- Google Tag Manager -->
+	  	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9X6Z2"
+	 	 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	  	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	  	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	  	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	  	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	  	})(window,document,'script','dataLayer','GTM-N9X6Z2');</script>
+	  	<!-- End Google Tag Manager -->
+	
+	  
+		
+		<!-- Navbar e Jumbotron juntos -->
+		
+		
+		
+		<div class="jumbotron" style="margin-bottom:0; padding-top:0;">	
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12" id="centralizado">
+						
+						
+						<div class="simule" style="padding-top:0;" ng-controller="SimuladorController">
+							<div class="container">
+								<div class="row">
+									
+									<p style="color:#fff; padding-top:10px; padding-bottom:5px;"><a href="https://www.contabilizei.com.br/mensalidade-comercio/?utm_source=calculadoramensalidade" style="text-decoration:underline; color:#B7DEFF"><span class="glyphicon glyphicon-arrow-left " aria-hidden="true" style="padding-right:10px"></span>Alternar para Comércio</a> <span class="hidden-xs" style="padding:20px">|</span><br class="visible-xs"><br class="visible-xs"> Calculadora de mensalidade<br class="visible-xs"> para empresas de Serviço:</p>
+									
+									<div class="col-md-4 col-md-offset-2 col-xs-12 col-xs-offset-0" id="especial">
+										
+										<div class="btn-group" data-toggle="buttons">
+											  <label class="btn btn-primary active" id="tab-sn" ng-click="simples = true">
+											    <a aria-controls="home" role="tab" data-toggle="tab"><input type="radio" name="options" id="option1" autocomplete="off" checked><h4>Simples Nacional</h4></a>
+											  </label>
+											  <label class="btn btn-primary" id="tab-lp" ng-click="simples = false">
+											    <a aria-controls="home" role="tab" data-toggle="tab"><input type="radio" name="options" id="option2" autocomplete="off"><h4>Lucro Presumido</h4></a>
+											  </label>
+										</div>
+										
+										<!-- Tab panes -->
+										<br><br>
+										<p>Quantos sócios tem sua empresa?</p>
+										
+										<div class="input-group">
+											<input type="number"  ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700" autofocus>
+										</div>
+										<br><br>
+										<p>Quantos funcionários?</p>
+										
+										<div class="input-group">
+											
+											<input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700" autofocus>
+											
+										</div>
+										<br><br>
+										<p>Qual seu faturamento mensal?</p>
+										
+										<div class="input-group">
+											
+											<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; text-align:center; font-size:1.2em; line-height:2.5em; font-weight:700">
+											    {{ltFaturamento[indice]}}&nbsp;&nbsp;
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="width:100%; text-align:center; font-size:1em; font-weight:700">
+											    <li ng-repeat="item in ltFaturamento"><a href ng-click="atualizaFaturamento($index)">{{item}}</a></li>
+											  </ul>
+											</div>
+										</div>
+											
+									</div>
+									
+									<div class="col-md-1 hidden-sm hidden-xs hidden-md" id="setas"><br><br>
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									</div>
+									
+									<div class="col-md-4 col-xs-12" style="padding-top:20px;">
+											Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>, <br><br><strong>sua mensalidade será de:</strong><br>
+											<span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês</strong>
+											
+											<br><hr style="width:40%"><strong>o que você vai economizar:</strong><br>
+											<span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span><strong> / ano</strong>
+											
+											<br><br class="visible-xs"><a href="https://www.contabilizei.com.br/escritorio-contabilidade-online/?utm_source=calculadoramensalidade#migre" ><button  class="botao">migre sua empresa :)</button></a>
+											<br><br class="visible-xs"><p style="font-size:0.8em; color:#fff; font-weight:300; padding-top:10px;">Não possui empresa? <br class="visible-xs"><a href="https://www.contabilizei.com.br/abrir-empresa/?utm_source=calculadoramensalidade" target="_blank" style="text-decoration:underline;">Abrimos sua empresa de graça</a></p>
+											
+									</div>
+									
+								</div>
+								<div class="row">
+									<br class="visible-xs"><small><p style="padding-top:5px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna com clientes sobre o custo do serviço de contabilidade anterior (R$394/mês).</span></p></small>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+				
+					
+				</div>
+			</div>
+		
+		
+		<!-- Na Mídia -->
+		<div class="midia visible-lg visible-md" style="background-color:#fff !important;">
+			<div class="container">
+				<div class="row">
+					
+					
+					<div class="col-md-4">
+						<a href="http://exame.abril.com.br/pme/noticias/contabilizei-recebe-investimento-da-kaszek-ventures" target="_blank">
+						<img src="../assets/img/exame.png">
+						<p class="texto">"A contabilidade online proporciona até <br>90% de economia nesse tipo de serviço."</p>
+						</a>
+					</div>
+					
+					
+					<div class="col-md-4">
+						<a href="http://techcrunch.com/2015/09/27/as-brazilian-economy-descends-into-crisis-tech-is-growing-double-digits/" target="_blank">
+						<img src="../assets/img/techcrunch.png">
+						<p class="texto">"Apesar da crise econômica no Brasil, o setor <br>de tecnologia não para de crescer."</p>
+					</div>
+					
+					
+					<div class="col-md-4">
+						<a href="https://www.youtube.com/watch?v=Q9m08YhkR4o&feature=youtu.be&t=67" target="_blank">
+						<img src="../assets/img/globo2.png">
+						<p class="texto">"Pequenos empresários buscam alternativas para fugir da crise."</p>
+						</a>
+					</div>
+					
+					
+					</div>
+					
+					
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Rodapé -->
+		<footer>
+		    <div class="footer" id="footer">
+		        <div class="container">
+		            <div class="row">
+		            
+		            	<div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+		                    <h3> Contabilizei </h3>
+		                    <ul>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilizei-contabilidade-online/?utm_source=calculadoramensalidade"> A empresa </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/midia/?utm_source=calculadoramensalidade"> Midia </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/?utm_source=calculadoramensalidade" target="_blank"> Blog </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/reclame-aqui-contabilizei/?utm_source=calculadoramensalidade" target="_blank"> Reclame aqui </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/documentos/politica-de-privacidade.pdf" target="_blank"> Política de privacidade </a> </li>
+		                        <li> <a href="https://contabilizei.recruiterbox.com" target="_blank"> Trabalhe conosco (vagas) </a> </li>
+		                    </ul>
+		                </div>	
+		            
+		                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+		                    <h3> Contabilidade Online </h3>
+		                    <ul>
+		                        <li role="presentation"> <a href="https://www.contabilizei.com.br/contador-online/?utm_source=calculadoramensalidade"> Como funciona</a> </li>
+		                        <li role="presentation"> <a href="https://www.contabilizei.com.br/mensalidade-contabilidade-online/?utm_source=calculadoramensalidade"> Quanto custa </a> </li>
+		                        <li role="presentation"> <a href="https://www.contabilizei.com.br/escritorio-contabilidade-online/?utm_source=calculadoramensalidade"> Quais cidades atendemos </a> </li>
+		                        <li role="presentation"> <a href="https://www.contabilizei.com.br/seguranca-contabilidade-online/?utm_source=calculadoramensalidade"> Segurança na contabilidade online </a> </li>
+		                        <li role="presentation"> <a href="http://suporte.contabilizei.com.br/hc/pt-br/?utm_source=calculadoramensalidade" target="_blank"> Central de atendimento </a> </li>
+		                    </ul>
+		                </div>
+		                
+		               	<div class="col-lg-3  col-md-3 col-sm-4 col-xs-12">
+		                    <h3> Últimas no Blog </h3>
+		                    <ul>
+		                    	<li> <a href="https://www.contabilizei.com.br/contabilidade-online/desoneracao-folha-de-pagamento/?utm_source=calculadoramensalidade" target="_blank">Desoneração na folha de pagamento</a> </li>
+		                    	<li> <a href="https://www.contabilizei.com.br/contabilidade-online/alteracao-tabela-simples-nacional-2016/?utm_source=calculadoramensalidade" target="_blank">Alteração tabela simples nacional 2016</a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/como-abrir-empresa/?utm_source=calculadoramensalidade" target="_blank">Como abrir empresa em 4 passos</a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/IRPF-2015-imposto-de-renda/?utm_source=calculadoramensalidade" target="_blank">Declaração IR pessoa física 2015 </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/tabela-simples-nacional/?utm_source=calculadoramensalidade" target="_blank"> Guia completo do simples nacional </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/como-solicitar-enquadramento-simples-nacional/?utm_source=calculadoramensalidade" target="_blank"> Solicitando enquadramento no simples </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/artigos-contabilidade-online/super-simples-nacional-mudancas/?utm_source=calculadoramensalidade" target="_blank"> As mudanças no super simples nacional </a> </li>
+		                        <li> <a href="https://www.contabilizei.com.br/contabilidade-online/artigos-contabilidade-online/motivos-para-contabilidade-online/?utm_source=calculadoramensalidade" target="_blank"> Motivos para usar contabilidade online </a> </li>
+		                    </ul>
+		                </div>
+		                
+		                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+		                    <h3> Conecte-se conosco </h3>
+		                   
+		                    <div class="fb-page" data-href="https://www.facebook.com/contabilizei" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" height="600"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/contabilizei"><a href="https://www.facebook.com/contabilizei"></a></blockquote></div></div>
+		                </div>
+		                
+		                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+		            	 	<h3> Somos investidos pelo grupo Kaszek </h3>
+		            	 	<a href="http://www.kaszek.com/" target="_blank"><img src="../assets/img/kaszekhome.png"></a><span class="hidden-xs hidden-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br class="visible-xs"><small>* eleito o melhor grupo de investimentos<br class="visible-xs"> da América Latina em 2015 <a href="http://latam-founders.com/community/35/" target="_blank"><span class="glyphicon glyphicon-info-sign" style="padding-left:5px; color:#007dc5;" aria-hidden="true"></span></a></small>
+		            	</div>
+		                
+		            </div>
+		            <!--/.row--> 
+		            
+		        
+		            
+		            
+		        	<div class="row">
+		            	<div class="col-lg-12 col-md-12">
+		                    <h3> Sobre a Contabilizei </h3>
+			            	<p>Contabilizei Contabilidade é um escritório de Contabilidade Online a partir de R$49/mês. O contador online para você abrir sua empresa grátis e economizar tempo e dinheiro. Conosco você tem disponível sua contabilidade online, emite Notas fiscais eletrônicas (NFS-e), gerencia folha de pagamentos, impostos e relatórios gerenciais.</p>
+			            	<br>
+			            	<p><small>Conforme determinação legal, as atividades contábeis são prestadas unicamente pela empresa Contabilizei Contabilidade através de seus contadores fanáticos. A Contabilizei Tecnologia é empresa parceira que viabiliza o software inteligente e realiza inovações tecnológicas possibilitando sempre a melhor plataforma contábil online. O termo "Contabilizei" utilizado neste site faz referência ora à Contabilizei Contabilidade ora à Contabilizei Tecnologia, as quais atuam em parceria e atendem a todas as exigências legais.</small></p>
+						    <br>
+						    <p>Endereço: Rua Francisco Rocha, 198 - Batel, Curitiba - PR, 80420-130.</p>
+						    <p>CNPJ: 20.182.807/0001-08 - Contabilizei Tecnologia Ltda.</p>
+						    <p>CNPJ: 19.322.789/0001-25 - Contabilizei Contabilidade Ltda.</p>
+						    
+						    <p>Conselho Regional de Contabilidade: PR-007940/O-0 e PR 054502/O-4.</p>
+						   
+						</div>
+					</div>
+
+		        </div>
+		        <!--/.container--> 
+		    </div>
+		    <!--/.footer-->
+		    
+		    <div class="footer-bottom">
+		        <div class="container" align="center">
+		            <p>©<a href="https://www.contabilizei.com.br"> Contabilizei Contabilidade Online</a>. Todos os direitos reservados.</p>
+		        </div>
+		    </div>
+		    <!--/.footer-bottom--> 
+		</footer>
+	    
+	    <!-- SUBSTITUIDO PELA VERSAO MAIS RECENTE JA UTILIZADA NO RESTANTE DO SITE -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="js/validacoes.js"></script>
+		
+		
+		
+	
+		
+		<!-- SCRIPTS DE FORMULARIOS E CONTEUDO DINÂMICO -->
+<!-- 		<script type="text/javascript" src="../assets/lib/jquery.mask/jquery.mask.min.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/placeholders/placeholders.min.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/lib/jquery/jquery.cookie.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/jquery.validate/jquery.validate.min.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/accounting/accounting.min.js"></script> -->
+
+<!-- 	 	<script type="text/javascript" src="/parametros.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/js/gapi.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/js/cupom.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/js/app.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/js/cadastro-migracao-post.js"></script> -->
+<!-- 		<script type="text/javascript" src="https://apis.google.com/js/client.js?onload=initGapi"></script> -->
+
+		<!-- CALCULO ECONOMIA -->
+		<script type="text/javascript">
+			// 
+// 			$(document).ready(function() {
+// 				$("valor-socios").change(function() {
+// 					console.log($("valor-socios").val());
+// 				);
+// 			});			
+			
+// 			function atualizarEconomia(mensalContabilizei){
+// 				var valor = mensalContabilizei;
+				
+// 				var valorMensalidade = parseInt($("#valor-mensalidade").val());
+				
+// 				if(valorMensalidade <= valor){
+// 					$('.valor.economia').html("0");
+// 				}else{
+// 					$('.valor.economia').html(accounting.formatMoney( 12 * (valorMensalidade - valor), "", 0, ".", ","));
+// 				}
+// 			}
+			
+// 			$(document).on("keyup", "#valor-mensalidade", function(e){
+// 				var valor = $("#tab-sn").hasClass("active") ? 49 : 99;
+				
+// 				atualizarEconomia(valor);
+
+// 			});
+			
+// 			$("#tab-sn, #tab-lp").click(function(e){
+// 				//INVERTIDO POIS ACTIVE SO MUDA NO FINAL DA ACAO DO CLICK
+// 				var valor = $("#tab-sn").hasClass("active") ? 99 : 49;
+				
+// 				atualizarEconomia(valor);
+// 			});
+			
+		</script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=234390939943812";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	</body>
+	
+</html>

@@ -1,0 +1,75 @@
+/* Navbar */
+
+#topo {
+	background-color:#1c72bb;
+}
+.dropdown,.dropdown-menu {
+	right:350px;
+}
+.conteudo {
+	padding-top:20px;
+}
+.navbar-brand {
+	margin-top:-6px;
+}
+.navbar-default .navbar-nav>li>a {
+	color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	background-color:#004c88;
+	color:#e8e8e8;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	background-color:#004c88;
+	color:#fff;
+}
+.botao {
+	background-color:#1c72bb;
+	border-radius:20px;
+	border:1px solid #acc8df;
+	color:#acc8df;
+	margin-top:11px;
+	padding:2px 15px 2px 15px;
+}
+.botao:hover {
+	background-color:#1c72bb;
+	border:1px solid #fff;
+	color:#fff;
+}
+
+.rodape {
+	padding-top:40px;
+	text-align:right;
+}
+.rodape button {
+	font-weight:600;
+	font-size:1.2em;
+	padding:10px 25px 10px 25px;
+	border-radius:25px;
+	color:#fff;
+	text-decoration:none;
+	background-color:#a2d92e;
+	border:none;
+	border-bottom:4px solid #92c32b;
+	text-shadow:1px 1px #82b515;
+}
+.rodape button:hover {
+	border:none;
+	background-color:#aee930;
+	border-bottom:4px solid #a2d92e;
+	color:#fff;
+}
+.rodape button:active {
+	margin-top:4px;
+	border-bottom:none;
+}
+.conteudo img {
+	padding-top:40px;
+}
+#centro {
+	text-align:center;
+}
+
+#direita {
+	text-align:right;
+}

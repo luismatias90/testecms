@@ -1,0 +1,12 @@
+User-agent: Googlebot
+Disallow: /documentos/
+Disallow: /assets-old/
+Disallow: /contabilidade-on-line/
+Disallow: /empresa-contabilidade-economica/
+Disallow: /mockups/
+Disallow: /simples-2015/
+Disallow: /termos-de-uso/
+Disallow: /tutoriais/
+Disallow: /sentisdds/
+Disallow: /99designs/
+Disallow: /trampos/

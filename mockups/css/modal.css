@@ -1,0 +1,173 @@
+body {
+	background-color:#666;
+	font-family: 'Nunito', sans-serif;
+}
+
+/* Modal Inicial */
+
+.modalIndique {
+	background-color:#fff;
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+    color:#000;
+    border-radius: 25px;
+}
+.modalIndique .titulo {
+	padding:20px 65px;
+}
+.modalIndique h2 {
+	font-weight:600;
+	font-size:2em;
+	line-height:1.5em;
+}
+.modalIndique img {
+	margin-top:-10px;
+}
+.modalIndique .botoes {
+	margin-top:5px;
+}
+.modalIndique .botoes p {
+	padding-bottom:15px;
+}
+.modalIndique button {
+	margin-bottom:10px;
+	width:400px;
+	padding:10px 0;
+	border-radius:25px;
+	border:none;
+	color:#fff;
+	font-weight:600;
+	font-size:1.1em;
+}
+.modalIndique .gmail {
+	background-color:#b24545;
+}
+.modalIndique .gmail:hover  {
+	background-color:#da5454;
+}
+.modalIndique .botoes .gmail img {
+	margin-top:-3px;
+	margin-left: -30px;
+	padding-right:20px;
+}
+.modalIndique .linkedin {
+	background-color:#373737;
+}
+.modalIndique .linkedin:hover  {
+	background-color:#5b5b5b;
+}
+.modalIndique .botoes .linkedin img {
+	margin-top:-3px;
+	margin-left: -12px;
+	padding-right:22px;
+}
+.modalIndique .facebook {
+	background-color:#304c87;
+}
+.modalIndique .facebook:hover  {
+	background-color:#3e64b3;
+}
+.modalIndique .botoes .facebook img {
+	margin-top:-3px;
+	margin-left: -8px;
+	padding-right:22px;
+}
+.modalIndique .twitter {
+	background-color:#5ea9dd;
+}
+.modalIndique .twitter:hover  {
+	background-color:#6abef8;
+}
+.modalIndique .botoes .twitter img {
+	margin-top:-3px;
+	margin-left: -25px;
+	padding-right:20px;
+}
+.modalIndique .link {
+	padding-top:20px;
+	margin-left:100px;
+	font-size:0.9em;
+	color:#888;
+}
+.modalIndique .linkbox {
+	border:1px dashed #b0b0b0;
+	background-color:#fafafa;
+	color:#b0b0b0;
+	margin-right:100px;
+	margin-top:-46px;
+	font-size:0.7em;
+	padding:10px 25px 0px 25px;;
+}
+.modalIndique .linkbox:hover {
+	background-color:#e8e8e8;
+	border:1px dashed #888;
+	color:#888;
+}
+.modalIndique .linkbox a {
+	color:#b0b0b0;
+}
+.modalIndique .linkbox a:hover {
+	color:#666;
+}
+
+/* Gmail */
+
+.modalIndique .esquerda {
+	top:40px;
+	bottom:40px;
+}
+.modalIndique .direita {
+	padding:40px 30px;
+}
+.modalIndique .direita .mensagem {
+	font-weight:500;
+	font-size:0.9em;
+}
+.modalIndique .direita textarea {
+	border:1px solid #b0b0b0;
+	color:#b0b0b0;
+	font-size:0.9em;
+	padding:10px 10px 0px 10px;
+	line-height:1.5em;
+}
+.modalIndique .direita input {
+	width:80%;
+	font-size:0.9em;
+}
+.modalIndique .gmail2 {
+	width:223px;
+	background-color:#b24545;	
+}
+.modalIndique .gmail2:hover  {
+	background-color:#da5454;
+}
+.modalIndique .gmail2 img {
+	margin-top:-3px;
+	margin-left: -30px;
+	padding-right:20px;
+}
+
+
+/* Scrollbar Gmail */
+.esquerda::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+/* Track */
+.esquerda::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.esquerda::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.esquerda::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}

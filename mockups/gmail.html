@@ -1,0 +1,92 @@
+<!DOCTYPE html>	
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1">  -->
+   
+    <title>Navbar</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="css/modal.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		
+		
+		
+		
+		<div class="modalIndique">
+			<div class="container">
+				
+			<div class="row" ng-show="access_token">
+		            <div class="col-xs-6 esquerda" style="height:420px; overflow: auto;">
+		                <table class="table">
+		                    <thead>
+		                        <tr>
+		                            <th><input type="checkbox" value="todos" ng-click="marcar()"></th>
+		                            <th>{{ checkAll ? "Desmarcar todos" : "Marcar todos" }}</th>
+		                        </tr>
+		                    </thead>
+		                    <tbody>
+		                        <tr ng-repeat="contato in ltContatos">
+		                            <td><input type="checkbox" ng-model="contato.check" value="{{contato.email}}"></td>
+		                            <td>{{contato.name}}<td>
+		                        </tr>
+		                    </tbody>
+		                    
+		                </table>
+		                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		            </div>
+		            <div class="col-xs-6 direita">
+		            	
+		            	<p class="mensagem">Ficou algum contato de fora? <br>-&nbsp;&nbsp;<a href="#adicionar" data-toggle="collapse" aria-controls="adicionar"><strong>Adicione manualmente</strong></a></p>
+		              	
+		              	
+		              	<!-- Inputs extras -->
+		              	<div class="collapse" id="adicionar">
+		              		 
+			              		 <input type="text" class="form-control" placeholder="Digite o e-mail desejado" style="display:inline;">&nbsp;&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-plus" style="color:#337ab7;"></span></a>
+							    
+						</div>
+						<hr>
+		            	
+		            	<p class="mensagem">Mensagem a ser enviada para seus contatos, customize-a como quiser:</p>
+		                <textarea rows="9" cols="27" ng-model="mensagem">Olá! Já conhece a Contabilizei? É um escritório de contabilidade online com mensalidade a partir de R$49/mês. Tudo que um contador tradicional faz, só que online! Estou utilizando e acho que você gostaria de experimentar também. Clique no link e saiba mais. :)</textarea>
+		              	<br><br>
+						<button class="gmail2"><img src="img/gmail.png">convidar</button>
+						
+		              	</div>
+		              	
+		              	
+		              	
+		              	  
+		            </div>    
+		        </div>
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+	
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
