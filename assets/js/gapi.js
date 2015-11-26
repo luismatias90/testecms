@@ -1,5 +1,5 @@
 gapiCallBack = function() {
-	
+
 }
 
 function addGapiCallBack(f) {
@@ -13,9 +13,9 @@ function addGapiCallBack(f) {
 function initGapi() {
 	var url = "https://contabilizei-site.appspot.com";
 	if(window.location.href.indexOf("localhost") != -1)
-		url = 'http://localhost:8888';
-	
+		url = 'https://www.contabilizei.com.br';
+
 	var ROOT = url + "/_ah/api";
 	gapi.client.load('contabilizei', 'v1', gapiCallBack, ROOT);
-	
+
 }

@@ -75,7 +75,7 @@
 		              <span class="icon-bar"></span>
 		              <span class="icon-bar"></span>
 		            </button>
-		            <a class="navbar-brand" href="https://www.contabilizei.com.br"><img alt="Contabilizei-contabilidade-online" src="../assets/img/contabilizei-contabilidade-online-01.png"></a>
+		            <a class="navbar-brand" href="/"><img alt="Contabilizei-contabilidade-online" src="../assets/img/contabilizei-contabilidade-online-01.png"></a>
 		          </div>
 
 		          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -85,10 +85,10 @@
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                          <li class="sistema"><a href="https://www.contabilizei.com.br/#funcionalidades">Contabilidade Online</a></li>
-                          <li class="continuar"><a href="https://www.contabilizei.com.br/abrir-empresa/">Abertura de Empresa Grátis</a></li>
-                          <li class="continuar2"><a href="https://www.contabilizei.com.br/alterar-mei-para-me/">Alteração MEI para ME Grátis</a></li>
-                          <li class="continuar2"><a href="https://www.contabilizei.com.br/contabilizei-contabilidade-online">Sobre a Contabilizei</a></li>
+                          <li class="sistema"><a href="/#funcionalidades">Contabilidade Online</a></li>
+                          <li class="continuar"><a href="/abrir-empresa/">Abertura de Empresa Grátis</a></li>
+                          <li class="continuar2"><a href="/alterar-mei-para-me/">Alteração MEI para ME Grátis</a></li>
+                          <li class="continuar2"><a href="/contabilizei-contabilidade-online">Sobre a Contabilizei</a></li>
                         </ul>
                       </li>
 		                  <li class="dropdown">
@@ -114,7 +114,7 @@
     <section id="splash">
         <div class="container">
           <h1>Como Abrir Micro Empresa GRÁTIS<sup>*</sup></h1>
-          <p class="lead">Pague somente as taxas do governo se contratar o nosso serviço de contabilidade online. <br>Conheça as <a class="condicoes-abertura" href="https://www.contabilizei.com.br/abrir-empresa/#preco">condições</a>.</p>
+          <p class="lead">Pague somente as taxas do governo se contratar o nosso serviço de contabilidade online. <br>Conheça as <a class="condicoes-abertura" href="/abrir-empresa/#preco">condições</a>.</p>
 
           <div class="row detalhes" align="center">
             <div class="col-lg-8 col-lg-offset-2">
@@ -122,7 +122,7 @@
 	            <p><span class="glyphicon glyphicon-ok" style="font-size:14px"></span>Atendimento ilimitado por contadores fanáticos</p>
 	            <p><span class="glyphicon glyphicon-ok" style="font-size:14px"></span>Plataforma online de fácil utilização</p>-->
 	              <span role="presentation"><a class="btn btn-lg btn-blue-inverted btn-margem" href="#formulario" role="button">ABRIR EMPRESA GRÁTIS</a></span>
-	              <p style="font-size:14px" class="abertura">Possui empresa? <a href="https://www.contabilizei.com.br">Contabilidade à partir de R$ 49 ao mês</a>.</p>
+	              <p style="font-size:14px" class="abertura">Possui empresa? <a href="/">Contabilidade à partir de R$ 49 ao mês</a>.</p>
 	        </div>
           </div><!--Row-->
         </div>
@@ -141,32 +141,32 @@
 			<div class="row texto">
 				<div class="col-lg-4 col-lg-offset-1 well">
                		<p>INICIE AGORA, SEM COMPROMISSO</p>
-	                  	
+
 					<form method="post" id="form-abertura" class="form-horizontal" role="form">
 						<div class="form-group has-feedback">
                       		<div class="col-lg-12">
 		                        <input type="nome" class="form-control" name="nome" id="nome" placeholder="Nome Completo">
 							  	<span class="glyphicon form-control-feedback"></span>
 						  	</div>
-						</div>	                    
+						</div>
 						<div class="form-group has-feedback">
                       		<div class="col-lg-12">
 		                        <input type="nome" class="form-control" name="cpf" id="cpf" placeholder="CPF">
 							  	<span class="glyphicon form-control-feedback"></span>
 						  	</div>
-						</div>	                    
+						</div>
 						<div class="form-group has-feedback">
                       		<div class="col-lg-12">
 		                        <input type="nome" class="form-control" name="email" id="email" placeholder="E-mail">
 							  	<span class="glyphicon form-control-feedback"></span>
 						  	</div>
-						</div>	                    
+						</div>
 						<div class="form-group has-feedback">
                       		<div class="col-lg-12">
 		                        <input type="nome" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
 							  	<span class="glyphicon form-control-feedback"></span>
 						  	</div>
-						</div>	                    
+						</div>
 						<div class="form-group has-feedback">
                       		<div class="col-lg-12">
 			              		<select class="form-control" name="segmentoEmpresa" id="segmentoEmpresa">
@@ -179,7 +179,7 @@
 			              		</select>
 							  	<span class="glyphicon form-control-feedback"></span>
 						  	</div>
-						</div>	                    
+						</div>
 						<div class="form-group has-feedback">
                       		<div class="col-lg-12">
 					          	<select class="form-control" class="span6" name="uf" id="uf">
@@ -187,27 +187,27 @@
 					            </select>
 							  	<span class="glyphicon form-control-feedback"></span>
 						  	</div>
-						</div>	                    
+						</div>
 						<div id="div-cidades" class="form-group has-feedback">
                       		<div class="col-lg-12">
 							        <input type="hidden" id="municipioIbge" name="municipioIbge" class="form-control" style="margin-left: 0px"/>
 							  	<span class="glyphicon form-control-feedback"></span>
 						  	</div>
-						</div>	                    
+						</div>
 						<div id="div-loading-cidades" style="color: #000; display: none" class="form-group">
                       		<div class="col-lg-12">
 				            	<span><i class="fa fa-circle-o-notch fa-spin"></i> Carregando municípios</span>
 						  	</div>
-						</div>	                    
+						</div>
 	                    <div class="form-group">
 	                      	<div class="col-lg-12" align="center">
 	                        	<button type="submit" id="completa-abertura" class="btn btn-lg btn-blue-abertura">Abrir Empresa GRÁTIS</button>
-	                        	<p><span style="color:#314046;font-size:11px; font-style:italic">Ao clicar você concorda com os <a href="https://www.contabilizei.com.br/termos-de-uso/Termos-de-uso-19032014.pdf" target="blank_">termos de uso</a>.</span></p>      
+	                        	<p><span style="color:#314046;font-size:11px; font-style:italic">Ao clicar você concorda com os <a href="/termos-de-uso/Termos-de-uso-19032014.pdf" target="blank_">termos de uso</a>.</span></p>
 	                      	</div>
 	                    </div>
-			        </form>	                  	
+			        </form>
               	</div>
-              	
+
               	<div class="col-lg-6 col-lg-offset-1 passos">
                 	<div class="row">
 	                  	<h3>Confira os próximos passos:</h3>
@@ -229,7 +229,7 @@
 	              </div>
           	</div>
 	    </div>
-        </section>              
+        </section>
 
     <footer>
         <div class="footer" id="footer">
@@ -256,9 +256,9 @@
                     <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
                         <h3> Contabilizei </h3>
                         <ul>
-                            <li> <a href="https://www.contabilizei.com.br/contabilizei-contabilidade-online"> A empresa </a> </li>
-                            <li> <a href="https://www.contabilizei.com.br/midia"> Midia </a> </li>
-                            <li> <a href="https://www.contabilizei.com.br/contabilidade-online" target="_blank"> Blog </a> </li>
+                            <li> <a href="/contabilizei-contabilidade-online"> A empresa </a> </li>
+                            <li> <a href="/midia"> Midia </a> </li>
+                            <li> <a href="/contabilidade-online" target="_blank"> Blog </a> </li>
                             <li> <a href="https://contabilizei.recruiterbox.com" target="_blank"> Trabalhe Conosco (Vagas) </a> </li>
                         </ul>
                     </div>
@@ -273,7 +273,7 @@
                             </li>
                         </ul> -->
                         <ul class="social">
-                            <li><a href="https://www.contabilizei.com.br/contabilidade-online/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
+                            <li><a href="/contabilidade-online/" target="_blank"><i class="fa fa-wordpress"></i></a></li>
                             <li><a href="https://www.facebook.com/Contabilizei" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://twitter.com/Contabilizei" target="_blank"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="https://plus.google.com/+ContabilizeiBr" target="_blank"><i class="fa fa-google-plus"></i></a></li>
@@ -281,7 +281,7 @@
                         </ul>
                     </div>
                 </div>
-                <!--/.row--> 
+                <!--/.row-->
              <div class="row">
 		            	<div class="col-lg-12 col-md-12">
 		                    <h3> Sobre a Contabilizei </h3>
@@ -290,29 +290,29 @@
 						    <p>Endereço: Rua Francisco Rocha, 198 - Batel, Curitiba - PR, 80420-130</p>
 						    <p>CNPJ: 19.322.789/0001-25 - Contabilizei Contabilidade Ltda</p>
 						    <p>Conselho Regional de Contabilidade: PR-007940/O-0 e SP-258642/O-7 T-PR</p>
-						   
+
 						</div>
 					</div>
 
             </div>
-            <!--/.container--> 
+            <!--/.container-->
         </div>
         <!--/.footer-->
-        
+
         <div class="footer-bottom">
             <div class="container" align="center">
-                <p>©<a href="https://www.contabilizei.com.br"> Contabilizei Contabilidade Online</a>. Todos os direitos reservados.</p>
+                <p>©<a href="/"> Contabilizei Contabilidade Online</a>. Todos os direitos reservados.</p>
             </div>
         </div>
-        <!--/.footer-bottom--> 
+        <!--/.footer-bottom-->
     </footer>
 
     </div> <!-- /container -->
-	
+
 	<!-- MODAL LIGACAO-->
     <div class="modal fade" role="dialog" id="modal-ligacao">
 		<div class="modal-dialog">
-    		<div class="modal-content">		
+    		<div class="modal-content">
     			<div class="modal-header">
   					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
   					<h4><i class="icon-phone"></i> Ligamos para você</h4>
@@ -326,10 +326,10 @@
 					<div class="row ligamos">
 						<div class="col-sm-2"></div>
 						<div class="col-sm-8">
-				    		<form method="get" action=""> 
+				    		<form method="get" action="">
 				    			<div class="form-group">
 					    			<input type="text" name="ligacaonome" class="form-control" placeholder="Nome">
-				    			</div>	
+				    			</div>
 				    			<div class="form-group">
 					    			<input type="text" name="ligacaofone" class="form-control" placeholder="Telefone">
 				    			</div>
@@ -344,7 +344,7 @@
 			    				</div>
 				    		</form>
 				    		<div id="enviando-ligacao" style="display: none">
-				    			<i class="icon-spinner icon-spin icon-large"></i> Enviando suas informações...	
+				    			<i class="icon-spinner icon-spin icon-large"></i> Enviando suas informações...
 				    		</div>
 						</div>
 					</div>
@@ -360,7 +360,7 @@
     <!-- MODAL CONFIRMACAO -->
     <div class="modal fade" role="dialog" id="modal-confirmacao">
 		<div class="modal-dialog">
-    		<div class="modal-content">		
+    		<div class="modal-content">
 				<div class="modal-header">
 		  			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		  			<h4><i class="icon-ok"></i> Cadastro efetuado com sucesso!</h4>
@@ -379,7 +379,7 @@
 		</div>
 	</div>
 	<!-- //MODAL CONFIRMACAO -->
-	
+
 	<!-- ZENDESK -->
 	<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
 	<style type="text/css" media="screen, projection">
@@ -397,8 +397,8 @@
 	      hide_tab: true
 	    });
 	  }
-	</script>	
-	
+	</script>
+
 
     <!-- Javscript -->
     <script type="text/javascript" src="../assets/lib/jquery/jquery-2.1.1.min.js"></script>

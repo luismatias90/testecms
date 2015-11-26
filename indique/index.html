@@ -1,10 +1,10 @@
-<!DOCTYPE html>	
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-   
+
     <title>Contabilizei</title>
 
     <!-- Bootstrap -->
@@ -27,41 +27,41 @@
 
     <script>
 		$(document).ready(function() {
-			
+
 			if (localStorage.getItem('indicacao.cpf') != "") {
 				$("#cpf").val(localStorage.getItem('indicacao.cpf'));
 			}
-			
+
 			$(document).ajaxStart(function() {
 			  $("#enviar").attr("disabled", "disabled");
 			  $("#enviar").html("<img src='loadingz.gif' style='padding-right:15px; width:35px;'>Enviando...");
 			});
-			
+
 			$("#enviar").click(function() {
 
 				if ($("#cpf").val() == "" || $("#email").val() == "") {
 					alert("Por favor, preencha os campos corretamente.");
 				} else {
 					localStorage.setItem('indicacao.cpf', $("#cpf").val());
-				
+
 					$.ajax({
 						method : "GET",
 						url : "https://appservices.contabilizei.com.br/rest/indicacao/public/ref/" + $("#cpf").val().replace(/\.|\-/g, ''),
 						data : {
-							
+
 						}
 					}).done(function(result) {
-					
+
 						if (result.nome == "" || result.ref == "") {
 							alert("Não identificamos o seu código. Verifique o CPF novamente.");
-							
+
 							$("#enviar").removeAttr("disabled");
 							$("#enviar").html("<span class='glyphicon glyphicon-envelope' style='padding-right:15px;' aria-hidden='true'></span>Enviar convite");
-							
+
 						} else {
 							localStorage.setItem('indicacao.nome', result.nome);
 							localStorage.setItem('indicacao.ref', result.ref);
-							
+
 							$.ajax({
 								method : "POST",
 								url : "https://appservices.contabilizei.com.br/rest/indicacao/public/send-email-ref",
@@ -77,30 +77,30 @@
 
 					});
 				}
-				
+
 			});
-			
-	    });			
-	    
+
+	    });
+
 		function formatar(mascara, documento){
 		  var i = documento.value.length;
 		  var saida = mascara.substring(0,1);
 		  var texto = mascara.substring(i)
-		  
+
 		  if (texto.substring(0,1) != saida){
 		            documento.value += texto.substring(0,1);
 		  }
 		}
-	
+
 	</script>
-    
+
   </head>
   <body>
-  	   
+
 	<div class="logo">
 					<img src="/assets/img/logoc.png" style="width:150px">
 	</div>
-	
+
 
 			<div class="geral">
 				<div class="container">
@@ -110,7 +110,7 @@
 							<input type="text" id="cpf" class="form-control" placeholder="Seu CPF" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)">
 							<input type="text" id="email" class="form-control" placeholder="E-mail do indicado">
 							<button type="button" id="enviar"><span class="glyphicon glyphicon-envelope" style="padding-right:15px;" aria-hidden="true"></span>Enviar convite</button>
-							<small><a href="https://www.contabilizei.com.br/indique/app" style="color:#DCF0F9; text-decoration:underline; padding-right:20px;" target="_blank">Adicionar como App</a><a href="https://www.contabilizei.com.br/indique/regulamento/" style="color:#B0D7F9; text-decoration:underline" target="_blank">Confira o regulamento</a></small>
+							<small><a href="/indique/app" style="color:#DCF0F9; text-decoration:underline; padding-right:20px;" target="_blank">Adicionar como App</a><a href="/indique/regulamento/" style="color:#B0D7F9; text-decoration:underline" target="_blank">Confira o regulamento</a></small>
 						</div>
 					</div>
 				</div>
@@ -129,8 +129,8 @@
 	  	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	  	})(window,document,'script','dataLayer','GTM-N9X6Z2');</script>
 	  	<!-- End Google Tag Manager -->
-		
-		
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <!--     <script src="/js/jquery.min.js"></script> -->
 
