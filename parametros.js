@@ -1,4 +1,4 @@
-var ambiente = "des"
+var ambiente = "prod"
 
 // ---------------------------
 // Desenvolvimento
