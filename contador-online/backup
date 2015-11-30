@@ -892,7 +892,7 @@
 	    <script type="text/javascript" src="https://1-ps.googleusercontent.com/sxk/v6U6m4D9OSQGS3iGzZa9vAy84f/s.contabilizei-site.appspot.com/www.contabilizei.com.br/assets/js/cupom.js.pagespeed.jm.0rNvvaSVtm0BeRlfvLqW.js"></script>
 	    <script type="text/javascript" src="https://1-ps.googleusercontent.com/sxk/v6U6m4D9OSQGS3iGzZa9vAy84f/s.contabilizei-site.appspot.com/www.contabilizei.com.br/assets/js/app.js.pagespeed.jm.syJJqgZFk-0DlIkWJ3Rw.js"></script>
 	    <script type="text/javascript" src="https://1-ps.googleusercontent.com/sxk/v6U6m4D9OSQGS3iGzZa9vAy84f/s.contabilizei-site.appspot.com/www.contabilizei.com.br/assets/js/cadastro-migracao-post.js.pagespeed.jm.qxqUugiaz0Kq8kKpMPnD.js"></script>
-		<script type="text/javascript" src="https://apis.google.com/js/client.js?onload=initGapi"></script>
+		assessor
 
 		<!-- CALCULO ECONOMIA -->
 		<script type="text/javascript">function atualizarEconomia(mensalContabilizei){var valor=mensalContabilizei;var valorMensalidade=parseInt($("#valor-mensalidade").val());if(valorMensalidade<=valor){$('.valor.economia').html("0");}else{$('.valor.economia').html(accounting.formatMoney(12*(valorMensalidade-valor),"",0,".",","));}}$(document).on("keyup","#valor-mensalidade",function(e){var valor=$("#tab-sn").hasClass("active")?49:99;atualizarEconomia(valor);});$("#tab-sn, #tab-lp").click(function(e){var valor=$("#tab-sn").hasClass("active")?99:49;atualizarEconomia(valor);});</script>
