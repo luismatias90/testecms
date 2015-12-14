@@ -421,9 +421,9 @@ Veja como funciona abaixo.</p><br>
 										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 									</div>
 
-									<div class="col-md-4 col-xs-12" style="padding-top:20px; background-color:transparent; color:#fff; border:none;">
+									<div class="col-md-4 col-xs-12" style="padding-top:0px; background-color:transparent; color:#fff; border:none;">
 											Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>, <br><br><strong>sua mensalidade será de:</strong><br>
-											<span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês</strong>
+											<span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês<br><span style="color:#B7DEFF;">PS: <span style="text-decoration:underline">Não</span> cobramos 13º</span></strong>
 
 											<br><hr style="width:40%"><strong>o que você vai economizar:</strong><br>
 											<span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span><strong> / ano</strong>
@@ -1108,10 +1108,13 @@ Veja como funciona abaixo.</p><br>
 		<script type="text/javascript" src="../assets/lib/accounting/accounting.min.js"></script>
 
 		<script type="text/javascript" src="../parametros.js"></script>
+
 	    <script type="text/javascript" src="../assets/js/cupom.js"></script>
 	    <script type="text/javascript" src="../assets/js/botao-ajuda.js"></script>
 	    <script type="text/javascript" src="../assets/js/app.js"></script>
 	    <script type="text/javascript" src="../assets/js/cadastro-abertura-post.js"></script>
+
+
 
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {

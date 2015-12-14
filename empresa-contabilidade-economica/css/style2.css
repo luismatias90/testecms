@@ -30,6 +30,7 @@ p  {
 	font-size:1.6em;
 	text-shadow:1px 1px #82b515;
 	border-bottom:4px solid #92c32b;
+	border:none;
 }
 .botaosupremo:hover {
 	background-color:#92d700;
@@ -108,6 +109,7 @@ p  {
 	text-decoration:none;
 	font-size:1.4em;
 	text-shadow:1px 1px #82b515;
+	border:none;
 }
 .jumbotron .botao:hover {
 	background-color:#92d700;
@@ -449,6 +451,7 @@ p  {
 	text-decoration:none;
 	font-size:1.5em;
 	text-shadow:1px 1px #82b515;
+	border:none;
 }
 .cabenobolso .botao:hover {
 	background-color:#92d700;
@@ -498,11 +501,11 @@ p  {
 
 .simule {
 	text-align:center;
-	padding-top:40px;
+	padding-top:70px;
 	padding-bottom:40px;
 }
 .simule .btn-primary {
-	background:#e8e8e8;
+	background:#d1d1d1;
 	border:none;
 }
  
@@ -906,3 +909,39 @@ p  {
 	margin-bottom: 0px;
 }
 
+
+@media (max-width: 600px) {
+	p {
+	line-height:1.4em;
+	}
+	.simule {
+	padding:10px 0 10px 0;
+	}
+	.simule .col-md-4 {
+	border-radius:0;
+	padding-top:10px;
+	}
+	.simule h2 {
+	padding-bottom:10px;
+	text-align:left;
+	}
+	.simule .col-md-5 {
+	padding-top:25px;
+	}
+	.simule h4 {
+	font-size:1em;
+	}
+	.simule .valor {
+	font-size:4.8em;
+	font-weight:600;
+	}
+	.simule p {
+	font-size:1em;
+	}
+	.jumbotron .botao {
+	padding:0;
+	border:none;
+	padding:10px 30px;
+	font-size:1.1em;
+	}
+}

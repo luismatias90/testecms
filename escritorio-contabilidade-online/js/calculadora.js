@@ -75,8 +75,19 @@ $scope.verificaValor = function(event, qntToCompare, model){
 		
 		$scope.valorMensalidade = valores[$scope.indice];
 		
-		$scope.valorDescontoAnual = (12 * $scope.valorContadorAtual) - (12 * ($scope.valorMensalidade + $scope.valorAdicionalSocios + $scope.valorAdicionalFuncionarios));
-		
+		 $scope.valorDescontoAnual = 
+	           (
+	               (12 * $scope.valorContadorAtual)
+	             
+	           
+	           )
+	           	 - 
+	           (
+	           	    (12 * $scope.valorMensalidade)
+	             + (12 * $scope.valorAdicionalSocios) 
+	             + (12 * $scope.valorAdicionalFuncionarios)
+	           )
+	           
 		if ($scope.valorDescontoAnual < 0) {
 			$scope.valorDescontoAnual = 0;
 		}
@@ -100,5 +111,7 @@ $scope.verificaValor = function(event, qntToCompare, model){
 	$scope.$watch("indice", function() {
 		$scope.calculaValor();
 	});
-	
+	$scope.$watch("valorContadorAtual", function() {
+        $scope.calculaValor();
+    });
 }]);

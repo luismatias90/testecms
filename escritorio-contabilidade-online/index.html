@@ -438,22 +438,28 @@
 										</div>
 
 										<!-- Tab panes -->
-										<br><br>
-										<p>Quantos sócios tem sua empresa?</p>
+										<p style="padding-top:10px">Quanto você paga de contabilidade por mês?</p>
+
+										<div class="input-group">
+											<span class="input-group-addon" style="background-color:#fafafa">R$</span>
+											<input type="number" ng-model="valorContadorAtual" min="0" max="2000" id="valorAtualCont" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
+
+										</div>
+										<p style="padding-top:15px">Quantos sócios tem sua empresa?</p>
 
 										<div class="input-group">
 											<input type="number" ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
 										</div>
-										<br><br>
-										<p>Quantos funcionários?</p>
+
+										<p style="padding-top:15px">Quantos funcionários?</p>
 
 										<div class="input-group">
 
 											<input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
 
 										</div>
-										<br><br>
-										<p>Qual seu faturamento mensal?</p>
+
+										<p style="padding-top:15px">Qual seu faturamento mensal?</p>
 
 										<div class="input-group">
 
@@ -477,19 +483,19 @@
 
 									<div class="col-md-4 col-xs-12" style="padding-top:20px; background-color:transparent; color:#fff; border:none;">
 											Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>, <br><br><strong>sua mensalidade será de:</strong><br>
-											<span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês</strong>
+											<span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês<br><span style="color:#B7DEFF;">PS: <span style="text-decoration:underline">Não</span> cobramos 13º</span></strong>
 
 											<br><hr style="width:40%"><strong>o que você vai economizar:</strong><br>
 											<span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span><strong> / ano</strong>
 
-											<br><br><a href="#migre" ><button class="botaosupremob" style="font-size:1.4em">migre sua empresa :)</button></a>
-											<br><br class="visible-xs"><p style="font-size:0.8em; color:#fff; font-weight:300; padding-top:10px;">Sua empresa é de comércio? <br class="visible-xs"><a href="/contabilidade-comercio/" target="_blank" style="text-decoration:underline;">Consulte aqui a mensalidade</a></p>
+											<a href="#migre" ><button class="botaosupremob" style="font-size:1.4em">migre sua empresa :)</button></a>
+											<br><br><br class="visible-xs"><p style="font-size:0.8em; color:#fff; font-weight:300; padding-top:10px;">Sua empresa é de comércio? <br class="visible-xs"><a href="/contabilidade-comercio/" target="_blank" style="text-decoration:underline;">Consulte aqui a mensalidade</a></p>
 
 									</div>
 
 								</div>
 								<div class="row">
-									<br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm"><small><p style="padding:5px 15px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna com clientes sobre o custo do serviço de contabilidade anterior (R$394/mês).</span></p></small>
+									<br class="hidden-xs hidden-sm"><small><p style="padding:5px 15px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna com clientes sobre o custo do serviço de contabilidade anterior (R$394/mês).</span></p></small>
 								</div>
 							</div>
 						</div>
@@ -1353,10 +1359,12 @@
 		<script type="text/javascript" src="../assets/lib/accounting/accounting.min.js"></script>
 
 		<script type="text/javascript" src="/parametros.js"></script>
+
 	    <script type="text/javascript" src="../assets/js/cupom.js"></script>
 	    <script type="text/javascript" src="../assets/js/botao-ajuda.js"></script>
 	    <script type="text/javascript" src="../assets/js/app.js"></script>
 	    <script type="text/javascript" src="../assets/js/cadastro-migracao-post.js"></script>
+
 
 			<!-- CALCULO ECONOMIA -->
 <!--  		<script type="text/javascript">

@@ -417,22 +417,28 @@
 								<div class="row">
 									<section id="cabenobolso">
 									<h2 class="text-center" style="padding:0 20px; color:#fff;">Mensalidade à partir de R$99/mês</h2>
- 			 						<p style="padding-bottom:30px; color:#fff;">Calcule a sua abaixo:</p>
+ 			 						<p style="padding-bottom:30px; color:#fff;">Calcule a sua economia abaixo:</p>
 
 									<div class="calculadoras col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0" id="especial">
 
 										<div class="btn-group" data-toggle="buttons" style="display:inline;">
-											  <label class="btn btn-primary active" id="tab-sn" style="width:35%; margin-left:5%; padding:6px 0;" ng-click="simples = true">
+											  <label class="btn btn-primary active" id="tab-sn" style="width:35%; margin-left:5%; padding:6px 0;" ng-click="comercio = true">
 											    <a aria-controls="home" role="tab" data-toggle="tab"><input type="radio" name="options" id="option1" autocomplete="off" checked><h4>Comércio</h4></a>
 											  </label>
-											  <label class="btn btn-primary" id="tab-lp" style="width:55%; margin-right:5%; padding:6px 0;" ng-click="simples = false">
+											  <label class="btn btn-primary" id="tab-lp" style="width:55%; margin-right:5%; padding:6px 0;" ng-click="comercio = false">
 											    <a aria-controls="home" role="tab" data-toggle="tab"><input type="radio" name="options" id="option2" autocomplete="off"><h4>Comércio + Serviço</h4></a>
 											  </label>
 										</div>
 
 										<!-- Tab panes -->
-										<br><br><br><br>
-										<p>Quantos sócios tem sua empresa?</p>
+										<p style="padding-top:60px">Quanto você paga de contabilidade por mês?</p>
+
+										<div class="input-group">
+											 <span class="input-group-addon" style="background-color:#fafafa">R$</span>
+											<input type="number" ng-model="valorContadorAtual" min="0" max="2000" id="valorAtualCont" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
+
+										</div>
+										<p  style="padding-top:15px">Quantos sócios tem sua empresa?</p>
 
 										<div class="input-group">
 											<input type="number" ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
@@ -442,7 +448,7 @@
 
 										<div class="input-group">
 
-											<input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" id="valor-funcionarios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700" >
+											<input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700" >
 
 										</div>
 
@@ -468,15 +474,15 @@
 										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 									</div>
 
-									<div class="col-md-4 col-xs-12" style="padding-top:20px; background-color:transparent; color:#fff; border:none;">
-											Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, sendo uma empresa de <strong>{{simples ? "Comércio" : "Comércio + Serviço"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>, <br><br><strong>sua mensalidade será de:</strong><br>
-											<span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês</strong>
+									<div class="col-md-4 col-xs-12" style="padding-top:40px; background-color:transparent; color:#fff; border:none;">
+											Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, sendo uma empresa de <strong>{{comercio ? "Comércio" : "Comércio + Serviço"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>, <br><br><strong>sua mensalidade será de:</strong><br>
+											<span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês<br><span style="color:#B7DEFF;">PS: <span style="text-decoration:underline">Não</span> cobramos 13º</span></strong>
 
 											<br><hr style="width:40%"><strong>o que você vai economizar no ano:</strong><br>
 											<span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span><strong> / ano</strong>
 
 											<br><br class="visible-xs"><a href="/contabilidade-comercio/cadastro/?utm_source=calculadoracomercio" ><button class="botaosupremob" style="font-size:1.5em">garanta sua vaga :)</button></a>
-											<p class="abrirempre" style="color:rgba(255,255,255,.8); font-size:0.8em;">Sua empresa é apenas prestadora de serviços? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="text-decoration:underline; color:rgba(255,255,255,.8)">Consulte aqui</a></p>
+											<br><br><p class="abrirempre" style="color:rgba(255,255,255,.8); font-size:0.8em;">Sua empresa é apenas prestadora de serviços? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="text-decoration:underline; color:rgba(255,255,255,.8)">Consulte aqui</a></p>
 
 
 									</div>
@@ -1012,10 +1018,12 @@
 		<script type="text/javascript" src="../assets/lib/accounting/accounting.min.js"></script>
 
 		<script type="text/javascript" src="/parametros.js"></script>
+
 	    <script type="text/javascript" src="../assets/js/cupom.js"></script>
 	    <script type="text/javascript" src="../assets/js/botao-ajuda.js"></script>
 	    <script type="text/javascript" src="../assets/js/app.js"></script>
 	    <script type="text/javascript" src="../assets/js/cadastro-migracao-post.js"></script>
+
 
 		<!-- CALCULO ECONOMIA -->
 		<!-- <script type="text/javascript">

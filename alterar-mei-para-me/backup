@@ -1075,10 +1075,12 @@ Veja como funciona abaixo.</p><br>
 		<script type="text/javascript" src="../assets/lib/accounting/accounting.min.js"></script>
 
 		<script type="text/javascript" src="../parametros.js"></script>
+
 	    <script type="text/javascript" src="../assets/js/cupom.js"></script>
 	    <script type="text/javascript" src="../assets/js/botao-ajuda.js"></script>
 	    <script type="text/javascript" src="../assets/js/app.js"></script>
 	    <script type="text/javascript" src="../assets/js/cadastro-migracao-post.js"></script>
+
 
 		<!-- CALCULO ECONOMIA -->
 		<script type="text/javascript">

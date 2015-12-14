@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="SimuladorApp">
+
+	<head>
+
+		<!-- Hotjar Tracking Code for www.contabilizei.com.br -->
+		<script>
+		    (function(f,b){
+		        var c;
+		        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+		        f._hjSettings={hjid:21654, hjsv:3};
+		        c=b.createElement("script");c.async=1;
+		        c.src="//static.hotjar.com/c/hotjar-21654.js?sv=3";
+		        b.getElementsByTagName("head")[0].appendChild(c);
+		    })(window,document);
+		</script>
+
+		<!-- Metatags -->
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	    <meta name="description" content="Escritório de Contabilidade Online para Empresas Prestadoras de Serviço. Em poucos passos você economiza tempo e dinheiro do seu negócio. Conheça a Contabilizei e veja sua economia.">
+	    <meta name="keywords" content="contabilidade online, escritorio de contabilidade online, trocar contabilidade, contabilidade economica, contabilidade, contador online, escritório contabilidade on-line, migrar contabilidade, trocar contador, contabilidade facil">
+		<!-- Google author -->
+
+		<link rel="author" href="https://plus.google.com/u/0/110264168711669397191/" />
+		<link rel="publisher" href="https://plus.google.com/u/0/110264168711669397191/" >
+
+
+		<!-- Geral -->
+		<meta property="og:locale" content="pt_BR" />
+		<meta property='og:type' content='website'/>
+		<meta property="og:site_name" content="Contabilizei">
+		<meta property="og:url" content="https://www.contabilizei.com.br">
+		<meta property='article:publisher' content='https://facebook.com/contabilizei'/>
+		<meta property="og:title" content="Contabilizei Contabilidade Inteligente">
+		<meta property="og:description" content="Contabilidade inteligente e online para micro e pequenas empresas a partir de R$ 49,00 por mês.">
+		<meta property="og:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/thumbhome.png">
+
+
+		<!-- Twitter -->
+
+		<meta name="twitter:card" content="product">
+		<meta name="twitter:site" content="@contabilizei">
+		<meta name="twitter:creator" content="@contabilizei">
+		<meta name="twitter:title" content="Contabilizei Contabilidade Online">
+		<meta name="twitter:description" content="Contabilidade inteligente e online para micro e pequenas empresas a partir de R$ 49,00 por mês.">
+		<meta name="twitter:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/thumbhome.png">
+
+	    <title>Escritório de Contabilidade Online | Contabilizei </title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/mailchimp.css">
+		<link rel="stylesheet" href="../assets/css/stylenew.css">
+		<link rel="stylesheet" href="../assets/css/botao2.css">
+
+
+
+		<!-- Fontes Customizadas -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../assets/css/animate.min.css">
+		<!--
+		<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","contabilizei.zendesk.com");/*]]>*/</script>
+		End of Contabilizei Contabilidade Online Zendesk Widget script -->
+
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+	    <link rel="shortcut icon" href="/assets/ico/contabilizei-favicon.ico">
+	    <script src="//my.hellobar.com/35f2e648daf45626e1931ec3683e451016af0994.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+	    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+	    <script type="text/javascript" src="js/calculadora.js"></script>
+
+	    <style rel="stylesheet">
+			input[type=number]::-webkit-inner-spin-button,
+			input[type=number]::-webkit-outer-spin-button {
+
+			   opacity: 1;
+
+			}
+		</style>
+	</head>
+
+	<body>
+
+
+	   	<!-- Google Tag Manager -->
+	  	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9X6Z2"
+	 	 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	  	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	  	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	  	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	  	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	  	})(window,document,'script','dataLayer','GTM-N9X6Z2');</script>
+	  	<!-- End Google Tag Manager -->
+
+	  	<!-- CUPOM -->
+	  	<div class="splash">
+			<div class="carregando-cupom hide well" align="center" style="background-color:#fff; border:none;">
+				<i class="fa fa-cloud animated infinite pulse" style="font-size:2em; color:rgb(40, 150, 214);"></i><br><span style="font-size: 1.2em;  color:rgb(40, 150, 214); font-weight:600" class="animated fadeIn"><strong>Validando código. Por favor, aguarde.</strong></span>
+			</div>
+
+			<div class="cupom-indicacao well text-center animated fadeIn" align="center" style="display: none; background-color: rgb(40, 150, 214); border:none; border-bottom:1px solid rgb(28, 117, 169);">
+				<div class="row animated bounceInDown" id="alert-cupom">
+					<div class="col-md-12 text-indicacao" style="font-size:1.2em; color:#fff;"></div>
+					<div class="col-md-12 animated" style="color:#B3E6FF;"><i class="fa fa-check-circle" style="padding-right:5px;"></i>Código válido. <a href="#migre" style="color:#B3E6FF; text-decoration:underline;">Finalize seu cadastro</a> para ativar o crédito.</div>
+				</div>
+			</div>
+		</div>
+	  	<!-- FIM CUPOM -->
+
+
+		<!-- Abertura de Empresa -->
+		<section id="aberturafacil">
+		<div class="aberturafacil" style="background-image: url('images/bgvideo.png');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 style="font-size:1.8em; font-weight:600; line-height:1.5em">Verifique abaixo se sua cidade ou atividade podem ser atendidas pela Contabilizei:</h2>
+						<!-- <p class="visible-lg visible-md">Clique abaixo para expandir cada tópico.</p>  -->
+					</div>
+				</div>
+				<div class="row" style="margin-top:30px;">
+
+
+			            <div class="col-md-4 col-xs-6">
+
+			            	<div class="oqueprecisa" id="passomigrar" style="border:1px solid #e8e8e8;">
+<!-- 				            	<a href="#collapseExample" style="text-decoration:underline" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"> -->
+				            	<h3><span class="glyphicon glyphicon-home" aria-hidden="true" style="padding-right:20px; color:#e8e8e8;"></span>Lista de cidades</span></h3>
+<!-- 				            	</a> -->
+
+<!-- 					            	<div class="collapse" id="collapseExample"> -->
+									  <div class="well text-left" style="min-height:225px;">
+									    <h3 style="line-height:1.5em">Serviço de abertura <br>de empresa</h3>
+									    <hr>
+									    <p>- Americana<br>
+										- Barueri<br>
+										- Belo Horizonte<br>
+										- Campinas<br>
+										- Curitiba<br>
+										- Embu das Artes<br>
+										- Fortaleza<br>
+										- Goiânia<br>
+										- Guarulhos<br>
+										- João Pessoa<br>
+										- Jundiaí<br>
+										- Maceió<br>
+										- Natal<br>
+										- Niterói<br>
+										- Porto Alegre<br>
+										- Recife<br>
+										- Ribeirão Preto<br>
+										- Rio de Janeiro<br>
+										- Santo André<br>
+										- Santos<br>
+										- Sorocaba<br>
+										- S. Bernardo do Campo<br>
+										- S. J. dos Campos<br>
+										- São Paulo<br>
+										- Taboão da Serra<br>
+										- Uberlândia<br>
+										- Vitória</p>
+						            	<a href="/abrir-empresa/?utm_source=staticfbatendimento" target="_blank" style="text-decoration:underline;"><p class="text-center" style="padding-top:10px;"><span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-right:10px;"></span>abra sua empresa grátis</a></p>
+
+						            	<hr>
+						            	<h3  style="line-height:1.5em">Contabilidade para empresas de serviço</h3>
+						            	<hr>
+						            	 <p>- Americana<br>
+										- Barueri<br>
+										- Belo Horizonte<br>
+										- Campinas<br>
+										- Curitiba<br>
+										- Embu das Artes<br>
+										- Fortaleza<br>
+										- Goiânia<br>
+										- Guarulhos<br>
+										- João Pessoa<br>
+										- Jundiaí<br>
+										- Maceió<br>
+										- Manaus<br>
+										- Natal<br>
+										- Niterói<br>
+										- Porto Alegre<br>
+										- Recife<br>
+										- Ribeirão Preto<br>
+										- Rio de Janeiro<br>
+										- Salvador<br>
+										- Santo André<br>
+										- Santos<br>
+										- Sorocaba<br>
+										- S. Bernardo do Campo<br>
+										- S. J. dos Campos<br>
+										- São Luís<br>
+										- São Paulo<br>
+										- Taboão da Serra<br>
+										- Uberlândia<br>
+										- Vitória</p>
+						            	<a href="/escritorio-contabilidade-online/?utm_source=staticfbatendimento" target="_blank" style="text-decoration:underline;"><p class="text-center" style="padding-top:10px;"><span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-right:10px;"></span>migre sua empresa de serviço</a></p>
+
+						            	<hr>
+						            	<h3 style="line-height:1.5em">Contabilidade para empresas de comércio</h3>
+						            	<hr>
+						            	<p>- Estado de São Paulo (SP)<br>
+									    - Estado do Rio de Janeiro (RJ)</p>
+									    <a href="/contabilidade-comercio/?utm_source=staticfbatendimento" target="_blank" style="text-decoration:underline;"><p class="text-center" style="padding-top:10px;"><span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-right:10px;"></span>migre sua empresa de comércio</a></p>
+									</div>
+<!-- 									</div> -->
+
+				            </div>
+
+			            </div>
+
+<!-- 			            <hr class="visible-xs visible-sm"> -->
+
+			             <div class="col-md-4 col-xs-6">
+
+			             	<div class="aopagar" id="passomigrar" style="border:1px solid #e8e8e8;">
+<!-- 				            	<a href="#collapseExample2" style="text-decoration:underline" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"> -->
+				            	<h3><i class="glyphicon glyphicon-th-list" style="padding-right:20px; color:#e8e8e8;"></i></span>Atividades</h3>
+<!-- 				            	</a> -->
+
+<!-- 				            		<div class="collapse" id="collapseExample2"> -->
+									  <div class="well text-left">
+									   <h3 style="line-height:1.5em">Serviço de abertura <br>de empresa</h3>
+									    <hr>
+									    <p>- <strong>O serviço de abertura de empresa é exclusivo para empresas prestadoras de serviço.</strong> Não abrimos empresas de comércio, varejo ou indústria.<br>
+									   	</p>
+									   	<a href="/abrir-empresa/?utm_source=staticfbatendimento" target="_blank" style="text-decoration:underline;"><p class="text-center" style="padding-top:10px;"><span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-right:10px;"></span>abra sua empresa grátis</a></p>
+
+									   <hr>
+									   <h3>Atividades de serviço</h3>
+									   <hr>
+									   <p>- Advocacia<br>
+										- Áreas da saúde no geral<br>
+										- Bloggers/Youtubers/etc<br>
+										- Desenvolvimento Web<br>
+										- Arquitetura<br>
+										- Consultoria<br>
+										- Corretagem de Imóveis<br>
+										- Corretagem de Seguros<br>
+										- Design de Interiores<br>
+										- Design Gráfico<br>
+										- Educação Física<br>
+										- Engenharia<br>
+										- Estúdios Cinematográficos<br>
+										- Fotografia<br>
+										- Holdings não financeiras<br>
+										- Jornalismo e Assessoria<br>
+										- Marketing<br>
+										- Organização e Promoção de Eventos<br>
+										- Publicidade e Propaganda<br>
+										- Prestador de Serviço em Geral<br>
+										- Recursos Humanos<br>
+										- Representação Comercial<br>
+										- Salas de Acesso a Internet<br>
+										- Serviços Administrativos<br>
+										- Serviços de Lavagem Automotiva<br>
+										- Serviços de TI<br>
+										- Serviços Online (SaaS)<br>
+										- Tradução<br>
+										- Treinamentos<br>
+										- Turismo<br>
+										</p>
+										<a href="/escritorio-contabilidade-online/?utm_source=staticfbatendimento" target="_blank" style="text-decoration:underline;"><p class="text-center" style="padding-top:10px;"><span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-right:10px;"></span>migre sua empresa de serviço</a></p>
+
+										<hr>
+										 <h3>Atividades de comércio</h3>
+									   <hr>
+									   <p>- Vestuário (moda)<br>
+										- Suprimento de informática<br>
+										- Artigos cama, mesa e banho<br>
+										- Instrumentos musicais<br>
+										- Livros, jornais e revistas<br>
+										- Papelaria<br>
+										- Artigos esportivos<br>
+										- Óptica<br>
+										- Calçados<br>
+										- Equipamentos para escritório<br>
+										- Móveis
+										</p>
+										<a href="/contabilidade-comercio/?utm_source=staticfbatendimento" target="_blank" style="text-decoration:underline;"><p class="text-center" style="padding-top:10px;"><span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-right:10px;"></span>migre sua empresa de comércio</a></p>
+
+									  </div>
+<!-- 									</div> -->
+
+				            </div>
+
+			            </div>
+
+<!-- 			             <hr class="visible-xs visible-sm"> -->
+
+<!-- 			            <div class="col-md-4 col-xs-4"> -->
+
+<!-- 			          	 	<div class="oquenaoprecisa" id="passomigrar"> -->
+<!-- 			            		<h3><i class="fa fa-check-square-o" style="padding-right:20px; color:#e8e8e8;"></i>E o meu contador atual?</h3> -->
+
+<!-- 			            			<div class="collapse" id="collapseExample3"> -->
+<!-- 									  <div class="well text-left"> -->
+<!-- 									   <p><strong>Nesta primeira etapa de cadastro não precisamos de nenhum documento do seu contador atual.</strong> Quando assumirmos sua contabilidade, precisaremos dos livros contábeis e dados de acesso. Caso seja necessário, providenciamos um termo de transferência para você.</p> -->
+
+<!-- 									</div> -->
+
+<!-- 				            	</div> -->
+<!-- 				            	<a class="blockLink" href="#collapseExample3" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"></a> -->
+<!-- 			            	</div> -->
+
+<!-- 			            </div> -->
+
+		      </div>
+
+				<div class="row" style="text-align:center;">
+					<div class="col-xs-12 col-md-12 col-lg-4 col-lg-offset-4" id="botaosupremo alt">
+
+						<a href="/empresa-contabilidade-economica/servicos.html"><button class="botaosupremo alt">simule sua mensalidade</button></a>
+<!-- 						<br><br><br><p class="abrirempre" style="padding:0; line-height:1.2em">Sua empresa é de comércio ou varejo? <br class="visible-xs"><a href="/contabilidade-comercio/" target="_blank">Cadastre-se aqui</a></p> -->
+<!-- 						<p class="abrirempre" style="padding:0; line-height:1.2em">Não possui empresa? <br class="visible-xs"><a href="/abrir-empresa/" target="_blank">Abrimos sua empresa de graça</a></p> -->
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		</section>
+
+
+
+
+
+
+		    <div class="footer-bottom">
+		        <div class="container" align="center">
+		            <p>©<a href="/"> Contabilizei Contabilidade Online</a>. Todos os direitos reservados.</p>
+		        </div>
+		    </div>
+		    <!--/.footer-bottom-->
+		</footer>
+
+		<!-- Load Bootstrap Js e jQuery -->
+<!-- 	    <script type="text/javascript" src="../assets/lib/jquery/jquery-2.1.1.min.js"></script> -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- 		<script type="text/javascript" src="../assets/js/validacoes.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/js/scroll.js"></script> -->
+
+
+
+		<!--
+		<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+		<style type="text/css" media="screen, projection">
+		  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
+		</style>
+		<script type="text/javascript">
+		  if (typeof(Zenbox) !== "undefined") {
+			Zenbox.init({
+			  dropboxID:   "20306696",
+			  url:         "https://contabilizei.zendesk.com",
+			  tabTooltip:  "Suporte",
+			  tabImageURL: "https://p1.zdassets.com/external/zenbox/images/tab_pt_support_right.png",
+			  tabColor:    "#0563AB",
+			  tabPosition: "Right",
+			  hide_tab: true
+			});
+		  }
+		</script> -->
+
+		<!--
+		<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0027/8049.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+		</script> -->
+
+
+	  	<!-- SCRIPTS DE FORMULARIOS E CONTEUDO DINÂMICO -->
+<!-- 		<script type="text/javascript" src="../assets/lib/jquery.mask/jquery.mask.min.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/placeholders/placeholders.min.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/lib/jquery/jquery.cookie.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/jquery.validate/jquery.validate.min.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script> -->
+<!-- 		<script type="text/javascript" src="../assets/lib/accounting/accounting.min.js"></script> -->
+
+<!-- 		<script type="text/javascript" src="/parametros.js"></script> -->
+<!-- 		 -->
+<!-- 	    <script type="text/javascript" src="../assets/js/cupom.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/js/botao-ajuda.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/js/app.js"></script> -->
+<!-- 	    <script type="text/javascript" src="../assets/js/cadastro-migracao-post.js"></script> -->
+<!-- 		 -->
+
+			<!-- CALCULO ECONOMIA -->
+<!--  		<script type="text/javascript">
+
+			function atualizarEconomia(mensalContabilizei){
+				var valor = mensalContabilizei;
+
+				var valorMensalidade = parseInt($("#valor-mensalidade").val());
+
+				if(valorMensalidade <= valor){
+					$('.valor.economia').html("0");
+				}else{
+					$('.valor.economia').html(accounting.formatMoney( 12 * (valorMensalidade - valor), "", 0, ".", ","));
+				}
+			}
+
+			$(document).on("keyup", "#valor-mensalidade", function(e){
+				var valor = $("#tab-sn").hasClass("active") ? 49 : 99;
+
+				atualizarEconomia(valor);
+
+			});
+
+			$("#tab-sn, #tab-lp").click(function(e){
+				//INVERTIDO POIS ACTIVE SO MUDA NO FINAL DA ACAO DO CLICK
+				var valor = $("#tab-sn").hasClass("active") ? 99 : 49;
+
+				atualizarEconomia(valor);
+			});
+
+</script> -->
+
+
+<!-- 		<script> -->
+<!-- 		$(function () { -->
+<!-- 		  $('[data-toggle="tooltip"]').tooltip() -->
+<!-- 		})</script> -->
+
+	</body>
+
+</html>
