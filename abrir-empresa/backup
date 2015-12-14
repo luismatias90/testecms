@@ -710,10 +710,10 @@
     <!-- HOVER EFECT FOR DROPDOWN LIST -->
     <script type="text/javascript" src="../assets/lib/dropdown.js"></script>
 
- 	<script type="text/javascript" src="/parametros.js"></script>
+ 	<script type="text/javascript" src="/assets/js/parametros.js"></script>
 
-    <script type="text/javascript" src="../assets/js/cupom.js"></script>
-    <script type="text/javascript" src="../assets/js/app.js"></script>
+    <script type="text/javascript" src="/assets/js/cupom.js"></script>
+    <script type="text/javascript" src="/assets/js/app.js"></script>
     <script type="text/javascript" src="../assets/js/site.js"></script>
     <script type="text/javascript" src="../assets/js/uf.js"></script>
     <script type="text/javascript" src="../assets/js/cadastro-abertura-post.js"></script>
