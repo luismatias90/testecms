@@ -34,7 +34,7 @@
 
 			$(document).ajaxStart(function() {
 			  $("#enviar").attr("disabled", "disabled");
-			  $("#enviar").html("<img src='loadingz.gif' style='padding-right:15px; width:35px;'>Enviando...");
+			  $("#enviar").html("<img src='/indique/loadingz.gif' style='padding-right:15px; width:35px;'>Enviando...");
 			});
 
 			$("#enviar").click(function() {
@@ -71,7 +71,7 @@
 									email: $("#email").val()
 								}
 							}).done(function(msg) {
-								location.href = "index2.html";
+								location.href = "/indique/index2.html";
 							});
 						}
 
