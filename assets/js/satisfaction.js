@@ -3,7 +3,7 @@
     strings: {
       goodRatings:      "Declarou como bom",
       badRatings:       "Estava incerto",
-      score:            "Satisfação no atendimento",
+      score:            "Satisfação com o atendimento",
       zendeskPlug:      'Powered by <a href="http://www.zendesk.com/">Zendesk</a>'
     },
     element: null,
