@@ -10,3 +10,4 @@ Disallow: /tutoriais/
 Disallow: /sentisdds/
 Disallow: /99designs/
 Disallow: /trampos/
+Disallow: /novo/
