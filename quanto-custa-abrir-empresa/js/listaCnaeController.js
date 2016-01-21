@@ -11,6 +11,9 @@ SimuladorApp.controller('listaCnaeController', ['$scope', function ($scope) {
     $scope.goToStep3 = function () {
         $scope.step3 = true;
     }
+    $scope.goToStep4 = function () {
+        $scope.step4 = true;
+    }
     $scope.escolheTipoEmpresa = function (tipoEmpresa) {
         var novaLista = [];
         var atividade = "";
