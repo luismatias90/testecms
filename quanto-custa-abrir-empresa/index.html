@@ -324,7 +324,7 @@
 
 
                         <div class="dropdown">
-                            <button id="selectServico" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:2em; width:100%; border-radius:50px">
+                            <button id="selectServico" class="botaoFocus" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:2em; width:100%; border-radius:50px">
                                 Escolha aqui
                                 <span class="caret" style="border-top: 8px dashed;   border-right: 8px solid transparent;    border-left: 8px solid transparent;"></span>
                             </button>
@@ -425,7 +425,12 @@
                                 .table td:first-child {
                                     color: #909090;
                                 }
-                               
+                                .dropdown .botaoFocus:focus {
+                                    background-color:#fafafa !important;
+                                    color:#2d73b2 !important;
+                                    
+                                    border:2px solid #2d73b2;
+                                }
                                 
                             </style>
 
