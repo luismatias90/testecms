@@ -22,9 +22,9 @@ if (ambiente == "hom") {
 // Produção
 // ---------------------------
 if (ambiente == "prod") {
-  // var baseCadastro = "https://cadastro.contabilizei.com.br";
-  var baseCadastro = "https://contabilizei-precadastro.appspot.com";
-  // var baseApp = "https://appservices.contabilizei.com.br";
-  var baseApp = "https://contabilizeiapp.appspot.com";
+  var baseCadastro = "https://cadastro.contabilizei.com.br";
+  // var baseCadastro = "https://contabilizei-precadastro.appspot.com";
+  var baseApp = "https://appservices.contabilizei.com.br";
+  // var baseApp = "https://contabilizeiapp.appspot.com";
   var baseUrl = "https://www.contabilizei.com.br";
 }
