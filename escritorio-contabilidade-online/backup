@@ -222,13 +222,13 @@
 
 					<div class="col-md-4">
 						<a href="http://startupi.com.br/2014/03/ferramenta-quer-substituir-contador/" target="_blank">
-						<img src="../assets/img/startupi.png">
+						<img src="/assets/img/startupi.png">
 						<p class="texto">"Eles são contadores, só que online."</p>
 					</div>
 
 					<div class="col-md-4">
 						<a href="https://www.youtube.com/watch?v=Q9m08YhkR4o&feature=youtu.be&t=67" target="_blank">
-						<img src="../assets/img/globo2.png">
+						<img src="/assets/img/globo2.png">
 						<p class="texto">"Pequenos empresários buscam <br>alternativas para fugir da crise."</p>
 						</a>
 					</div>
@@ -237,7 +237,7 @@
 
 					<div class="col-md-4">
 						<a href="http://revistapegn.globo.com/Noticias/noticia/2014/03/empreendedores-inovam-e-criam-servico-contabil-online.html" target="_blank">
-						<img src="../assets/img/pequenas.png">
+						<img src="/assets/img/pequenas.png">
 						<p class="texto">"Conseguiram inovar em uma das áreas <br>mais tradicionais do mercado."</p>
 						</a>
 					</div>
@@ -266,19 +266,19 @@
 				<div class="textopasso">
 
 		            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		                <img src="../assets/img/aberturapasso1.png">
+		                <img src="/assets/img/aberturapasso1.png">
 		                <p><span style="font-size:1.3em; font-weight:700; color:#2ba5e5;">Inicie seu cadastro</span><br> de migração de contabilidade para a Contabilizei. Você só precisa do CNPJ e<br class="visible-lg"> CPF - seu e dos outros sócios, se houver. </p>
 		            </div><!-- /.col-lg-3 -->
 		            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		                <img src="../assets/img/aberturapasso2.png">
+		                <img src="/assets/img/aberturapasso2.png">
 		                <p><span style="font-size:1.3em; font-weight:700; color:#2ba5e5;">Informe-nos sobre sua empresa </span><br>Vamos precisar do contrato social da empresa (ou requerimento de empresário), dados de acesso na prefeitura e a chave do Simples Nacional (se for o caso). </p>
 		            </div><!-- /.col-lg-3 -->
 		            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		                <img src="../assets/img/aberturapasso3.png">
+		                <img src="/assets/img/aberturapasso3.png">
 		                <p><span style="font-size:1.3em; font-weight:700; color:#2ba5e5;">Defina o mês de início</span><br>Quando começamos a cuidar da sua contabilidade? Você escolhe! Combine com o contador atual a melhor data para a transição. Se for necessário um termo de transferência, nós providenciamos<br class="visible-lg"> para você. </p>
 		            </div><!-- /.col-lg-3 -->
 		            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-		                <img src="../assets/img/aberturapasso4.png">
+		                <img src="/assets/img/aberturapasso4.png">
 		                <p><span style="font-size:1.3em; font-weight:700; color:#2ba5e5;">Em até 5 dias, sua empresa aqui</span><br> Após o pagamento, você recebe seu login e senha para acessar nossa plataforma em até 5 dias úteis. Nossos contadores fanáticos irão te apoiar e cuidar da contabilidade da sua empresa. ;)<br><br><span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="color:#2ba5e5"></span>&nbsp;&nbsp;<a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/204874919" target="_blank">Entenda o processo em detalhes</a></p>
 		            </div><!-- /.col-lg-3 -->
 		        </div><!--row-->
@@ -329,7 +329,7 @@
 					</div>
 
 					<div class="col-md-1 visible-md visible-lg">
-						<img src="../assets/img/chaves.png">
+						<img src="/assets/img/chaves.png">
 					</div>
 
 					<div class="col-md-6 col-sm-8 col-lg-5 col-lg-offset-0">
@@ -370,7 +370,7 @@
 
 					<div class="col-md-4 col-md-offset-2">
 
-						<img src="../assets/img/mapa.png">
+						<img src="/assets/img/mapa.png">
 						<h3>1. Sua cidade</h3>
 
 						<div class="dropdown">
@@ -418,7 +418,7 @@
 
 					<div class="col-md-4">
 
-						<img src="../assets/img/prestadoras.png" class="atividade">
+						<img src="/assets/img/prestadoras.png" class="atividade">
 						<h3>2. Sua atividade</h3>
 
 						<div class="dropdown">
@@ -550,7 +550,7 @@
 
 							</p>
 						<br>
-						<img src="../assets/img/qualidademig.png" class="hidden-sm hidden-xs">
+						<img src="/assets/img/qualidademig.png" class="hidden-sm hidden-xs">
 
 						<div class="hidden-sm hidden-xs">
 							<br><br>
@@ -629,22 +629,22 @@
 				<div class="row">
 
 					<div class="col-md-3">
-						<img src="../assets/img/presente.png">
+						<img src="/assets/img/presente.png">
 						<p>Estamos presentes em <br><strong>mais de 30 cidades</strong></p>
 					</div>
 
 					<div class="col-md-3">
-						<img src="../assets/img/econo.png">
+						<img src="/assets/img/econo.png">
 						<p>Serviço completo de contabilidade<br><strong>econômico e prático</strong></p>
 					</div>
 
 					<div class="col-md-3">
-						<img src="../assets/img/atend.png">
+						<img src="/assets/img/atend.png">
 						<p>Atendimento campeão com<br><strong>linguagem simplificada</strong></p>
 					</div>
 
 					<div class="col-md-3" id="setinha">
-						<img src="../assets/img/seta.png">
+						<img src="/assets/img/seta.png">
 						<p>Migre sua empresa<br><strong>e economize agora!</strong></p>
 					</div>
 
@@ -694,7 +694,7 @@
 					<div class="col-md-6">
 						<br class="hidden-xs hidden-sm">
 
-						<img src="../assets/img/notas.png" class="visible-md visible-lg">
+						<img src="/assets/img/notas.png" class="visible-md visible-lg">
 					</div>
 				</div>
 
@@ -706,7 +706,7 @@
 						</div>
 
 					<div class="col-md-6">
-						<img src="../assets/img/impostos.png" class="visible-md visible-lg">
+						<img src="/assets/img/impostos.png" class="visible-md visible-lg">
 					</div>
 
 				</div>
@@ -719,7 +719,7 @@
 					</div>
 
 					<div class="col-md-6">
-						<img src="../assets/img/paga.png" class="visible-md visible-lg">
+						<img src="/assets/img/paga.png" class="visible-md visible-lg">
 					</div>
 
 				</div>
@@ -732,7 +732,7 @@
 					</div>
 
 					<div class="col-md-6">
-						<img src="../assets/img/empresa.png" class="visible-md visible-lg">
+						<img src="/assets/img/empresa.png" class="visible-md visible-lg">
 					</div>
 
 				</div>
@@ -1096,7 +1096,7 @@
 
 		                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
 		            	 	<h3> Somos investidos pelo grupo Kaszek </h3>
-		            	 	<a href="http://www.kaszek.com/" target="_blank"><img src="../assets/img/kaszekhome.png"></a><span class="hidden-xs hidden-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br class="visible-xs"><small>* eleito o melhor grupo de investimentos<br class="visible-xs"> da América Latina em 2015 <a href="http://latam-founders.com/community/35/" target="_blank"><span class="glyphicon glyphicon-info-sign" style="padding-left:5px; color:#007dc5;" aria-hidden="true"></span></a></small>
+		            	 	<a href="http://www.kaszek.com/" target="_blank"><img src="/assets/img/kaszekhome.png"></a><span class="hidden-xs hidden-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br class="visible-xs"><small>* eleito o melhor grupo de investimentos<br class="visible-xs"> da América Latina em 2015 <a href="http://latam-founders.com/community/35/" target="_blank"><span class="glyphicon glyphicon-info-sign" style="padding-left:5px; color:#007dc5;" aria-hidden="true"></span></a></small>
 		            	</div>
 
 		            </div>
@@ -1127,10 +1127,10 @@
 		</footer>
 
 		<!-- Load Bootstrap Js e jQuery -->
-	    <script type="text/javascript" src="../assets/lib/jquery/jquery-2.1.1.min.js"></script>
+	    <script type="text/javascript" src="/assets/lib/jquery/jquery-2.1.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="../assets/js/validacoes.js"></script>
-		<script type="text/javascript" src="../assets/js/scroll.js"></script>
+		<script type="text/javascript" src="/assets/js/validacoes.js"></script>
+		<script type="text/javascript" src="/assets/js/scroll.js"></script>
 
 
 		<!-- BOTAO DE AJUDA -->
@@ -1183,13 +1183,13 @@
 
 
 	  	<!-- SCRIPTS DE FORMULARIOS E CONTEUDO DINÂMICO -->
-		<script type="text/javascript" src="../assets/lib/jquery.mask/jquery.mask.min.js"></script>
-		<script type="text/javascript" src="../assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script>
-		<script type="text/javascript" src="../assets/lib/placeholders/placeholders.min.js"></script>
-	    <script type="text/javascript" src="../assets/lib/jquery/jquery.cookie.js"></script>
-		<script type="text/javascript" src="../assets/lib/jquery.validate/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="../assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script>
-		<script type="text/javascript" src="../assets/lib/accounting/accounting.min.js"></script>
+		<script type="text/javascript" src="/assets/lib/jquery.mask/jquery.mask.min.js"></script>
+		<script type="text/javascript" src="/assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script>
+		<script type="text/javascript" src="/assets/lib/placeholders/placeholders.min.js"></script>
+	    <script type="text/javascript" src="/assets/lib/jquery/jquery.cookie.js"></script>
+		<script type="text/javascript" src="/assets/lib/jquery.validate/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="/assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script>
+		<script type="text/javascript" src="/assets/lib/accounting/accounting.min.js"></script>
 
 		<script type="text/javascript" src="/assets/js/parametros.js"></script>
 

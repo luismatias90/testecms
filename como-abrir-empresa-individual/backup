@@ -34,7 +34,7 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/contabilizei-favicon.ico">
+    <link rel="shortcut icon" href="/assets/ico/contabilizei-favicon.ico">
 
  <!--FACEBOOK METADATA-->
     <meta property="og:title" content="Contabilidade Online Fácil e Econômica para micro e pequenas empresas.">
@@ -75,7 +75,7 @@
 		              <span class="icon-bar"></span>
 		              <span class="icon-bar"></span>
 		            </button>
-		            <a class="navbar-brand" href="/"><img alt="Contabilizei-contabilidade-online" src="../assets/img/contabilizei-contabilidade-online-01.png"></a>
+		            <a class="navbar-brand" href="/"><img alt="Contabilizei-contabilidade-online" src="/assets/img/contabilizei-contabilidade-online-01.png"></a>
 		          </div>
 
 		          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -400,26 +400,26 @@
 	</script>
 
     <!-- Javscript -->
-    <script type="text/javascript" src="../assets/lib/jquery/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="../assets/lib/jquery.mask/jquery.mask.min.js"></script>
-	<script type="text/javascript" src="../assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script>
-	<script type="text/javascript" src="../assets/lib/placeholders/placeholders.min.js"></script>
-    <script type="text/javascript" src="../assets/lib/jquery/jquery.cookie.js"></script>
-	<script type="text/javascript" src="../assets/lib/jquery.validate/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="../assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script>
-	<script type="text/javascript" src="../assets/lib/select2/select2.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/jquery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="/assets/lib/jquery.mask/jquery.mask.min.js"></script>
+	<script type="text/javascript" src="/assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script>
+	<script type="text/javascript" src="/assets/lib/placeholders/placeholders.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/jquery/jquery.cookie.js"></script>
+	<script type="text/javascript" src="/assets/lib/jquery.validate/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="/assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script>
+	<script type="text/javascript" src="/assets/lib/select2/select2.min.js"></script>
 
-    <script type="text/javascript" src="../assets/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/bootstrap.min.js"></script>
     <!-- HOVER EFECT FOR DROPDOWN LIST -->
-    <script type="text/javascript" src="../assets/lib/dropdown.js"></script>
+    <script type="text/javascript" src="/assets/lib/dropdown.js"></script>
 
  	<script type="text/javascript" src="/assets/js/parametros.js"></script>
 
     <script type="text/javascript" src="/assets/js/cupom.js"></script>
     <script type="text/javascript" src="/assets/js/app.js?v1201"></script>
-    <script type="text/javascript" src="../assets/js/site.js"></script>
-    <script type="text/javascript" src="../assets/js/uf.js"></script>
-    <script type="text/javascript" src="../assets/js/cadastro-abertura.js"></script>
+    <script type="text/javascript" src="/assets/js/site.js"></script>
+    <script type="text/javascript" src="/assets/js/uf.js"></script>
+    <script type="text/javascript" src="/assets/js/cadastro-abertura.js"></script>
 
 
 </body>
