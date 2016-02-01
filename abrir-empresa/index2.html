@@ -464,7 +464,7 @@ Veja como funciona abaixo.</p><br>
                            
                            <br>
                             <a href="#quantoCusta">
-                                <button class="botaosupremob" ng-click="goToStep2()" style="font-size:1.5em;font-weight:400; margin-top:40px;">Quais serão os custos de abertura?</button>
+                                <button class="botaosupremob" ng-click="goToStep2()" style="font-size:1.5em;font-weight:400; margin-top:40px;">Quais serão os custos agora?</button>
                             </a>
 
 
@@ -602,6 +602,72 @@ Veja como funciona abaixo.</p><br>
 
         </div>
 
+        
+     
+     
+      
+         
+
+        <!-- Modal Junta -->
+        <div class="modal fade" id="modalJunta" tabindex="-1" role="dialog" aria-labelledby="modalJuntaLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="padding-bottom:0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="myModalLabel" style="padding-top:5px">Cidades atendidas pela Contabilizei:</h4>
+                  <br>
+                <div class="row" style="background-color:#fafafa; font-weight:700; padding:10px 0; border-top:1px solid #e8e8e8;">
+                    <div class="col-md-4" style="padding-left:30px;">Cidade</div>  <div class="col-md-5" style="padding:0;margin:0">Junta Comercial (sem sócio/com sócio)</div>  <div class="col-md-3 text-right" style="padding-right:22px;">Alvará prefeitura</div>  
+                </div>
+              </div>
+              <div class="modal-body" style="height:350px; overflow:auto; padding-top:0">
+                    <table class="table">
+                   
+                    <tr><td style="border-top:none;">Americana</td><td style="border-top:none;">R$57,48 / R$129,36</td><td class="text-right" style="border-top:none;">R$38,96</td></tr>
+                    <tr><td>Barueri</td><td>R$57,48 / R$129,36</td><td class="text-right">R$75,00</td></tr>
+                    <tr><td>Belo Horizonte</td><td>R$110,00 / R$221,00</td><td class="text-right">R$173,06</td></tr>
+                    <tr><td>Curitiba</td><td>R$51,40 / R$71,30</td><td class="text-right">a partir de R$25,00</td></tr>
+                    <tr><td>Embu das Artes</td><td>R$57,48 / R$129,36</td><td class="text-right">R$313</td></tr>
+                    <tr><td>Fortaleza</td><td>R$57,48 / R$129,36</td><td class="text-right">Em breve</td></tr>
+                    <tr><td>Goiânia</td><td>R$132,00 / R$279,00</td><td class="text-right">R$120,00</td></tr>
+                    <tr><td>Guarulhos</td><td>R$57,48 / R$129,36</td><td class="text-right">R$16,00</td></tr>
+                    <tr><td>João Pessoa</td><td>R$57,48 / R$129,36</td><td class="text-right">Em breve</td></tr>
+                    <tr><td>Jundiaí</td><td>R$57,48 / R$129,36</td><td class="text-right">Isento</td></tr>
+                    <tr><td>Maceió</td><td>R$88,00 / R$213,00</td><td class="text-right">R$170,00</td></tr>
+                    <tr><td>Natal</td><td>R$65,00 / R$138,00</td><td class="text-right">R$236,00</td></tr>
+                    <tr><td>Niterói</td><td>R$217,00 / R$351,00</td><td class="text-right">R$174,92</td></tr>
+                    <tr><td>Porto Alegre</td><td>R$68,00 / R$117,00</td><td class="text-right">R$71,00</td></tr>
+                    <tr><td>Recife</td><td>R$101,00 / R$293,00</td><td class="text-right">R$80 a R$320</td></tr>
+                    <tr><td>Ribeirão Preto</td><td>R$57,48 / R$129,36</td><td class="text-right">Em breve</td></tr>
+                    <tr><td>Rio de Janeiro</td><td>R$217,00 / R$351,00</td><td class="text-right">R$753,07</td></tr>
+                    <tr><td>Santo André</td><td>R$57,48 / R$129,36</td><td class="text-right">R$210,00</td></tr>
+                    <tr><td>Santos</td><td>R$57,48 / R$129,36</td><td class="text-right">R$190,95</td></tr>
+                    <tr><td>Sorocaba</td><td>R$57,48 / R$129,36</td><td class="text-right">Em breve</td></tr>
+                    <tr><td>São Bernardo do Campo</td><td>R$57,48 / R$129,36</td><td class="text-right">R$167,00</td></tr>
+                    <tr><td>São José dos Campos</td><td>R$57,48 / R$129,36</td><td class="text-right">Em breve</td></tr>
+                    <tr><td>São Paulo</td><td>R$57,48 / R$129,36</td><td class="text-right">R$120,00</td></tr>
+                    <tr><td>Taboão da Serra</td><td>R$57,48 / R$129,36</td><td class="text-right">Em breve</td></tr>
+                    <tr><td>Uberlândia</td><td>R$57,48 / R$129,36</td><td class="text-right">Em breve</td></tr>
+                    <tr><td style="border-bottom:1px solid #e8e8e8;">Vitória</td><td style="border-bottom:1px solid #e8e8e8;">R$118,16 / R$254,00</td><td class="text-right" style="border-bottom:1px solid #e8e8e8;">R$181,07</td></tr>
+                    
+                </table>
+                  <p class="text-center"><small>As informações ainda estão sendo atualizadas para 2016.</small></p>
+                  
+              </div>
+              <div class="modal-footer">
+                <p class="pull-left" style="padding: 0; margin: 0;margin-top:3px;  margin-left:10px"><small>Sua cidade não está aqui? <a data-dismiss="modal" href="#migre" style="text-decoration:underline">Cadastre-se</a> para ser notificado quando lhe atendermos.</small></p>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+       
+        
+        
+        
         <div class="quempode animated fadeIn" style="background:none; background-color:#fafafa; border-top:1px solid #e8e8e8; padding-bottom: 80px;">
             <section id="quantoCusta">
                 <div class="container">
@@ -630,14 +696,14 @@ Veja como funciona abaixo.</p><br>
                                 <br>
 
                                 <h3 style="text-transform: uppercase; letter-spacing:0.2em; font-size:0.9em;  color:#494949">Taxa junta comercial (média nacional):</h3>
-                                <h4 style="font-weight:300;line-height:1.5em; font-size:3em">R$57 a R$351</h4>
+                                <h4 style="font-weight:300;line-height:1.5em; font-size:3em">R$57 a R$351  <a href="#modalJunta" data-toggle="modal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.4em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
                                 <br>
                                 <span style="background-color:#FF6B6B; color:#FFFFE1; padding:2px 20px; font-size:3em; border-radius:100%; border-bottom:2px solid rgba(0,0,0,.2)">+</span>
                                 <br>
                                 <br>
 
                                 <h3 style="text-transform: uppercase; letter-spacing:0.2em; font-size:0.9em;  color:#494949">Taxa alvará prefeitura (média nacional):</h3>
-                                <h4 style="font-weight:300;line-height:1.5em; font-size:3em">R$120 a R$753</h4>
+                                <h4 style="font-weight:300;line-height:1.5em; font-size:3em">R$120 a R$753 <a href="#modalJunta" data-toggle="modal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.4em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
 
 
                                 <br>
@@ -1277,7 +1343,12 @@ Veja como funciona abaixo.</p><br>
 		}(document, 'script', 'facebook-jssdk'));</script>
 
 		<script type="text/javascript" async="true" src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/40bbe6d9-bf4c-4139-8258-af4a415c65d7-loader.js"></script>
-        
+        <script>
+
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 	</body>
 
 </html>
