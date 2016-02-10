@@ -34,9 +34,7 @@ i {
 .migre button:active {
     box-shadow:none;
 }
-input {
-    padding:20px !important;
-}
+
 .bgbranco {
     background-color:#fff;
 }
