@@ -10,6 +10,8 @@ $(document).ready(function(){
 	$("#form-migracao input[name=telefone]").mask("(00)0000-00009", options);
 	
 	$("#form-migracao input[name=cpf]").mask('000.000.000-00', {reverse: true});
+    
+    $("#form-migracao input[name=cnpj]").mask('00.000.000/0000-00', {reverse: true});
 
 	$('#form-migracao').validate({
         rules: {
@@ -23,6 +25,10 @@ $(document).ready(function(){
             "cpf":{
             	required: true,
             	validacpf: true
+            },
+            "cnpj":{
+            	required: true,
+            	validacnpj: true
             },
             "telefone":{
             	required: true,
@@ -103,6 +109,12 @@ $(document).ready(function(){
 	    return validarCpf($(element).val());
 	    
 	}, 'CPF inválido');
+    
+    $.validator.addMethod('validacnpj', function (value, element, param) {
+	    
+	    return validarCNPJ($(element).val());
+	    
+	}, 'CNPJ inválido');
 	
 	$("#btn-iniciar-migracao").click(function(){
 		$('#form-migracao').attr("action", "https://contabilizei-precadastro-teste.appspot.com" + "/rest/public/integracaoMigracao/informacoesLogin");
