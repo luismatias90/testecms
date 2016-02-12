@@ -12,6 +12,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     background:transparent;
+    font-weight:300;
 }
 .contabilizei2 {
     opacity:0.99;
@@ -27,10 +28,10 @@ body {
     padding-top:6px;
 }
 .logo {
-    margin-left:230px;
+    margin-left:130px;
 }
 .nav .espacador {
-    margin-left:120px;
+    margin-left:250px;
 }
 .navbar-brand {
     padding:10px 15px;
@@ -142,6 +143,17 @@ body {
     
 }
 
+
+/* Depoimentos */
+
+
+.depoimentos {
+    border-top:1px solid #e8e8e8;
+    background-color:#fafafa;
+    padding:50px 0;
+}
+
+
 /* Settings */
 
 
@@ -155,7 +167,8 @@ body {
 }
 h2 {
     font-weight:300;
-    padding-bottom:10px;
+    line-height:1.5em;
+    text-align:center;
 }
 h3 {
     margin:0;
@@ -196,10 +209,11 @@ input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s eas
     border:none;
     padding:10px 60px;
     border-radius:6px;
-    box-shadow:inset 0 1px 0 0 rgba(255,255,255,.5), 0px 2px 6px rgba(0,0,0,.09);
+    box-shadow:inset 0 1px 0 0 rgba(255,255,255,.1), 0px 2px 6px rgba(0,0,0,.09);
     margin:0px 10px;
     transition:0.5s ease;
     font-weight:500;
+    color:#fff;
 }
 .accent:hover {
     background-color:#6BEC18;
@@ -207,6 +221,36 @@ input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s eas
 }
 .accent:active {
     background-color:#52B315;
+}
+
+.contorno {
+    background-color:transparent;
+    border:2px solid #c6c6c6;
+    padding:10px 20px;
+    border-radius:6px;
+    margin:0px 10px;
+    transition:0.5s ease;
+    font-weight:500;
+    color:#c6c6c6;
+}
+.contorno:active {
+    background-color:#e8e8e8;
+}
+
+.big {
+    font-size:18px;
+    padding:12px 60px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+}
+.big:hover {
+    box-shadow:0px 4px 12px rgba(0,0,0,.2);
+}
+.big:active {
+    box-shadow:none;
+}
+.noshadow {
+    box-shadow:none;
+    padding:12px 30px;
 }
 .primary {
     color:#2196F3 !important;
@@ -217,4 +261,14 @@ input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s eas
 .primary-bg {
     background-color:#424242 !important;
     color:#fff;
+}
+.divider {
+    border:1px dashed #e8e8e8;
+}
+.padding-lat {
+    padding:0 30px;
+    opacity:0.54;
+}
+.botoes {
+    padding:20px 0;
 }
