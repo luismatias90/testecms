@@ -14,6 +14,7 @@
     display: inline-block;
     vertical-align: middle;
     box-shadow: 0px 2px 6px rgba(0,0,0,.4);
+    transition:0.3s ease;
 }
 .botaoajuda:hover {
     background-color:#2196F3;
@@ -21,7 +22,6 @@
 	color:#fff;
     box-shadow: 0px 7px 12px rgba(0,0,0,.3);
     bottom:14px;
-    transition:0.3s ease;
 }
 .botaoajuda:active {
 	text-decoration:none !important;
@@ -57,6 +57,7 @@
 	position:fixed;
 	bottom:11px;
 	right:38px;
+
 }
 .boxajuda {
 	background-color:#fff;
@@ -111,12 +112,11 @@
 	border-radius:50%;
 	color:#e8e8e8;
     box-shadow: 0px 7px 12px rgba(0,0,0,.3);
-    
+    transition:0.3s ease;
 }
 .boxx:hover {
 	text-decoration:none !important;
 	color:#fff;
-    transition:0.3s ease;
 }
 .boxx:active {
 	text-decoration:none !important;
