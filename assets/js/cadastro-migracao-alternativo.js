@@ -117,7 +117,7 @@ $(document).ready(function(){
 	}, 'CNPJ inválido');
 	
 	$("#btn-iniciar-migracao").click(function(){
-		$('#form-migracao').attr("action", "https://contabilizei-precadastro-teste.appspot.com" + "/rest/public/integracaoMigracao/informacoesLogin");
+		$('#form-migracao').attr("action", "https://contabilizei-precadastro.appspot.com/" + "/rest/public/integracaoMigracao/informacoesLogin");
 		$('#form-migracao').submit();
 	});
 	
