@@ -66,11 +66,17 @@ body {
 }
 .card {
     background-color:#fdfdfd;
-    border:1px solid #e8e8e8;
-    box-shadow:0px 3px 7px 0px rgba(0,0,0,0.08);;
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.08);;
     border-radius:6px;
-    margin:60px 0;
+    margin:60px 0 0px 0;
+}
+.cardBig {
     min-height:400px;
+    border:1px solid #e8e8e8;
+    margin:60px 0;
+}
+.cardBranco {
+    background-color:#FFF;
 }
 .inteligente {
     background-color:#fff;
@@ -152,13 +158,132 @@ body {
     background-color:#fafafa;
     padding:50px 0;
 }
+.headerDepoimento {
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    min-height:50px;
+    vertical-align:middle !important;
+    color:#fff;
+    padding:8px 0;
+}
+.marginEsquerda {
+    margin-left:-30px;
+    margin-top:-15px;
+}
+.marginDireita {
+    margin-right:-30px;
+    margin-top:-15px;
+}
+.imgSombra {
+    border-radius:50px;
+    box-shadow:0px 2px 7px rgba(0,0,0,.2);
+}
+.depoimento {
+    padding:15px 15px 10px 20px;
+}
+.nome {
+    font-size:1.3em;
+    font-weight:500;
+}
+.empresa {
+    opacity:0.7;
+    font-weight:300;
+}
+
+
+/* Faça Parte */
+
+.facaParte {
+    padding:60px 0;
+    color:#fff;
+    background-image: url('/assets/img/abrindoterno.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.economiaTotal {
+    font-size:3em;
+    font-weight:600;
+}
+
+/* Midia */
+
+.midia {
+    padding:20px 0;
+    border:1px solid #e8e8e8;
+}
+.logosMidia {
+    margin:25px;
+    opacity:0.6;
+    transition:0.5s ease;
+}
+.logosMidia:hover {
+    opacity:1.0;
+}
+
+/* Footer */
+.footer {
+    padding:60px 0 0 0;
+
+    color:#fff;
+}
+.footer p {
+    opacity:0.7;
+    font-size:12px;
+    line-height:1.5em;
+}
+.footer small {
+    opacity:0.7;
+}
+.footer ul {
+    list-style: none;
+    padding:0;
+}
+.footer ul li {
+    margin:8px 0;
+}
+.footer a {
+    color:#fff;
+    opacity:0.9;
+    transition:0.2s ease;
+}
+.footer a:hover {
+    text-decoration: none;
+    opacity:1.0;
+}
+.footer hr {
+    width:40px;
+    border-top:none;
+    border-bottom:1px solid #6B6B6B;
+    margin-left:0;
+}
+.about {
+    padding:40px 0;
+}
+.reservado {
+    padding:20px 0 10px 0;
+    background-color:#3A3A3A;
+}
+
 
 
 /* Settings */
 
-
+.textoPequeno {
+    font-size:18px;
+    font-weight:500;
+    opacity:0.4;
+}
 .texto {
     opacity:0.87;
+}
+.textoLongo {
+    line-height:1.8em;
+    opacity:0.74;
+}
+.opacity {
+    opacity:0.7;
+    font-size:1.5em;
+    font-weight:300;
 }
 .feat {
     line-height:2.5em;
@@ -233,6 +358,24 @@ input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s eas
     font-weight:500;
     color:#c6c6c6;
 }
+.contornoBranco {
+    background-color:transparent;
+    border:2px solid rgba(255,255,255,.5);
+    padding:10px 20px;
+    border-radius:6px;
+    margin:0px 10px;
+    transition:0.5s ease;
+    font-weight:500;
+    color:rgba(255,255,255,.5);
+
+}
+.contornoBranco:hover {
+    color:#fff;
+    border-color:#fff;
+}
+.contornoBranco:active {
+    background-color:rgba(255,255,255,.8)
+}
 .contorno:active {
     background-color:#e8e8e8;
 }
@@ -255,8 +398,17 @@ input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s eas
 .primary {
     color:#2196F3 !important;
 }
+.branco {
+    color:#fff;
+}
+.bg-branco {
+    background-color:#fff;
+}
+.bg-azul {
+    background-color:#2196F3;
+}
 .bg-cinza {
-    background-color:rgba(240, 240, 240, 0.36) !important;
+    background-color:rgba(240, 240, 240, 0.36);
 }
 .primary-bg {
     background-color:#424242 !important;
