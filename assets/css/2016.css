@@ -244,11 +244,12 @@ body {
 .footer a {
     color:#fff;
     opacity:0.9;
-    transition:0.2s ease;
+    transition:0.4s ease;
 }
 .footer a:hover {
     text-decoration: none;
     opacity:1.0;
+    padding-left:10px;
 }
 .footer hr {
     width:40px;
