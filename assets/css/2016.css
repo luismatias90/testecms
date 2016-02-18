@@ -32,6 +32,7 @@ body {
 }
 .nav .espacador {
     margin-left:250px;
+    transition:0.2s ease;
 }
 .navbar-brand {
     padding:10px 15px;
@@ -49,6 +50,18 @@ body {
 }
 .jumbotron img {
     margin:0 auto;
+}
+
+.contabilizei .material-icons, .contabilizei .cadastre {
+    display: none;
+}
+.contabilizei2 .material-icons, .contabilizei2  .cadastre {
+    display: inline-block;
+    font-size:14px;
+        transition:0.5s ease;
+}
+.contabilizei2 .espacador {
+    margin-left:50px;
 }
 
 /* Barra Form Lead */
@@ -87,7 +100,7 @@ body {
     margin:60px 0 0px 0;
 }
 .card .col-md-9 {
-    padding-left:5px;
+    padding-left:35px;
    
 }
 .card small {
@@ -169,12 +182,10 @@ body {
     border-right:none;
 }
 .card .col-md-3 img {
-    margin-left: -20px;
-    width: 182px;
+    margin-left: 36px;
+    width: 126px;
     margin-top: -9px;
     height: 312px;
-    border-left:1px solid #e8e8e8;
-    opacity:0.5;
 }
 
 
@@ -379,8 +390,9 @@ h3 {
     font-weight:300;
 }
 h4 {
-    padding:15px 0 10px 0;
+    padding:15px 0 5px 0px;
     font-size:22px;
+    line-height:1.5em;
 }
 .padding {
     padding:0 55px;
@@ -416,6 +428,9 @@ input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s eas
     transition:0.5s ease;
     font-weight:500;
     color:#fff;
+}
+.menorzin {
+    padding:10px 30px;
 }
 .accent:hover {
     background-color:#6BEC18;
