@@ -19,14 +19,16 @@ body {
     background:#fff;
     box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
     transition:0.2s;
-    height:57px;
+    height:59px;
 }
 .navbar img {
     display: inline-block;
     vertical-align:middle;
 }
+
+
 .navtopo {
-    padding-top:6px;
+    padding-top:8px;
 }
 .logo {
     margin-left:130px;
@@ -62,21 +64,49 @@ body {
 }
 .dropdown:hover .dropdown-menu {
     display: block;
+    padding:10px;
 }
-.contabilizei2 .dropdown-menu {
+.dropdown-menu {
     border:none;
+    background-color:#fff;
+    border:1px solid #e8e8e8;
+    margin-left:-1px;
+}
+.dropdown-menu .textoLi {
+    padding:10px;
+    font-weight:400;
+}
+.dropdown-menu>li>a {
+    padding:10px;
+    transition:0.2s ease;
+}
+.dropdown-menu>li>a:hover {
+    padding-left:15px;
+}
+.linkBotao:hover {
+    background:transparent !important;
+    padding-left:10px !important;
+}
+.dropdown-menu {
     background-color:#fff;
 }
 
-.contabilizei2 .dropdown-menu {
-    background-color:#fafafa;
-    box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>li:hover, .navbar-nav>li:focus, .navbar-nav>li>a:active {
+    border-bottom:none;
+    box-shadow: inset 0 -3px 0px #0097F6;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color:transparent;
+}
+.dropdown:hover a {
+    color: #0097F6 !important;
+}
+.dropdown .dropdown-menu a,.dropdown .dropdown-menu:hover a {
+    color:gray !important;
 }
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>li:hover, .navbar-nav>li:focus, .navbar-nav>li>a:active {
-    background-color:#fafafa;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+.nav>li {
+    border:1px solid transparent;
 }
 .contabilizei2 .material-icons, .contabilizei2  .cadastre {
     display: inline-block;
@@ -85,11 +115,18 @@ body {
 }
 .contabilizei2 .cadastre {
     margin-left:28px;
+    border:none !important;
 }
 .contabilizei2 .cadastre:hover {
-    background-color:transparent !important;
+    background:transparent !important;
+    border:none !important;
+    box-shadow:none !important;
 }
-
+.dropdown-menu hr {
+    margin:5px auto;
+    width:92%;
+    opacity:0.5;
+}
 
 /* Barra Form Lead */
 
@@ -251,9 +288,9 @@ body {
     margin-top:20px;
 }
 .notas .col-md-4 {
-    padding-bottom:20px;
-  
+    padding-bottom:20px; 
 }
+
 
 /* Depoimentos */
 
@@ -458,6 +495,11 @@ input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s eas
 }
 .menorzin {
     padding:10px 30px;
+    margin:0;
+    box-shadow:inset 0 1px 0 0 rgba(255,255,255,.1), 0px 2px 2px rgba(0,0,0,.09);
+}
+.menorzin:hover {
+    box-shadow:0px 2px 6px rgba(0,0,0,.15);
 }
 .accent:hover {
     background-color:#6BEC18;
