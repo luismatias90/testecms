@@ -227,7 +227,7 @@ body {
 }
 .nav-tabs .material-icons {
     font-size:3em;
-    line-height:1.91em;
+    line-height:1.98em;
 }
 .card .nav>li>a {
     padding:10px 30px;
@@ -681,7 +681,31 @@ h4 {
         margin-right:0px;
         margin-top:-15px;
     }
-
-    
-    
-}
+    .quemSomos {
+        padding: 28px 0;
+    }
+    .depoimentos {
+        padding:28px 0;
+    }
+    .facaParte {
+        padding:28px 0;
+        background-image:none;
+    }
+    .economiaTotal {
+        font-size:30px;
+    }
+    .footer {
+        padding:28px 0 0 0;
+    }
+    .menuFooter,.about,.final {
+        padding:0 15px;
+    }
+    .final {
+        padding:0 15px;
+    }
+    .alignBottom {
+        padding:0;
+    }
+    .reservado {
+        padding:10px 20px;
+    }
