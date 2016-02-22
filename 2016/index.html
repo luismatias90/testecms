@@ -82,11 +82,11 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                 
               </button>
               <a class="navbar-brand" href="/2016/"><img src="/assets/img/logo2016.png" class="logo" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
             </div> 
@@ -94,7 +94,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="espacador">&nbsp;</li>
+                <li class="espacador hidden-xs hidden-sm">&nbsp;</li>
                  <li class="dropdown">
                   <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contabilizei <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -139,7 +139,7 @@
                     
                   </ul>
                 </li>
-                <li class="cadastre animated fadeIn"><button class="accent menorzin">Cadastre-se hoje</button></li>
+                <li class="cadastre animated fadeIn hidden-xs"><button class="accent menorzin">Cadastre-se hoje</button></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -156,10 +156,9 @@
         
       
     
-      <div class="navlead text-center primary-bg">
+      <div class="navlead text-center primary-bg hidden-xs">
         <div class="container">
             <p>Comece já seu cadastro:
-                
                 
                 <span class="padding"><i class="material-icons margin-neg">mail_outline</i><input class="text-center" placeholder="Digite seu email"></span>
                 
@@ -174,8 +173,8 @@
         
       <div class="features text-center">
         <div class="container">
-            <h2 class="primary">Adeus burocracia. Olá, Contabilizei.</h2>
-            <p class="texto">Simplificamos a contabilidade para você ganhar tempo e dinheiro.</p>
+            <h2 class="primary">Adeus burocracia. <br class="visible-xs">Olá, Contabilizei.</h2>
+            <p class="texto" style="opacity:0.5">Simplificamos a contabilidade para <br class="visible-xs">você ganhar tempo e dinheiro.</p>
         
           
             <div class="col-md-8 col-md-offset-2">
@@ -184,23 +183,37 @@
                     <div class="inteligente">
                         <h3 class="padding-vert">Se regularize de forma inteligente e acessível</h3>
                     </div>
-                        <div class="col-md-2">
-                            <div class="bg-cinza">
+                        <div class="col-md-2 col-xs-12">
+                            
+                            <div class="bg-cinza hidden-xs">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active"><a href="#notas" aria-controls="home" role="tab" data-toggle="tab"><i class="material-icons">list</i></a></li>
+                                    
                                     <li role="presentation"><a href="#impostos" aria-controls="profile" role="tab" data-toggle="tab"><i class="material-icons">account_balance</i></a></li>
+                                    
                                     <li role="presentation"><a href="#rotinas" aria-controls="messages" role="tab" data-toggle="tab"><i class="material-icons">check_circle</i></a></li>
 
                                 </ul>
                             </div>
 
+                            <div class="bg-cinza visible-xs">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="col-xs-4 active" role="presentation"><a href="#notas" aria-controls="home" role="tab" data-toggle="tab"><i class="material-icons">list</i></a></li>
+                                    
+                                    <li class="col-xs-4" role="presentation"><a href="#impostos" aria-controls="profile" role="tab" data-toggle="tab"><i class="material-icons">account_balance</i></a></li>
+                                    
+                                    <li class="col-xs-4" role="presentation"><a href="#rotinas" aria-controls="messages" role="tab" data-toggle="tab"><i class="material-icons">check_circle</i></a></li>
+
+                                </ul>
+                            </div>
+                            
                         </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10 col-xs-12">
                             <div class="tab-content text-left">
                             
                             
                                 <div role="tabpanel" class="tab-pane active animated fadeIn" id="notas">
-                                    <div class="col-md-9">
+                                    <div class="col-md-9 col-xs-12">
                                         <h4 class="primary">Notas fiscais</h4>
 
                                         <p class="texto feat wow fadeIn" data-wow-delay="0.2s">Importe suas notas fiscais em segundos. Nossa plataforma é compatível com os formatos utilizados pelas prefeituras (NFS-e) e pelos estados (NF-e). Você também pode emitir as notas diretamente na plataforma, poupando seu tempo.</p>
@@ -270,14 +283,30 @@
                         <h3 class="padding-vert">Nossos serviços</h3>
                     </div>
                         <div class="col-md-2">
-                            <div class="bg-cinza">
+                            
+                            <div class="bg-cinza hidden-xs">
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active"><a href="#pc" aria-controls="home" role="tab" data-toggle="tab"><i class="material-icons">store</i></a></li>
+                                    
                                     <li role="presentation"><a href="#tablet" aria-controls="profile" role="tab" data-toggle="tab"><i class="material-icons">account_balance_wallet</i></a></li>
+                                    
                                     <li role="presentation"><a href="#smartphone" aria-controls="messages" role="tab" data-toggle="tab"><i class="material-icons">local_grocery_store</i></a></li>
 
                                 </ul>
                             </div>
+
+                            <div class="bg-cinza visible-xs">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="col-xs-4 active" role="presentation"><a href="#pc" aria-controls="home" role="tab" data-toggle="tab"><i class="material-icons">store</i></a></li>
+                                    
+                                    <li class="col-xs-4" role="presentation"><a href="#tablet" aria-controls="profile" role="tab" data-toggle="tab"><i class="material-icons">account_balance_wallet</i></a></li>
+                                    
+                                    <li class="col-xs-4" role="presentation"><a href="#smartphone" aria-controls="messages" role="tab" data-toggle="tab"><i class="material-icons">local_grocery_store</i></a></li>
+
+                                </ul>
+                            </div>
+                            
+                          
 
                         </div>
                     <div class="col-md-10">
@@ -428,7 +457,7 @@
                 <div class="col-md-4 col-md-offset-2">
                     <div class="card cardBranco wow fadeIn">
                         <div class="headerDepoimento text-center bg-azul">
-                            <img src="/assets/img/angelo.png" class="pull-left imgSombra marginEsquerda">
+                            <img src="/assets/img/angelo.png" class="img-responsive pull-left imgSombra marginEsquerda">
                             <span class="nome">Angelo Nunes</span><br><span class="empresa">RedFire Tecnologia</span>
                         </div>
                         <div class="depoimento">
@@ -442,7 +471,7 @@
                 <div class="col-md-4">
                     <div class="card cardBranco wow fadeIn">
                         <div class="headerDepoimento text-center bg-azul">
-                            <img src="/assets/img/sergio.png" class="pull-right imgSombra marginDireita">
+                            <img src="/assets/img/sergio.png" class="img-responsive pull-right imgSombra marginDireita">
                             <span class="nome">Sergio Moschioni</span><br><span class="empresa">Visual Project</span>
                            
                         </div>
@@ -459,7 +488,7 @@
                 <div class="col-md-4 col-md-offset-2">
                     <div class="card cardBranco wow fadeIn" data-wow-delay="0.2s">
                         <div class="headerDepoimento text-center bg-azul">
-                            <img src="/assets/img/daniela.png" class="pull-left imgSombra marginEsquerda">
+                            <img src="/assets/img/daniela.png" class="img-responsive pull-left imgSombra marginEsquerda">
                             <span class="nome">Daniela P. da Silva</span><br><span class="empresa">R&D Informática</span>
                         </div>
                         <div class="depoimento">
@@ -475,7 +504,7 @@
                 <div class="col-md-4">
                     <div class="card cardBranco wow fadeIn" data-wow-delay="0.2s">
                         <div class="headerDepoimento text-center bg-azul">
-                            <img src="/assets/img/alessandro.png" class="pull-right imgSombra marginDireita">
+                            <img src="/assets/img/alessandro.png" class="img-responsive pull-right imgSombra marginDireita">
                             <span class="nome">Alessandro Tausz</span><br><span class="empresa">Onfiak Solutions</span>
                            
                         </div>
@@ -644,6 +673,7 @@
         
         
     <!-- BOTAO DE AJUDA -->
+<!--
     <div id="btn-ajuda-fixed">
         <a class="botaoajuda" href="javascript:void(0);">
             <p><i class="material-icons" style="padding-right:6px; font-size:1.3em;">help</i>Ajuda</p>
@@ -664,40 +694,32 @@
         </div>
 
     </div>
+-->
         
     <!-- CSS -->
     <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/botao2016.css">
+<!--    <link rel="stylesheet" href="/assets/css/botao2016.css">-->
 
     <!-- Javascripts -->
     <script src="/assets/js/wow.min.js"></script>
     <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script async type="text/javascript" src="/assets/js/botao-ajuda.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="/assets/js/counterup.js"></script>
+<!--    <script async type="text/javascript" src="/assets/js/botao-ajuda.js"></script>-->
     
-    <script src="js/wow.min.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
     <script>
     new WOW().init();
     </script>
         
-    <script>
-         jQuery(document).ready(function($) {
-             $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-             });
-         });
-    </script>
+   
         
     <script>
     $(document).ready(function(){
-      $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 60) { // check if user scrolled more than 50 from top of the browser window
-          $(".navbar-fixed-top").addClass("contabilizei2"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 60) { 
+          $(".navbar-fixed-top").addClass("contabilizei2"); 
         } else {
-          $(".navbar-fixed-top").removeClass("contabilizei2"); // if not, change it back to transparent
+          $(".navbar-fixed-top").removeClass("contabilizei2"); 
         }
       });
     });

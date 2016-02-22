@@ -15,7 +15,6 @@ body {
     font-weight:300;
 }
 .contabilizei2 {
-    
     background:#fff;
     box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
     transition:0.2s;
@@ -105,9 +104,7 @@ body {
     color:gray !important;
 }
 
-.nav>li {
-    border:1px solid transparent;
-}
+
 .contabilizei2 .material-icons, .contabilizei2  .cadastre {
     display: inline-block;
     font-size:14px;
@@ -465,7 +462,7 @@ h4 {
     padding:30px 0 30px 9px;
 }
 
-input {
+.navlead input {
     background-color:transparent;
     border:none;
     border-bottom:2px solid rgba(255,255,255,.6);
@@ -474,10 +471,10 @@ input {
     width:300px;
     transition:0.5s ease;
 }
-input:hover {
+.navlead input:hover {
     border-bottom:2px solid #fff;
 }
-input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s ease; }
+.navlead input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s ease; }
 .margin-neg {
     margin-right:-40px;
     color:rgba(255,255,255,.6);
@@ -585,4 +582,106 @@ input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s eas
 }
 .botoes {
     padding:20px 0;
+}
+
+
+
+
+/* Responsivo */
+
+@media (max-width: 768px) { 
+    
+    .contabilizei2 { 
+        height:50px;
+    }
+    .navtopo {
+        padding:0
+    }
+    .logo {
+        margin-left:10px;
+        margin-top:3px;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color:#FFF;
+        
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color:#2196F3;
+    }
+    .navbar-default .navbar-toggle {
+        background-color:#2196F3;
+        border:none;
+        border:1px solid #2196F3;
+    }
+    .navbar-collapse {
+        background-color:#fff;
+    }
+    .dropdown-menu {
+        width:100%;
+    }
+    .jumbotron h1 {
+        font-size:28px;
+    }
+    .features .container {
+        padding:0;
+    }
+    .features {
+        padding:28px 0;
+        border-top:1px solid #e8e8e8;
+    }
+    .features h2 {
+        font-size:28px;
+    }
+    .cardBig {
+        margin:40px 0;
+        min-height:500px;
+    }
+    .nav-tabs .material-icons {
+        font-size:29px;
+        line-height:1.91em;
+    }
+    .card .col-md-2 {
+        width:100%;
+        border-right:none;
+    }
+    .card .nav>li>a {
+        padding:10px;
+    }
+    h3 {
+        font-size:20px;
+        line-height:1.5em;
+    }
+    .padding-vert {
+        padding:15px;
+    }
+    .features .bg-cinza {
+        border-bottom:1px solid #e8e8e8;
+    }
+    .features .col-xs-4 {
+        padding:0;
+    }
+    .nav-tabs>li {
+        border-bottom:none;
+        padding:20px 0;
+    }
+    .features h4 {
+        padding:0;
+    }
+    .card .col-md-9 {
+        padding:0 5px;
+    } 
+    .card .texto {
+        font-size:14px;
+    }
+    .marginEsquerda {
+        margin-left:0px;
+        margin-top:-15px;
+    }
+    .marginDireita {
+        margin-right:0px;
+        margin-top:-15px;
+    }
+
+    
+    
 }
