@@ -1,6 +1,7 @@
 body {
     background-color:#fafafa;
     font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
     font-size:14px;
 }
 
@@ -13,12 +14,13 @@ body {
     vertical-align: middle;
     background:transparent;
     font-weight:300;
+    height:59px;
 }
 .contabilizei2 {
     background:#fff;
     box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
     transition:0.2s;
-    height:59px;
+
 }
 .navbar img {
     display: inline-block;
@@ -88,6 +90,11 @@ body {
 }
 .dropdown-menu {
     background-color:#fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color:#777;
+    font-weight:500;
+    opacity:0.74;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>li:hover, .navbar-nav>li:focus, .navbar-nav>li>a:active {
@@ -710,6 +717,7 @@ h4 {
     .reservado {
         padding:10px 20px;
     }
+    
 }
 
 
