@@ -65,7 +65,7 @@
         
 
 		<!-- Fontes Customizadas -->
-        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
 		
 
@@ -508,7 +508,7 @@ Siga o passo a passo abaixo.</p><br>
             
         </div>
 
-        <div class="simule animated fadeIn" style="padding-top:40px; padding-bottom:20px; background-color:#1392ff; border-top:1px solid #fff; border-bottom:1px solid #fff;" ng-controller="SimuladorController">
+        <div class="simule" ng-controller="SimuladorController" >
 
             
                 <div class="container">
@@ -520,7 +520,7 @@ Siga o passo a passo abaixo.</p><br>
                             <h2 style="font-size:2em; font-weight:300; padding-bottom:30px;line-height:1.5em; color:#fff">Depois de abrir a empresa, qual vai ser o custo para mantê-la?</h2>
 
 
-                            <h3 style="color:#fff; font-weight:300; border-bottom:1px dashed rgba(255,255,255,.5); padding-bottom:20px;">Simule aqui seus gastos com contabilidade:</h3>
+                            <h3 class="text-center" style="color:#fff; font-weight:300; border-bottom:1px dashed rgba(255,255,255,.5); padding-bottom:20px;">Simule aqui seus gastos com contabilidade:</h3>
                             <br>
                             <br>
                             <br>
@@ -528,47 +528,45 @@ Siga o passo a passo abaixo.</p><br>
 
                         </div>
 
+                    </div>
+                    <div class="row">
+                       
+                            <div class="calculadora col-md-4 col-md-offset-2">
 
-
-                        <div class="calculadoras col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0" id="especial" style="border: 1px solid #e8e8e8; padding: 30px 0 30px 0; border-radius: 20px;    background-color: #fff; border-bottom: 5px solid #e8e8e8;">
-
-                            <div class="btn-group" data-toggle="buttons">
-                                <label class="btn btn-primary active" id="tab-sn" ng-click="simples = true">
-                                    <a aria-controls="home" role="tab" data-toggle="tab">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
-                                        <h4>Simples Nacional</h4></a>
-                                </label>
-                                <label class="btn btn-primary" id="tab-lp" ng-click="simples = false">
-                                    <a aria-controls="home" role="tab" data-toggle="tab">
-                                        <input type="radio" name="options" id="option2" autocomplete="off">
-                                        <h4>Lucro Presumido</h4></a>
-                                </label>
-                            </div>
+                                <div class="col-md-12 col-xs-12 btn-group" data-toggle="buttons">
+                                    <label class="col-md-6 col-xs-6 btn btn-primary active" id="tab-sn" ng-click="simples = true">
+                                        <a aria-controls="home" role="tab" data-toggle="tab">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                            <h4>Simples Nacional</h4></a>
+                                    </label>
+                                    <label class="col-md-6 col-xs-6 btn btn-primary" id="tab-lp" ng-click="simples = false">
+                                        <a aria-controls="home" role="tab" data-toggle="tab">
+                                            <input type="radio" name="options" id="option2" autocomplete="off">
+                                            <h4>Lucro Presumido</h4></a>
+                                    </label>
+                                </div>
 
                             <!-- Tab panes -->
-                            <br>
-                            <br>
-                            <p>Quantos sócios tem sua empresa?</p>
+                            
+                            <p class="text-center" style="padding-top: 110px;">Quantos sócios tem sua empresa?</p>
 
-                            <div class="input-group">
-                                <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
+                            <div class="input-group text-center">
+                                <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; margin:0 auto; font-weight:700">
                             </div>
-                            <br>
-                            <br>
-                            <p>Quantos funcionários?</p>
+                            
+                            <p class="text-center" style="padding-top:30px;">Quantos funcionários?</p>
 
                             <div class="input-group">
 
-                                <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
+                                <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; font-weight:700">
 
                             </div>
-                            <br>
-                            <br>
-                            <p>Qual seu faturamento mensal?</p>
+                           
+                            <p class="text-center"  style="padding-top:30px;">Qual seu faturamento mensal?</p>
 
                             <div class="input-group">
 
-                                <div class="dropdown">
+                                <div class="dropdownz">
                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; text-align:center; font-size:1.2em; line-height:2.5em; font-weight:700">
                                         {{ltFaturamento[indice]}}&nbsp;&nbsp;
                                         <span class="caret"></span>
@@ -580,39 +578,38 @@ Siga o passo a passo abaixo.</p><br>
                                 <br class="visible-lg visible-md">
                             </div>
 
+                        
                         </div>
-
                         <div class="col-md-1 hidden-sm hidden-xs hidden-md" style="font-size: 3em;color: #fff; padding-top:90px;">
                             <br>
-                            <br>
+                            
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         </div>
 
-                        <div class="col-md-4 col-xs-12" style="padding-top:0px; background-color:transparent; color:#fff; border:none;">
+                        <div class="col-md-4 col-xs-12 text-center" style="padding-top:0px; background-color:transparent; color:#fff; border:none;">
+                            <br class="visible-xs"><br class="visible-xs">
                             Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>,
                             <br>
-                            <br><strong>sua mensalidade será de:</strong>
+                            <br>Sua mensalidade será:
                             <br>
                             <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês<br><span style="color:#B7DEFF;">PS: <span style="text-decoration:underline">Não</span> cobramos 13º</span></strong>
 
                             <br>
-                            <hr style="width:40%"><strong>o que você vai economizar:</strong>
+                            <hr style="width:40%">Você vai economizar:
                             <br>
                             <span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span><strong> / ano</strong>
 
+                            
+                            <a href="#migre"><button class="accent big" style="font-size:1.4em">abrir empresa grátis</button></a>
                             <br>
                             <br>
-                            <a href="#migre"><button class="accent big" style="font-size:1.4em">abrir empresa grátis :)</button></a>
-                            <br>
-                            <br class="visible-xs">
-                            <p style="font-size:0.8em; color:#fff; font-weight:300; padding-top:10px;">Já possui empresa?
-                                <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="text-decoration:underline;">Contabilidade a partir de R$ 49 / mês</a></p>
+                            <p class="abrirempre"><span class="opacidade">Já tem empresa?</span> <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="color:#fff; text-decoration:underline;">Contabilidade a partir de R$ 49 / mês</a></p>
 
                         </div>
 
                     </div>
-                    <div class="row">
-                        <br class="hidden-xs hidden-sm">
+                    <div class="row text-center">
+                        <br class="visible-xs"><section id="migre"></section>
                         <br class="hidden-xs hidden-sm"><small><p style="padding:5px 15px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna com clientes sobre o custo do serviço de contabilidade anterior (R$394/mês).</span></p></small>
                     </div>
                 </div>
@@ -628,12 +625,24 @@ Siga o passo a passo abaixo.</p><br>
 
 
 		<!-- Migre hoje sua empresa -->
-		<section id="migre">
+		
         <div class="migre">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7">
 
+						<h2>Estamos prontos para fazer a<br class="visible-lg visible-md"> abertura da sua empresa</h2>
+						<br><p><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;O cadastro é rápido e sem burocracia, <strong>preencha em apenas 5 minutos</strong><br>
+								<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;Estamos prontos para te atender com agilidade, <strong>conte conosco em todo o processo</strong><br>
+								<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;Temos uma equipe fanática para manter <strong>sua empresa 100% regularizada</strong>
+
+							</p>
+						<br>
+						<img src="/assets/img/equipe.jpg" class="img-thumbnail hidden-sm hidden-xs">
+
+					</div>
+
+					<div class="col-md-5 col-sm-10">
 
 							<h3>Inicie agora mesmo <span class="glyphicon glyphicon-ok hidden-xs" aria-hidden="true"></span></h3>
 							<p class="visible-lg visible-md">economia e eficiência comprovadas para você :)</p>
@@ -641,43 +650,42 @@ Siga o passo a passo abaixo.</p><br>
 
 						<form class="form-horizontal"  id="form-abertura" role="form" method="post">
 							<div class="form-group has-feedback">
-								
-                                
+								<div class="col-lg-12">
 									<input type="nome" class="form-control" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
 									<span class="glyphicon form-control-feedback"></span>
-								
+								</div>
 							</div>
 							<div class="form-group has-feedback">
-								
+								<div class="col-lg-12">
 									<input type="nome" class="form-control" name="cpf" id="cpf" placeholder="CPF">
 									<span class="glyphicon form-control-feedback"></span>
-								
+								</div>
 							</div>
 
 							<div class="form-group has-feedback">
-								
+								<div class="col-lg-12">
 									<input type="nome" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
 									<span class="glyphicon form-control-feedback"></span>
-								
+								</div>
 							</div>
 							<div class="form-group has-feedback">
-								
+								<div class="col-lg-12">
 									 <input type="nome" class="form-control" name="email" id="email" placeholder="E-mail">
 									<span class="glyphicon form-control-feedback"></span>
-							
+								</div>
 							</div>
 							<div class="form-group has-feedback">
-								
+								<div class="col-lg-12">
 									<input type="password" class="form-control" name="senha" id="senha" placeholder="Defina sua senha">
 									<span class="glyphicon form-control-feedback"></span>
-								
+								</div>
 							</div>
 							<div class="form-group">
-								
-									<button id="completa-abertura" class="accent big" align="center">Iniciar Cadastro</button><p class="abrirempre">Já possui empresa? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank">Contabilidade a partir de R$ 49 / mês</a></p>
+								<div class="col-lg-12" align="center">
+									<button id="completa-abertura"  align="center" class="accent big" style="width:100%;margin:0">Iniciar abertura de empresa grátis</button><p class="abrirempre">Já possui empresa? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank">Contabilidade a partir de R$ 49 / mês</a></p>
 							<hr>
 									<span class="aoclicar">Ao clicar você concorda com os <a href="/termos-de-uso/Termos-de-uso-19032014.pdf" target="blank_">termos de uso</a>.</span>
-								
+								</div>
 							</div>
 						  </form>
 
@@ -685,7 +693,7 @@ Siga o passo a passo abaixo.</p><br>
 				</div>
 			</div>
 		</div>
-		</section>
+		
 
 		
 
@@ -740,7 +748,7 @@ Siga o passo a passo abaixo.</p><br>
 							<li><em><a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/204434705-Quais-Atividades-A-Contabilizei-N%C3%83O-Realiza-" target="_blank">veja a lista completa aqui </a></em>&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right" style="font-size:0.8em; color:#b5b5b5;"></span></li>
 						</ul>
 
-						<p class="tranquilo"><span style="font-size:1.2em; padding-bottom:10px; font-weight:700;">Por que oferecemos<br class="visible-xs"> serviços extras?</span><br><span style="font-size:0.9em">Estes serviços raramente são solicitados. Nosso modelo de negócios está baseado no que oferecemos via mensalidade para manter sua empresa 100% regularizada com economia. No entanto, caso precise de um serviço extra, estamos aqui para te apoiar.</span></p>
+						<p class="tranquilo"><span style="font-size:1.2em; padding-bottom:10px; font-weight:700;">Por que oferecemos<br class="visible-xs"> serviços extras?</span><br><br class="hidden-xs"><br class="hidden-xs"><span style="font-size:0.9em">Estes serviços raramente são solicitados. Nosso modelo de negócios está baseado no que oferecemos via mensalidade para manter sua empresa 100% regularizada com economia. No entanto, caso precise de um serviço extra, estamos aqui para te apoiar.</span></p>
 
 					</div>
 				</div>
