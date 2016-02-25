@@ -15,12 +15,15 @@ body {
     background:transparent;
     font-weight:300;
     height:59px;
+    transition:0.2s ease;
 }
 .contabilizei2 {
     background:#fff;
     box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
-    transition:0.2s;
-
+    transition:0.2s ease;
+}
+.contabilizei:hover {
+    box-shadow:0 84px 100px 0 rgba(0, 0, 0, 0.1), 0 29px 58px 0 rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
 }
 .navbar img {
     display: inline-block;
@@ -103,6 +106,9 @@ body {
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color:transparent;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color:#777;
 }
 .dropdown:hover a {
     color: #0097F6 !important;
@@ -600,6 +606,11 @@ h4 {
     
     .contabilizei2 { 
         height:50px;
+    }
+    .contabilizei:hover {
+    background:#fff;
+    box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
+    transition:0.2s ease;
     }
     .navtopo {
         padding:0

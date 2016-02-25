@@ -4,9 +4,7 @@
     transition:0.2s;
     height:59px;
 }
-.contabilizei:hover {
-    box-shadow:0 84px 100px 0 rgba(0, 0, 0, 0.1), 0 29px 58px 0 rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
-}
+
 .jumbotron {
     background:none;
     background-color:#2196F3;
