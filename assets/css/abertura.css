@@ -2,7 +2,6 @@
     background:#fff;
     box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
     transition:0.2s;
-    height:59px;
 }
 h2 {
     font-size:2em;
@@ -239,14 +238,14 @@ h2 {
     margin-bottom:0;
 }
 .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
-    color:#E24B65 !important
+    color:#FF4A4A !important
 }
 .has-error .form-control {
     box-shadow:none !important;
-    border-color:#E24B65 !important;
+    border-color:#FF4A4A !important;
 }
 .has-error .form-control-feedback {
-    color:#E24B65 !important
+    color:#FF4A4A !important
 }
 .has-success .form-control {
     box-shadow:none !important;
@@ -266,12 +265,12 @@ h2 {
     margin-left: 10px;
 }
 .migre {
-	padding:35px 0 60px 0;
-    
+	padding:60px 0;
+    border-bottom:1px solid #e8e8e8;
 }
 .migre input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s ease; }
 .migre h2 {
-	line-height:1.2em;
+	line-height:1.5em;
 }
 .migre h3 {
 	font-weight:700;
@@ -290,7 +289,11 @@ h2 {
 .migre .col-md-5 {
 	padding:30px 40px 20px 40px;
     background-color:#fff;
-    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.15);
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.3);
+    border-radius:6px;
+}
+.migre img {
+    box-shadow:0px 4px 9px 0px rgba(0,0,0,0.3);
     border-radius:6px;
 }
 .verde {
@@ -304,5 +307,8 @@ h2 {
     }
     .btn-primary {
     transition:0s;
+    }
+    .big {
+        padding:12px 30px;
     }
 }

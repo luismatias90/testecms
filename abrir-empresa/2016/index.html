@@ -129,7 +129,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                 
               </button>
-              <a class="navbar-brand" href="/2016/"><img src="/assets/img/logo2016.png" class="img-responsive logo" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
+              <a class="navbar-brand" href="/2016/"><img src="/assets/img/logo2016.png" class="img-responsive logo hidden-sm hidden-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"><img src="/assets/img/logo2016.png" class="img-responsive visible-sm visible-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
             </div> 
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -182,7 +182,7 @@
                     
                   </ul>
                 </li>
-                <li class="cadastre animated fadeIn hidden-xs"><a href="#migre" class="linkBotao2"><button class="accent menorzin">Abrir empresa grátis</button></a></li>
+                <li class="cadastre animated fadeIn hidden-xs hidden-sm"><a href="#migre" class="linkBotao2"><button class="accent menorzin">Abrir empresa grátis</button></a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -192,7 +192,7 @@
               
                 <h1>Abrir empresa é grátis</h1>
                 
-                <p class="texto">Você contrata o serviço de contabilidade online com mensalidade a partir de R$ 49/mês, <br class="hidden-xs"> paga as taxas do governo e protocola a documentação nos órgãos públicos<br class="hidden-xs"> para abrir sua empresa.
+                <p class="texto">Você contrata o serviço de contabilidade online com mensalidade a partir de R$ 49/mês, <br class="hidden-xs hidden-sm"> paga as taxas do governo e protocola a documentação nos órgãos públicos<br class="hidden-xs hidden-sm"> para abrir sua empresa.
 Siga o passo a passo abaixo.</p><br>
 
                 <a href="#quetipo" ><button class="accent big">Quero abrir minha empresa</button></a>
@@ -455,7 +455,7 @@ Siga o passo a passo abaixo.</p><br>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
 
-                            <h2  class="opacidade">Entenda a abertura de empresa grátis:</h2>
+                            <h2  class="opacidade">Entenda a abertura de empresa grátis:<br><br></h2>
 
 
 
@@ -515,14 +515,12 @@ Siga o passo a passo abaixo.</p><br>
                     <div class="row">
 
 
-                        <div class="col-md-6 col-md-offset-3">
+                        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
 
-                            <h2 style="font-size:2em; font-weight:300; padding-bottom:30px;line-height:1.5em; color:#fff">Depois de abrir a empresa, qual vai ser o custo para mantê-la?</h2>
+                            <h2 style="font-size:2em; font-weight:300; padding-bottom:30px;line-height:1.5em; color:#fff">Depois de abrir a empresa, qual vai ser o custo para mantê-la? Simule abaixo:</h2>
 
 
-                            <h3 class="text-center" style="color:#fff; font-weight:300; border-bottom:1px dashed rgba(255,255,255,.5); padding-bottom:20px;">Simule aqui seus gastos com contabilidade:</h3>
-                            <br>
-                            <br>
+                           
                             <br>
 
 
@@ -531,7 +529,7 @@ Siga o passo a passo abaixo.</p><br>
                     </div>
                     <div class="row">
                        
-                            <div class="calculadora col-md-4 col-md-offset-2">
+                            <div class="calculadora col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6">
 
                                 <div class="col-md-12 col-xs-12 btn-group" data-toggle="buttons">
                                     <label class="col-md-6 col-xs-6 btn btn-primary active" id="tab-sn" ng-click="simples = true">
@@ -580,13 +578,13 @@ Siga o passo a passo abaixo.</p><br>
 
                         
                         </div>
-                        <div class="col-md-1 hidden-sm hidden-xs hidden-md" style="font-size: 3em;color: #fff; padding-top:120px; opacity:0.5">
+                        <div class="col-lg-1 hidden-sm hidden-xs hidden-md" style="font-size: 3em;color: #fff; padding-top:120px; opacity:0.5">
                             <br>
                             
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         </div>
 
-                        <div class="col-md-4 col-xs-12 text-center" style="padding-top:0px; background-color:transparent; color:#fff; border:none;">
+                        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 text-center" style="padding-top:0px; background-color:transparent; color:#fff; border:none;">
                             <br class="visible-xs"><br class="visible-xs">
                             Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>,
                             <br>
@@ -600,17 +598,18 @@ Siga o passo a passo abaixo.</p><br>
                             <span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span><strong> / ano</strong>
 
                             
-                            <a href="#migre"><button class="accent big" style="font-size:1.4em">abrir empresa grátis</button></a>
+                            <a href="#migre" class="hidden-md"><button class="accent big" style="font-size:1.4em">abrir empresa grátis</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px">abrir empresa grátis</button></a>
+                            <br class="hidden-md">
                             <br>
-                            <br>
-                            <p class="abrirempre"><span class="opacidade">Já tem empresa?</span> <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="color:#fff; text-decoration:underline;">Contabilidade a partir de R$ 49 / mês</a></p>
+                            <br class="visible-sm">
+                            <p class="abrirempre hidden-sm"><span class="opacidade">Já tem empresa?</span> <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="color:#fff; text-decoration:underline;">Contabilidade a partir de R$ 49 / mês</a></p>
 
                         </div>
 
                     </div>
                     <div class="row text-center">
                         <br class="visible-xs"><section id="migre"></section>
-                        <br class="hidden-xs hidden-sm"><small><p style="padding:5px 15px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna com clientes sobre o custo do serviço de contabilidade anterior (R$394/mês).</span></p></small>
+                        <br class="hidden-xs hidden-sm"><small><p style="padding:5px 15px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna  com clientes <br class="visible-sm">sobre o custo do serviço de contabilidade anterior (R$394/mês).</span></p></small>
                     </div>
                 </div>
            
@@ -629,22 +628,17 @@ Siga o passo a passo abaixo.</p><br>
         <div class="migre">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-7">
+					<div class="col-md-7 text-center">
 
-						<h2>Estamos prontos para fazer a<br class="visible-lg visible-md"> abertura da sua empresa</h2>
-						<br><p><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;O cadastro é rápido e sem burocracia, <strong>preencha em apenas 5 minutos</strong><br>
-								<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;Estamos prontos para te atender com agilidade, <strong>conte conosco em todo o processo</strong><br>
-								<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;Temos uma equipe fanática para manter <strong>sua empresa 100% regularizada</strong>
-
-							</p>
-						<br>
-						<img src="/assets/img/equipe.jpg" class="img-thumbnail hidden-sm hidden-xs">
+						<h2>Conheça a equipe que já abriu mais de <br>1.600 empresas em todo Brasil:</h2>
+						
+						<img src="/assets/img/equipe.jpg" class="hidden-sm hidden-xs">
 
 					</div>
 
 					<div class="col-md-5 col-sm-10 text-center">
 
-							<h3>Comece hoje uma vida nova</h3>
+							<h3>Estamos todos te esperando, vem!</h3>
 							
 
 						<form class="form-horizontal"  id="form-abertura" role="form" method="post">

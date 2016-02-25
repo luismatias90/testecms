@@ -14,7 +14,7 @@ body {
     vertical-align: middle;
     background:transparent;
     font-weight:300;
-    height:59px;
+    height:70px;
     transition:0.2s ease;
 }
 .contabilizei2 {
@@ -32,7 +32,7 @@ body {
 
 
 .navtopo {
-    padding-top:8px;
+    padding-top:12px;
 }
 .logo {
     margin-left:130px;
@@ -98,20 +98,22 @@ body {
     background-color:#fff;
 }
 .navbar-default .navbar-nav>li>a {
-    color:#777;
-    font-weight:500;
+    color:#9C9C9C;
+    font-weight:400;
+    padding-bottom: 22px;
     
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>li:hover, .navbar-nav>li:focus, .navbar-nav>li>a:active {
     border-bottom:none;
     box-shadow: inset 0 -3px 0px #0097F6;
+    
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color:transparent;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color:#777;
+    color:#9C9C9C;
 }
 .dropdown:hover a {
     color: #0097F6 !important;
@@ -509,6 +511,7 @@ h4 {
 .menorzin {
     padding:10px 30px;
     margin:0;
+    margin-top: 3px;
     box-shadow:inset 0 1px 0 0 rgba(255,255,255,.1), 0px 2px 2px rgba(0,0,0,.09);
 }
 .menorzin:hover {
