@@ -59,7 +59,10 @@ body {
     margin:0 auto;
 }
 
-.contabilizei .material-icons, .contabilizei .cadastre {
+.contabilizei .material-icons {
+    font-size:14px;
+}
+.contabilizei .cadastre {
     display: none;
 }
 
@@ -118,7 +121,7 @@ body {
 }
 
 
-.contabilizei2 .material-icons, .contabilizei2  .cadastre {
+.contabilizei2  .cadastre {
     display: inline-block;
     font-size:14px;
     transition:0.5s ease;
