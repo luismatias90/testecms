@@ -97,7 +97,7 @@ body {
 .navbar-default .navbar-nav>li>a {
     color:#777;
     font-weight:500;
-    opacity:0.74;
+    
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>li:hover, .navbar-nav>li:focus, .navbar-nav>li>a:active {
