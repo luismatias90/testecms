@@ -9,27 +9,39 @@ h2 {
 .jumbotron {
     background:none;
     background-color:#2196F3;
-    padding:60px 0 20px 0;
+    padding:140px 0 100px 0;
     color:#fff;
     margin:0;
 }
 .jumbotron h1 {
     font-weight:700;
     font-size:3em;
-    margin:60px 0 40px 0;
+    margin:0;
+}
+.jumbotron h2 {
+    margin:0;
+    padding:10px 0 40px 0;
+   
 }
 .linkBotao2 {
     padding:0 !important;
     box-shadow:none !important;
 }
 .jumbotron .texto {
-    opacity:0.8;
+    opacity:0.9;
+    font-size:17px;
+    line-height:2em;
 }
 .jumbotron .abrirempre {
-    padding:40px 0;
+    padding:20px 0;
     font-size:14px;
     font-weight:400;
     color:#fff;
+}
+.jumbotron .big {
+    font-size:22px;
+    padding:20px 60px;
+    font-weight:500;
 }
 .opacidade {
     opacity:0.8;
@@ -301,6 +313,7 @@ h2 {
 }
 .perguntas {
     padding:40px 0;
+    background:#fff;
 }
 .perguntasdefato {
 	padding:40px 0 30px 0;
@@ -320,7 +333,25 @@ h2 {
 	padding:15px 55px; 
 	font-size:1.1em;
 }
-
+.maizin {
+    background-color:#FF6B6B; 
+    color:#FFFFE1; 
+    padding:5px 18px; 
+    font-size:2.5em; 
+    border-radius:100%; 
+    border-bottom:2px solid rgba(0,0,0,.2);
+}
+.adiantamento {
+    font-size:14px;
+    line-height:2em;
+    color:#777;
+}
+.tituloComo {
+    text-transform: uppercase; 
+    letter-spacing:0.2em; 
+    font-size:0.9em;  
+    color:#9F9F91; 
+}
 @media (max-width: 768px) { 
     .simule h4 {
     font-size:16px;
