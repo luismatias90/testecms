@@ -81,6 +81,7 @@ h2 {
 .quempode h3 {
     font-weight:700;
 }
+
 .simule {
     padding-top:40px; 
     padding-bottom:20px; 
@@ -351,6 +352,7 @@ h2 {
     letter-spacing:0.2em; 
     font-size:0.9em;  
     color:#9F9F91; 
+    line-height:2em
 }
 @media (max-width: 768px) { 
     .simule h4 {
