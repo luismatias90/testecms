@@ -20,8 +20,11 @@ h2 {
 }
 .jumbotron h2 {
     margin:0;
-    padding:10px 0 40px 0;
-   
+    padding:10px 0 40px 0;  
+}
+.jumbotron p {
+    line-height:1.8em;
+
 }
 .linkBotao2 {
     padding:0 !important;
@@ -335,25 +338,40 @@ h2 {
 	font-size:1.1em;
 }
 .maizin {
-    background-color:#FF6B6B; 
-    color:#FFFFE1; 
-    padding:5px 18px; 
+    background-color: #F3F3CC;
+    color: #FFFFE1;
+    padding: 7px 18px;
     font-size:2.5em; 
     border-radius:100%; 
-    border-bottom:2px solid rgba(0,0,0,.2);
 }
 .adiantamento {
     font-size:14px;
     line-height:2em;
-    color:#777;
+    color:#9E9E94;
+    letter-spacing:0.5px;
 }
 .tituloComo {
     text-transform: uppercase; 
     letter-spacing:0.2em; 
     font-size:0.9em;  
-    color:#9F9F91; 
+    color:#7D7D75; 
     line-height:2em
 }
+.cifraoPreco {
+    font-size:0.5em;
+    font-weight:400;
+    padding:0 8px;
+    opacity:0.5;
+    vertical-align: middle;
+}
+.precoVerde {
+    color:#5DCA18;
+    font-size:3.5em;
+    vertical-align: middle;
+    font-weight: 400 !important;
+}
+
+
 @media (max-width: 768px) { 
     .simule h4 {
     font-size:16px;
