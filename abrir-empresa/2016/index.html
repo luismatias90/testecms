@@ -490,14 +490,14 @@ Veja como funciona abaixo.</p><br><br>
                                 
 
                                 <h3 class="tituloComo wow fadeIn">3. você protocola o processo <br>na junta comercial:</h3>
-                                <h4 style="font-weight:300;line-height:1.5em;"  class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>57<span class="cifraoPreco">~ R$</span>351  <a href="#modalJunta" data-toggle="modal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.4em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
+                                <h4 style="font-weight:300;line-height:1.5em;"  class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>57<span class="cifraoPreco">~ R$</span>351  <a href="#modalJunta" data-toggle="modal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.3em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
                                 <br>
                                 <span class="maizin wow fadeIn">+</span>
                                 <br>
                                 <br><br>
 
                                 <h3 class="tituloComo wow fadeIn">4. você paga a taxa do alvará<br> para a prefeitura:</h3>
-                                <h4 style="font-weight:300;line-height:1.5em;" class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>120<span class="cifraoPreco">~ R$</span>753 <a href="#modalJunta" data-toggle="modal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.4em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
+                                <h4 style="font-weight:300;line-height:1.5em;" class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>120<span class="cifraoPreco">~ R$</span>753 <a href="#modalJunta" data-toggle="modal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.3em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
 
 
                                 <br>
@@ -592,30 +592,32 @@ Veja como funciona abaixo.</p><br><br>
 
                         
                         </div>
+<!--
                         <div class="col-lg-1 hidden-sm hidden-xs hidden-md" style="font-size: 3em;color: #fff; padding-top:47px; opacity:0.5">
                             <br>
                             
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         </div>
+-->
 
-                        <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 text-center" style="padding-top:25px; background-color:transparent; color:#fff; border:none;">
+                        <div class="calculadoraSimule col-lg-4 col-md-5 col-sm-6 col-xs-12 text-center">
                             
 <!--
                             Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>,
                             <br>
 
                             <br>-->
-                            <span style="font-size:2em; vertical-align: middle; font-weight:300">Sua mensalidade será:
+                            <span style="font-size:1.8em; vertical-align: middle; font-weight:300"><span class="opacidade">Sua mensalidade será:</span>
                             <br>
                             <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</span>
 
                            
-                            <hr style="width:30%; margin-top:20px; margin-bottom:40px; opacity:0.5"><span style="font-weight:300">O que você economiza em um ano:</span>
+                            <hr style="width:30%; margin-top:20px; margin-bottom:40px; opacity:0.5"><span style="font-weight:300" class="opacidade">O que você economiza em um ano:</span>
                             <br><br>
                             <span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span> / ano
 
                             
-                            <br><br><a href="#migre" class="hidden-md"><button class="accent big" style="font-size:1.4em">abrir empresa grátis</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px">Abrir empresa grátis</button></a>
+                            <br><br><a href="#migre" class="hidden-md"><button class="accent big" style="font-size:1.4em">Abrir empresa grátis</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px">Abrir empresa grátis</button></a>
                             
                             <br><br><span style="color:#B7DEFF;">PS: <span style="text-decoration:underline">Não</span> cobramos 13º</span>
                         </div>
