@@ -442,7 +442,7 @@ blockquote {
         min-width:0px;
     }
     .calculadoraSimule { 
-        padding-left:0;
+        padding-left: 15px;
     }
     .quempode {
         padding: 28px 0 60px 0;
@@ -476,7 +476,10 @@ blockquote {
         padding:30px 10px;
     }
     .migre .formEsquerda {
-        padding-right:0px;
+        padding-right:15px;
         padding-top:0
+    }
+    .migre .formulario {
+    padding: 30px 10px 20px 10px;
     }
 }
