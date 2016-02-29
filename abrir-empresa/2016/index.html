@@ -297,25 +297,25 @@ Veja como funciona abaixo.</p><br><br>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 text-center" style="padding-top:0;">
 
-                            <h2 class="opacidade"><strong>{{atividadeSelecionada}}</strong>, que legal! <br class="hidden-xs">Veja a lista de CNAES e alíquotas para você:</h2>
+                            <h2 class="opacidade"><strong>{{atividadeSelecionada}}</strong>, que legal! <br>Veja a lista de CNAES e alíquotas para você:</h2>
 
                             <br class="hidden-xs"><br class="hidden-xs">
 
                             <table class="table table-striped" style="border-bottom:1px solid #e8e8e8;">
 
-                                <th class="text-center">Atividade</th>
-                                <th class="text-center">CNAE</th>
+                                
+                                <th class="text-center listaCnae">CNAE</th>
                                 <th class="text-center">Denominação</th>
                                 <th class="text-center">Alíquota inicial*</th>
-                                <th class="text-center">Simples Nacional</th>
+                                <th class="text-center hidden-xs">Simples Nacional</th>
 
 
                                 <tr ng-repeat="empresa in listaEmpresa">
-                                    <td>{{empresa.atividade}}</td>
-                                    <td style="min-width:100px">{{empresa.codigo}}</td>
-                                    <td style="max-width:300px">{{empresa.denominacao}}</td>
+                                    
+                                    <td >{{empresa.codigo}}</td>
+                                    <td>{{empresa.denominacao}}</td>
                                     <td>{{empresa.aliquota_inicial}}</td>
-                                    <td><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00"></span></td>
+                                    <td class="hidden-xs"><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00"></span></td>
                                 </tr>
 
 
@@ -466,7 +466,7 @@ Veja como funciona abaixo.</p><br><br>
                                 <h3 class="tituloComo wow fadeIn">1. Você contrata nossa contabilidade:</h3>
                                 <h4 style="font-weight:300;line-height:1.5em;"  class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>199 </h4>
                                 
-                                <span class="adiantamento wow fadeIn"  data-wow-delay="0.4s">Este pagamento simboliza uma adesão e vira <br><span style="color:#5DCA18; font-weight:500 !important;">crédito para até 4 mensalidades</span> de contabilidade.</span>
+                                <span class="adiantamento wow fadeIn"  data-wow-delay="0.4s">Este pagamento simboliza uma adesão e vira <br><span style="color:#5DCA18; font-weight:500 !important;" data-toggle="tooltip" title="Só será utilizado a partir do momento que sua empresa estiver aberta.">crédito para até 4 mensalidades</span> de contabilidade.</span>
 
                                 <br>
                                  <hr style="width:90%;border-top:1px dashed rgba(0,0,0,.05); border-bottom:1px dashed rgba(0,0,0,.05)" class=" wow fadeIn" data-wow-delay="0.2s">
@@ -531,7 +531,7 @@ Veja como funciona abaixo.</p><br><br>
 
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
 
-                            <h2 style="font-size:2em; font-weight:300; padding-bottom:30px;line-height:1.5em; color:#fff">Depois de abrir empresa, você vai precisar de contabilidade. Simule a mensalidade abaixo:</h2>
+                            <h2 style="font-size:2em; font-weight:300; padding-bottom:30px;line-height:1.5em; color:#fff">Depois de abrir empresa, nós fazemos a contabilidade dela. Simule a mensalidade abaixo:</h2>
 
 
                            
@@ -646,7 +646,7 @@ Veja como funciona abaixo.</p><br><br>
 				<div class="row">
 					<div class="col-md-7 text-center">
 
-						<h2>Conheça a equipe que já abriu mais de <br><strong>1.600</strong> empresas em todo Brasil:</h2>
+						<h2>Conheça a equipe que já abriu mais de <br><strong>1.600</strong> novas empresas em todo Brasil:</h2>
 						
 						<img src="/assets/img/equipe.jpg" class="hidden-sm hidden-xs">
 
