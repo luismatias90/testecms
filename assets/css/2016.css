@@ -610,7 +610,7 @@ h4 {
 
 @media (max-width: 768px) { 
     
-    .contabilizei2 { 
+    .contabilizei,.contabilizei2 { 
         height:50px;
     }
     .contabilizei:hover {

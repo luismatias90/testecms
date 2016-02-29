@@ -190,29 +190,29 @@
       <div class="jumbotron text-center"> 
           <div class="container">
               
-                <h1>Abrir empresa é grátis.</h1><h2>E simples também:</h2>
+                <h1>Abrir empresa<br class="visible-xs"> é grátis.</h1><h2>E simples também:</h2>
                 
-                <p class="opacidade">Contratando o serviço de contabilidade online com mensalidade a partir de R$49/mês, <br class="hidden-xs"> você paga apenas as taxas do governo e protocola a documentação nos <br class="hidden-xs">órgãos públicos para abrir sua empresa.
-Veja como funciona abaixo.</p><br><br>
+                <p class="opacidade">Contratando o serviço de contabilidade online com mensalidade a partir de <strong>R$49/mês</strong>, <br class="hidden-xs"> você paga apenas as taxas do governo e protocola a documentação nos <br class="hidden-xs">órgãos públicos para abrir sua empresa.
+Veja como funciona abaixo.</p><br class="hidden-xs"><br>
 
                 <a href="#quetipo" ><button class="accent big">Venha, vamos te guiar!</button></a>
-
-              
-          </div> 
-      </div>
-
-
-
-
-
-
-
-		<div class="navlead text-center primary-bg hidden-xs">
-            <div class="container">
-                <p class="wow fadeIn">Confiança de quem já abriu mais de <span class="economiaTotal">1.600</span> novas empresas em todo o Brasil.
                 
-                </p>
-            </div><section id="quetipo"></section>
+              
+          </div>
+      </div> 
+
+
+
+
+
+
+
+		<div class="navlead text-center primary-bg">
+            <div class="container">
+                <p class="wow fadeIn">Confiança de quem já abriu mais de <br class="visible-xs"><span class="economiaTotal">1.600</span><br class="visible-xs"> novas empresas em todo o Brasil.
+                
+                </p><section id="quetipo"></section>
+            </div>
         </div>
 		
 
@@ -226,10 +226,10 @@ Veja como funciona abaixo.</p><br><br>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12  wow fadeIn">
+                       
+                        <h2 class="opacidade">Escolha a área que <br class="visible-xs">deseja abrir empresa:</h2>
 
-                        <h2 class="opacidade">Escolha o tipo de empresa que você deseja abrir:</h2>
-
-                        <br><br>
+                        <br class="hidden-xs"><br>
                     </div>
 
                     <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
@@ -238,7 +238,7 @@ Veja como funciona abaixo.</p><br><br>
 
 
                         <div class="dropdownz">
-                            <button id="selectServico" class="contorno big" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:2em; width:100%; margin:0;">
+                            <button id="selectServico" class="contorno big escolhaAqui" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Escolha aqui
                                 <span class="caret" ></span>
                             </button>
@@ -246,7 +246,7 @@ Veja como funciona abaixo.</p><br><br>
                             <section id="empresaExiste"></section>
                             <section id="empresaNaoExiste"></section>
                             
-                            <ul id="servicos" class="dropdown-menu novoMenu" role="menu" aria-labelledby="dLabel" style="width:95%; margin-left:2.5%; font-size:1.5em; border-radius:6px; margin-bottom:60px;">
+                            <ul id="servicos" class="dropdown-menu novoMenu" role="menu" aria-labelledby="dLabel">
                                 <li><a href="#empresaNaoExiste" ng-click="escolheTipoEmpresa(0)"><em><strong>Meu serviço não consta na lista</strong></em></a></li>
                                 <li><a href="#empresaExiste" ng-click="escolheTipoEmpresa(1)">Advocacia</a></li>
                                 <li><a href="#empresaExiste" ng-click="escolheTipoEmpresa(2)">Agência de Marketing Digital</a></li>
@@ -297,9 +297,9 @@ Veja como funciona abaixo.</p><br><br>
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 text-center" style="padding-top:0;">
 
-                            <h2 class="opacidade"><strong>{{atividadeSelecionada}}</strong>, que legal! <br>Veja a lista de CNAES e alíquotas para você:</h2>
+                            <h2 class="opacidade"><strong>{{atividadeSelecionada}}</strong>, que legal! <br class="hidden-xs">Veja a lista de CNAES e alíquotas para você:</h2>
 
-                            <br class="hidden-xs"><br class="hidden-xs">
+                            <br><br>
 
                             <table class="table table-striped" style="border-bottom:1px solid #e8e8e8;">
 
@@ -329,7 +329,7 @@ Veja como funciona abaixo.</p><br><br>
                             </span>
                            <br>
                             <a href="#quantoCusta">
-                                <button class="accent big" ng-click="goToStep2()" style="margin-top:40px;">Entendendo a abertura grátis</button>
+                                <button class="accent big" ng-click="goToStep2()" style="margin-top:40px;">Veja os custos para abrir empresa</button>
                             </a>
 
 
@@ -356,12 +356,12 @@ Veja como funciona abaixo.</p><br><br>
                                 
                             </style>
 
-<section id="quantoCusta"></section>
+
                         </div>
                     </div>
                 </div>
            
-        </div>
+        </div><section id="quantoCusta"></section>
 
         <!-- Cadastro lead não qualificado -->
         
@@ -455,7 +455,7 @@ Veja como funciona abaixo.</p><br><br>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
 
-                            <h2  class="opacidade">Entenda a abertura de empresa grátis:<br><br></h2>
+                            <h2  class="opacidade">Entenda a abertura <br class="visible-xs">de empresa grátis:<br><br></h2>
 
 
 
@@ -466,14 +466,14 @@ Veja como funciona abaixo.</p><br><br>
                                 <h3 class="tituloComo wow fadeIn">1. Você contrata nossa contabilidade:</h3>
                                 <h4 style="font-weight:300;line-height:1.5em; padding-left:0"  class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>199 </h4>
                                 
-                                <span class="adiantamento wow fadeIn"  data-wow-delay="0.4s">Este pagamento simboliza uma adesão e vira <br><span style="color:#5DCA18; font-weight:500 !important;" data-toggle="tooltip" title="Só será utilizado a partir do momento que sua empresa estiver aberta.">crédito para até 4 mensalidades</span> de contabilidade.</span>
+                                <span class="adiantamento wow fadeIn"  data-wow-delay="0.4s">Este pagamento simboliza uma adesão e vira <br class="hidden-xs"><span style="color:#5DCA18; font-weight:500 !important;" data-toggle="tooltip" title="Só será utilizado a partir do momento que sua empresa estiver aberta.">crédito para até 4 mensalidades</span> de contabilidade.</span>
 
                                 <br>
                                  <hr style="width:90%;border-top:1px dashed rgba(0,0,0,.05); border-bottom:1px dashed rgba(0,0,0,.05)" class=" wow fadeIn" data-wow-delay="0.2s">
                                 <br>
  
 
-                                <h3 class="tituloComo wow fadeIn">2. você inicia o processo de <br>abertura de empresa:</h3>
+                                <h3 class="tituloComo wow fadeIn">2. você inicia o processo de <br class="hidden-xs">abertura de empresa:</h3>
                                 
                                 <br>
                                 
@@ -489,15 +489,15 @@ Veja como funciona abaixo.</p><br><br>
                                 
                                 
 
-                                <h3 class="tituloComo wow fadeIn">3. você protocola o processo <br>na junta comercial:</h3>
-                                <h4 style="font-weight:300;line-height:1.5em; padding-left:0"  class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>57<span class="cifraoPreco">~ R$</span>351  <a href="#modalJunta" data-toggle="modal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.3em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
+                                <h3 class="tituloComo wow fadeIn">3. você protocola o processo <br class="hidden-xs">na junta comercial:</h3>
+                                <h4 style="font-weight:300;line-height:1.5em; padding-left:0"  class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>57<span class="cifraoPreco">~ R$</span>351  <a href="#modalJunta" data-toggle="modal" class="hidden-xs"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.3em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
                                 <br>
                                 <span class="maizin wow fadeIn">+</span>
                                 <br>
                                 <br><br>
 
-                                <h3 class="tituloComo wow fadeIn">4. você paga a taxa do alvará<br> para a prefeitura:</h3>
-                                <h4 style="font-weight:300;line-height:1.5em; padding-left:0" class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>120<span class="cifraoPreco">~ R$</span>753 <a href="#modalJunta" data-toggle="modal"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.3em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
+                                <h3 class="tituloComo wow fadeIn">4. você paga a taxa do alvará<br class="hidden-xs"> para a prefeitura:</h3>
+                                <h4 style="font-weight:300;line-height:1.5em; padding-left:0" class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span>120<span class="cifraoPreco">~ R$</span>753 <a href="#modalJunta" data-toggle="modal" class="hidden-xs"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.3em" data-toggle="tooltip" title="Veja o custo da sua cidade"></span></a></h4>
 
 
                                 <br>
@@ -507,22 +507,22 @@ Veja como funciona abaixo.</p><br><br>
                                 <h3 class="tituloComo wow fadeIn">Média final para abrir sua empresa:</h3>
                                 <h4 style="font-weight:300;line-height:1.5em; padding-left:0" class="wow fadeIn precoVerde" data-wow-delay="0.2s"><span class="cifraoPreco">R$</span> 320</h4>
                                 <hr style="width:90%;border-top:1px dashed rgba(0,0,0,.05); border-bottom:1px dashed rgba(0,0,0,.05)" class="wow fadeIn">
-                                <h4 style="font-weight:300;line-height:2em; font-size:1.4em;" class="wow bounceIn" data-wow-delay="0.4s">Você paga apenas as taxas do governo. <strong><br>O serviço de abertura na Contabilizei é grátis!</strong></h4>
+                                <h4 style="font-weight:300;line-height:2em; font-size:1.4em;" class="wow bounceIn" data-wow-delay="0.4s">Você paga apenas as taxas do governo. <strong><br class="hidden-xs">O serviço de abertura na Contabilizei é grátis!</strong></h4>
                             </div>
                         </div>
                     </div>
-                </div>
+               
 
            
             <br><br><br>
             <a href="#simulador">
-                <button class="accent big wow fadeIn">E depois de abrir?</button><section id="simulador"></section>
+                <button class="accent big wow fadeIn">E depois de abrir?</button>
             </a>
-            
-        </div>
+             </div>
+        </div><section id="simulador"></section>
 
          
-        <div class="simule wow fadeIn" ng-controller="SimuladorController" >
+        <div class="simule" ng-controller="SimuladorController" >
 
             
                 <div class="container">
@@ -531,7 +531,7 @@ Veja como funciona abaixo.</p><br><br>
 
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
 
-                            <h2 style="font-size:2em; font-weight:300; padding-bottom:30px;line-height:1.5em; color:#fff">Depois de abrir empresa, nós fazemos a contabilidade dela. Simule a mensalidade abaixo:</h2>
+                            <h2 class="branco">Depois de abrir empresa, nós fazemos a contabilidade dela. Simule a mensalidade abaixo:</h2>
 
 
                            
@@ -607,7 +607,7 @@ Veja como funciona abaixo.</p><br><br>
                             <br>
 
                             <br>-->
-                            <span style="font-size:1.8em; vertical-align: middle; font-weight:300"><span class="opacidade">Sua mensalidade será:</span>
+                            <span style="font-size:1.6em; vertical-align: middle; font-weight:300"><span class="opacidade">Sua mensalidade será:</span>
                             <br>
                             <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</span>
 
@@ -617,7 +617,12 @@ Veja como funciona abaixo.</p><br><br>
                             <span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span> / ano
 
                             
-                            <br><br><a href="#migre" class="hidden-md"><button class="accent big" style="font-size:1.4em">Abrir empresa grátis</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px">Abrir empresa grátis</button></a>
+                            <br><br><a href="#migre" class="hidden-md hidden-xs"><button class="accent big" style="font-size:1.4em">Abrir empresa grátis</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px">Abrir empresa grátis</button></a>
+                            
+                            
+                            <div class="container visible-xs">
+                                <a href="#migre"><button class="accent big" style="font-size:1.4em">Abrir empresa grátis</button></a>
+                            </div>
                             
                             <br><br><span style="color:#B7DEFF;">PS: <span style="text-decoration:underline">Não</span> cobramos 13º</span>
                         </div>
@@ -645,15 +650,12 @@ Veja como funciona abaixo.</p><br><br>
 			<div class="container">
 				<div class="row">
                     
-                    
-                  
-                    
-                    
-					<div class="formEsquerda col-md-5 col-md-offset-1 text-left">
+
+					<div class="formEsquerda col-md-5 col-md-offset-1 text-left  wow fadeIn">
 
 						<h2 class="opacidade2" style="font-size:1.8em">Confiança de quem já abriu mais de <strong>1.600</strong> novas empresas no Brasil.</h2><br>
                         
-                        <div class="wow fadeIn">
+                        <div>
                             <div>
                                 <img src="/assets/img/angelo.png" class="img-responsive pull-left imgSombra">
                                 <span class="opacidade2">Angelo Nunes<br>RedFire Tecnologia</span>
@@ -855,8 +857,8 @@ Veja como funciona abaixo.</p><br><br>
 
 
 						  <div class="maisduvidas">
-							  <h5>Para outras dúvidas sobre o processo de abertura e contabilidade:</h5><br class="hidden-xs">
-							  <a href="http://suporte.contabilizei.com.br/hc/pt-br/categories/200343969-Abrir-Minha-Empresa" target="_blank"><button class="contorno big" id="suporte">acesse nossa página de suporte</button></a> <!-- <br><p style="font-size:0.9em">ou <a href="http://suporte.contabilizei.com.br/hc/pt-br/requests/new" target="_blank">envie-nos uma mensagem</a></p> -->
+							  <h5 class="opacidade">Para outras dúvidas sobre o processo de abertura e contabilidade:</h5><br class="hidden-xs">
+							  <a href="http://suporte.contabilizei.com.br/hc/pt-br/categories/200343969-Abrir-Minha-Empresa" target="_blank"><button class="contorno big" id="suporte">Acesse a página de suporte</button></a> <!-- <br><p style="font-size:0.9em">ou <a href="http://suporte.contabilizei.com.br/hc/pt-br/requests/new" target="_blank">envie-nos uma mensagem</a></p> -->
 						  </div>
 
 
@@ -869,6 +871,27 @@ Veja como funciona abaixo.</p><br><br>
                 </div>
             </div>
         </section>
+        </div>
+        
+       <div class="midia text-center bg-cinza">
+            <div class="container">
+                <div class="logos col-md-12">
+                    
+                    <a href="http://techcrunch.com/2015/09/27/as-brazilian-economy-descends-into-crisis-tech-is-growing-double-digits/" target="_blank" data-toggle="tooltip" title='"Apesar da crise econômica no Brasil, o setor de tecnologia não para de crescer. (matéria em inglês)"' class="wow fadeIn"><img class="logosMidia" src="/assets/img/logotechcrunch.png"></a>
+
+                    <a href="http://classificados.folha.uol.com.br/negocios/2015/11/1703284-ex-militar-aplica-tatica-de-guerra-para-criar-negocio-de-servicos-contabeis.shtml" target="_blank" data-toggle="tooltip" title='"Ex-militar aplica tática de guerra para criar negócio de serviços contábeis."' class="wow fadeIn" data-wow-delay="0.1s"><img class="logosMidia" src="/assets/img/logofolha.png"></a>
+
+                    <a href="http://exame.abril.com.br/pme/noticias/contabilizei-recebe-investimento-da-kaszek-ventures" target="_blank" data-toggle="tooltip" title='"Contabilizei recebe investimento da KaszeK Ventures."' class="wow fadeIn" data-wow-delay="0.2s"><img class="logosMidia" src="/assets/img/logoexame.png"></a>
+
+                    <a href="https://www.contabilizei.com.br/midia/valor-economico-a-democratizacao-da-contabilidade/" target="_blank" data-toggle="tooltip" title='"Contabilizei: "Democratização da Contabilidade."' class="wow fadeIn" data-wow-delay="0.3s"><img class="logosMidia" src="/assets/img/logovalor.png"></a>
+
+                    <a href="http://revistapegn.globo.com/Noticias/noticia/2014/03/empreendedores-inovam-e-criam-servico-contabil-online.html" target="_blank" data-toggle="tooltip" title='"Conseguiram inovar em uma das áreas mais tradicionais do mercado."' class="wow fadeIn" data-wow-delay="0.4s"><img class="logosMidia" src="/assets/img/logopegn.png"></a>
+                    
+                    <a href="https://queminova.catracalivre.com.br/inclui/startup-oferece-contabilidade-acessivel-a-micro-e-pequenas-empresas/" target="_blank" data-toggle="tooltip" title='"Startup oferece contabilidade acessível a micro e pequenas empresas."' class="wow fadeIn" data-wow-delay="0.5s"><img class="logosMidia" src="/assets/img/logocatraca.png"></a>
+
+                </div>
+
+            </div>
         </div>
                 
        
