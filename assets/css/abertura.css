@@ -7,14 +7,16 @@ h2 {
     font-size:2em;
 }
 .jumbotron {
-    
+    background:none;
     background-color:#2196F3;
     padding:140px 0 100px 0;
     color:#fff;
     margin:0;
+/*
     background-image: url('/assets/img/aberturahero.png');
     background-position: right;
     background-repeat: no-repeat;
+*/
 }
 .jumbotron h1 {
     font-weight:700;
@@ -69,8 +71,6 @@ h2 {
     background-color:#fff;
 }
 .quempode .dropdown-menu {
-	width:290px;
-	margin-left:35px;
 	height: 350px;
 	overflow: auto;
 }
@@ -89,6 +89,8 @@ h2 {
     border-radius:6px; 
     margin-bottom:60px;
 }
+
+
 .quempode h3 {
     font-weight:700;
 }
