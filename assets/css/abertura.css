@@ -149,8 +149,10 @@ h2 {
     margin-top:-15px;
 }
 .simule .valor {
-    font-size: 6em;
+    font-size: 5em;
     font-weight: 500;
+    vertical-align: middle;
+    line-height:1.1em;
 }
 .fazemos {
 	padding:60px 0 80px 0;
@@ -370,7 +372,9 @@ h2 {
     vertical-align: middle;
     font-weight: 400 !important;
 }
-
+.listaCnae {
+     min-width:130px;
+}
 
 @media (max-width: 768px) { 
     .simule h4 {
@@ -383,4 +387,7 @@ h2 {
     .big {
         padding:12px 30px;
     }
+    .listaCnae {
+     min-width:0px;
+}
 }
