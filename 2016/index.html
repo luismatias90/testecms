@@ -77,8 +77,8 @@
 	</head>
     <body>
     
-       
-    <nav class="navbar navbar-default navbar-fixed-top contabilizei navtopo">
+      <!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top contabilizei navtopo">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -88,7 +88,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                 
               </button>
-              <a class="navbar-brand" href="/2016/"><img src="/assets/img/logo2016.png" class="img-responsive logo" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
+              <a class="navbar-brand" href="/2016/"><img src="/assets/img/logo2016.png" class="img-responsive logo hidden-sm hidden-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"><img src="/assets/img/logo2016.png" class="img-responsive visible-sm visible-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
             </div> 
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -98,52 +98,57 @@
                  <li class="dropdown">
                   <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contabilizei <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Nós na mídia</a></li>
-                    <li><a href="#">Nosso blog</a></li>
-                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="/contabilizei-contabilidade-online/2016/">Sobre a empresa</a></li>
+<!--                    <li><a href="/funcionalidades/">Nosso produto</a></li>-->
+                    <li><a href="/midia/2016/">Nós na mídia</a></li>
+                    <li><a href="/contabilidade-online/2016/" target="_blank">Blog</a></li>
+                    <li><hr></li>
+                    <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Estamos contratando, vem!</a></li>
                   </ul>
                 </li>
                  <li class="dropdown">
                   <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Abrir empresa <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Como funciona</a></li>
-                    <li><a href="#">Quanto custa</a></li>
-                    <li><a href="#">Principais dúvidas</a></li>
+                    <li><a href="/quanto-custa-abrir-empresa/2016/">Como funciona a abertura</a></li>
+                    <li><a href="/quanto-custa-abrir-empresa/2016/">Escolhendo as atividades</a></li>
                     
                     <li><hr></li>
-                    <li><a href="#" class="linkBotao"><button class="accent menorzin">Abrir empresa grátis</button></a></li>
+                    <li><a href="/abrir-empresa/2016/" class="linkBotao"><button class="accent menorzin">Abrir empresa grátis</button></a></li>
                    
                   </ul>
                 </li>
                 <li class="dropdown">
                   <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Já tem empresa? <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Quanto custa</a></li>
-                    <li><a href="#">O que preciso pra migrar</a></li>
-                    <li><a href="#">Principais dúvidas</a></li>
+                    
+                    <li><a href="/escritorio-contabilidade-online/2016/#aberturafacil">O que preciso pra migrar</a></li>
+                    <li><a href="/escritorio-contabilidade-online/2016/#cabenobolso">Simule a mensalidade</a></li>
                     
                     <li><hr></li>
-                    <li><a href="#" class="linkBotao"><button class="accent menorzin" style="width:100%">Tenho empresa de serviços</button></a></li>
-                      <li><a href="#" class="linkBotao"><button class="accent menorzin">Tenho empresa de comércio</button></a></li>
+                    <li><a href="/escritorio-contabilidade-online/2016/" class="linkBotao"><button class="accent menorzin" style="width:100%">Tenho empresa de serviços</button></a></li>
+                      <li><a href="/contabilidade-comercio/2016/" class="linkBotao"><button class="accent menorzin">Tenho empresa de comércio</button></a></li>
                   </ul>
                 </li>
                 <li class="loginCliente dropdown">
                   <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">lock_outline</i> Login <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Cadastre-se agora</a></li>
-                    <li><a href="#">Continue seu cadastro</a></li>
+<!--                    <li><a href="#">Cadastre-se agora</a></li>-->
+                    <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
+                    
+                    <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
                     <li><hr></li>
-                    <li><a href="#">Consulte o processo de abertura</a></li>
-                    <li><a href="#">Acesse o sistema de contabilidade</a></li>
+                    <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
                     
                   </ul>
                 </li>
-                <li class="cadastre animated fadeIn hidden-xs"><button class="accent menorzin">Cadastre-se hoje</button></li>
+                <li class="cadastre animated fadeIn hidden-xs hidden-sm"><a href="#migre" class="linkBotao2"><button class="accent menorzin">Abrir empresa grátis</button></a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
-      </nav>
+      </nav> 
+    
+        
+        
       <div class="jumbotron text-center"> 
           <div class="container">
               
@@ -536,18 +541,32 @@
         
     <div class="midia text-center bg-branco">
         <div class="container">
-            <div class="logos col-md-10 col-md-offset-1">
-                <h2 class="textoPequeno">Contabilizei na mídia:</h2>    
-                <a href="#"><img class="logosMidia" src="/assets/img/logotechcrunch.png"></a>
+            <div class="logos col-md-12">
+                <br><span class="textoPequeno">Contabilizei na mídia:</span>
+                <br>
                 
-                <a href="#"><img class="logosMidia" src="/assets/img/logofolha.png"></a>
-                
-                <a href="#"><img class="logosMidia" src="/assets/img/logoexame.png"></a>
-                
-                <a href="#"><img class="logosMidia" src="/assets/img/logovalor.png"></a>
-                
-                <a href="#"><img class="logosMidia" src="/assets/img/logopegn.png"></a>
+                <a href="http://techcrunch.com/2015/09/27/as-brazilian-economy-descends-into-crisis-tech-is-growing-double-digits/" target="_blank" data-toggle="tooltip" title='"Apesar da crise econômica no Brasil, o setor de tecnologia não para de crescer. (matéria em inglês)"' class="wow fadeIn"><img class="logosMidia" src="/assets/img/logotechcrunch.png"></a>
+
+                <br class="visible-xs">
+
+                <a href="http://classificados.folha.uol.com.br/negocios/2015/11/1703284-ex-militar-aplica-tatica-de-guerra-para-criar-negocio-de-servicos-contabeis.shtml" target="_blank" data-toggle="tooltip" title='"Ex-militar aplica tática de guerra para criar negócio de serviços contábeis."' class="wow fadeIn" data-wow-delay="0.1s"><img class="logosMidia" src="/assets/img/logofolha.png"></a>
+
+                <br class="visible-xs">
+
+                <a href="http://exame.abril.com.br/pme/noticias/contabilizei-recebe-investimento-da-kaszek-ventures" target="_blank" data-toggle="tooltip" title='"Contabilizei recebe investimento da KaszeK Ventures."' class="wow fadeIn" data-wow-delay="0.2s"><img class="logosMidia" src="/assets/img/logoexame.png"></a>
+
+                <br class="visible-xs">
+
+                <a href="https://www.contabilizei.com.br/midia/valor-economico-a-democratizacao-da-contabilidade/" target="_blank" data-toggle="tooltip" title='"Contabilizei: "Democratização da Contabilidade."' class="wow fadeIn" data-wow-delay="0.3s"><img class="logosMidia" src="/assets/img/logovalor.png"></a>
+
+                <br class="visible-xs">
+
+                <a href="http://revistapegn.globo.com/Noticias/noticia/2014/03/empreendedores-inovam-e-criam-servico-contabil-online.html" target="_blank" data-toggle="tooltip" title='"Conseguiram inovar em uma das áreas mais tradicionais do mercado."' class="wow fadeIn" data-wow-delay="0.4s"><img class="logosMidia" src="/assets/img/logopegn.png"></a>
                
+                
+                <br class="visible-xs">
+                    
+                <a href="https://queminova.catracalivre.com.br/inclui/startup-oferece-contabilidade-acessivel-a-micro-e-pequenas-empresas/" target="_blank" data-toggle="tooltip" title='"Startup oferece contabilidade acessível a micro e pequenas empresas."' class="wow fadeIn" data-wow-delay="0.5s"><img class="logosMidia" src="/assets/img/logocatraca.png"></a>
             </div>
            
         </div>
@@ -579,7 +598,7 @@
     </div>
         
         
-    <footer>
+   <footer>
         <div class="footer primary-bg">
             <div class="container">
                 <div class="menuFooter">
@@ -588,12 +607,14 @@
 		                    <h3> Contabilizei </h3>
 		                    <hr>
                             <ul>
-		                        <li> <a href="/contabilizei-contabilidade-online"> A empresa </a> </li>
-		                        <li> <a href="/midia"> Midia </a> </li>
-		                        <li> <a href="/contabilidade-online" target="_blank"> Blog </a> </li>
-		                        <li> <a href="/reclame-aqui-contabilizei/" target="_blank"> Reclame aqui </a> </li>
+		                        <li><a href="/contabilizei-contabilidade-online/2016/">Sobre a empresa</a></li>
+<!--                                <li><a href="/funcionalidades/">Nosso produto</a></li>-->
+                                <li><a href="/midia/2016/">Nós na mídia</a></li>
+                                <li><a href="/contabilidade-online/2016/" target="_blank">Blog</a></li>
+                                
+		                        <li> <a href="/reclame-aqui-contabilizei/2016/" target="_blank"> Reclame aqui </a> </li>
 		                        <li> <a href="/documentos/politica-de-privacidade.pdf" target="_blank"> Política de privacidade </a> </li>
-		                        <li> <a href="https://jobs.lever.co/contabilizei" target="_blank"> Trabalhe conosco (vagas) </a> </li>
+		                        <li> <a href="https://jobs.lever.co/contabilizei" target="_blank"> Estamos contratando, vem! </a> </li>
 		                    </ul>
 		                </div>
 
@@ -601,11 +622,11 @@
 		                    <h3> Contabilidade Online </h3>
 		                    <hr>
                             <ul>
-		                        <li role="presentation"> <a href="/contador-online/"> Como funciona </a> </li>
-		                        <li role="presentation"> <a href="/escritorio-contabilidade-online/"> Quanto custa </a> </li>
-		                        <li role="presentation"> <a href="/escritorio-contabilidade-online/"> Quais cidades atendemos </a> </li>
-                                <li role="presentation"> <a href="http://suporte.contabilizei.com.br/hc/pt-br" target="_blank"> Depoimentos de quem usa </a> </li>
-		                        <li role="presentation"> <a href="/seguranca-contabilidade-online/"> Segurança na contabilidade online </a> </li>
+		                        <li role="presentation"> <a href="/escritorio-contabilidade-online/2016/"> Como funciona </a> </li>
+		                        <li role="presentation"> <a href="/escritorio-contabilidade-online/2016/"> Quanto custa </a> </li>
+		                        <li role="presentation"> <a href="/escritorio-contabilidade-online2016//"> Quais cidades atendemos </a> </li>
+                                <li role="presentation"> <a href="/depoimentos-contabilidade-online/2016/" target="_blank"> Depoimentos de quem usa </a> </li>
+		                        <li role="presentation"> <a href="/seguranca-contabilidade-online/2016/"> Segurança na contabilidade online </a> </li>
                                 <li role="presentation"> <a href="http://suporte.contabilizei.com.br/hc/pt-br" target="_blank"> Central de atendimento </a> </li>
 		                    </ul>
 		                </div>
@@ -649,10 +670,13 @@
                     
                 </div>
                 <div class="col-md-3  col-xs-12 final">
-                    
-                    <br class="visible-xs"><h3>Conecte-se</h3>
-                    <hr>
-                    <i class="material-icons">account_circle</i> <i class="material-icons">account_circle</i> <i class="material-icons">account_circle</i> <i class="material-icons">account_circle</i>
+                    <div class="socialMedia">
+                        <br class="visible-xs"><h3>Conecte-se</h3>
+                        <hr>
+                        <a href="https://www.facebook.com/Contabilizei/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/contabilizei/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/3318452/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
                     
                     <div class="alignBottom">
                         <br class="visible-xs"><h3>Feito com <i class="material-icons" style="font-size:0.8em">favorite_border</i><br>
@@ -668,7 +692,7 @@
                 </div>
             
         </div>
-    </footer>   
+    </footer>  
         
         
         
@@ -702,7 +726,7 @@
 <!--    <link rel="stylesheet" href="/assets/css/botao2016.css">-->
 
     <!-- Javascripts -->
-    <script src="/assets/js/wow.min.js"></script>
+    
     <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!--    <script async type="text/javascript" src="/assets/js/botao-ajuda.js"></script>-->
@@ -712,7 +736,9 @@
     new WOW().init();
     </script>
         
-   
+    <script src="//my.hellobar.com/35f2e648daf45626e1931ec3683e451016af0994.js" type="text/javascript" charset="utf-8" async="async"></script>
+    
+    <script type="text/javascript" async="true" src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/40bbe6d9-bf4c-4139-8258-af4a415c65d7-loader.js" async="async"></script>
         
     <script>
     $(document).ready(function(){
@@ -725,8 +751,15 @@
       });
     });
     </script>    
+
         
-    <script type="text/javascript" async="true" src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/40bbe6d9-bf4c-4139-8258-af4a415c65d7-loader.js" async="async"></script>
-        
+    <script>
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </body>
 </html>

@@ -93,6 +93,11 @@ body {
 .linkBotao:hover {
     background:transparent !important;
     padding-left:10px !important;
+    box-shadow:none !important;
+}
+.linkBotao2 {
+    padding:0 !important;
+    box-shadow:none !important;
 }
 .dropdown-menu {
     background-color:#fff;
@@ -398,12 +403,12 @@ body {
 .footer ul li {
     margin:8px 0;
 }
-.footer a {
+.footer li a {
     color:#fff;
     opacity:0.9;
-    transition:0.4s ease;
+    transition:0.4s;
 }
-.footer a:hover {
+.footer li a:hover {
     text-decoration: none;
     opacity:1.0;
     padding-left:10px;
@@ -413,6 +418,21 @@ body {
     border-top:none;
     border-bottom:1px solid #6B6B6B;
     margin-left:0;
+}
+.footer .socialMedia i {
+    text-align:center;
+    font-size:20px;
+    padding:14px 16px;
+    background-color:#fff;
+    color:#424242;
+    border-radius:50px;
+    margin-right:10px;
+    transition:0.5s ease;
+}
+.footer .socialMedia i:hover {
+    background-color:#2196F3;
+    border-radius:6px;
+    color:#fff;
 }
 .about {
     padding:40px 72px 40px 0;
@@ -602,6 +622,8 @@ h4 {
 .botoes {
     padding:20px 0;
 }
+    
+
 
 
 

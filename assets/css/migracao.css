@@ -7,31 +7,40 @@ h2 {
     font-size:2em;
 }
 .jumbotron {
-    background:none;
-    background-color:#2196F3;
+    background:#2196F3;
     padding:140px 0 100px 0;
     color:#fff;
     margin:0;
 /*
-    background-image: url('/assets/img/aberturahero.png');
-    background-position: right;
+    background-image: url('/assets/img/bghumano1.png');
+    background-size: cover;
     background-repeat: no-repeat;
 */
 }
 .jumbotron h1 {
-    font-weight:700;
-    font-size:3em;
+    font-weight:300;
+    font-size:1.5em;
+    line-height:1.4em;
     margin:0;
 }
 .jumbotron h2 {
+    font-weight: 300;
+    font-size:2.5em;
     margin:0;
     padding:10px 0 40px 0;  
+    margin-bottom:40px;
 }
 .jumbotron p {
     line-height:1.8em;
 
 }
-
+.jumbotron hr {
+    width:59%;
+    border-top:none;
+    border-bottom:none;
+    border-bottom:1px dashed rgba(255,255,255,.2);
+    margin-bottom:60px;
+}
 .jumbotron .texto {
     opacity:0.9;
     font-size:17px;
@@ -59,6 +68,10 @@ h2 {
 }
 .navlead p,.navlead .economiaTotal {
     vertical-align: middle;
+}
+.navlead {
+    background:#545454;
+    color:#fff;
 }
 .economiaTotal {
     padding:0 20px;
@@ -95,12 +108,11 @@ h2 {
 .simule {
     padding-top:70px; 
     padding-bottom:20px; 
-    background-color:#1392ff; 
-    border-top:1px solid #fff; 
-    border-bottom:1px solid #fff;
+    background-color:#424242; 
+    border-top:1px solid rgba(255,255,255,.2);
 }
 .simule .calculadora {
-    padding:20px;
+    padding:20px 20px 0px 20px;
     background-color:#fff;
     box-shadow:0px 2px 10px 0px rgba(0,0,0,0.25);
     border-radius:6px;
@@ -165,7 +177,7 @@ h2 {
 .fazemos {
 	padding:60px 0 80px 0;
 	border-bottom:1px solid #e8e8e8;
-    background-color:#fff;
+    background-color:#fafafa;
 }
 .fazemos .x {
 	font-size:4em;
@@ -188,21 +200,26 @@ h2 {
 	text-align:left;
 	padding-left:0px;
     border:1px solid #e8e8e8;
-    padding:0px 20px;
+    padding:0px 0px;
+    background-color:#fff;
 }
 .fazemos li {
 	border-bottom:1px solid #e8e8e8;
-	padding-left:10px;
+	padding-left:20px;
+    transition:0.2s ease;
 }
 .fazemos li:hover {
-	background-color:#fafafa;
+	background-color:#e8e8e8;
+}
+.fazemos li .glyphicon {
+    padding-right:15px;
 }
 .fazemos .esquerda {
 	font-weight:500;
     opacity:1;
 }
 .fazemos .esquerda li:hover {
-	background-color:#ecffc4;
+	background-color:#DBFFBF;
 }
 .verde {
 	color:#a2d92e;
@@ -213,10 +230,9 @@ h2 {
 	font-size:1em;
 	padding:20px;
 	text-transform:uppercase;
-	background-color:#a2d92e;
+	background-color:#0097F6;
 
 	color:#fff;
-	text-shadow:1px 1px #82b515;
 }
 .fazemos .titulo2 {
 	text-align:center;
@@ -233,11 +249,14 @@ h2 {
 	color:#999;
 	margin-top:20px;
 	padding:20px;
-	background-color:#fafafa;
+	background-color:#fdfdfd;
 	border:1px dashed #e8e8e8;	
+    transition:0.2s ease;
 }
 .fazemos .tranquilo:hover {
 	color:#666;
+    background-color:#fff;
+    border:1px solid #e8e8e8;
 
 }
 /* Migre */
@@ -292,7 +311,7 @@ h2 {
 }
 .migre {
 	padding:70px 0;
-    border-bottom:1px solid #e8e8e8;
+    
 }
 .migre input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s ease; }
 .migre h2 {
@@ -412,6 +431,49 @@ blockquote {
     width:100%; 
     margin:0;
 }
+.input-group-addon {
+    background:none;
+    padding: 6px 34px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid #E8E8E8;
+}
+.produto {
+    padding:60px 0;
+}
+
+
+
+@media (min-width: 1400px) {
+    .jumbotron {
+        padding:180px 0 180px 0;        
+/*
+        background:url('/assets/img/bghumano2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+*/
+        background:#2196F3;
+    }
+
+    .jumbotron h1 {
+        font-weight:300;
+        font-size:1.5em;
+        line-height:1.4em;
+        margin:0;
+    }
+    .jumbotron h2 {
+        font-weight: 300;
+        font-size:3.5em;
+        margin:0;
+        padding:30px 0 70px 0;  
+        margin-bottom:40px;
+    }
+} 
+
+
 @media (max-width: 768px) { 
     .jumbotron {
         background:none;
