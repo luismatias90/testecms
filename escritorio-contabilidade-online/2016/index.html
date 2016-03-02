@@ -193,11 +193,13 @@
               
               <h1 class="opacidade">Escritório de contabilidade online para empresas prestadoras de serviços</h1>
               <hr>
-              <h2>Sua empresa regularizada<br> a partir de R$ 49 / mês.</h2>
+              <h2>Sua empresa regularizada<br class="hidden-xs"> a partir de R$ 49 / mês.</h2>
                 
 <!--               <p class="opacidade">Contratando nossa contabilidade online suas obrigações ficam garantidas e você pode <br class="hidden-xs">economizar mais de<strong> R$4.000,00/ano</strong>. Invista em você e no seu negócio<br class="hidden-xs"> e deixe a contabilidade com a gente! Conheça a Contabilizei.</p><br class="hidden-xs">-->
                 
-               <a href="#simulador" ><button class="accent big wow fadeIn">Economize até R$ 4.000 com contabilidade</button></a>
+               <a href="#simulador" class="hidden-xs" ><button class="accent big wow fadeIn">Economize até R$ 4.000 com contabilidade</button></a>
+              
+              <a href="#simulador" class="visible-xs" ><button class="accent big wow fadeIn">Simule a economia</button></a>
                 
               
           </div>
@@ -231,9 +233,9 @@
 
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
 
-                            <h2 class="branco text-left">Contabilizei garante uma economia de até <strong>90%</strong> com serviços de contabilidade:</h2>
+                            <h2 class="branco text-left hidden-xs">Contabilizei garante uma economia de até <strong>90%</strong> com serviços de contabilidade:</h2>
 
-
+                            <h2 class="branco text-center visible-xs">Contabilizei garante uma economia de até <strong>90%</strong> com serviços de contabilidade:</h2>
 
                         </div>
 
@@ -257,6 +259,8 @@
 
                             <!-- Tab panes -->
                             
+                                
+                            <br class="visible-xs">
                             <p class="text-center" style="padding-top:80px">Quanto você paga de contabilidade por mês?</p>
                             
                                 
@@ -268,13 +272,13 @@
                                 
                             
                             </div>    
-                                
+                                <br class="visible-xs">
                             <p class="text-center" style="padding-top:15px;">Quantos sócios têm sua empresa? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Lembre-se que você conta como sócio"></span></p>
 
                             <div class="input-group text-center">
                                 <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; margin:0 auto; font-weight:700">
                             </div>
-                            
+                            <br class="visible-xs">
                             <p class="text-center" style="padding-top:15px;">Quantos funcionários?</p>
 
                             <div class="input-group">
@@ -282,7 +286,7 @@
                                 <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; font-weight:700">
 
                             </div>
-                           
+                           <br class="visible-xs">
                             <p class="text-center"  style="padding-top:20px;">Qual o faturamento mensal?<br></p>
 
                             <div class="input-group">
@@ -342,7 +346,7 @@
                         <br>
                         <br class="hidden-xs hidden-sm"><small><p style="padding:5px 15px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna  com clientes <br class="visible-sm">sobre o custo do serviço de contabilidade anterior (R$394/mês).</span></p></small>
                     </div>
--->                 <br><br><br><br><section id="migre"></section>
+-->                 <br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs"><br class="hidden-xs"><section id="migre"></section>
                 </div>
            
 
@@ -364,7 +368,7 @@
 
 					<div class="formEsquerda col-md-5 col-md-offset-1 col-xs-12 text-left  wow fadeIn">
 
-						<h2 class="opacidade2" style="font-size:1.8em">Junte-se às <strong>35.000</strong> empresas<br> que querem usar Contabilizei.</h2><br>
+						<h2 class="opacidade2" style="font-size:1.8em">Junte-se às <strong>35.000</strong> empresas<br  class="hidden-xs"> que querem usar Contabilizei.</h2><br>
                         
                         <div>
                             <div>
@@ -396,9 +400,9 @@
                         
 
 					</div>
-
+                      <br class="hidden-xs">  <br class="hidden-xs">
 					<div class="formulario col-md-5 col-sm-10 col-xs-12 text-center wow fadeIn">
-
+                          
 							  <h3>Estamos todos te esperando, vem!</h3>
 							
 
@@ -436,7 +440,7 @@
 							</div>
 							<div class="form-group" style="margin-bottom:0">
 								<div class="col-lg-12" align="center">
-									<button id="btn-iniciar-migracao"  align="center" class="accent big" style="width:100%;margin:0px; margin-top:10px;">Iniciar abertura de empresa grátis</button><br><br>
+									<button id="btn-iniciar-migracao"  align="center" class="accent big" style="width:100%;margin:0px; margin-top:10px;">Iniciar migração de empresa</button><br><br>
 									<span class="aoclicar">Ao clicar você concorda com os <a href="/termos-de-uso/Termos-de-uso-19032014.pdf" target="blank_">termos de uso</a>.</span>
 								</div>
 							</div>
@@ -452,19 +456,19 @@
         
         
         <section id="produto"></section>
-        <div class="produto bg-azul">
+        <div class="produto bg-azul hidden-xs">
             <div class="container">
                 <div class="col-md-10 col-md-offset-1">
                     <h2 class="branco opacidade" style="font-size:1.5em;">Somos uma empresa de tecnologia reinventando a contabilidade.</h2>
                     <br><br><br><br><br>
                     
                     
-                    <p class="branco gigante wow fadeInLeft">Notas fiscais em segundos</p>
-                    <p class="branco grandinho wow fadeInDown" data-wow-delay="0.3s"><span class="opacidade">Já pensou fazer tudo em apenas dois cliques?</span></p>
+                    <p class="branco gigante wow fadeInLeft">Software inteligente e seguro</p>
+                    <p class="branco grandinho wow fadeInDown" data-wow-delay="0.3s"><span class="opacidade">Toda tecnologia Contabilizei é desenvolvida e otimizada em casa.</span></p>
                     
                     <hr class="wow fadeInDown" data-wow-delay="0.4s">
                     <p class="branco gigante wow fadeInLeft"  data-wow-delay="0.5s">Saiba exatamente o que fazer</p>
-                    <p class="branco grandinho wow fadeInDown" data-wow-delay="0.8s"><span class="opacidade">Já pensou fazer tudo em apenas dois cliques?</span></p>
+                    <p class="branco grandinho wow fadeInDown" data-wow-delay="0.8s"><span class="opacidade">Cards inteligentes: definem as prioridades para você.</span></p>
                     
                     <hr class="wow fadeInDown" data-wow-delay="0.9s">
                     <p class="branco gigante wow fadeInLeft"  data-wow-delay="1s">Faça parte da revolução</p>
@@ -487,7 +491,7 @@
 		
         <!-- O que fazemos vs O que não fazemos -->
         <section id="fazemos"></section>
-		<div class="fazemos">
+		<div class="fazemos  hidden-xs">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 wow fadeIn">
