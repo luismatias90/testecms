@@ -197,3 +197,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu  {
 .atividadehover:hover .atividadeatendida {
     visibility: visible;
 }
+.menu.affix-top {
+    position: static;
+    margin-top: 22px;
+    padding: 0 15px;
+}
+.menu.affix {
+    position: fixed;
+    top: 20px;
+}
