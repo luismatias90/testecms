@@ -268,9 +268,12 @@
                             <div class="input-group">
                                 
                                 <span class="input-group-addon">R$</span>
-                                <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
+                                <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="hidden-xs form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
                                 
-                            
+                                
+                                <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="visible-xs form-control" value="0" style="height:60px; text-align:left; padding-left:85px; font-size:2em; margin:0 auto; font-weight:700">
+                                
+                                
                             </div>    
                                 <br class="visible-xs">
                             <p class="text-center" style="padding-top:15px;">Quantos sócios têm sua empresa? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Lembre-se que você conta como sócio"></span></p>

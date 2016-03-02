@@ -268,7 +268,12 @@
                             <div class="input-group">
                                 
                                 <span class="input-group-addon">R$</span>
-                                <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
+                                <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="hidden-xs form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
+                                
+                                
+                                <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="visible-xs form-control" value="0" style="height:60px; text-align:left; padding-left:85px; font-size:2em; margin:0 auto; font-weight:700">
+                                
+                                
                                 
                             
                             </div>    
