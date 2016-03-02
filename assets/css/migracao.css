@@ -8,7 +8,7 @@ h2 {
 }
 .jumbotron {
     background:#2196F3;
-    padding:140px 0 100px 0;
+    padding:140px 0 128px 0;
     color:#fff;
     margin:0;
 }
@@ -104,7 +104,7 @@ h2 {
     padding-top:70px; 
     padding-bottom:20px; 
     background-color:#424242; 
-    border-top:1px solid rgba(255,255,255,.2);
+    
 }
 .simule .calculadora {
     padding:20px 20px 0px 20px;
@@ -152,12 +152,20 @@ h2 {
     font-size:16px;
     padding:10px 0;
 }
+.simule h2 {
+    font-size:1.5em;
+    padding-bottom:30px;
+    font-weight:300;
+}
 
 .simule .input-group, .form-control {
     width: 100%;
     margin: 0 auto;
 }
 .calculadora .col-md-12, .calculadora .col-xs-12 {
+    padding:0;
+}
+.calculadora h4 {
     padding:0;
 }
 .simule .dropdown-menu {
@@ -195,16 +203,19 @@ h2 {
 	text-align:left;
 	padding-left:0px;
     border:1px solid #e8e8e8;
+    border-top:none;
     padding:0px 0px;
     background-color:#fff;
 }
 .fazemos li {
-	border-bottom:1px solid #e8e8e8;
-	padding-left:20px;
-    transition:0.2s ease;
+	border-bottom: 1px solid #F5F5F5;
+    padding-left: 20px;
+    transition: 0.2s ease;
+    border-top: 1px solid #fff;
+    box-shadow: inset 1px 0px 0 #fff;
 }
 .fazemos li:hover {
-	background-color:#e8e8e8;
+	background-color:#fafafa;
 }
 .fazemos li .glyphicon {
     padding-right:15px;
@@ -214,7 +225,7 @@ h2 {
     opacity:1;
 }
 .fazemos .esquerda li:hover {
-	background-color:#DBFFBF;
+	background-color:rgba(154, 200, 228, 0.08);
 }
 .verde {
 	color:#a2d92e;
@@ -408,7 +419,7 @@ h2 {
      min-width:130px;
 }
 .calculadoraSimule {
-    padding-top:30px; 
+    padding-top:19px; 
     padding-left:46px; 
     background-color:transparent; 
     color:#fff; 
@@ -438,8 +449,37 @@ blockquote {
 }
 .produto {
     padding:60px 0;
+    height:1000px;
 }
+.produto hr {
+    width:49%;
+    margin:40px 0;
+    border-top:none;
+    border-bottom:none;
+    border-bottom:1px dashed rgba(255,255,255,.4);
 
+}
+.produto .big {
+    font-size:22px;
+    padding:20px 60px;
+    font-weight:500;
+    margin-left:0;
+    margin-top:20px;
+    position:absolute;
+    z-index:999;
+}
+.imgDisplay {
+    width: 800px;
+    margin-right: 100px;
+    margin-top: -582px;
+}
+.grandinho {
+    font-size:1.5em;
+}
+.gigante {
+    font-size: 2.8em;
+    font-weight: 300;
+}
 
 
 @media (min-width: 1400px) {
@@ -466,6 +506,15 @@ blockquote {
         padding:30px 0 70px 0;  
         margin-bottom:40px;
     }
+    .produto {
+        height: 1050px;
+    }
+    .imgDisplay {
+        width: 900px;
+        margin-right: 300px;
+        margin-top: -610px;
+    }
+
 } 
 
 

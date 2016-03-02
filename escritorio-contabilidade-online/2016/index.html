@@ -197,7 +197,7 @@
                 
 <!--               <p class="opacidade">Contratando nossa contabilidade online suas obrigações ficam garantidas e você pode <br class="hidden-xs">economizar mais de<strong> R$4.000,00/ano</strong>. Invista em você e no seu negócio<br class="hidden-xs"> e deixe a contabilidade com a gente! Conheça a Contabilizei.</p><br class="hidden-xs">-->
                 
-               <a href="#simulador" ><button class="accent big">Veja como economizar até R$ 4.000 / ano</button></a>
+               <a href="#simulador" ><button class="accent big wow fadeIn">Economize até R$ 4.000 com contabilidade</button></a>
                 
               
           </div>
@@ -231,11 +231,8 @@
 
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
 
-                            <h2 class="branco">Contabilizei garante uma economia de <br>até <strong>90%</strong> com serviços de contabilidade:</h2>
+                            <h2 class="branco text-left">Contabilizei garante uma economia de até <strong>90%</strong> com serviços de contabilidade:</h2>
 
-
-                           
-                            <br><br><br>
 
 
                         </div>
@@ -260,14 +257,14 @@
 
                             <!-- Tab panes -->
                             
-                            <p class="text-center" style="padding-top:100px">Quanto você paga de contabilidade por mês?</p>
+                            <p class="text-center" style="padding-top:80px">Quanto você paga de contabilidade por mês?</p>
                             
                                 
                             
                             <div class="input-group">
                                 
                                 <span class="input-group-addon">R$</span>
-                                <input type="number" ng-model="valorContadorAtual" min="0" max="2000" id="valorAtualCont" class="form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
+                                <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
                                 
                             
                             </div>    
@@ -312,31 +309,31 @@
                         </div>
 -->
 
-                        <div class="calculadoraSimule col-lg-4 col-md-5 col-sm-6 col-xs-12 text-center wow fadeIn" data-wow-delay="0.2s">
+                        <div class="calculadoraSimule col-lg-4 col-md-5 col-sm-6 col-xs-12 text-center" data-wow-delay="0.2s">
                             
 <!--
                             Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>,
                             <br>
 
                             <br>-->
-                            <span style="font-size:1.6em; vertical-align: middle; font-weight:300"><span class="opacidade">Sua mensalidade será:</span>
+                            <div class="wow fadeInLeft" style="font-size:1.6em; vertical-align: middle; font-weight:300"><span class="opacidade">Sua mensalidade será:</span>
                             <br>
-                            <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</span>
+                            <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</div>
 
                            
-                            <hr style="width:30%; margin-top:20px; margin-bottom:40px; opacity:0.2"><span style="font-weight:300;" class="opacidade">O que você economiza em um ano:</span>
+                            <hr style="width:30%; margin-top:20px; margin-bottom:40px; opacity:0.2"><div  class="wow fadeInDown" data-wow-delay="0.4s"><span  style="font-weight:300;" class="opacidade">O que você economiza em um ano:</span>
                             <br><br>
-                            <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual}}</span> / ano</span>
+                            <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual}}</span> / ano</span></div>
 
                             
-                            <br><br><a href="#migre" class="hidden-md hidden-xs"><button class="accent big" style="font-size:1.4em; width:100%">Migrar empresa</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px">Migrar empresa</button></a>
+                            <br><a href="#migre" class="hidden-md hidden-xs"><button class="accent big" style="font-size:1.4em; width:100%">Migrar empresa</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px">Migrar empresa</button></a>
                             
                             
                             <div class="container visible-xs">
                                 <a href="#migre"><button class="accent big" style="font-size:1.4em">Migrar empresa</button></a>
                             </div>
                             
-                            <br><br><span class="opacidade"><span style="text-decoration:underline">Não</span> precisamos do seu contador para o cadastro.</span>
+                            <br><br><span class="opacidade">Não precisamos de nenhuma informação do seu contador atual para o cadastro.</span>
                         </div>
 
                     </div>
@@ -367,7 +364,7 @@
 
 					<div class="formEsquerda col-md-5 col-md-offset-1 col-xs-12 text-left  wow fadeIn">
 
-						<h2 class="opacidade2" style="font-size:1.8em">Junte-se às <strong>35.000</strong> empresas<br> que querem Contabilizei.</h2><br>
+						<h2 class="opacidade2" style="font-size:1.8em">Junte-se às <strong>35.000</strong> empresas<br> que querem usar Contabilizei.</h2><br>
                         
                         <div>
                             <div>
@@ -457,13 +454,32 @@
         <section id="produto"></section>
         <div class="produto bg-azul">
             <div class="container">
-                
-                <div class="col-md-6 col-md-offset-3">
-                    <h2 class="branco">Nosso produto</h2>
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="branco opacidade" style="font-size:1.5em;">Somos uma empresa de tecnologia reinventando a contabilidade.</h2>
+                    <br><br><br><br><br>
+                    
+                    
+                    <p class="branco gigante wow fadeInLeft">Notas fiscais em segundos</p>
+                    <p class="branco grandinho wow fadeInDown" data-wow-delay="0.3s"><span class="opacidade">Já pensou fazer tudo em apenas dois cliques?</span></p>
+                    
+                    <hr class="wow fadeInDown" data-wow-delay="0.4s">
+                    <p class="branco gigante wow fadeInLeft"  data-wow-delay="0.5s">Saiba exatamente o que fazer</p>
+                    <p class="branco grandinho wow fadeInDown" data-wow-delay="0.8s"><span class="opacidade">Já pensou fazer tudo em apenas dois cliques?</span></p>
+                    
+                    <hr class="wow fadeInDown" data-wow-delay="0.9s">
+                    <p class="branco gigante wow fadeInLeft"  data-wow-delay="1s">Faça parte da revolução</p>
+                    
+                    <a href="#migre"><button class="accent big wow fadeInUp"  data-wow-delay="1.2s">Migre sua empresa hoje</button></a>
+                    
+                    
                 </div>
-                
             </div>
+                    <img class="pull-right imgDisplay wow fadeInRight" src="/assets/img/plataformavoa.png">
+                    
+                             
+                
         </div>
+        
         
         
         
@@ -474,11 +490,11 @@
 		<div class="fazemos">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-12 wow fadeIn">
 						<h2 class="opacidade">O que está incluso na mensalidade de contabilidade:</h2>
 						<p class="opacidade2" style="text-align:center; padding-bottom:50px;">Todas obrigações legais para sua empresa estar em dia.</p>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 wow fadeIn">
 						<hr class="visible-xs" width="50%">
 
 
@@ -503,7 +519,7 @@
 
 					</div>
 
-					<div class="col-md-5">
+					<div class="col-md-5 wow fadeIn">
 
 						<h3 class="titulo2">serviços extras (exclusivo para clientes)</h3>
 
@@ -545,7 +561,7 @@
 						
 					</div>
 				</div>
-					<div class="perguntasdefato">
+					<div class="perguntasdefato wow fadeIn">
 					 <div class="row">
 					 	<div class="col-lg-8 col-lg-offset-2">
 		            	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
