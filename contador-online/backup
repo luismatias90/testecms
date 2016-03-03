@@ -102,7 +102,7 @@
 		            <li><a href="/contabilizei-contabilidade-online/" target="_blank">Conheça a equipe</a></li>
 		            <li><a href="/midia/" target="_blank">Nós na mídia</a></li>
 		            <li><a href="/contabilidade-online/" target="_blank">Nosso Blog</a></li>
-		            <li><a href="https://contabilizei.recruiterbox.com/" target="_blank">Trabalhe Conosco</a></li>
+		            <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Trabalhe Conosco</a></li>
 		            <li><br></li>
 		          </ul>
 		        </li>
@@ -300,7 +300,7 @@
 								<li><a href="javascript:void(0);" data-cidade-atendida="true">Americana</a></li>
 								<li><a href="javascript:void(0);" data-cidade-atendida="true">Barueri</a></li>
 								<li><a href="javascript:void(0);" data-cidade-atendida="true">Belo Horizonte</a></li>
-								<li><a href="javascript:void(0);" data-cidade-atendida="true">Campinas</a></li>
+								<!--<li><a href="javascript:void(0);" data-cidade-atendida="true">Campinas</a></li>-->
 								<li><a href="javascript:void(0);" data-cidade-atendida="true">Curitiba</a></li>
 								<li><a href="javascript:void(0);" data-cidade-atendida="true">Embu das Artes</a></li>
 								<li><a href="javascript:void(0);" data-cidade-atendida="true">Fortaleza</a></li>
@@ -350,20 +350,20 @@
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Bloggers/Youtubers/etc</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Desenvolvimento Web</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Arquitetura</a></li>
-								<li><a href="javascript:void(0);" data-servico-atendido="false">Comércio e Varejo</a></li>
+								<li><a href="javascript:void(0);" data-servico-atendido="true">Comércio e Varejo</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="false">Construção e Reforma</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Consultoria</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Corretagem de Imóveis</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Corretagem de Seguros</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Design de Interiores</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Design Gráfico</a></li>
-								<li><a href="javascript:void(0);" data-servico-atendido="false">E-commerce</a></li>
+								<li><a href="javascript:void(0);" data-servico-atendido="true">E-commerce</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Editoração</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Educação Física</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Engenharia</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Estúdios Cinematográficos</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Fotografia</a></li>
-								<li><a href="javascript:void(0);" data-servico-atendido="true">Holdings não financeiras</a></li>
+								<li><a href="javascript:void(0);" data-servico-atendido="false">Holdings não financeiras</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Jornalismo e Assessoria</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Organização e Promoção de Eventos</a></li>
 								<li><a href="javascript:void(0);" data-servico-atendido="true">Publicidade e Propaganda</a></li>
@@ -815,7 +815,7 @@
 		                        <li> <a href="/contabilizei-contabilidade-online"> A empresa </a> </li>
 		                        <li> <a href="/midia"> Midia </a> </li>
 		                        <li> <a href="/contabilidade-online" target="_blank"> Blog </a> </li>
-		                        <li> <a href="https://contabilizei.recruiterbox.com" target="_blank"> Trabalhe Conosco (Vagas) </a> </li>
+		                        <li> <a href="https://jobs.lever.co/contabilizei" target="_blank"> Trabalhe Conosco (Vagas) </a> </li>
 		                    </ul>
 		                </div>
 		                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">

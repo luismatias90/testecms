@@ -1300,6 +1300,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu  {
 }
 .zd_rating_string {
   font-size: 1.3em;
+    line-height:1.5em;
   margin: 0!important;
 }
 .zd_satisfaction_score .zd_rating_number {
