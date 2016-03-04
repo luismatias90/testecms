@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="SimuladorApp">
+
+	<head>
+
+		<!-- Hotjar Tracking Code for www.contabilizei.com.br -->
+		<script>
+		    (function(f,b){
+		        var c;
+		        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+		        f._hjSettings={hjid:21654, hjsv:3};
+		        c=b.createElement("script");c.async=1;
+		        c.src="//static.hotjar.com/c/hotjar-21654.js?sv=3";
+		        b.getElementsByTagName("head")[0].appendChild(c);
+		    })(window,document);
+		</script>
+
+		<!-- Metatags -->
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	    <meta name="description" content="Escritório de Contabilidade Online para Empresas de Comércio. Em poucos passos você economiza tempo e dinheiro do seu negócio. Conheça a Contabilizei e veja sua economia.">
+	    <meta name="keywords" content="contabilidade online comercio, escritorio de contabilidade online comercio, trocar contabilidade, contabilidade economica, contabilidade, contador online, escritório contabilidade on-line, migrar contabilidade, trocar contador, contabilidade facil, comercio contabilidade">
+		<!-- Google author -->
+
+		<link rel="author" href="https://plus.google.com/u/0/110264168711669397191/" />
+		<link rel="publisher" href="https://plus.google.com/u/0/110264168711669397191/" >
+
+		<!-- Geral -->
+		<meta property="og:locale" content="pt_BR" />
+		<meta property='og:type' content='website'/>
+		<meta property="og:site_name" content="Contabilizei">
+		<meta property="og:url" content="https://www.contabilizei.com.br/contabilidade-comercio/">
+		<meta property='article:publisher' content='https://facebook.com/contabilizei'/>
+		<meta property="og:title" content="Contabilizei Contabilidade Inteligente">
+		<meta property="og:description" content="Contabilidade inteligente e online para Comércio a partir de R$ 99,00 por mês.">
+		<meta property="og:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/contabcomercio.png">
+
+
+		<!-- Twitter -->
+
+		<meta name="twitter:card" content="product">
+		<meta name="twitter:site" content="@contabilizei">
+		<meta name="twitter:creator" content="@contabilizei">
+		<meta name="twitter:title" content="Contabilizei Contabilidade Online">
+		<meta name="twitter:description" content="Contabilidade inteligente e online para Comércio a partir de R$ 99,00 por mês.">
+		<meta name="twitter:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/contabcomercio.png">
+
+	    <title>Contabilidade Online para Comércio | Contabilizei </title>
+
+
+		<script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+	    <script type="text/javascript" src="https://www.contabilizei.com.br/contabilidade-comercio/js/calculadora.js"></script>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+		<link rel="stylesheet" href="../assets/css/stylenew.css">
+		<link rel="stylesheet" href="../assets/css/botao2.css">
+
+
+
+		<!-- Fontes Customizadas -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    	<link rel="stylesheet" href="../assets/css/animate.min.css">
+
+		<!-- Start of contabilizei Zendesk Widget script -->
+        <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contabilizei.zendesk.com");
+        /*]]>*/</script>
+        <!-- End of contabilizei Zendesk Widget script -->
+
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+	    <link rel="shortcut icon" href="/assets/ico/contabilizei-favicon.ico">
+
+	    <style rel="stylesheet">
+			input[type=number]::-webkit-inner-spin-button,
+			input[type=number]::-webkit-outer-spin-button {
+
+			   opacity: 1;
+
+			}
+		</style>
+        <script src="//my.hellobar.com/35f2e648daf45626e1931ec3683e451016af0994.js" type="text/javascript" charset="utf-8" async="async"></script>
+	</head>
+
+	<body>
+
+
+	   	<!-- Google Tag Manager -->
+	  	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9X6Z2"
+	 	 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	  	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	  	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	  	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	  	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	  	})(window,document,'script','dataLayer','GTM-N9X6Z2');</script>
+	  	<!-- End Google Tag Manager -->
+
+	  	<!-- CUPOM -->
+	  	<div class="splash">
+			<div class="carregando-cupom hide well" align="center" style="background-color:#fff; border:none;">
+				<i class="fa fa-cloud animated infinite pulse" style="font-size:2em; color:rgb(40, 150, 214);"></i><br><span style="font-size: 1.2em;  color:rgb(40, 150, 214); font-weight:600" class="animated fadeIn"><strong>Validando código. Por favor, aguarde.</strong></span>
+			</div>
+
+			<div class="cupom-indicacao well text-center animated fadeIn" align="center" style="display: none; background-color: rgb(40, 150, 214); border:none; border-bottom:1px solid rgb(28, 117, 169);">
+				<div class="row animated bounceInDown" id="alert-cupom">
+					<div class="col-md-12 text-indicacao" style="font-size:1.2em; color:#fff;"></div>
+					<div class="col-md-12 animated" style="color:#B3E6FF;"><i class="fa fa-check-circle" style="padding-right:5px;"></i>Código válido. Finalize seu cadastro para ativar o crédito.</div>
+				</div>
+			</div>
+		</div>
+	  	<!-- FIM CUPOM -->
+
+		<!-- Navbar e Jumbotron juntos -->
+		<div class="jumbotron" style="padding-bottom:0">
+
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Menu</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="/"><img src="/../assets/img/logoc.png" style="margin-top:-5px;"></a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+		      <ul class="nav navbar-nav navbar-right">
+		          <li class="dropdown hidden-sm">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false">Contabilizei&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		            <img class="visible-lg visible-md" src="/../assets/img/sobre.png" style="width:250px; padding-bottom:10px;">
+		            <li><a href="/contabilizei-contabilidade-online/" target="_blank">Quem somos</a></li>
+		            <li><a href="/midia/" target="_blank">Nós na mídia</a></li>
+		            <li><a href="/contabilidade-online/" target="_blank">Nosso Blog</a></li>
+		            <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Trabalhe Conosco</a></li>
+		            <li><br></li>
+		          </ul>
+		        </li>
+
+		        <li class="dropdown">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false">Abrir Empresa&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		          	<img class="visible-lg visible-md" src="/../assets/img/sobre2.png" style="width:350px;">
+		            <p class="textodrop hidden-xs"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Sim, abrimos sua empresa de graça!</span><br> Você paga as taxas do governo, protocola a documentação nos órgãos públicos e deixa o <br class="hidden-xs">resto com a gente. Transforme a burocracia num<br class="hidden-xs">clique e tenha mais tempo para o seu negócio.</p>
+		            <li class="divider hidden-xs"></li>
+		            <li><a href="/abrir-empresa/"><button class="botaosupremob">abra sua empresa de graça</button></a></li>
+		          </ul>
+		        </li>
+
+		        <li class="dropdown">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false">Já tem Empresa?&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		          	<img class="visible-lg visible-md" src="/assets/img/sobre3.png" style="width:350px;">
+		            <p class="textodrop hidden-xs"><span style="font-size:1.3em; font-weight:700;">Atendemos empresas de serviço e comércio:</span><br>Todas as obrigações legais garantidas para sua empresa ficar 100% regularizada com economia.</p>
+		            <li class="divider hidden-xs"></li>
+		            <li><a href="/escritorio-contabilidade-online/"><button class="botaosupremob">tenho empresa de serviços</button></a><a href="/contabilidade-comercio/" style="padding-top:5px;"><button class="botaosupremob">tenho empresa de comércio</button></a></li>
+		          </ul>
+			   	  </li>
+
+			   	   <!-- <li class="dropdown hidden-sm">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false">MEI para ME&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		          	<img class="visible-lg visible-md" src="/../assets/img/sobre4.png" style="width:350px;">
+		            <p class="textodrop hidden-xs"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Chegou a hora de crescer.</span><br> Alterar MEI para ME é um importante passo, conte conosco nessa nova etapa. Fazemos esta alteração de graça para você crescer o seu negócio com economia.</p>
+		            <li class="divider hidden-xs"></li>
+		            <li><a href="/alterar-mei-para-me/"><button class="botaosupremob">altere MEI para ME de graça</button></a></li>
+		          </ul>
+			   	  </li> -->
+
+			   	   <li class="dropdown">
+		          <a href="#" class="dropdown" role="button" aria-expanded="false" id="droprod">Área do Cliente&nbsp;&nbsp;<span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu" id="dropdrop">
+		          	<br>
+		            <li><a href="/escritorio-contabilidade-online/" target="_blank">Comece seu cadastro</a></li>
+		            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
+
+		            <li class="divider hidden-xs"></li>
+		            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
+		            <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
+		            <li><br></li>
+
+		          </ul>
+			   	  </li>
+			  </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+
+
+
+
+
+			<div class="abrirempresa">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h1 class="titulo">Contabilidade online para comércio:<strong><br class="hidden-xs"> a partir de R$ 99 / mês</strong>
+							</h1>
+							<br>
+							<p>Contratando nossa contabilidade online suas obrigações ficam garantidas e você pode <br class="hidden-xs"> <span style="font-size:1.4em;"><strong>economizar até R$9.000,00/ano</strong></span>. As vagas para o comércio são <br class="hidden-xs">limitadas. Então garanta já sua vaga para começar 2016 com o pé direito!</p>
+
+							<a href="#aberturafacil" ><button class="botao botaoesp" style="font-size:1.4em; border-radius:50px; padding:8px 55px 10px 55px;">vagas limitadíssimas! veja as condições</button></a>
+							<br><br><p class="abrirempre" style="font-size:1em; color:rgba(255,255,255,.8)"><strong>Sua empresa é prestadora de serviços? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="text-decoration:underline; color:rgba(255,255,255,.8)">Consulte aqui</a></strong></p>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Na Mídia -->
+		<div class="midia visible-lg visible-md" style="background-color:#fff !important;">
+			<div class="container">
+				<div class="row">
+
+
+					<div class="col-md-4">
+						<a href="http://exame.abril.com.br/pme/noticias/contabilizei-recebe-investimento-da-kaszek-ventures" target="_blank">
+						<img src="/assets/img/exame.png">
+						<p class="texto">"A contabilidade online proporciona até <br>90% de economia nesse tipo de serviço."</p>
+						</a>
+					</div>
+
+
+					<div class="col-md-4">
+						<a href="http://techcrunch.com/2015/09/27/as-brazilian-economy-descends-into-crisis-tech-is-growing-double-digits/" target="_blank">
+						<img src="/assets/img/techcrunch.png">
+						<p class="texto">"Apesar da crise econômica no Brasil, o setor <br>de tecnologia não para de crescer."</p>
+					</div>
+
+
+					<div class="col-md-4">
+						<a href="https://www.youtube.com/watch?v=Q9m08YhkR4o&feature=youtu.be&t=67" target="_blank">
+						<img src="/assets/img/globo2.png">
+						<p class="texto">"Pequenos empresários buscam alternativas para fugir da crise."</p>
+						</a>
+					</div>
+
+
+					</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Abertura de Empresa -->
+		<section id="aberturafacil">
+		<div class="aberturafacil">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>Condições para migrar para a Contabilizei:</h2>
+						<!-- <p class="visible-lg visible-md">Clique abaixo para expandir cada tópico.</p>  -->
+					</div>
+				</div>
+				<div class="row" style="margin-top:60px;">
+
+
+			            <div class="col-md-4">
+
+			            	<div class="oqueprecisa" id="passomigrar">
+				            	<h3><span class="glyphicon glyphicon-list-alt" aria-hidden="true" style="padding-right:20px; color:#e8e8e8;"></span>O que<br class="visible-md"> eu preciso?</span></h3>
+
+					            	<!-- <div class="collapse" id="collapseExample"> -->
+									  <div class="well text-left">
+									    <p><strong>- Estar no Simples Nacional;</strong><br>
+									    - Ter a atividade dentro da lista <small style="padding-left:5px;">(<a href="#perguntas">veja a lista</a>)</small><br>
+									    - Não comercializar produtos com substituição tributária. <small style="padding-left:5px;">(<a href="#perguntas">veja a lista</a>)</small><br>
+									    - Ter certificado digital A1;<br>
+									    - Não realizar importação/exportação;<br>
+                                                <br class="visible-md">
+						            	</p>
+									 <!--  </div> -->
+									</div>
+				            	<!-- <a class="blockLink" href="#collapseExample" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"></a> -->
+				            </div>
+
+			            </div>
+
+			            <hr class="visible-xs visible-sm">
+
+			             <div class="col-md-4">
+
+			             	<div class="aopagar" id="passomigrar">
+				            	<h3><i class="fa fa-credit-card" style="padding-right:20px; color:#e8e8e8;"></i></span>Quanto <br class="visible-md">vai custar?</h3>
+
+				            		<!-- <div class="collapse" id="collapseExample2"> -->
+									  <div class="well text-left">
+									   <p><strong>Para iniciar a migração, cobramos a sua primeira mensalidade.</strong> Fique tranquilo(a), este pagamento se mantém como crédito para o mês que iniciarmos a responsabilidade pela sua contabilidade. Até lá você não será cobrado mais nada.</p>
+									  </div>
+									<!-- </div>-->
+				            	<!-- <a class="blockLink" href="#collapseExample2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"></a>-->
+				            </div>
+
+			            </div>
+
+			             <hr class="visible-xs visible-sm">
+
+			            <div class="col-md-4">
+
+			          	 	<div class="oquenaoprecisa" id="passomigrar">
+			            		<h3><i class="fa fa-check-square-o" style="padding-right:20px; color:#e8e8e8;"></i>Quando <br class="visible-md">começa?</h3>
+
+			            			<!-- <div class="collapse" id="collapseExample3">-->
+									  <div class="well text-left">
+									   <p><strong>Nossa responsabilidade pela sua contabilidade se inicia a partir do mês que você determinar.</strong> Como as vagas para o comércio são limitadas, recomendamos fazer já o cadastro para garantir a sua. Não leva mais que 2 min! :)<br class="visible-md"><br class="visible-md"></p>
+									  </div>
+									<!-- </div>-->
+				            	<!-- <a class="blockLink" href="#collapseExample3" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"></a>-->
+
+			            	</div>
+
+			            </div>
+
+		      </div>
+
+				<div class="row" style="text-align:center;">
+					<div class="col-xs-12 col-md-12 col-lg-4 col-lg-offset-4" id="botaosupremo alt">
+
+						<a href="#cabenobolso"><button class="botaosupremo alt">simule a mensalidade</button></a>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		</section>
+
+		<!-- Cabe no seu bolso -->
+
+<!-- 		<div class="cabenobolso" style="padding-bottom:0;"> -->
+<!-- 			<div class="container"> -->
+<!-- 				<div class="row"> -->
+
+<!-- 					<div class="col-md-12" style="padding-bottom:50px"> -->
+
+<!-- 						<h2>Tudo o que um contador tradicional faz, só que online.</h2> -->
+<!-- 						<p>Todas as obrigações legais e fiscais do seu negócio estão garantidas aqui.</p> -->
+
+
+
+
+<!-- 					</div> -->
+
+<!-- 					<div class="col-lg-3 col-lg-offset-2 col-md-4 col-md-offset-1 col-sm-4" > -->
+
+
+<!-- 						<div class="simplesnac" style="padding-bottom:20px;"> -->
+
+<!-- 								<h3 style="font-size:1.4em">Empresas de Comércio<br><span style="font-size:0.7em; padding-left:10px; color:#B1DBFF;">mensalidade a partir de:</span></h3> -->
+<!-- 								<span class="cifrao">R$ </span><span class="valor"  style="line-height:1.1em;">99</span><strong>/ mês</strong>								 -->
+
+<!-- 						</div> -->
+
+<!-- <!-- 					<div class="lucropre" style="padding-bottom:20px;"> -->
+
+<!-- <!-- 							<h3 style="font-size:1.5em">Comércio + Serviço</h3> -->
+<!-- <!-- 							<span class="cifrao">R$</span> <span class="valor" style="line-height:1em">129</span><strong>/ mês</strong> -->
+
+<!-- <!-- 					</div> -->
+
+<!-- 					</div> -->
+
+<!-- 					<div class="col-md-1 visible-md visible-lg text-center" style="margin:0; padding-top:0px; padding-right:20px;"> -->
+<!-- 						<br><br><br><br><span style="font-size:3em; color:#e8e8e8;"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></span> -->
+<!-- 					</div> -->
+
+<!-- 					<div class="col-md-6 col-sm-8 col-lg-5 col-lg-offset-0" "> -->
+<!-- 						<br class="visible-xs"><h2 style="padding-top:0px; margin:0;">Preço válido para:</h2> -->
+
+<!-- 						<p class="descrixo" style="padding-bottom:0;"> -->
+
+<!-- 						<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp; Empresa sediada nos estados de SP e RJ <br> -->
+<!-- 						<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp; Regime Simples Nacional<br> -->
+<!-- 						<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp; Ter uma das atividades da lista <br class="visible-xs"><span style="font-size:0.7em">(<a href="#perguntas">veja a lista</a>)</span><br> -->
+<!-- 					<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp; Até 3 sócios <span style="font-size:0.7em">(adicione R$29 para cada sócio extra)</span><br> -->
+<!-- 						<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp; Sem funcionários <br class="visible-xs"><span style="font-size:0.7em">(adicione R$29/mês por funcionário)</span><br> -->
+<!-- 						<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp; Faturamento mensal até <br class="visible-xs">R$ 50.000,00 <br> -->
+<!-- 						<span class="glyphicon glyphicon-hand-right" aria-hidden="true" style="color:#8F8F8F;"></span>&nbsp;&nbsp; <strong>OBS:</strong> Comércio + Serviço a partir de R$129/mês -->
+<!-- 						<br class="visible-sm"><br class="visible-sm"> -->
+<!-- 						<br class="visible-xs"><a href="#migre"><button class="botaosupremo alt" style="margin-top:20px; margin-bottom:0; font-size:1.3em;">garanta sua vaga!</button></a> -->
+<!-- 						<br class="visible-sm"><br class="visible-sm"> -->
+<!-- 						</p> -->
+
+<!-- 					</div> -->
+
+<!-- 					<div class="col-md-12" style="margin:0; padding-bottom:40px;"> -->
+<!-- 						<br><a href="#migre/" target="_blank"><h5><span class="glyphicon glyphicon-arrow-right" style="padding-right:10px;" aria-hidden="true"></span>Sua empresa não se enquadra? Faça o cadastro para receber mais informações.</h5></a> -->
+<!-- 					</div> -->
+
+
+<!-- 		</div> -->
+			<div class="simule" style="padding-top:40px; padding-bottom:20px; background-color:#1392ff; border-top:1px solid #fff; border-bottom:1px solid #fff;" ng-controller="SimuladorController">
+							<div class="container">
+								<div class="row">
+									<section id="cabenobolso">
+									<h2 class="text-center" style="padding:0 20px; color:#fff;">Mensalidade à partir de R$99/mês</h2>
+ 			 						<p style="padding-bottom:30px; color:#fff;">Calcule a sua economia abaixo:</p>
+
+									<div class="calculadoras col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0" id="especial">
+
+										<div class="btn-group" data-toggle="buttons" style="display:inline;">
+											  <label class="btn btn-primary active" id="tab-sn" style="width:35%; margin-left:5%; padding:6px 0;" ng-click="comercio = true">
+											    <a aria-controls="home" role="tab" data-toggle="tab"><input type="radio" name="options" id="option1" autocomplete="off" checked><h4>Comércio</h4></a>
+											  </label>
+											  <label class="btn btn-primary" id="tab-lp" style="width:55%; margin-right:5%; padding:6px 0;" ng-click="comercio = false">
+											    <a aria-controls="home" role="tab" data-toggle="tab"><input type="radio" name="options" id="option2" autocomplete="off"><h4>Comércio + Serviço</h4></a>
+											  </label>
+										</div>
+
+										<!-- Tab panes -->
+										<p style="padding-top:60px">Quanto você paga de contabilidade por mês?</p>
+
+										<div class="input-group">
+											 <span class="input-group-addon" style="background-color:#fafafa">R$</span>
+											<input type="number" ng-model="valorContadorAtual" min="0" max="2000" id="valorAtualCont" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
+
+										</div>
+										<p  style="padding-top:15px">Quantos sócios tem sua empresa?</p>
+
+										<div class="input-group">
+											<input type="number" ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700">
+										</div>
+
+										<p style="padding-top:15px;">Quantos funcionários?</p>
+
+										<div class="input-group">
+
+											<input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="text-align:center; font-size:2em; font-weight:700" >
+
+										</div>
+
+										<p style="padding-top:15px;">Qual seu faturamento mensal?</p>
+
+										<div class="input-group">
+
+											<div class="dropdown">
+											  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; text-align:center; font-size:1.2em; line-height:2.5em; font-weight:700">
+											    {{ltFaturamento[indice]}}&nbsp;&nbsp;
+											    <span class="caret"></span>
+											  </button>
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="width:100%; text-align:center; font-size:1em; font-weight:700">
+											    <li ng-repeat="item in ltFaturamento"><a href ng-click="atualizaFaturamento($index)">{{item}}</a></li>
+											  </ul>
+											</div>
+											<br>
+										</div>
+
+									</div>
+
+									<div class="col-md-1 hidden-sm hidden-xs hidden-md" style="font-size: 3em;color: #fff; padding-top:90px;"><br><br>
+										<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+									</div>
+
+									<div class="col-md-4 col-xs-12" style="padding-top:40px; background-color:transparent; color:#fff; border:none;">
+											Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, sendo uma empresa de <strong>{{comercio ? "Comércio" : "Comércio + Serviço"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>, <br><br><strong>sua mensalidade será de:</strong><br>
+											<span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span><strong> / mês<br><span style="color:#B7DEFF;">PS: <span style="text-decoration:underline">Não</span> cobramos 13º</span></strong>
+
+											<br><hr style="width:40%"><strong>o que você vai economizar no ano:</strong><br>
+											<span class="cifrao">R$ </span> <span class="valor economia">{{valorDescontoAnual}}</span><strong> / ano</strong>
+
+											<br><br class="visible-xs"><a href="#migre" ><button class="botaosupremob" style="font-size:1.5em">garanta sua vaga :)</button></a>
+											<br><br><p class="abrirempre" style="color:rgba(255,255,255,.8); font-size:0.8em;">Sua empresa é apenas prestadora de serviços? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="text-decoration:underline; color:rgba(255,255,255,.8)">Consulte aqui</a></p>
+
+
+									</div>
+
+								</div>
+								<div class="row">
+									<br class="hidden-xs"><br class="visible-xs"><small><p style="padding-top:5px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna com clientes sobre o custo do serviço de contabilidade anterior (R$788/mês).</span></p></small>
+								</div>
+							</div>
+						</div>
+
+		</section>
+
+
+
+
+
+	<div class="migre2 text-center" style="background-color:#fafafa; border-bottom:1px solid #e8e8e8; padding:30px 0 40px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<h2>Somos simples e transparentes, faz parte da nossa cultura.</h2><p style="font-weight: 600; font-size: 1.2em; color: #8f8f8f;">Temos certeza que você vai gostar. Para provar, nosso índice de satisfação de atendimento:</p>
+						<br>
+							<br>
+								<script type="text/javascript" src="/assets/js/satisfaction.js"></script>
+								<script type="text/javascript">
+									var markup =  '\
+								        <div class="zd_satisfaction col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12" style="background-color:#fff; border-bottom:3px solid #e8e8e8; border-radius:100px;">\
+								            <div class="zd_satisfaction_score">\
+								            <p class="zd_rating_number" style="color:#8ACB00; line-height:1.3em;"><span class="counter">' + settings.ratings.good + '</span>%</p>\
+								            <p class="zd_rating_string" style="color:#8ACB00"><strong>' + settings.strings.score + '</strong></p><br>\
+								          </div>\
+								        </div>\
+								        <div class="zd_plug col-md-12 col-sm-12 col-xs-12"><br><span class="blink glyphicon glyphicon-certificate" style="padding-right:10px; font-size:0.5em"></span>Atualizado ao vivo por nossos minions do <a href="http://www.zendesk.com/" target="_blank" style="text-decoration:underline">Zendesk</a><span class="hidden-xs glyphicon glyphicon-ok" style="padding-left:5px; color:#8ACB00"></span></div>\
+								      ';
+
+								    document.write(markup);
+								</script>
+
+
+
+					</div>
+
+					<div class="col-xs-12 col-md-12 col-lg-4 col-lg-offset-4" id="botaosupremo alt">
+
+						<a href="#migre"><button class="botaosupremo alt" style="margin-top:10px 0;">garanta sua vaga!</button></a>
+						<p class="abrirempre">Sua empresa é prestadora de serviços? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank">Consulte aqui</a></p>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+<!-- Migre hoje sua empresa -->
+		<div class="migre">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+
+						<section id="migre"><h2>Estamos prontos para <br>ser seu escritório de<br> contabilidade online</h2>
+						<br><p><span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;O cadastro é rápido e sem burocracia, <strong>preencha em apenas 5 minutos</strong><br>
+								<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;Não é necessário nenhum documento do seu atual contador <strong>nesta etapa</strong><br>
+								<span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:#8acb00;"></span>&nbsp;&nbsp;Temos uma equipe fanática para manter <strong>sua empresa 100% regularizada</strong>
+
+							</p>
+						<br>
+						<img src="/assets/img/qualidademig.png" class="img-responsive">
+
+						<div class="hidden-sm hidden-xs">
+							<br><br>
+							<a data-toggle="collapse" href="#abreDuvida" aria-expanded="false" aria-controls="abreDuvida" style="color:#666; font-size:0.9em; border:1px solid #e8e8e8; border-radius:25px; padding:5px; ">
+							 - Condições da garantia do dinheiro de volta&nbsp;&nbsp;<span class="caret"></span>
+							</a>
+
+							<div class="collapse" id="abreDuvida" style="width:80%; margin-top:10px;">
+							  <div class="well" style="padding:10px 15px; background-color:#fafafa;">
+							   <p style="line-height:1.7em;"><span style="font-size:0.9em">Se em até 30 dias você não estiver contente com o serviço de contabilidade online da Contabilizei, nós cancelamos
+								sua conta e lhe restituímos integralmente o valor da mensalidade.
+								Sem perguntas e sem ressentimentos, pode confiar. :)
+								<br><br>
+								<em><small>* Exclusivo para clientes que já têm empresa e migraram
+								a contabilidade para a Contabilizei.</small></em></span></p>
+							  </div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-5 col-sm-10">
+
+							<h3>Inicie agora mesmo <span class="glyphicon glyphicon-ok hidden-xs" aria-hidden="true"></span></h3>
+							<p class="visible-lg visible-md">economia e eficiência comprovadas para você :)</p>
+							<br>
+
+						<form class="form-horizontal" id="form-migracao" role="form" method="post">
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<input type="nome" class="form-control" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<input type="cpf" class="form-control" name="cpf" id="cpf" placeholder="CPF">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<input type="telefone" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<input type="password" class="form-control" name="senha" id="senha" placeholder="Defina sua senha">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-lg-12" align="center">
+									<button id="btn-iniciar-migracao" align="center" style="margin-bottom:5px;">Iniciar Cadastro</button>
+									<p class="abrirempre" style="font-size:0.9em">Sua empresa é prestadora de serivços? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank">Consulte aqui</a></p>
+									<hr class="visible-xs">
+									<p class="abrirempre" style="font-size:0.9em; padding:0px;">Não possui empresa?<br class="visible-xs"><a href="/abrir-empresa/" target="_blank"> Abrimos sua empresa de graça</a></p><hr>
+									<span class="aoclicar">Ao clicar você concorda <br class="visible-xs">com os <a href="/termos-de-uso/Termos-de-uso-19032014.pdf" target="blank_">termos de uso</a>.</span>
+								</div>
+							</div>
+						  </form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+
+		<!-- Sobre o Contabilizei -->
+		<div class="sobre visible-lg" style="border-bottom:1px solid #e8e8e8">
+			<div class="container" >
+				<div class="row">
+
+					<div class="col-md-3">
+						<img src="/assets/img/presente.png">
+						<p>Estamos presentes em <br><strong>mais de 30 cidades</strong></p>
+					</div>
+
+					<div class="col-md-3">
+						<img src="/assets/img/econo.png">
+						<p>Serviço completo de contabilidade<br><strong>econômico e prático</strong></p>
+					</div>
+
+					<div class="col-md-3">
+						<img src="/assets/img/atend.png">
+						<p>Atendimento campeão com<br><strong>linguagem simplificada</strong></p>
+					</div>
+
+					<div class="col-md-3" id="setinha">
+						<img src="/assets/img/seta.png">
+						<p>Migre sua empresa<br><strong>e economize agora!</strong></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+	
+
+
+
+
+
+		<!-- O que fazemos vs O que não fazemos -->
+		<section id="fazemos">
+		<div class="fazemos">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>O que está incluso na mensalidade de contabilidade:</h2>
+						<br><br>
+					</div>
+					<div class="col-md-6">
+						<hr class="visible-xs" width="50%">
+
+
+						<h3 class="titulo">Sua empresa 100%<br class="visible-xs"> regularizada com economia:</h3>
+
+						<ul class="esquerda">
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Todas as obrigações legais com Receita Federal e Prefeitura</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Cálculo dos impostos</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Emissão de guia de impostos</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Pro-labore dos sócios</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Obrigações acessórias como DCTF, SPED etc</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Envio do Imposto de Renda da Empresa anual - IRPJ (DIPJ, DEFIS)</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Relatórios contábeis (DRE, Balanço Patrimonial, Balancete, Livro Caixa etc)</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Documentos assinados por contador</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Atendimento personalizado via chat, e-mail e telefone</li>
+							<li><span class="glyphicon glyphicon-ok verde" aria-hidden="true"></span>&nbsp;&nbsp;Conexão segura com a plataforma</li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-1 visible-md visible-lg">
+
+					</div>
+
+					<div class="col-md-5">
+
+						<h3 class="titulo2">serviços extras (exclusivo para clientes)</h3>
+
+						<ul style="color:#999;">
+							<li>Alteração contratual</li>
+							<li>Certidões negativas do INSS, FGTS, Federais, ICMS e ISS</li>
+							<li>Declaração Siscoserv (para empresas exportadoras de serviço)</li>
+							<li>Certidão negativa de falências ou protestos</li>
+							<li>Consultoria</li>
+							<li><em><a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/204434705-Quais-Atividades-A-Contabilizei-N%C3%83O-Realiza-" target="_blank">veja a lista completa aqui </a></em>&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right" style="font-size:0.8em; color:#b5b5b5;"></span></li>
+						</ul>
+
+						<p class="tranquilo"><span style="font-size:1.2em; padding-bottom:10px; font-weight:700;">Por que oferecemos<br class="visible-xs"> serviços extras?</span><br><span style="font-size:0.9em">Estes serviços raramente são solicitados. Nosso modelo de negócios está baseado no que oferecemos via mensalidade para manter sua empresa 100% regularizada com economia. No entanto, caso precise de um serviço extra, estamos aqui para te apoiar.</span></p>
+
+					</div>
+				</div>
+
+				<div class="row" style="text-align:center;">
+						<div class="col-xs-12 col-md-12 col-lg-4 col-lg-offset-4" id="botaosupremo">
+
+						<a href="#migre"><button class="botaosupremo alt">garanta sua vaga!</button></a>
+						<p class="abrirempre">Sua empresa é prestadora de serviços? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank">Consulte aqui</a></p>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		</section>
+
+
+	<!-- Perguntas Frequentes -->
+		<section id="perguntas">
+		<div class="perguntas" style="border-bottom:1px solid #e8e8e8;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2>Perguntas frequentes</h2>
+						<p>Clique na pergunta para expandi-la</p>
+					</div>
+				</div>
+					<div class="perguntasdefato" style="padding-bottom:0; padding-top:20px;">
+					 <div class="row">
+					 	<div class="col-lg-8 col-lg-offset-2">
+		            	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingTwo">
+						      <h5 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						         Quais atividades de comércio vocês atendem?
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+						      <div class="panel-body">
+						       <ul>
+						       		<li>vestuário (moda)</li>
+									<li>suprimento de informática</li>
+									<li>artigos cama, mesa e banho</li>
+									<li>instrumentos musicais</li>
+									<li>livros, jornais e revistas</li>
+									<li>papelaria</li>
+									<li>artigos esportivos</li>
+									<li>óptica</li>
+									<li>calçados</li>
+									<li>equipamentos para escritório</li>
+									<li>móveis</li>
+						       </ul>
+						       <hr>
+						       Se a sua atividade não está listada acima, <a href="#migre" target="_blank">faça seu cadastro<span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-left:5px;"></span></a> para analisarmos! Caso não seja possível atender, entraremos em contato tão quanto começarmos a atender a atividade em questão.
+						      </div>
+						    </div>
+						  </div>
+
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingOne">
+						      <h5 class="panel-title">
+						        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						         Quanto tempo leva o processo de cadastro da Contabilizei?
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+						      <div class="panel-body">
+						        O processo de cadastro para Contabilizei é muito rápido, <a href="#migre" target="_blank">basta iniciá-lo aqui<span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-left:5px;"></span></a> Após a conclusão, nossa equipe de contadores analisa as informações e te retorna em até 03 dias úteis para atualizar seu processo.
+						      </div>
+						    </div>
+						  </div>
+
+						   <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingMei">
+						      <h5 class="panel-title">
+						        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseMei" aria-expanded="false" aria-controls="collapseMei">
+						         Quais são os produtos sujeitos à substituição tributária?
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseMei" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingMei">
+						      <div class="panel-body">
+						       <ul>
+						       		<li>Derivados do fumo</li>
+									<li>Cerveja, chope, refrigerante, água mineral ou gelo, bebidas hidroeletrolíticas (Isotônicas) e energéticas.</li>
+									<li>Cimento de qualquer espécie, exceto branco</li>
+									<li>Biscoito, pães industrializados e massas de qualquer espécie (derivados de trigo)</li>
+									<li>Óleo comestível</li>
+									<li>Açucar</li>
+									<li>Combustíveis, Derivados ou não do petróleo</li>
+									<li>Operações relativas à venda por sistema de marketing porta-a-porta a consumidor final</li>
+									<li>Produtos farmacêuticos, algodão, soro, vacina, atadura, esparadrapo, cotonete, gaze, mamadeira, bico, absorvente higiênico, preservativo, seringa escova e pasta dentifrícias, polivitgaminas e vitaminas, agulhas e seringas, fio dental e fita dental, chupeta, preparação para higiene bucal e dentária, fraldas descartáveis, preparação química contraceptivas à base de hormônios ou de espemicidas.</li>
+									<li>Picolés e sorvetes e acessórios ou componentes destinados a integrar ou acondicionar o sorvete</li>
+									<li>Sorvetes de qualquer espécies e preparados para fabricação de sorvetes de máquinas</li>
+									<li>Pneumáticos, Câmaras de ar e Protetores de borracha.</li>
+									<li>Tintas vernizes e outras mercadorias da indústria química, preparações concebidas para solver diluir ou remover tintas e vernizes, ceras eucáusticas, massas de polir xadrez e pós assemelhados exceto pigmento à base de dióxido de titânio, piche impermeabilizantes, preparação catalístca, massa para acabamento, pintura ou vedação, corantes.</li>
+									<li>Veículos</li>
+									<li>Veículos, faturamento direto ao Consumidor, inclusive Arrendamento Mercantil(Leasing)</li>
+									<li>Filme fotográfico e cinematográfico e slide</li>
+									<li>Lâmina de barbear, aparelho de barbear descartável e isqueiro</li>
+									<li>Lâmpada elétrica, Reator e Starter.</li>
+									<li>Pilhas e baterias elétricas</li>
+									<li>Disco fonográfico, fita virgem ou gravada</li>
+									<li>Telhas cumeeira e caixa d’água de cimento, amianto, fibrocimento, polietileno e fibra de vidro.</li>
+									<li>Rações tipo “pet” para animais domésticos, classificadas na Posição 2309 da NBM/SH.</li>
+									<li>Seringas e Agulhas</li>
+									<li>Aparelhos Celulares, Cartões Inteligentes (Smart Cards, Sim Card)</li>
+									<li>Veículos de duas rodas (Motocicletas)</li>
+									<li>Autopeças</li>
+
+									<li>Produtos Farmacêuticos</li>
+									<li>Bebidas Quentes (exceto: cachaça)</li>
+
+
+									<li>Colchões, suportes elásticos para cama, travesseiros e pillow e protetores de colchão.</li>
+									<li>Material de Construção, Acabamento e Bricolagem.</li>
+
+									<li>Material de Limpeza.</li>
+
+						       </ul>
+						      </div>
+						    </div>
+						  </div>
+						   <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingMei2">
+						      <h5 class="panel-title">
+						        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseMei2" aria-expanded="false" aria-controls="collapseMei2">
+						       	 Não tenho certificado digital. Como adquiro um?
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseMei2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingMei2">
+						      <div class="panel-body">
+							       Preparamos um passo a passo simples para te ajudar a obter o certificado digital, <a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/203761219-Ainda-n%C3%A3o-tenho-o-certificado-digital-como-posso-obter-" target="_blank">acesse-o aqui<span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-left:5px;"></span></a>
+
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingThree">
+						      <h5 class="panel-title">
+						        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						           Sou MEI, você atendem?
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+						      <div class="panel-body">
+						      	Não. De uma forma geral, empresas MEI não necessitam de serviços contábeis.
+						      </div>
+						    </div>
+						   </div>
+
+						   <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingFour">
+						      <h5 class="panel-title">
+						        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						          Minha empresa tem atividade de comércio e serviço. Posso transferir para a Contabilizei?
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+						      <div class="panel-body">
+						    	Depende, este é um caso que precisa de uma análise mais detalhada em relação às suas atividades. <a href="#migre" target="_blank">Faça seu cadastro aqui<span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-left:5px;"></span></a> e nós te retornaremos em até 03 dias úteis. :)
+							 </div>
+						    </div>
+						  </div>
+
+
+
+						    <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingFive">
+						      <h5 class="panel-title">
+						        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+						        E os livros contábeis do período anterior à Contabilizei?
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+						      <div class="panel-body">
+						  Você coleta os livros no antigo contador e arquiva no seu escritório até nossa equipe de contadores fanáticos entrar em contato com você.
+							 </div>
+						    </div>
+						  </div>
+
+
+						    <div class="panel panel-default">
+						    <div class="panel-heading" role="tab" id="headingSix">
+						      <h5 class="panel-title">
+						        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+						           Meu estado não é atendido pela Contabilizei. O que faço?
+						        </a>
+						      </h5>
+						    </div>
+						    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+						      <div class="panel-body">
+						     Nosso objetivo é atender mais estados e estamos trabalhando para isto. Nós podemos notificar você quando estivermos prontos no seu estado: basta <a href="#migre" target="_blank">realizar o cadastro<span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-left:5px;"></span></a> conosco, inserir o CNPJ e aguardar nosso contato.
+
+							 </div>
+						    </div>
+						  </div>
+
+						  </div>
+						</div>
+					</div>
+				</div>
+
+<!-- 					<div class="col-xs-12 col-md-12 col-lg-4 col-lg-offset-4" id="botaosupremo" > -->
+
+<!-- 						<a href="#migre"><button class="botaosupremo alt" style="margin:30px 0;">garanta sua vaga!</button></a> -->
+
+<!-- 					</div> -->
+				<br><br>
+
+			</div>
+		</div>
+
+		</section>
+
+		<!-- Simule a economia -->
+<!-- 		<section id="simule"> -->
+<!-- 		<div class="simule" style="background-color:#fff; background-image:url('../assets/img/bgvideo.png'); padding:30px 0;"> -->
+<!-- 			<div class="container"> -->
+<!-- 				<div class="row"> -->
+<!-- 					<div class="col-md-12"> -->
+<!-- 						<h2>Quanto você economiza conosco:</h2> -->
+
+<!-- 					</div> -->
+
+<!-- 					<div class="col-md-4 col-md-offset-2" style="background-color:#fff; padding:30px 0; border:1px solid #e8e8e8; border-radius:20px;"> -->
+
+<!-- 						<div class="btn-group" data-toggle="buttons">
+<!-- 							  <label class="btn btn-primary active" id="tab-sn"> -->
+<!-- 							    <a aria-controls="home" role="tab" data-toggle="tab"><input type="radio" name="options" id="option1" autocomplete="off" checked><h4>Simples Nacional</h4></a> -->
+<!-- 							  </label> -->
+<!-- 							  <label class="btn btn-primary" id="tab-lp"> -->
+<!-- 							    <a aria-controls="home" role="tab" data-toggle="tab"><input type="radio" name="options" id="option2" autocomplete="off"><h4>Lucro Presumido</h4></a> -->
+<!-- 							  </label> -->
+
+<!-- 						</div> -->
+
+<!-- 						Tab panes -->
+
+<!-- 						<p style="font-size:1.2em">Digite seu custo mensal de contabilidade:</p><br> -->
+
+<!-- 						<div class="input-group"> -->
+<!-- 							<span class="input-group-addon">R$</span> -->
+<!-- 							<input type="text" id="valor-mensalidade" class="form-control" value="788" style="text-align:center; font-size:2em; font-weight:700;"> -->
+<!-- 							<span class="input-group-addon">,00</span> -->
+<!-- 						</div> -->
+
+<!-- 					</div> -->
+
+<!-- 					<div class="col-md-4" style="padding-top:30px; border:none; background:none;"> -->
+<!-- 							<span class="badge" style="background-color:#8acb00; color:#fff; font-size:1em; padding:4px 10px;"><strong>Com a Contabilizei você economiza até:</strong></span><br> -->
+<!-- 							<span class="cifrao" style="color:#8acb00">R$ </span> <span class="valor economia" style="color:#8acb00">8.268</span><strong><span style="color:#8acb00">/ ano</span></strong> -->
+
+
+<!-- 					</div> -->
+
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+<!-- 		</section> -->
+
+
+
+
+
+		<!-- Eficiência e economia para você -->
+		<div class="eficiencia" style="padding:20px 0;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						<h5>Mais de <strong>30.000</strong> empresas querem usar Contabilizei. <br class="visible-xs"> <br class="visible-xs"><a href="#migre"><button class="botaosupremo" style="font-size:1.2em; padding:10px 20px; margin-left:15px;">garanta sua vaga agora!</small></button></a> </h5>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<!-- Rodapé -->
+			<!-- Rodapé -->
+		<footer>
+		    <div class="footer" id="footer">
+		        <div class="container">
+		            <div class="row">
+
+		            	<div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+		                    <h3> Contabilizei </h3>
+		                    <ul>
+		                        <li> <a href="/contabilizei-contabilidade-online"> A empresa </a> </li>
+		                        <li> <a href="/midia"> Midia </a> </li>
+		                        <li> <a href="/contabilidade-online" target="_blank"> Blog </a> </li>
+		                        <li> <a href="/reclame-aqui-contabilizei/" target="_blank"> Reclame aqui </a> </li>
+		                        <li> <a href="/documentos/politica-de-privacidade.pdf" target="_blank"> Política de privacidade </a> </li>
+		                        <li> <a href="https://jobs.lever.co/contabilizei" target="_blank"> Trabalhe conosco (vagas) </a> </li>
+		                    </ul>
+		                </div>
+
+		                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+		                    <h3> Contabilidade Online </h3>
+		                    <ul>
+		                        <li role="presentation"> <a href="/contador-online/"> Como funciona</a> </li>
+		                        <li role="presentation"> <a href="/escritorio-contabilidade-online/"> Quanto custa </a> </li>
+		                        <li role="presentation"> <a href="/escritorio-contabilidade-online/"> Quais cidades atendemos </a> </li>
+		                        <li role="presentation"> <a href="/seguranca-contabilidade-online/"> Segurança na contabilidade online </a> </li>
+		                        <li role="presentation"> <a href="http://suporte.contabilizei.com.br/hc/pt-br" target="_blank"> Central de atendimento </a> </li>
+		                    </ul>
+		                </div>
+
+		               	<div class="col-lg-3  col-md-3 col-sm-4 col-xs-12">
+		                    <h3> Últimas no Blog </h3>
+		                    <ul>
+		                    	<li> <a href="/contabilidade-online/desoneracao-folha-de-pagamento/" target="_blank">Desoneração na folha de pagamento</a> </li>
+		                    	<li> <a href="/contabilidade-online/alteracao-tabela-simples-nacional-2016/" target="_blank">Alteração tabela simples nacional 2016</a> </li>
+		                        <li> <a href="/contabilidade-online/como-abrir-empresa/" target="_blank">Como abrir empresa em 4 passos</a> </li>
+		                        <li> <a href="/contabilidade-online/IRPF-2015-imposto-de-renda/" target="_blank">Declaração IR pessoa física 2015 </a> </li>
+		                        <li> <a href="/contabilidade-online/tabela-simples-nacional/" target="_blank"> Guia completo do simples nacional </a> </li>
+		                        <li> <a href="/contabilidade-online/como-solicitar-enquadramento-simples-nacional/" target="_blank"> Solicitando enquadramento no simples </a> </li>
+		                        <li> <a href="/contabilidade-online/artigos-contabilidade-online/super-simples-nacional-mudancas/" target="_blank"> As mudanças no super simples nacional </a> </li>
+		                        <li> <a href="/contabilidade-online/artigos-contabilidade-online/motivos-para-contabilidade-online/" target="_blank"> Motivos para usar contabilidade online </a> </li>
+		                    </ul>
+		                </div>
+
+		                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+		                    <h3> Conecte-se conosco </h3>
+
+		                    <div class="fb-page" data-href="https://www.facebook.com/contabilizei" data-hide-cover="false" data-show-facepile="true" data-show-posts="false" height="600"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/contabilizei"><a href="https://www.facebook.com/contabilizei"></a></blockquote></div></div>
+		                </div>
+
+		                <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+		            	 	<h3> Somos investidos pelo grupo Kaszek </h3>
+		            	 	<a href="http://www.kaszek.com/" target="_blank"><img src="/assets/img/kaszekhome.png"></a><span class="hidden-xs hidden-sm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br class="visible-xs"><small>* eleito o melhor grupo de investimentos<br class="visible-xs"> da América Latina em 2015 <a href="http://latam-founders.com/community/35/" target="_blank"><span class="glyphicon glyphicon-info-sign" style="padding-left:5px; color:#007dc5;" aria-hidden="true"></span></a></small>
+		            	</div>
+
+		            </div>
+		            <!--/.row-->
+		        	<div class="row">
+		            	<div class="col-lg-12 col-md-12">
+		                    <h3> Sobre a Contabilizei </h3>
+			            	<p>Contabilizei Contabilidade é um escritório de Contabilidade Online a partir de R$49/mês. O contador online para você abrir sua empresa grátis e economizar tempo e dinheiro. Conosco você tem disponível sua contabilidade online, emite Notas fiscais eletrônicas (NFS-e), gerencia folha de pagamentos, impostos e relatórios gerenciais.</p>
+			            	<br>
+			            	<p><small>Conforme determinação legal, as atividades contábeis são prestadas unicamente pela empresa Contabilizei Contabilidade através de seus contadores fanáticos. A Contabilizei Tecnologia é empresa parceira que viabiliza o software inteligente e realiza inovações tecnológicas possibilitando sempre a melhor plataforma contábil online. O termo "Contabilizei" utilizado neste site faz referência ora à Contabilizei Contabilidade ora à Contabilizei Tecnologia, as quais atuam em parceria e atendem a todas as exigências legais.</small></p>
+						    <br>
+						    <p>Endereço: Rua Francisco Rocha, 198 - Batel, Curitiba - PR, 80420-130.</p>
+						    <p>CNPJ: 20.182.807/0001-08 - Contabilizei Tecnologia Ltda.</p>
+						    <p>CNPJ: 19.322.789/0001-25 - Contabilizei Contabilidade Ltda.</p>
+
+						    <p>Conselho Regional de Contabilidade: PR-007940/O-0 e PR 054502/O-4.</p>
+
+						</div>
+					</div>
+
+		        </div>
+		        <!--/.container-->
+		    </div>
+		    <!--/.footer-->
+
+		    <div class="footer-bottom">
+		        <div class="container" align="center">
+		            <p>©<a href="/"> Contabilizei Contabilidade Online</a>. Todos os direitos reservados.</p>
+		        </div>
+		    </div>
+		    <!--/.footer-bottom-->
+		</footer>
+
+		<!-- Load Bootstrap Js e jQuery -->
+<!-- 	    <script type="text/javascript" src="/assets/lib/jquery/jquery-2.1.1.min.js"></script> -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/js/validacoes.js"></script>
+		<script type="text/javascript" src="/assets/js/scroll.js"></script>
+
+
+		<!-- BOTAO DE AJUDA -->
+<!--
+		<div id="btn-ajuda-fixed">
+			<a class="botaoajuda" href="javascript:void(0);">
+				<p><i class="fa fa-question-circle" style="padding-right:10px; font-size:1.3em;"></i>Ajuda</p>
+			</a>
+			<div class="geralajuda">
+				<div class="boxajuda" style="display: none">
+					<span class="glyphicon glyphicon-search help-search-ajuda" style="padding-left:6%; padding-right:2%; color:#bbb;"></span>
+					<input autocapitalize="off" autocorrect="off" placeholder="Como podemos ajudá-lo?" type="search">
+					<div class="boxflecha"></div>
+				</div>
+
+				<div class="fecharajuda" style="display: none">
+					<a href="javascript:void(0)" class="boxx">
+						<i class="fa fa-times iconbox"></i>
+					</a>
+				</div>
+			</div>
+
+		</div>
+-->
+
+		<script type="text/javascript" src="assets/lib/jquery/jquery-2.1.1.min.js"></script>
+		<script>
+			 jQuery(document).ready(function($) {
+				 $('.counter').counterUp({
+					delay: 10,
+					time: 1000
+				 });
+			 });
+		</script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<script src="/assets/js/counterup.js"></script>
+
+	  	<!-- SCRIPTS DE FORMULARIOS E CONTEUDO DINÂMICO -->
+		<script type="text/javascript" src="/assets/lib/jquery.mask/jquery.mask.min.js"></script>
+		<script type="text/javascript" src="/assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script>
+		<script type="text/javascript" src="/assets/lib/placeholders/placeholders.min.js"></script>
+	    <script type="text/javascript" src="/assets/lib/jquery/jquery.cookie.js"></script>
+		<script type="text/javascript" src="/assets/lib/jquery.validate/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="/assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script>
+		<script type="text/javascript" src="/assets/lib/accounting/accounting.min.js"></script>
+
+		<script type="text/javascript" src="/assets/js/parametros.js"></script>
+
+	    <script type="text/javascript" src="/assets/js/cupom.js"></script>
+	    <script type="text/javascript" src="/assets/js/botao-ajuda.js"></script>
+	    <script type="text/javascript" src="/assets/js/app.js"></script>
+	    <script type="text/javascript" src="/assets/js/cadastro-migracao-post.js"></script>
+
+
+		<!-- CALCULO ECONOMIA -->
+		<!-- <script type="text/javascript">
+
+			function atualizarEconomia(mensalContabilizei){
+				var valor = mensalContabilizei;
+
+				var valorMensalidade = parseInt($("#valor-mensalidade").val());
+
+				if(valorMensalidade <= valor){
+					$('.valor.economia').html("0");
+				}else{
+					$('.valor.economia').html(accounting.formatMoney( 12 * (valorMensalidade - valor), "", 0, ".", ","));
+				}
+			}
+
+			$(document).on("keyup", "#valor-mensalidade", function(e){
+				var valor = $("#tab-sn").hasClass("active") ? 99 : 99;
+
+				atualizarEconomia(valor);
+
+			});
+
+			$("#tab-sn, #tab-lp").click(function(e){
+				//INVERTIDO POIS ACTIVE SO MUDA NO FINAL DA ACAO DO CLICK
+				var valor = $("#tab-sn").hasClass("active") ? 99 : 99;
+
+				atualizarEconomia(valor);
+			});
+
+		</script>-->
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=234390939943812";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- 		<script> -->
+<!-- 		$(function () { -->
+<!-- 		  $('[data-toggle="tooltip"]').tooltip() -->
+<!-- 		})</script> -->
+
+		<script type="text/javascript" async="true" src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/40bbe6d9-bf4c-4139-8258-af4a415c65d7-loader.js"></script>
+	</body>
+
+</html>

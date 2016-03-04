@@ -1,0 +1,517 @@
+.contabilizei {
+    background:#fff;
+    box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
+    transition:0.2s;
+}
+h2 {
+    font-size:2em;
+}
+.jumbotron {
+    background:none;
+    background-color:#2196F3;
+    padding:178px 0 146px 0;
+    color:#fff;
+    margin:0;
+/*
+    background-image: url('/assets/img/aberturahero.png');
+    background-position: right;
+    background-repeat: no-repeat;
+*/
+}
+.jumbotron h1 {
+    font-weight:700;
+    font-size:3em;
+    margin:0;
+    padding-bottom:30px;
+}
+.jumbotron h2 {
+    margin:0;
+    padding:10px 0 70px 0;  
+}
+.jumbotron p {
+    line-height:1.8em;
+
+}
+.contabilizei2 .espacador {
+    margin-left:250px;
+}
+.jumbotron .texto {
+    opacity:0.9;
+    font-size:17px;
+    line-height:2em;
+}
+.jumbotron .abrirempre {
+    padding:20px 0;
+    font-size:14px;
+    font-weight:400;
+    color:#fff;
+}
+.jumbotron .big {
+    font-size:22px;
+    padding:20px 60px;
+    font-weight:500;
+}
+.escolha {
+/*    padding-bottom:480px;*/
+}
+.opacidade {
+    opacity:0.8;
+}
+.opacidade2 {
+    opacity:0.5;
+}
+.jumbotron .abrirempre a {
+    color:#fff;
+}
+.navlead p,.navlead .economiaTotal {
+    vertical-align: middle;
+}
+.economiaTotal {
+    padding:0 20px;
+}
+.quempode {
+    padding:60px 0 80px 0;
+    background-color:#fff;
+}
+.quempode .dropdown-menu {
+	height: 350px;
+	overflow: auto;
+}
+.quempodeNao {
+    padding:60px 0;
+    background:#FF4A4A;
+}
+.menor {
+    font-size:24px;
+}
+.novoMenu {
+    padding:20px;
+    width:95%; 
+    margin-left:2.5%; 
+    font-size:1.5em; 
+    border-radius:6px; 
+    margin-bottom:60px;
+}
+
+
+.quempode h3 {
+    font-weight:700;
+}
+
+.simule {
+    padding-top:70px; 
+    padding-bottom:20px; 
+    background-color:#1392ff; 
+    border-top:1px solid #fff; 
+    border-bottom:1px solid #fff;
+}
+.simule .calculadora {
+    padding:20px;
+    background-color:#fff;
+    box-shadow:0px 2px 10px 0px rgba(0,0,0,0.25);
+    border-radius:6px;
+}
+.btn {
+    transition:0.3s ease;
+}
+.btn-primary {
+    background: linear-gradient(to bottom,#f6f6f6 0,#ccc 101%);
+    border:1px solid #ADADAD;
+    box-shadow:0px 2px 6px 0px rgba(0,0,0,0.2);
+    text-decoration:none;
+    transition:0.5s ease;
+}
+.btn-primary:hover {
+    background:linear-gradient(to bottom,#f6f6f6 0,#BFBFBF 101%);
+    border:1px solid #ADADAD;
+}
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    background: none;
+    background-color:#ccc;
+    border:none;
+    box-shadow:inset 0 2px 6px rgba(0,0,0,.3);
+    text-decoration:none;
+    border:1px solid #ADADAD;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color:#ccc;
+    box-shadow:inset 0 2px 6px rgba(0,0,0,.3);
+    border:1px solid #ADADAD;
+}
+.btn-group .btn+.btn, .btn-group .btn+.btn-group, .btn-group .btn-group+.btn, .btn-group .btn-group+.btn-group {
+    margin-left:0;
+}
+.calculadora a {
+    color:#666;
+    text-decoration:none;
+    text-shadow:1px 1px 0 rgba(255,255,255,.3);
+}
+
+.simule h4 {
+    font-size:16px;
+    padding:10px 0;
+}
+
+.simule .input-group, .form-control {
+    width: 100%;
+    margin: 0 auto;
+}
+.calculadora .col-md-12, .calculadora .col-xs-12 {
+    padding:0;
+}
+.simule .dropdown-menu {
+    margin-top:-15px;
+}
+.simule .valor {
+    font-size: 6em;
+    font-weight: 400;
+    vertical-align: middle;
+    line-height:1.1em;
+}
+.fazemos {
+	padding:60px 0 80px 0;
+	border-bottom:1px solid #e8e8e8;
+    background-color:#fff;
+}
+.fazemos .x {
+	font-size:4em;
+	font-weight:800;
+	color:#e8e8e8;
+}
+.fazemos h2 {
+	text-align:center;
+}
+.fazemos h3 {
+    opacity:1;
+}
+.fazemos .col-md-2 {
+	padding-top:350px;
+	text-align:center;
+}
+.fazemos ul {
+	list-style-type:none;
+	line-height:3.5em;
+	text-align:left;
+	padding-left:0px;
+    border:1px solid #e8e8e8;
+    padding:0px 20px;
+}
+.fazemos li {
+	border-bottom:1px solid #e8e8e8;
+	padding-left:10px;
+}
+.fazemos li:hover {
+	background-color:#fafafa;
+}
+.fazemos .esquerda {
+	font-weight:500;
+    opacity:1;
+}
+.fazemos .esquerda li:hover {
+	background-color:#ecffc4;
+}
+.verde {
+	color:#a2d92e;
+}
+.fazemos .titulo {
+	text-align:center;
+	font-weight:800;
+	font-size:1em;
+	padding:20px;
+	text-transform:uppercase;
+	background-color:#a2d92e;
+
+	color:#fff;
+	text-shadow:1px 1px #82b515;
+}
+.fazemos .titulo2 {
+	text-align:center;
+	font-weight:800;
+	font-size:1em;
+	padding:20px;
+	text-transform:uppercase;
+	background-color:#bcbcbc;
+
+	color:#fff;
+}
+.fazemos .tranquilo {
+	text-align:left;
+	color:#999;
+	margin-top:20px;
+	padding:20px;
+	background-color:#fafafa;
+	border:1px dashed #e8e8e8;	
+}
+.fazemos .tranquilo:hover {
+	color:#666;
+
+}
+/* Migre */
+
+.form-control {
+    transition:0.5s ease;
+    box-shadow:none !important;
+}
+.migre .input-group,.form-control {
+	width:100%;
+
+	height:50px;
+	margin:0 auto;
+    box-shadow:none;
+    border-radius:0;
+    border:none;
+    border-bottom:2px solid #e8e8e8;
+}
+.migre .input-group,.migre .form-control {
+    padding-left:55px;
+}
+
+.help-block {
+    margin-bottom:0;
+}
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
+    color:#FF4A4A !important
+}
+.has-error .form-control {
+    box-shadow:none !important;
+    border-color:#FF4A4A !important;
+}
+.has-error .form-control-feedback {
+    color:#FF4A4A !important
+}
+.has-success .form-control {
+    box-shadow:none !important;
+    border-color:#8acb00 !important;
+}
+.has-success .form-control-feedback {
+    color:#8acb00 !important;
+}
+.migre .form-control:hover, .form-control:focus {
+    box-shadow:none;
+    border-color:#C5C5C5;
+}
+.migre .form-group .material-icons {
+    color:#e8e8e8;  
+    margin-bottom: -34px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.migre {
+	padding:70px 0;
+    border-bottom:1px solid #e8e8e8;
+}
+.migre input:focus::-webkit-input-placeholder { color:transparent;  transition:0.2s ease; }
+.migre h2 {
+	line-height:1.5em;
+}
+.migre h3 {
+	font-weight:700;
+	font-size:1.8em;
+	color:#64dd17;
+    opacity:1;
+    padding-bottom:30px;
+    margin:0;
+}
+
+
+.migre .aoclicar {
+	color:#999;
+	font-size:0.8em; 
+	font-style:italic;
+}
+.migre .formulario {
+	padding:30px 40px 20px 40px;
+    background-color:#fff;
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.3);
+    border-radius:6px;
+}
+.migre .formEsquerda {
+    padding-right:70px;
+    padding-top:0
+}
+
+.migre img {
+    margin-top: 0px; 
+    margin-right:20px;
+    margin-bottom: 0px;
+    width: 40px;
+
+}
+
+.verde {
+    border:none;
+}
+.perguntas {
+    padding:40px 0 20px 0;
+    background:#fff;
+}
+.perguntasdefato {
+	padding:40px 0 30px 0;
+	text-align:left;
+}
+.perguntasdefato h5 {
+	font-weight:500;
+	color:#666;
+	padding:10px 5px;
+}
+.maisduvidas {
+	padding-top:20px;
+	text-align:center;
+}
+#suporte {
+	border-radius:6px; 
+	padding:15px 55px; 
+	font-size:1.1em;
+}
+.maizin {
+    background-color: #F3F3CC;
+    color: #FFFFE1;
+    padding: 7px 18px;
+    font-size:2.5em; 
+    border-radius:100%; 
+}
+.adiantamento {
+    font-size:14px;
+    line-height:2em;
+    color:#9E9E94;
+    letter-spacing:0.5px;
+}
+.tituloComo {
+    text-transform: uppercase; 
+    letter-spacing:0.2em; 
+    font-size:0.9em;  
+    color:#7D7D75; 
+    line-height:2em
+}
+.cifraoPreco {
+    font-size:0.5em;
+    font-weight:400;
+    padding:0 8px;
+    opacity:0.5;
+    vertical-align: middle;
+}
+.precoVerde {
+    color:#5DCA18;
+    font-size:3.5em;
+    vertical-align: middle;
+    font-weight: 400 !important;
+}
+.listaCnae {
+     min-width:130px;
+}
+.calculadoraSimule {
+ padding-top:19px; 
+    padding-left:46px; 
+    background-color:transparent; 
+    color:#fff; 
+    border:none;
+}
+.cardBranco {
+    margin:0;
+}
+blockquote {
+    font-size:14px;
+    padding: 5px 20px;
+}
+.escolhaAqui {
+    font-size:2em; 
+    width:100%; 
+    margin:0;
+}
+@media (min-width: 1400px) {
+    .jumbotron {
+        padding:265px 0 200px 0;    
+
+    }
+    .jumbotron h1 {
+        padding-bottom:63px;
+    }
+    .jumbotron h2 {
+        padding-bottom:80px;
+    }
+    .produto {
+        height: 1050px;
+/*
+                background:url('/assets/img/bgtech.png');
+        
+        background-color:#2196F3;
+*/
+    }
+    .imgDisplay {
+        width: 900px;
+        margin-right: 150px;
+        margin-top: -610px;
+    }
+    .migre {
+        padding:120px 10px 140px 10px;
+    }
+
+} 
+@media (max-width: 768px) { 
+    .jumbotron {
+        background:none;
+        background:#2196F3;
+        padding:90px 0 60px 0;
+    }
+
+    .jumbotron p {
+        font-size:18px;
+    }
+    .jumbotron .big,.big {
+        padding:20px 0;
+        width:100%;
+        margin:0;
+    }
+    .simule h4 {
+        font-size:16px;
+        padding:10px 0;
+    }
+    .btn-primary {
+        transition:0s;
+    }
+
+    .listaCnae {
+        min-width:0px;
+    }
+    .calculadoraSimule { 
+        padding-left: 15px;
+    }
+    .quempode {
+        padding: 28px 0 60px 0;
+    }
+    h2 {
+        font-size:1.5em;
+        font-weight:500;
+        
+    }
+    .novoMenu {
+        padding:0px;
+        width:100%;
+        font-size:1em; 
+        border-radius:6px; 
+        margin-bottom:60px;
+    }
+    .quempode .dropdown-menu {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .escolhaAqui {
+        font-size:1.5em;   
+    }
+    .precoVerde {
+        font-size:3em;
+    }
+    .simule .dropdown-menu {
+        margin-top:0;
+    }
+    .migre {
+        padding:30px 10px;
+    }
+    .migre .formEsquerda {
+        padding-right:15px;
+        padding-top:0
+    }
+    .migre .formulario {
+    padding: 30px 10px 20px 10px;
+    }
+}
