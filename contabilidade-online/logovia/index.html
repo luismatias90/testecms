@@ -25,15 +25,11 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="/contabilidade-online/assets/css/bootstrap-blog-novo.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="/assets/css/blog.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="/contabilidade-online/assets/css/contabilizei-blog-novo.css" rel="stylesheet">
-    <link href="/assets/css/style4.css" rel="stylesheet">
-    <link href="/assets/css/slidebox.css" rel="stylesheet">
-
-    <!-- Goggle fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Fontes Customizadas -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
 	<script src="//load.sumome.com/" data-sumo-site-id="7abaaff9ea4ea9b94eddac0bc302180c037599de8da451d32b32f23de688b513" async="async"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -55,106 +51,78 @@
   })(window,document,'script','dataLayer','GTM-N9X6Z2');</script>
   <!-- End Google Tag Manager -->
 
-   <div class="jumbotron" style="padding-top:10px; padding-bottom:0;">
+   <!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top contabilizei navtopo">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                 
+              </button>
+              <a class="navbar-brand" href="/"><img src="/assets/img/logo2016.png" class="img-responsive logo hidden-sm hidden-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"><img src="/assets/img/logo2016.png" class="img-responsive visible-sm visible-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
+            </div> 
 
-		<nav class="navbar navbar-default">
-		  <div class="container">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		        <span class="sr-only">Menu</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="/?utm_source=blog&utm_medium=logo&utm_campaign=parcerialogovia"><img src="/assets/img/logoc.png" style="margin-top:-15px;"></a>
-		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-		      <ul class="nav navbar-nav navbar-right">
-		          <li class="dropdown hidden-sm">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false">Contabilizei&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		            <img class="visible-lg visible-md" src="/assets/img/sobre.png" style="width:250px; padding-bottom:10px;">
-		            <li><a href="/contabilizei-contabilidade-online/?utm_source=blog&utm_medium=contabilizei&utm_campaign=parcerialogovia" target="_blank">Conheça a equipe</a></li>
-		            <li><a href="/midia/?utm_source=blog&utm_medium=contabilizei&utm_campaign=parcerialogovia" target="_blank">Nós na mídia</a></li>
-		            <li><a href="/contabilidade-online/?utm_source=blog&utm_medium=contabilizei&utm_campaign=parcerialogovia" target="_blank">Nosso Blog</a></li>
-		            <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Trabalhe Conosco</a></li>
-		            <li><br></li>
-		          </ul>
-		        </li>
-
-		        <li class="dropdown">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false">Abrir Empresa&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		          	<img class="visible-lg visible-md" src="/assets/img/sobre2.png" style="width:350px;">
-		            <p class="textodrop"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Sim, abrimos sua empresa de graça!</span><br> Você paga as taxas do governo, protocola a documentação nos órgãos públicos
-e o resto <br class="hidden-xs">deixa com a gente. Transforme a burocracia <br class="hidden-xs">num clique e tenha mais tempo para o negócio.</p>
-		            <li class="divider hidden-xs"></li>
-		            <li><a href="/abrir-empresa/?utm_source=blog&utm_medium=abrirempresa&utm_campaign=parcerialogovia"><button class="botaosupremob">abra sua empresa de graça</button></a></li>
-		          </ul>
-		        </li>
-
-		           <li class="dropdown">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false">Já tem Empresa?&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		          	<img class="visible-lg visible-md" src="/assets/img/sobre3.png" style="width:350px;">
-		            <p class="textodrop hidden-xs"><span style="font-size:1.3em; font-weight:700;">Atendemos empresas de serviço e comércio:</span><br>Todas as obrigações legais garantidas para sua empresa ficar 100% regularizada com economia.</p>
-		            <li class="divider hidden-xs"></li>
-		            <li><a href="/escritorio-contabilidade-online/"><button class="botaosupremob">tenho empresa de serviços</button></a><a href="/contabilidade-comercio/" style="padding-top:5px;"><button class="botaosupremob">tenho empresa de comércio</button></a></li>
-		          </ul>
-			   	  </li>
-
-			   	  <!--  <li class="dropdown hidden-sm">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false">MEI para ME&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		          	<img class="visible-lg visible-md" src="/assets/img/sobre4.png" style="width:350px;">
-		            <p class="textodrop"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Chegou a hora de crescer.</span><br> Alterar MEI para ME é um grande passo. Conte conosco nessa nova etapa, fazemos a alteração de MEI para ME de graça. Desse jeito você cresce seu negócio e economiza também.</p>
-		            <li class="divider hidden-xs"></li>
-		            <li><a href="/alterar-mei-para-me/?utm_source=blog&utm_medium=meiparame&utm_campaign=parcerialogovia"><button class="botaosupremob">altere MEI para ME de graça</button></a></li>
-		          </ul>
-			   	  </li> -->
-
-			   	   <li class="dropdown">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false" id="droprod">Área do Cliente&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		          	<br>
-		            <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse a plataforma</a></li>
-		            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
-		            <li class="divider hidden-xs"></li>
-		            <li><a href="/?utm_source=blog&utm_medium=areadocliente&utm_campaign=parcerialogovia"><button class="botaosupremob">cadastre-se agora</button></a></li>
-
-		          </ul>
-			   	  </li>
-			  </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-	</div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="espacador hidden-xs hidden-sm">&nbsp;</li>
+                 <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contabilizei <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/contabilizei-contabilidade-online/">Sobre a empresa</a></li>
+<!--                    <li><a href="/funcionalidades/">Nosso produto</a></li>-->
+                    <li><a href="/midia/">Nós na mídia</a></li>
+                    <li><a href="/contabilidade-online/" target="_blank">Blog</a></li>
+                    <li><hr></li>
+                    <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Estamos contratando, vem!</a></li>
+                  </ul>
+                </li>
+                 <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Abrir empresa <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/quanto-custa-abrir-empresa/">Como funciona a abertura</a></li>
+                    <li><a href="/quanto-custa-abrir-empresa/">Escolhendo as atividades</a></li>
+                    
+                    <li><hr></li>
+                    <li><a href="/abrir-empresa/" class="linkBotao"><button class="accent menorzin">Abrir empresa grátis</button></a></li>
+                   
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Já tem empresa? <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    
+                    <li><a href="/escritorio-contabilidade-online/">O que preciso pra migrar</a></li>
+                    <li><a href="/escritorio-contabilidade-online/">Simule a mensalidade</a></li>
+                    
+                    <li><hr></li>
+                    <li><a href="/escritorio-contabilidade-online/" class="linkBotao"><button class="accent menorzin" style="width:100%">Tenho empresa de serviços</button></a></li>
+                      <li><a href="/contabilidade-comercio/" class="linkBotao"><button class="accent menorzin">Tenho empresa de comércio</button></a></li>
+                  </ul>
+                </li>
+                <li class="loginCliente dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">lock_outline</i> Login <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+<!--                    <li><a href="#">Cadastre-se agora</a></li>-->
+                    <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
+                    
+                    <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
+                    <li><hr></li>
+                    <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="cadastre animated fadeIn hidden-xs hidden-sm"><a href="#migre" class="linkBotao2"><button class="accent menorzin">Abrir empresa grátis</button></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+      </nav>
 
 
-  <!--Inicio do nav-footer-->
-  <!--Desktop-->
-  <nav class="navbar navbar-footer navbar-fixed-bottom" role="navigation">
-  	<div class="precos">
-	    <div class="container">
-	          <div class="row">
-	            <div class="col-md-12">
-	           	 <p><strong>Contabilizei</strong> - Contabilidade Online para Empresas de Serviço e Comércio.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/?utm_source=blog&utm_medium=rodapefixo&utm_campaign=parcerialogovia" target="_blank"><button class="botaosupremob">contabilidade a partir de R$49/mês</button></a></p>
-	            </div>
-	          </div>
-	    </div>
-    </div>
-  </nav>
-
-
-
-
-
-	<br><br>
+ 
 
     <div class="container post">
       <div class="topo">
@@ -205,20 +173,7 @@ e o resto <br class="hidden-xs">deixa com a gente. Transforme a burocracia <br c
     </div> <!--row entrevista-->
 
 
-   <!--Form antigo
-  <div class="row signup">
-    <form action="http://contabilizei.us7.list-manage.com/subscribe/post?u=20fce41406f8c0a1765d1d18f&amp;id=2975f414ed" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div class="col-xs-12 col-md-8 well" align="center">
-              <h3>Receba em primeira mão tecnologias, táticas e dicas para potencializar seu negócio</h3>
-              <div class="form-group">
-                <label class="sr-only" for="exampleInputEmail2">E-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" name="EMAIL" placeholder="Insira seu e-mail e">
-              </div>
-              <button type="submit" class="btn btn-success btn-xl">Junte-se a nós</button>
-            <p style="font-size:11px;text-align:center;margin-top:3px;font-style:italic">Nós JAMAIS compartilharemos o seu e-mail</p>
-          </div>
-      </form>
-    </div>-->
+  
     <div class="footer">
       <div class="row autor" id="autor">
         <div class="col-xs-3 col-md-2">
@@ -250,71 +205,32 @@ e o resto <br class="hidden-xs">deixa com a gente. Transforme a burocracia <br c
       </div> <!--row-->
   </div> <!-- /container -->
 
-  <!-- Modal Bootstrap
-  <div class="modal fade" id="modalExit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              </div>
-            <div class="modal-body">
-              <div id="mc_embed_signup">
-                    <div class="row signup">
-                      <div class="col-xs-18 col-md-12" align="center">
-                        <form action="http://contabilizei.us7.list-manage.com/subscribe/post?u=20fce41406f8c0a1765d1d18f&amp;id=2975f414ed" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                          <h3>Receba em primeira mão tecnologias, táticas e dicas para potencializar seu negócio</h3>
-                          <div class="mc-field-group">
-                            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Insira seu e-mail e">
-                          </div>
-                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_20fce41406f8c0a1765d1d18f_2975f414ed" value=""></div>
-                          <div class="clear"><input type="submit" value="Quero dicas para potencializar o meu negócio" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-lg"></div>
-                        </form>
-                      </div>
-                    </div>
-                 </div>
-            </div>
-            <div class="modal-footer">
-                  <p><a href="#" id="ignorarModal"> Não, obrigado.</a></p>
-              </div>
-        </div>
       </div>
-  </div> -->
 
-	<div id="slidebox">
-		<a class="close">&nbsp;</a>
-		<a href="/escritorio-contabilidade-online/?utm_source=blog&utm_medium=sliderbox&utm_campaign=parcerialogovia" target="_blank">
-			<img class="shadow alignCenter" style="width: 90%; height: auto;" src="/assets/img/ctablog.png">
-		</a>
-	</div>
+	
+        
+        
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+  
+    
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 60) { 
+          $(".navbar-fixed-top").addClass("contabilizei2"); 
+        } else {
+          $(".navbar-fixed-top").removeClass("contabilizei2"); 
+        }
+      });
+    });
+    </script>    
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--EXIT MODAL-->
-    <script type="text/javascript" src="/contabilidade-online/assets/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/contabilidade-online/assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/contabilidade-online/assets/js/blog.js"></script>
 
-    <!-- Slidebox Script -->
-	<script type="text/javascript">
-	$(function() {
-	  var slidebox = $('#slidebox');
-	  if (slidebox.length>0) {
-	    $(window).scroll(function(){
-	        var distanceTop = $('#last').offset().top - $(window).height();
-	        if  ($(window).scrollTop() > distanceTop){
-	            slidebox.animate({'right':'0px'},300);
-	        }
-	        else{
-	            slidebox.stop(true).animate({'right':'-430px'},100);
-	        }
-	    });
-	    $('#slidebox .close').on('click',function(){
-	        $(this).parent().remove();
-	    });
-	  }
-	});
-	</script>
-
+    
+      
 </body>
 </html>

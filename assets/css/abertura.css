@@ -9,7 +9,7 @@ h2 {
 .jumbotron {
     background:none;
     background-color:#2196F3;
-    padding:140px 0 100px 0;
+    padding:160px 0 100px 0;
     color:#fff;
     margin:0;
 /*
@@ -43,6 +43,9 @@ h2 {
     font-weight:400;
     color:#fff;
 }
+.depoimento {
+    padding:10px 15px 10px 20px;
+}
 .jumbotron .big {
     font-size:22px;
     padding:20px 60px;
@@ -50,6 +53,10 @@ h2 {
 }
 .opacidade {
     opacity:0.8;
+}
+.navlead {
+    padding:25px 0;
+    font-size:16px;
 }
 .opacidade2 {
     opacity:0.5;
@@ -394,7 +401,7 @@ h2 {
      min-width:130px;
 }
 .calculadoraSimule {
-    padding-top:30px; 
+ padding-top:19px; 
     padding-left:46px; 
     background-color:transparent; 
     color:#fff; 
@@ -412,6 +419,32 @@ blockquote {
     width:100%; 
     margin:0;
 }
+@media (min-width: 1400px) {
+    .jumbotron {
+        padding:224px 0 180px 0;    
+
+    }
+    .jumbotron h2 {
+        padding-bottom:80px;
+    }
+    .produto {
+        height: 1050px;
+/*
+                background:url('/assets/img/bgtech.png');
+        
+        background-color:#2196F3;
+*/
+    }
+    .imgDisplay {
+        width: 900px;
+        margin-right: 150px;
+        margin-top: -610px;
+    }
+    .migre {
+        padding:120px 10px 140px 10px;
+    }
+
+} 
 @media (max-width: 768px) { 
     .jumbotron {
         background:none;
