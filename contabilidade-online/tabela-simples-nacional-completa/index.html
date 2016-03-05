@@ -25,16 +25,12 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="/contabilidade-online/assets/css/bootstrap-blog-novo.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="/assets/css/blog.css" rel="stylesheet">
+    <link href="/assets/css/anexos.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="/contabilidade-online/assets/css/contabilizei-blog-novo.css" rel="stylesheet">
-   	<link href="/assets/css/style4.css" rel="stylesheet">
-    <link href="/assets/css/slidebox.css" rel="stylesheet">
-    <link href="/assets/css/animate.min.css" rel="stylesheet" >
-
-    <!-- Goggle fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Fontes Customizadas -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -57,131 +53,114 @@
 	})(window,document,'script','dataLayer','GTM-N9X6Z2');</script>
 	<!-- End Google Tag Manager -->
 
-  <div class="jumbotron" style="padding-top:10px; padding-bottom:0;">
+   <!-- Navbar -->
+		<nav class="navbar navbar-default navbar-fixed-top contabilizei navtopo">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                 
+              </button>
+              <a class="navbar-brand" href="/"><img src="/assets/img/logo2016.png" class="img-responsive logo hidden-sm hidden-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"><img src="/assets/img/logo2016.png" class="img-responsive visible-sm visible-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
+            </div> 
 
-		<nav class="navbar navbar-default">
-		  <div class="container">
-		    <!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		        <span class="sr-only">Menu</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="/?utm_source=blog&utm_medium=logo&utm_campaign=tabelasimplescompleta"><img src="/assets/img/logoc.png" style="margin-top:-15px;"></a>
-		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-
-		      <ul class="nav navbar-nav navbar-right">
-		          <li class="dropdown hidden-sm">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false">Contabilizei&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		            <img class="visible-lg visible-md" src="/assets/img/sobre.png" style="width:250px; padding-bottom:10px;">
-		            <li><a href="/contabilizei-contabilidade-online/?utm_source=blog&utm_medium=contabilizei&utm_campaign=tabelasimplescompleta" target="_blank">Conheça a equipe</a></li>
-		            <li><a href="/midia/?utm_source=blog&utm_medium=contabilizei&utm_campaign=tabelasimplescompleta" target="_blank">Nós na mídia</a></li>
-		            <li><a href="/contabilidade-online/?utm_source=blog&utm_medium=contabilizei&utm_campaign=tabelasimplescompleta" target="_blank">Nosso Blog</a></li>
-		            <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Trabalhe Conosco</a></li>
-		            <li><br></li>
-		          </ul>
-		        </li>
-
-		        <li class="dropdown">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false">Abrir Empresa&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		          	<img class="visible-lg visible-md" src="/assets/img/sobre2.png" style="width:350px;">
-		            <p class="textodrop"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Sim, abrimos sua empresa de graça!</span><br> Você paga as taxas do governo, protocola a documentação nos órgãos públicos
-e o resto <br class="hidden-xs">deixa com a gente. Transforme a burocracia <br class="hidden-xs">num clique e tenha mais tempo para o negócio.</p>
-		            <li class="divider hidden-xs"></li>
-		            <li><a href="/abrir-empresa/?utm_source=blog&utm_medium=abrirempresa&utm_campaign=tabelasimplescompleta"><button class="botaosupremob">abra sua empresa de graça</button></a></li>
-		          </ul>
-		        </li>
-
-		          <li class="dropdown">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false">Já tem Empresa?&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		          	<img class="visible-lg visible-md" src="/assets/img/sobre3.png" style="width:350px;">
-		            <p class="textodrop hidden-xs"><span style="font-size:1.3em; font-weight:700;">Atendemos empresas de serviço e comércio:</span><br>Todas as obrigações legais garantidas para sua empresa ficar 100% regularizada com economia.</p>
-		            <li class="divider hidden-xs"></li>
-		            <li><a href="/escritorio-contabilidade-online/"><button class="botaosupremob">tenho empresa de serviços</button></a><a href="/contabilidade-comercio/" style="padding-top:5px;"><button class="botaosupremob">tenho empresa de comércio</button></a></li>
-		          </ul>
-			   	  </li>
-
-			   	  <!-- <li class="dropdown hidden-sm">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false">MEI para ME&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		          	<img class="visible-lg visible-md" src="/assets/img/sobre4.png" style="width:350px;">
-		            <p class="textodrop"><span style="font-size:1.3em; font-weight:700; line-height:3em;">Chegou a hora de crescer.</span><br> Alterar MEI para ME é um grande passo. Conte conosco nessa nova etapa, fazemos a alteração de MEI para ME de graça. Desse jeito você cresce seu negócio e economiza também.</p>
-		            <li class="divider hidden-xs"></li>
-		            <li><a href="/alterar-mei-para-me/?utm_source=blog&utm_medium=meiparame&utm_campaign=tabelasimplescompleta"><button class="botaosupremob">altere MEI para ME de graça</button></a></li>
-		          </ul>
-			   	  </li>-->
-
-			   	   <li class="dropdown">
-		          <a href="#" class="dropdown" role="button" aria-expanded="false" id="droprod">Área do Cliente&nbsp;&nbsp;<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" id="dropdrop">
-		          	<br>
-		            <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse a plataforma</a></li>
-		            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
-		            <li class="divider hidden-xs"></li>
-		            <li><a href="/?utm_source=blog&utm_medium=areadocliente&utm_campaign=tabelasimplescompleta"><button class="botaosupremob">cadastre-se agora</button></a></li>
-
-		          </ul>
-			   	  </li>
-			  </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-	</div>
-
-
-  <!--Inicio do nav-footer-->
-  <!--Desktop-->
-  <nav class="navbar navbar-footer navbar-fixed-bottom hidden-xs" role="navigation">
-  	<div class="precos">
-	    <div class="container">
-	          <div class="row">
-	            <div class="col-md-12">
-	           	 <p><strong>Contabilizei</strong> - Contabilidade Online para Empresas de Serviço e Comércio.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/?utm_source=blog&utm_medium=rodapefixo&utm_campaign=tabelasimplescompleta" target="_blank"><button class="botaosupremob">contabilidade a partir de R$49/mês</button></a></p>
-	            </div>
-	          </div>
-	    </div>
-    </div>
-  </nav>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="espacador hidden-xs hidden-sm">&nbsp;</li>
+                 <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contabilizei <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/contabilizei-contabilidade-online/">Sobre a empresa</a></li>
+<!--                    <li><a href="/funcionalidades/">Nosso produto</a></li>-->
+                    <li><a href="/midia/">Nós na mídia</a></li>
+                    <li><a href="/contabilidade-online/" target="_blank">Blog</a></li>
+                    <li><hr></li>
+                    <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Estamos contratando, vem!</a></li>
+                  </ul>
+                </li>
+                 <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Abrir empresa <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/quanto-custa-abrir-empresa/">Como funciona a abertura</a></li>
+                    <li><a href="/quanto-custa-abrir-empresa/">Escolhendo as atividades</a></li>
+                    
+                    <li><hr></li>
+                    <li><a href="/abrir-empresa/" class="linkBotao"><button class="accent menorzin">Abrir empresa grátis</button></a></li>
+                   
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Já tem empresa? <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    
+                    <li><a href="/escritorio-contabilidade-online/">O que preciso pra migrar</a></li>
+                    <li><a href="/escritorio-contabilidade-online/">Simule a mensalidade</a></li>
+                    
+                    <li><hr></li>
+                    <li><a href="/escritorio-contabilidade-online/" class="linkBotao"><button class="accent menorzin" style="width:100%">Tenho empresa de serviços</button></a></li>
+                      <li><a href="/contabilidade-comercio/" class="linkBotao"><button class="accent menorzin">Tenho empresa de comércio</button></a></li>
+                  </ul>
+                </li>
+                <li class="loginCliente dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">lock_outline</i> Login <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+<!--                    <li><a href="#">Cadastre-se agora</a></li>-->
+                    <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
+                    
+                    <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
+                    <li><hr></li>
+                    <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="cadastre animated fadeIn hidden-xs hidden-sm"><a href="/?utm_source=blog&utm_medium=botaotopo&utm_campaign=guia-simples" target="_blank" class="linkBotao2"><button class="accent menorzin">Conheça a Contabilizei</button></a></li>
+                
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+      </nav>
 
 
 
 
 
 	<br><br>
+    <div class="header bg-azul">
+        <div class="container post">
+            <div class="topo">
+                <div class="jumbotronzes col-md-8 col-md-offset-2">
+                    <img class="img-circle hidden-xs pull-left" alt="Tabela Simples Nacional Completa" style="width: 140px; height: 140px;" src="/contabilidade-online/assets/img/lucro-presumido-simples-nacional.png">
+	           <h1>Tabela do Simples <br>Nacional - Completa</h1>
+	           
+	          	<p class="branco opacidade2 pequeno"> Atualizado em 16/02/2016 </p>
+     
+                </div>
+            </div>
+            </div>
+      </div>
 
-
-    <div class="container post">
-    	<div class="topo">
-	      	<div class="jumbotronzes">
-	        	<img class="img-circle hidden-xs" alt="Lucro presumido para simples" style="width: 140px; height: 140px;" src="/contabilidade-online/assets/img/lucro-presumido-simples-nacional.png">
-	        	<h1>Tabela do Simples Nacional - Completa</h1>
-	        	<h2>Confira a Tabela Simples Nacional Completa com Alíquota, Anexo e Cnae. Pesquise atividades e impostos correspondentes.</h2>
-	          	<p style="font-style:italic;font-size:12px">Atualizado em 16/02/2016</p>
-
-      		</div>
-    	</div>
-
-	<br><hr>
+      <div class="container">
       <div class="row entrevista">
         <div class="col-xs-12 col-md-12">
-
-            <p class="obs">
-        	<strong>Sobre a Contabilizei:</strong>
-A contabilidade online e inteligente que está ajudando micro e pequenas empresas de todo o Brasil a economizarem tempo e dinheiro. <a href="/?utm_source=blog&utm_medium=saibamais&utm_campaign=tabelasimplescompleta" target="_blank">Saiba mais aqui</a>.
-        	</p><br>
-          	<hr>
+            <div class="col-md-8 col-md-offset-2">
+            <h2>Confira a Tabela Simples Nacional Completa com Alíquota, Anexo e Cnae. Pesquise atividades e impostos correspondentes.</h2>
+            <hr>
+            
+            </div>
+          	
+            
+          
+          <div  class="row col-xs-12 col-md-12">
+                
+          	
+            
           	<section id="tabelacontabilizei">
-          	<h3 align="center">1. Tabela do Simples Nacional 2016 - Atividades atendidas pela Contabilizei:</h3>
-          	<p class="text-center obs" style="line-height:1em; padding:0; margin:0;"><a href="#tabelacompleta">pular para a tabela completa<span class="glyphicon glyphicon-collapse-down" style="padding-left:8px;" aria-hidden="true"></span></a></p>
+          	<h3 class="contexto" align="center">1. Tabela do Simples Nacional 2016 - Atividades atendidas pela Contabilizei:</h3>
+          	<p class="text-center obs"><a href="#tabelacompleta">Pular para a tabela completa<span class="glyphicon glyphicon-collapse-down" style="padding-left:8px;" aria-hidden="true"></span></a></p>
 
           	<table class="contabz table table-striped">
 
@@ -403,9 +382,9 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
 			<!-- Tabela Completa -->
           	<section id="tabelacompleta">
             <h3 align="center" id="1">2. Tabela Simples Nacional 2016 - Completa</h3>
-            <p class="text-center obs" style="line-height:1em; padding:0; margin:0;"><a href="#tabelacontabilizei">veja apenas a lista de atividades atendidas pela Contabilizei a partir de R$49/mês<span class="glyphicon glyphicon-collapse-up" style="padding-left:8px;" aria-hidden="true"></span></a></p>
+            <p class="text-center obs"><a href="#tabelacontabilizei">Veja apenas a lista de atividades atendidas pela Contabilizei a partir de R$49/mês<span class="glyphicon glyphicon-collapse-up" style="padding-left:8px;" aria-hidden="true"></span></a></p>
 
-            <p>A seguir, você encontra a <strong>Tabela Simples Nacional</strong> completa, incluindo cnaes, atividades, alíquotas e respectivos anexos (Tabela Simples Nacional por segmento).
+                <p>A seguir, você encontra a <strong>Tabela Simples Nacional</strong> completa, incluindo cnaes, atividades, alíquotas e respectivos anexos (Tabela Simples Nacional por segmento).</p>
             <table class="table table-striped">
 
 <tr class="atividadehover"><th width="100px">Código</th><th>Denominação</th><th>ANEXO</th><th>ALÍQUOTA INICIAL*</th><span style="font-size:10px; float:right">*Alíquota inicial = Faturamento até R$ 180.000 nos últimos 12 meses</span></tr>
@@ -536,8 +515,8 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>0600-0/01</td><td>Extração de petróleo e gás natural</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0600-0/02</td><td>Extração e beneficiamento de xisto</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0600-0/03</td><td>Extração e beneficiamento de areias betuminosas</td><td>I</td><td>4,00%</td></tr>
- <tr class="atividadehover"><td>0710-3/01</td><td>Extração de minério de fImpedida</td><td>I</td><td>4,00%</td></tr>
- <tr class="atividadehover"><td>0710-3/02</td><td>Pelotização, sinterização e outros beneficiamentos de minério de fImpedida</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>0710-3/01</td><td>Extração de minério de ferro</td><td>I</td><td>4,00%</td></tr>
+ <tr class="atividadehover"><td>0710-3/02</td><td>Pelotização, sinterização e outros beneficiamentos de minério de ferro</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>0721-9/01</td><td>Extração de minério de alumínio</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0721-9/02</td><td>Beneficiamento de minério de alumínio</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>0722-7/01</td><td>Extração de minério de estanho</td><td>I</td><td>4,00%</td></tr>
@@ -550,8 +529,8 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>0729-4/01</td><td>Extração de minérios de nióbio e titânio</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0729-4/02</td><td>Extração de minério de tungstênio</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0729-4/03</td><td>Extração de minério de níquel</td><td>I</td><td>4,00%</td></tr>
- <tr class="atividadehover"><td>0729-4/04</td><td>Extração de minérios de cobre, chumbo, zinco e outros minerais metálicos não-fImpedidasos não especificados anteriormente</td><td>I</td><td>4,00%</td></tr>
- <tr class="atividadehover"><td>0729-4/05</td><td>Beneficiamento de minérios de cobre, chumbo, zinco e outros minerais metálicos não-fImpedidasos não especificados anteriormente</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>0729-4/04</td><td>Extração de minérios de cobre, chumbo, zinco e outros minerais metálicos não-ferrosos não especificados anteriormente</td><td>I</td><td>4,00%</td></tr>
+ <tr class="atividadehover"><td>0729-4/05</td><td>Beneficiamento de minérios de cobre, chumbo, zinco e outros minerais metálicos não-ferrosos não especificados anteriormente</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>0810-0/01</td><td>Extração de ardósia e beneficiamento associado</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0810-0/02</td><td>Extração de granito e beneficiamento associado</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0810-0/03</td><td>Extração de mármore e beneficiamento associado</td><td>I</td><td>4,00%</td></tr>
@@ -573,7 +552,7 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>0899-1/03</td><td>Extração de amianto</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0899-1/99</td><td>Extração de outros minerais não-metálicos não especificados anteriormente</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>0910-6/00</td><td>Atividades de apoio à extração de petróleo e gás natural</td><td>IV</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>0990-4/01</td><td>Atividades de apoio à extração de minério de fImpedida </td><td>III</td><td>6,00%</td></tr>
+ <tr class="atividadehover"><td>0990-4/01</td><td>Atividades de apoio à extração de minério de ferro </td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>0990-4/02</td><td>Atividades</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>0990-4/03</td><td>Atividades</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>1011-2/01</td><td>Frigorífico - abate de bovinos</td><td>II</td><td>4,50%</td></tr>
@@ -784,8 +763,8 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>2392-3/00</td><td>Fabricação de cal e gesso</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2399-1/01</td><td>Decoração, lapidação, gravação, vitrificação e outros trabalhos em cerâmica, louça, vidro e cristal</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2399-1/99</td><td>Fabricação de outros produtos de minerais não-metálicos não especificados anteriormente</td><td>II</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>2411-3/00</td><td>Produção de fImpedida-gusa</td><td>II</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>2412-1/00</td><td>Produção de fImpedidaligas</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>2411-3/00</td><td>Produção de ferro-gusa</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>2412-1/00</td><td>Produção de ferroligas</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2421-1/00</td><td>Produção de semi-acabados de aço</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2422-9/01</td><td>Produção de laminados planos de aço ao carbono, revestidos ou não</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2422-9/02</td><td>Produção de laminados planos de aços especiais</td><td>II</td><td>4,50%</td></tr>
@@ -794,7 +773,7 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>2424-5/01</td><td>Produção de arames de aço</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2424-5/02</td><td>Produção de relaminados, trefilados e perfilados de aço, exceto arames</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2431-8/00</td><td>Produção de tubos de aço com costura</td><td>II</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>2439-3/00</td><td>Produção de outros tubos de fImpedida e aço</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>2439-3/00</td><td>Produção de outros tubos de ferro e aço</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2441-5/01</td><td>Produção de alumínio e suas ligas em formas primárias</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2441-5/02</td><td>Produção de laminados de alumínio</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2442-3/00</td><td>Metalurgia dos metais preciosos</td><td>II</td><td>4,50%</td></tr>
@@ -802,16 +781,16 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>2449-1/01</td><td>Produção de zinco em formas primárias</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2449-1/02</td><td>Produção de laminados de zinco</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2449-1/03</td><td>Produção de soldas e ânodos para galvanoplastia</td><td>II</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>2449-1/99</td><td>Metalurgia de outros metais não-fImpedidasos e suas ligas não especificados anteriormente</td><td>II</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>2451-2/00</td><td>Fundição de fImpedida e aço</td><td>II</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>2452-1/00</td><td>Fundição de metais não-fImpedidasos e suas ligas</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>2449-1/99</td><td>Metalurgia de outros metais não-ferrosos e suas ligas não especificados anteriormente</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>2451-2/00</td><td>Fundição de ferro e aço</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>2452-1/00</td><td>Fundição de metais não-ferrosos e suas ligas</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2511-0/00</td><td>Fabricação de estruturas metálicas</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2512-8/00</td><td>Fabricação de esquadrias de metal</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2513-6/00</td><td>Fabricação de obras de caldeiraria pesada</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2521-7/00</td><td>Fabricação de tanques, reservatórios metálicos e caldeiras para aquecimento central</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2522-5/00</td><td>Fabricação de caldeiras geradoras de vapor, exceto para aquecimento central e para veículos</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2531-4/01</td><td>Produção de forjados de aço</td><td>II</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>2531-4/02</td><td>Produção de forjados de metais não-fImpedidasos e suas ligas</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>2531-4/02</td><td>Produção de forjados de metais não-ferrosos e suas ligas</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2532-2/01</td><td>Produção de artefatos estampados de metal</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2532-2/02</td><td>Metalurgia do pó</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>2539-0/00</td><td>Serviços de usinagem, solda, tratamento e revestimento em metais (este serviço foi analisado como sendo prestado para terceiros. As empresas que realizam a produção própria para venda deverá utilizar o Sim II para tributar esta parte das receitas)</td><td>III</td><td>6,00%</td></tr>
@@ -907,7 +886,7 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>3011-3/02</td><td>Construção de embarcações para uso comercial e para usos especiais, exceto de grande porte</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>3012-1/00</td><td>Construção de embarcações para esporte e lazer</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>3031-8/00</td><td>Fabricação de locomotivas, vagões e outros materiais rodantes</td><td>II</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>3032-6/00</td><td>Fabricação de peças e acessórios para veículos fImpedidaviários</td><td>II</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>3032-6/00</td><td>Fabricação de peças e acessórios para veículos ferroviários</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>3041-5/00</td><td>Fabricação de aeronaves</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>3042-3/00</td><td>Fabricação de turbinas, motores e outros componentes e peças para aeronaves</td><td>II</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>3050-4/00</td><td>Fabricação de veículos militares de combate</td><td>II</td><td>4,50%</td></tr>
@@ -977,7 +956,7 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>3314-7/21</td><td>Manutenção e reparação de máquinas e aparelhos para a indústria de celulose, papel e papelão e artefatos</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>3314-7/22</td><td>Manutenção e reparação de máquinas e aparelhos para a indústria do plástico</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>3314-7/99</td><td>Manutenção e reparação de outras máquinas e equipamentos para usos industriais não especificados anteriormente</td><td>III</td><td>6,00%</td></tr>
- <tr class="atividadehover"><td>3315-5/00</td><td>Manutenção e reparação de veículos fImpedidaviários</td><td>III</td><td>6,00%</td></tr>
+ <tr class="atividadehover"><td>3315-5/00</td><td>Manutenção e reparação de veículos ferroviários</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>3316-3/01</td><td>Manutenção e reparação de aeronaves, exceto a manutenção na pista</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>3316-3/02</td><td>Manutenção de aeronaves na pista</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>3317-1/01</td><td>Manutenção e reparação de embarcações e estruturas flutuantes</td><td>III</td><td>6,00%</td></tr>
@@ -1009,7 +988,7 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>3900-5/00</td><td>Descontaminação</td><td>VI</td><td>16,93%</td></tr>
  <tr class="atividadehover"><td>4110-7/00</td><td>Incorporação</td><td>&nbsp;</td><td>Impedida</td></tr>
  <tr class="atividadehover"><td>4120-4/00</td><td>Construção de edifícios</td><td>IV</td><td>4,50%</td></tr>
- <tr class="atividadehover"><td>4211-1/01</td><td>Construção de rodovias e fImpedidavias</td><td>IV</td><td>4,50%</td></tr>
+ <tr class="atividadehover"><td>4211-1/01</td><td>Construção de rodovias e ferrovias</td><td>IV</td><td>4,50%</td></tr>
  <tr class="atividadehover"><td>4211-1/02</td><td>Pintura para sinalização em pistas rodoviárias e aeroportos</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>4212-0/00</td><td>Construção de obras-de-arte especiais</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>4213-8/00</td><td>Obras de urbanização - ruas, praças e calçadas</td><td>IV</td><td>4,50%</td></tr>
@@ -1276,9 +1255,9 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>4789-0/08</td><td>Comércio varejista de artigos fotográficos e para filmagem</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>4789-0/09</td><td>Comércio varejista de armas e munições</td><td>I</td><td>4,00%</td></tr>
  <tr class="atividadehover"><td>4789-0/99</td><td>Comércio varejista de outros produtos não especificados anteriormente</td><td>I</td><td>4,00%</td></tr>
- <tr class="atividadehover"><td>4911-6/00</td><td>Transporte fImpedidaviário de carga</td><td>III</td><td>6,00%</td></tr>
- <tr class="atividadehover"><td>4912-4/01</td><td>Transporte fImpedidaviário de passageiros intermunicipal e interestadual</td><td>&nbsp;</td><td>Impedida</td></tr>
- <tr class="atividadehover"><td>4912-4/02</td><td>Transporte fImpedidaviário de passageiros municipal e em região metropolitana</td><td>III</td><td>6,00%</td></tr>
+ <tr class="atividadehover"><td>4911-6/00</td><td>Transporte ferroviário de carga</td><td>III</td><td>6,00%</td></tr>
+ <tr class="atividadehover"><td>4912-4/01</td><td>Transporte ferroviário de passageiros intermunicipal e interestadual</td><td>&nbsp;</td><td>Impedida</td></tr>
+ <tr class="atividadehover"><td>4912-4/02</td><td>Transporte ferroviário de passageiros municipal e em região metropolitana</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>4912-4/03</td><td>Transporte metroviário</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>4921-3/01</td><td>Transporte rodoviário coletivo de passageiros, com itinerário fixo, municipal</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>4921-3/02</td><td>Transporte rodoviário coletivo de passageiros, com itinerário fixo, intermunicipal em região metropolitana</td><td>III</td><td>6,00%</td></tr>
@@ -1323,7 +1302,7 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
  <tr class="atividadehover"><td>5211-7/99</td><td>Depósitos de mercadorias para terceiros, exceto armazéns gerais e guarda-móveis</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>5212-5/00</td><td>Carga e descarga</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>5221-4/00</td><td>Concessionárias de rodovias, pontes, túneis e serviços relacionados</td><td>III</td><td>6,00%</td></tr>
- <tr class="atividadehover"><td>5222-2/00</td><td>Terminais rodoviários e fImpedidaviários</td><td>VI</td><td>16,93%</td></tr>
+ <tr class="atividadehover"><td>5222-2/00</td><td>Terminais rodoviários e ferroviários</td><td>VI</td><td>16,93%</td></tr>
  <tr class="atividadehover"><td>5223-1/00</td><td>Estacionamento de veículos<div class="atividadeatendida"><span class="label label-success" style="margin-left:20px;"><a href="/?utm_source=blog&utm_medium=cnae&utm_campaign=tabelasimplescompleta" target="_blank" style="color:#fff;"><span class="glyphicon glyphicon-new-window" style="padding-right:10px;" aria-hidden="true"></span>ATIVIDADE ATENDIDA A PARTIR DE R$49/MÊS</a></span></div></td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>5229-0/01</td><td>Serviços de apoio ao transporte por táxi, inclusive centrais de chamada</td><td>III</td><td>6,00%</td></tr>
  <tr class="atividadehover"><td>5229-0/02</td><td>Serviços de reboque de veículos</td><td>III</td><td>6,00%</td></tr>
@@ -1715,12 +1694,12 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
 
 
             </table>
-          </section>
+         
         <section id="anexos3e62">
         
-            <br><br>
+            <br>
                 <p class="obs"><strong>* Será tributado como Anexo 6 quando exercer atividades de cunho intelectual, de natureza técnica e científica. Será tributado como Anexo 3 quando a atividade não se caracterizar como de cunho intelectual, de natureza técnica e científica. <a href="/contabilidade-online/enquadramento-anexo-iii-ou-anexo-vi-simples-nacional/" target="_blank">Entenda a tributação do Simples Nacional nos Anexos III e VI</a></strong></p>
-                    <br><hr style="width:30%"><br>
+                   <hr style="width:30%">
         </section>
 
             <h3>Tabela do Simples Nacional</h3>
@@ -1746,103 +1725,23 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
     </div> <!--row entrevista-->
 
 
-
-  </div> <!-- /container -->
-
-
-	<!-- <div class="modal" id="ouibounce-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog animated bounceIn" style="z-index:9999999;">
-	    	<div class="modal-content">
-	      		<div class="modal-header" style="border:none;">
-	        		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            	</div>
-	      		<div class="modal-body text-center" style="padding-bottom:30px;">
-	        		<a href="/contador-online/?utm_source=blog&utm_medium=modal&utm_campaign=tabelasimplescompleta" target="_blank"><img src="/assets/img/blogexit.png" class="animated pulse infinite" title="Clique e conheça :)"></a>
-	      		</div>
-	      		<div class="modal-footer">
-              		<p class="text-center" style="font-size:1em; margin:0;"><a href="javascript:void(0);" data-dismiss="modal"> Não, obrigado.</a></p>
-           		</div>
-	    	</div>
-	  	</div>
-	  	<div class="modal-backdrop in"></div>
-	</div> -->
-
-	<!-- <div id="slidebox">
-		<a class="close">&nbsp;</a>
-		<a href="/escritorio-contabilidade-online/?utm_source=blog&utm_medium=sliderbox&utm_campaign=tabelasimplescompleta" target="_blank">
-			<img class="shadow alignCenter" style="width: 90%; height: auto;" src="/assets/img/ctablog.png">
-		</a>
-	</div> -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--
-    <script src="/assets/js/ouibounce.min.js"></script>-->
-    <script type="text/javascript" src="/contabilidade-online/assets/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/contabilidade-online/assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/contabilidade-online/assets/js/blog.js"></script>
-
-    <!--
-    <script>
-
-      // if you want to use the 'fire' or 'disable' fn,
-      // you need to save OuiBounce to an object
-      var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
-        aggressive: true,
-        timer: 0,
-        callback: function() { console.log('ouibounce fired!'); }
+	    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+  
+    
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 60) { 
+          $(".navbar-fixed-top").addClass("contabilizei2"); 
+        } else {
+          $(".navbar-fixed-top").removeClass("contabilizei2"); 
+        }
       });
-
-      $('body').on('click', function() {
-        $('#ouibounce-modal').hide();
-      });
-
-      $('#ouibounce-modal .modal-footer').on('click', function() {
-        $('#ouibounce-modal').hide();
-      });
-
-      $('#ouibounce-modal .modal').on('click', function(e) {
-        e.stopPropagation();
-      });
-    </script> -->
-
-    <!-- Slidebox Script -->
-	<script type="text/javascript">
-	$(function() {
-	  var slidebox = $('#slidebox');
-	  if (slidebox.length>0) {
-	    $(window).scroll(function(){
-	        var distanceTop = $('#last').offset().top - $(window).height();
-	        if  ($(window).scrollTop() > distanceTop){
-	            slidebox.animate({'right':'0px'},300);
-	        }
-	        else{
-	            slidebox.stop(true).animate({'right':'-430px'},100);
-	        }
-	    });
-	    $('#slidebox .close').on('click',function(){
-	        $(this).parent().remove();
-	    });
-	  }
-	});
-	</script>
-    <!-- Drip -->
-	<script type="text/javascript">
-	  var _dcq = _dcq || [];
-	  var _dcs = _dcs || {};
-	  _dcs.account = '7827954';
-
-	  (function() {
-	    var dc = document.createElement('script');
-	    dc.type = 'text/javascript'; dc.async = true;
-	    dc.src = '//tag.getdrip.com/7827954.js';
-	    var s = document.getElementsByTagName('script')[0];
-	    s.parentNode.insertBefore(dc, s);
-	  })();
-	</script>
-
-	<script type="text/javascript" async="true" src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/40bbe6d9-bf4c-4139-8258-af4a415c65d7-loader.js"></script>
+    });
+    </script>    
 </body>
 </html>

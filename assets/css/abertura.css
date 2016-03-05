@@ -43,6 +43,9 @@ h2 {
     font-weight:400;
     color:#fff;
 }
+.depoimento {
+    padding:10px 15px 10px 20px;
+}
 .jumbotron .big {
     font-size:22px;
     padding:20px 60px;
@@ -50,6 +53,10 @@ h2 {
 }
 .opacidade {
     opacity:0.8;
+}
+.navlead {
+    padding:25px 0;
+    font-size:16px;
 }
 .opacidade2 {
     opacity:0.5;

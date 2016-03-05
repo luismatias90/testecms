@@ -206,7 +206,7 @@
 							<p>Contratando o serviço de contabilidade com mensalidade a partir de<strong> R$ 49 / mês</strong> <br class="hidden-xs"> você paga apenas as taxas do governo e protocola a documentação nos <br class="hidden-xs">órgãos públicos. O resto é com a gente, vamos deixar sua Empresa <br class="hidden-xs">Individual pronta para faturar!
 Veja como funciona abaixo.</p><br>
 
-							<a href="#aberturafacil" ><button class="botao botaoesp">quero abrir minha empresa</button></a>
+							<a href="" ><button class="botao botaoesp">quero abrir minha empresa</button></a>
 							<p class="abrirempre">Já possui empresa? <br class="visible-xs"><a href="/escritorio-contabilidade-online/" target="_blank" style="text-decoration:underline;">Contabilidade a partir de R$ 49 / mês</a></p>
 
 						</div>
@@ -1028,7 +1028,7 @@ Veja como funciona abaixo.</p><br>
 				</div>
 					<div class="perguntasdefato">
 					 <div class="row">
-					 	<div class="col-lg-8 col-lg-offset-2">
+					 	<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
 		            	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 						  <div class="panel panel-default">
 						    <div class="panel-heading" role="tab" id="headingOne">

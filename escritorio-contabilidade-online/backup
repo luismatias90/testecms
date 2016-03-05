@@ -228,7 +228,7 @@
 							<br>
 							<p>Contratando nossa contabilidade online suas obrigações ficam garantidas e você pode <br class="hidden-xs">economizar mais de<strong> R$4.000,00/ano</strong>. Invista em você e no seu negócio<br class="hidden-xs"> e deixe a contabilidade com a gente! Conheça a Contabilizei.</p>
 
-							<a href="#aberturafacil" ><button class="botao botaoesp" style="font-size:1.6em; border-radius:50px;">quero migrar e economizar</button></a>
+							<a href="" ><button class="botao botaoesp" style="font-size:1.6em; border-radius:50px;">quero migrar e economizar</button></a>
 							<br><br><p class="abrirempre" style="font-size:1.2em; padding-bottom:0; line-height:1.2em; color:rgba(255,255,255,.9);"><strong>Sua empresa é de comércio? <br class="visible-xs"><a href="/contabilidade-comercio/" target="_blank" style="text-decoration:underline; color:rgba(255,255,255,.9);">Consulte aqui</a></strong></p>
 
 							<p class="abrirempre" style="padding:0; color:rgba(255,255,255,.7); line-height:1.2em;">Não possui empresa? <br class="visible-xs"><a href="/abrir-empresa/" target="_blank" style="text-decoration:underline;  color:rgba(255,255,255,.7)">Abrimos sua empresa de graça</a></p>
@@ -351,7 +351,7 @@
 				<div class="row" style="text-align:center;">
 					<div class="col-xs-12 col-md-12 col-lg-4 col-lg-offset-4" id="botaosupremo alt">
 
-						<a href="#cabenobolso"><button class="botaosupremo alt">simule sua mensalidade</button></a>
+						<a href=""><button class="botaosupremo alt">simule sua mensalidade</button></a>
 <!-- 						<br><br><br><p class="abrirempre" style="padding:0; line-height:1.2em">Sua empresa é de comércio ou varejo? <br class="visible-xs"><a href="/contabilidade-comercio/" target="_blank">Cadastre-se aqui</a></p> -->
 <!-- 						<p class="abrirempre" style="padding:0; line-height:1.2em">Não possui empresa? <br class="visible-xs"><a href="/abrir-empresa/" target="_blank">Abrimos sua empresa de graça</a></p> -->
 

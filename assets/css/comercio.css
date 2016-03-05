@@ -36,6 +36,13 @@ h2 {
     border-bottom:1px dashed rgba(255,255,255,.2);
     margin-bottom:60px;
 }
+.depoimento {
+    padding:10px 15px 10px 20px;
+}
+.navlead {
+    padding:25px 0;
+    font-size:16px;
+}
 .jumbotron .texto {
     opacity:0.9;
     font-size:17px;
