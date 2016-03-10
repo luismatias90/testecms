@@ -158,7 +158,7 @@ body {
 /* Barra Form Lead */
 
 .navlead {
-    padding:10px 0 40px 0;
+    padding: 23px 0 52px 0;
     font-size:16px;
     color:#fff;
     background-color:#1E1F21;
@@ -166,7 +166,7 @@ body {
 .navlead h2 {
     font-size: 18px;
     padding-left: 24px;
-    padding-bottom:15px;
+    padding-bottom:30px;
 }
 
 /* Features */
@@ -601,7 +601,7 @@ h4 {
 }
 .big:hover {
     box-shadow:0px 4px 12px rgba(0,0,0,.2);
-}
+}   
 .big:active {
     box-shadow:none;
 }
@@ -652,10 +652,33 @@ h4 {
 
 @media (min-width: 1400px) {
     .jumbotron {
-        height:900px;
+        height: 627px;
+        background-origin: content-box;
+        padding-right: 265px;
+        padding-top: 75px;
+    }
+    .jumbotron h1, .jumbotron h2 {
+        padding-left: 69px;
+    }
+    .jumbotron h1 {
+        font-size:45px;
+        margin-top:146px;
+    }
+    .jumbotron h2 {
+        font-size:23px;
+    }
+    .setinha,.contabz {
+        display:none !important;
+    }
+    .navlead {
+        padding: 35px 0 60px 0;
+    }
+    .navlead h2 {
+        padding-bottom:27px;
     }
 }
 
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { background:none; }
 
 @media (max-width: 768px) { 
     
@@ -663,9 +686,9 @@ h4 {
         height:50px;
     }
     .contabilizei:hover {
-    background:#fff;
-    box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
-    transition:0.2s ease;
+        background:#fff;
+        box-shadow:0 4px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 10px 0 rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.10);
+        transition:0.2s ease;
     }
     .navtopo {
         padding:0
@@ -692,8 +715,15 @@ h4 {
     .dropdown-menu {
         width:100%;
     }
+    .jumbotron {
+        background: none;
+        height: initial;
+        padding: 60px 0;
+    }
     .jumbotron h1 {
         font-size:28px;
+        margin-top:0;
+        padding-top:30px;
     }
     .features .container {
         padding:0;
