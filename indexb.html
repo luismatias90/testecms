@@ -192,7 +192,7 @@
           <div class="container">
               <div class="col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0">
                 <h1 class="primary wow slideInLeft">Suas definições <br>de contabilidade <br>foram atualizadas. </h1>
-                  <h2 class="jumboh2 text-left wow slideInLeft" data-wow-delay="0.3s"><span class=" opacidade2">Simples, online, inteligente e <br>a partir de R$49/mês.</span></h2><br><br><br><br><h2 class="jumboh2 primary text-left wow fadeInUp" data-wow-delay="1.8s">Conheça a Contabilizei.</h2>
+                  <h2 class="jumboh2 text-left wow slideInLeft" data-wow-delay="0.3s"><span class=" opacidade2">Simples, online, inteligente e <br>a partir de R$49/mês.</span></h2><br><br><br><br><h2 class="jumboh2 contabz primary text-left wow fadeInUp" data-wow-delay="1.5s">Conheça a Contabilizei.</h2>
               </div> 
               
           </div>  
@@ -201,7 +201,7 @@
       
     
       <div class="navlead text-center hidden-xs">
-        <a href="#ola" class="visible-lg wow fadeIn" data-wow-delay="2s"><i class="material-icons setinha animated infinite pulse">keyboard_arrow_down</i></a>
+        <a href="#ola" class="visible-lg wow fadeIn" data-wow-delay="1.7s"><i class="material-icons setinha animated infinite pulse">keyboard_arrow_down</i></a>
         <div class="container">
            
             <h2 class="opacidade text-center">Junte-se a milhares de empresas que utilizam nosso escritório de contabilidade com todas obrigações legais inclusas.</h2>
@@ -478,7 +478,7 @@
 
                             <h3><i class="material-icons">people</i> Equipe</h3>
                             <hr>    
-                            <p><span class="grande">42 pessoas</span> <br>fanáticas no que fazem </p>
+                            <p><span class="grande">44 pessoas</span> <br>fanáticas no que fazem </p>
 
 
                         </div>
@@ -511,7 +511,7 @@
         
     <div class="depoimentos">
         <div class="container">
-            <h2 class="primary">Quem usa nossa contabilidade online:</h2>
+            <h2 class="primary">A diferença que fazemos:</h2>
             
             
             
@@ -810,10 +810,12 @@
       $(window).scroll(function() { 
         if ($(document).scrollTop() > 60) { 
           $(".navbar-fixed-top").addClass("contabilizei2"); 
-          $(".setinha").addClass("setinha2"); 
+          $(".setinha").addClass("invisivel"); 
+          $(".contabz").addClass("invisivel"); 
         } else {
           $(".navbar-fixed-top").removeClass("contabilizei2"); 
-          $(".setinha").removeClass("setinha2"); 
+          $(".setinha").removeClass("invisivel"); 
+          $(".contabz").removeClass("invisivel"); 
         }
       });
     });
