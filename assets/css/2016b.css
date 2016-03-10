@@ -57,10 +57,10 @@ body {
 }
 
 .jumbotron h1 {
-    font-weight:300;
+    font-weight:700;
     font-size:38px;
     line-height:1.3em;
-    margin:160px 0 30px 0;
+    margin:120px 0 30px 0;
 }
 .jumbotron img {
     margin:0 auto;
