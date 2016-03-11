@@ -30,6 +30,7 @@ body {
     display: inline-block;
     vertical-align:middle;
 }
+/*
 .modal-dialog {
     width:65%;
 }
@@ -38,6 +39,7 @@ body {
     padding:0;
     font-weight:300;
 }
+*/
 .navtopo {
     padding-top:12px;
 }
