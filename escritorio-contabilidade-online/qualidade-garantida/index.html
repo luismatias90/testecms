@@ -4,7 +4,7 @@
 	<head>
         <link rel="manifest" href="/manifest.json">
         <script src="//cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
-        <!-- <script>
+        <script>
         var OneSignal = OneSignal || [];
         OneSignal.push(["init", {
         appId: "591ed5ba-69c1-4cb6-99a8-a8ca235e7f33",
@@ -35,7 +35,7 @@
           'dialog.blocked.message': "Follow these instructions to allow notifications:"
         }    
         }]);
-        </script>-->
+        </script>
 
 		<!-- Metatags -->
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -242,36 +242,7 @@
         </div>
 		
 
-    <a href="#" id="subscribe-link"></a>
-      <script>
-        function subscribe() {
-            OneSignal.push(["registerForPushNotifications"]);
-            event.preventDefault();
-        }
-
-        var OneSignal = OneSignal || [];
-
-        OneSignal.push(["init", {
-            appId: "591ed5ba-69c1-4cb6-99a8-a8ca235e7f33",
-            autoRegister: false
-        }]);
-
-        OneSignal.push(function() {
-            // If we're on an unsupported browser, do nothing
-            if (!OneSignal.isPushNotificationsSupported()) {
-                return;
-            }
-            OneSignal.isPushNotificationsEnabled(function (isEnabled) {
-                if (isEnabled) {
-                    // The user is subscribed to notifications
-                    // Don't show anything
-                } else {
-                    document.getElementById("subscribe-link").textContent = "Subscribe to Notifications";
-                    document.getElementById("subscribe-link").addEventListener('click', subscribe);
-                }
-            });
-        });
-    </script>
+   
         
    <section id="simulador"></section>
 
