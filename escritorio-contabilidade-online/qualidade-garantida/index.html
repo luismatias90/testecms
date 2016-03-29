@@ -2,20 +2,47 @@
 <html lang="pt-br" ng-app="SimuladorApp">
 
 	<head>
-        <script src="//cdn.optimizely.com/js/2652660099.js"></script>
-		<!-- Hotjar Tracking Code for www.contabilizei.com.br -->
-<!--
-		<script>
-		    (function(f,b){
-		        var c;
-		        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
-		        f._hjSettings={hjid:21654, hjsv:3};
-		        c=b.createElement("script");c.async=1;
-		        c.src="//static.hotjar.com/c/hotjar-21654.js?sv=3";
-		        b.getElementsByTagName("head")[0].appendChild(c);
-		    })(window,document);
-		</script>
--->
+        <link rel="manifest" href="/escritorio-contabilidade-online/qualidade-garantida/manifest.json">
+        <script src="//cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+        <script>
+        var OneSignal = OneSignal || [];
+        OneSignal.push(["init", {
+        appId: "591ed5ba-69c1-4cb6-99a8-a8ca235e7f33",
+        autoRegister: false,
+        notifyButton: {
+        enable: true // Set to false to hide
+        }
+            
+            
+        // Merge these settings with the notifyButton setting in your existing init()
+        notifyButton: {
+            enable: true,
+            enable: true, // Required to use the notify button
+            size: 'medium', // One of 'small', 'medium', or 'large'
+            theme: 'default', // One of 'default' (red-white) or 'inverse" (white-red)
+            position: 'bottom-left', // Either 'bottom-left' or 'bottom-right'               offset: {
+              bottom: '0px',
+              left: '0px', // Only applied if bottom-left
+              right: '0px' // Only applied if bottom-right
+            },
+            prenotify: true, // Show an icon with 1 unread message for first-time site visitors
+            showCredit: false, // Hide the OneSignal logo
+            text: {
+              'tip.state.unsubscribed': 'Subscribe to notifications',
+              'tip.state.subscribed': "You're subscribed to notifications",
+              'tip.state.blocked': "You've blocked notifications",
+              'message.prenotify': 'Click to subscribe to notifications',
+              'message.action.subscribed': "Thanks for subscribing!",
+              'message.action.resubscribed': "You're subscribed to notifications",
+              'message.action.unsubscribed': "You won't receive notifications again",
+              'dialog.main.title': 'Manage Site Notifications',
+              'dialog.main.button.subscribe': 'SUBSCRIBE',
+              'dialog.main.button.unsubscribe': 'UNSUBSCRIBE',
+              'dialog.blocked.title': 'Unblock Notifications',
+              'dialog.blocked.message': "Follow these instructions to allow notifications:"
+        }    
+        }]);
+        </script>
 
 		<!-- Metatags -->
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
