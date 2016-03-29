@@ -1,7 +1,7 @@
 {
   "name": "Contabilizei",
   "short_name": "Contabilizei",
-  "start_url": "/escritorio-contabilidade-online/qualidade-garantida/",
+  "start_url": "/",
   "display": "standalone",
   "gcm_sender_id": "AIzaSyB7P4RaGGGApyYJlunwkBP_6R_EcFC8tQs",
   "gcm_user_visible_only": true
