@@ -96,11 +96,22 @@ body {
     font-weight:300;
     font-size:38px;
     line-height:1.3em;
-    margin:60px 0 30px 0;
+    margin:70px 0 30px 0;
+}
+.jumbotron .alternatitulo {
+    font-size:22px;
+    margin:60px 0 0 0;
+}
+.jumbotron .alternah2 {
+    font-weight:700;
+    margin:10px 0 60px 0;
+    font-size:36px;
+    line-height:1.4em;
 }
 .jumbotron img {
     margin:0 auto;
 }
+
 
 .contabilizei .material-icons {
     font-size:14px;
@@ -682,6 +693,21 @@ h4 {
 
 
 /* Responsivo */
+
+
+@media (min-width: 1400px) {
+
+    .jumbotron .alternatitulo {
+        font-size:26px;
+        margin:75px 0 0 0;
+    }
+    .jumbotron .alternah2 {
+        font-weight:700;
+        margin:10px 0 80px 0;
+        font-size:40px;
+        line-height:1.4em;
+    }
+}
 
 @media (max-width: 768px) { 
     .modal-dialog {
