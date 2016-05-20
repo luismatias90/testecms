@@ -857,3 +857,18 @@ h4 {
    vertical-align: middle !important;
     margin-top: -3px;
 }
+
+.olar {
+    background-color:#2196F3;
+    text-align:center;
+    padding:40px;
+    color:#fff;
+    font-size:2em;
+/*    box-shadow:0 -15px 54px rgba(199, 199, 199, 0.8);*/
+    transition:0.5s ease;
+}
+.olar:hover, .olar:active, .olar:visited, .olar:focus {
+    background-color:#48ADFD;
+    text-decoration:none;
+    color:#fff;
+}

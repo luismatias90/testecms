@@ -9,8 +9,7 @@
     <meta name="keywords" content="tabela simples nacional, tabela simples nacional 2016, alteração simples nacional 2016, nova tabela simples nacional, alteração tabela simples nacional">
 
 	<link rel="shortcut icon" href="/assets/ico/contabilizei-favicon.ico">
-    
-    
+
     <title>Alteração na Tabela Simples Nacional para 2016 | Contabilizei</title>
 
     <!-- Descrição -->
@@ -160,14 +159,9 @@
 A contabilidade online e inteligente que está ajudando micro e pequenas empresas de todo o Brasil a economizarem tempo e dinheiro. <a href="/?utm_source=blog&utm_medium=saibamais&utm_campaign=mudancasimples2016" target="_blank">Saiba mais aqui</a>.
         	</p>
           	<hr>
-             
             <h3 class="contexto" id="1">Contexto</h3>
             <p>Está em trâmite na Câmara dos Deputados, o Projeto de Lei Complementar (PLP) 448/14 que institui novos limites de faturamento para micro e pequenas empresas do Simples Nacional. A proposta é aumentar em 400% o limite de R$ 3,6 milhões de faturamento ao ano para R$ 14,4.</p>
-            
-            
             <p>Completando 10 anos em 2016, o Simples Nacional (também conhecido como Super Simples) foi um marco para o empreendedorismo no Brasil, e sua revisão é fundamental para ampliar o acesso ao programa e desafogar empreendedores que contribuem, hoje, com uma carga de impostos alta.</p>
-            
-            <div class="article">
             <p class="obs">
             Importante 1: A seguir, contemplamos as principais alterações do Simples Nacional para 2016. É importante lembrar que estas ainda não foram aprovadas e nossas análises estão baseadas em inferências no texto do projeto de lei em trâmite.
             </p>
@@ -233,10 +227,10 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
             <p>Enquanto o projeto não é aprovado, confira o que está em vigor sobre o Simples Nacional:
             <p><a href="/contabilidade-online/tabela-simples-nacional/" target="_blank"><span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-right:15px;"></span>Guia da Tabela do Simples Nacional</a></p>
 			<p><a href="/contabilidade-online/tabela-simples-nacional-completa/" target="_blank"><span class="glyphicon glyphicon-new-window" aria-hidden="true" style="padding-right:15px;"></span>Atividades Permitidas no Simples Nacional </a></p>
-            </div>  
+
 			<br>
             <hr> <!--quebra antes do footer-->
- 
+
          </div>
 
     </div> <!--row entrevista-->
@@ -283,8 +277,6 @@ A contabilidade online e inteligente que está ajudando micro e pequenas empresa
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     
-    <script src="/contabilidade-online/assets/js/readmore.min.js"></script>
-
     <script type="text/javascript">
     $(document).ready(function(){
       $(window).scroll(function() { 
