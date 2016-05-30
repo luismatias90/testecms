@@ -14,7 +14,7 @@ SimuladorApp.controller('SimuladorController', ['$scope', function($scope) {
 		"acima de R$200.001/mês" ];
 	
 	$scope.indice = 0;
-	$scope.valorContadorAtual = 394;
+	$scope.valorContadorAtual = 440;
 	$scope.valorDescontoAnual = 0;
 	$scope.valorMensalidade = 0;
 	
