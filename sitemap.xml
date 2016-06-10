@@ -696,7 +696,18 @@
       <priority>0.8</priority>
 
    </url>
+    
+    <url>
 
+      <loc>https://www.contabilizei.com.br/verifique-o-atendimento/</loc>
+
+      <lastmod>2016-06-10</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
 
 </urlset> 
 
