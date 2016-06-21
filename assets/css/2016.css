@@ -180,9 +180,7 @@ body {
 .dropdown .dropdown-menu a,.dropdown .dropdown-menu:hover a {
     color:gray !important;
 }
-.navbar-collapse.in {
-    overflow-y: visible;
-}
+
 
 .contabilizei2  .cadastre {
     display: inline-block;
@@ -698,7 +696,7 @@ h4 {
 
 
 @media (min-width: 1400px) {
-
+    
     .jumbotron .alternatitulo {
         font-size:26px;
         margin:75px 0 0 0;
@@ -712,8 +710,10 @@ h4 {
 }
 
 @media (max-width: 768px) { 
-    .dropdown:active .dropdown-menu {
-        display: none;
+   
+    .navbar-collapse.in {
+        overflow-y: visible;
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
     }
     
     .modal-dialog {
