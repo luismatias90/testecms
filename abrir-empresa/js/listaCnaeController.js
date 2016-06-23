@@ -18,7 +18,7 @@ SimuladorApp.controller('listaCnaeController', ['$scope', function ($scope) {
         var novaLista = [];
         var atividade = "";
 
-        if (tipoEmpresa == 0 || tipoEmpresa == 40) {
+        if (tipoEmpresa == 0 || tipoEmpresa == 41) {
             $scope.step1 = false;
         } else {
             $scope.step1 = true
