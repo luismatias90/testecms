@@ -4,7 +4,8 @@ SimuladorApp.controller('listaCnaeController', ['$scope', function ($scope) {
     $scope.atividadeSelecionada = "";
     $scope.empresaExiste = false;
     $scope.empresaExisteTemp = false;
-
+    $scope.mostraAdvocacia = false;
+    
     $scope.goToStep2 = function () {
         $scope.step2 = true;
     }
@@ -25,7 +26,12 @@ SimuladorApp.controller('listaCnaeController', ['$scope', function ($scope) {
         }
         $scope.empresaExisteTemp = true;
 
-
+        if (tipoEmpresa == 1) {
+            $scope.mostraAdvocacia = true;
+        } else {
+            $scope.mostraAdvocacia = false;
+        }
+        
         for (var i = 0; i < listaEmpresa.length; i++) {
             if (listaEmpresa[i].tipo == tipoEmpresa) {
                 novaLista.push(listaEmpresa[i]);
@@ -40,7 +46,7 @@ SimuladorApp.controller('listaCnaeController', ['$scope', function ($scope) {
 }]);
 
 var listaEmpresa = [
-    {tipo:1, atividade: 'Advocacia', denominacao:'Serviços advocatícios', codigo: '6911-7/01', simples: true, aliquota_inicial: '4,5%'},
+{tipo:1, atividade: 'Advocacia', denominacao:'Serviços advocatícios', codigo: '6911-7/01', simples: true, aliquota_inicial: '4,5%'},
 {tipo:2, atividade: 'Agência de Marketing Digital', denominacao:'Agenciamento de espaços para publicidade, exceto em veículos de comunicação', codigo: '7312-2/00', simples: true, aliquota_inicial: '6%'},
 {tipo:2, atividade: 'Agência de Marketing Digital', denominacao:'Promoção de vendas', codigo: '7319-0/02', simples: true, aliquota_inicial: '6%'},
 {tipo:2, atividade: 'Agência de Marketing Digital', denominacao:'Marketing direto', codigo: '7319-0/03', simples: true, aliquota_inicial: '6%'},

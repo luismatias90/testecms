@@ -58,7 +58,7 @@
 
     <!-- Fontawesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/animate.min.css">
+    
 
     <!-- Google fonts -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -534,28 +534,6 @@
 		<script src="/assets/js/validacoes.js"></script>
 		<script src="/assets/js/scroll.js"></script>
 
-		<!-- BOTAO DE AJUDA -->
-<!--
-		<div id="btn-ajuda-fixed">
-			<a class="botaoajuda" href="javascript:void(0);">
-				<p><i class="fa fa-question-circle" style="padding-right:10px; font-size:1.3em;"></i>Ajuda</p>
-			</a>
-			<div class="geralajuda">
-				<div class="boxajuda" style="display: none">
-					<span class="glyphicon glyphicon-search help-search-ajuda" style="padding-left:6%; padding-right:2%; color:#bbb;"></span>
-					<input autocapitalize="off" autocorrect="off" placeholder="Como podemos ajudá-lo?" type="search">
-					<div class="boxflecha"></div>
-				</div>
-
-				<div class="fecharajuda" style="display: none">
-					<a href="javascript:void(0)" class="boxx">
-						<i class="fa fa-times iconbox"></i>
-					</a>
-				</div>
-			</div>
-
-		</div>
--->
 
 
 
@@ -577,46 +555,11 @@
 	    <script type="text/javascript" src="/assets/js/cadastro-migracao-post.js"></script>
 
 
-		<!-- CALCULO ECONOMIA -->
-		<script type="text/javascript">
-
-			function atualizarEconomia(mensalContabilizei){
-				var valor = mensalContabilizei;
-
-				var valorMensalidade = parseInt($("#valor-mensalidade").val());
-
-				if(valorMensalidade <= valor){
-					$('.valor.economia').html("0");
-				}else{
-					$('.valor.economia').html(accounting.formatMoney( 12 * (valorMensalidade - valor), "", 0, ".", ","));
-				}
-			}
-
-			$(document).on("keyup", "#valor-mensalidade", function(e){
-				var valor = $("#tab-sn").hasClass("active") ? 49 : 99;
-
-				atualizarEconomia(valor);
-
-			});
-
-			$("#tab-sn, #tab-lp").click(function(e){
-				//INVERTIDO POIS ACTIVE SO MUDA NO FINAL DA ACAO DO CLICK
-				var valor = $("#tab-sn").hasClass("active") ? 99 : 49;
-
-				atualizarEconomia(valor);
-			});
-
-		</script>
-
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3&appId=234390939943812";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+		
 
 		<script type="text/javascript" async="true" src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/40bbe6d9-bf4c-4139-8258-af4a415c65d7-loader.js"></script>
+    
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+        
 </body>
 </html>
