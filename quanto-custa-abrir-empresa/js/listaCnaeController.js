@@ -88,7 +88,7 @@ var listaEmpresa = [
 {tipo:11, atividade: 'Desenvolvimento Web', denominacao:'Desenvolvimento e licenciamento de programas de computador não-customizáveis', codigo: '6203-1/00', simples: true, aliquota_inicial: '19,5%'},
 {tipo:11, atividade: 'Desenvolvimento Web', denominacao:'Consultoria em tecnologia da informação', codigo: '6204-0/00', simples: true, aliquota_inicial: '16,93%'},
 {tipo:11, atividade: 'Desenvolvimento Web', denominacao:'Suporte técnico, manutenção e outros serviços em tecnologia da informação', codigo: '6209-1/00', simples: true, aliquota_inicial: '16,93%'},
-{tipo:12, atividade: 'Design de Interiores', denominacao:'Design de interiores', codigo: '7410-2/02', simples: true, aliquota_inicial: '4,5%'},
+{tipo:12, atividade: 'Design de Interiores', denominacao:'Design de interiores', codigo: '7410-2/02', simples: true, aliquota_inicial: '16,93%'},
 {tipo:13, atividade: 'Design em Geral', denominacao:'Web design', codigo: '6201-5/02', simples: true, aliquota_inicial: '19,5%'},
 {tipo:13, atividade: 'Design em Geral', denominacao:'Design de produto', codigo: '7410-2/03', simples: true, aliquota_inicial: '16,93%'},
 {tipo:13, atividade: 'Design em Geral', denominacao:'Atividades de design não especificadas anteriormente', codigo: '7410-2/99', simples: true, aliquota_inicial: '16,93%'},
