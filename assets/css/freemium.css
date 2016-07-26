@@ -28,19 +28,24 @@ background-size: cover;
         float: left;
     margin-left: 0;
 }
+
+.btn-cta-mobile{
+    min-width: 210px;
+    width: 90%!important;
+    max-width: 400px!important;
+}
 .cta {
     max-width: 52%;
     float: left;
     height: 40px;
     margin-right: 5px;
-    min-width: 210px;
+    min-width: 150px;
     background-color:#fff;
     border: none;
     padding: 8px;
     color: #777777;
     width: 300px;
     transition: 0.5s ease;
-    margin-left: 25px;
 }
 
 .cta2{
