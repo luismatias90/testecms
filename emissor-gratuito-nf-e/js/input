@@ -1,0 +1,3 @@
+document.querySelector('input[type=range]').addEventListener('input', function() {
+  this.setAttribute('value', this.value);
+}, false);
