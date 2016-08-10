@@ -86,4 +86,8 @@ body{
 	text-align: center;
 	width: 530px;
 }
+.sombra{   
+    box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
 
