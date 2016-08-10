@@ -90,4 +90,10 @@ body{
     box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
+.fundo-cel{
+    background: url('/assets/img/fundo-cel.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 485px;
+}
 
