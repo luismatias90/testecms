@@ -13,3 +13,5 @@ ExpiresByType image/x-icon "access plus 1 year"
 ExpiresDefault "access plus 2 days"
 </IfModule>
 ## EXPIRES CACHING ##
+
+ErrorDocument 404 http://www.contabilizei.com.br/404.html
