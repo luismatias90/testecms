@@ -31,7 +31,9 @@ h1 {
 }
 .input-group input {
 	margin:20px 0;
-	padding:30px;
+/*	padding:30px;*/
+    padding:15px;
+    height:60px !important;
 	font-size:1.6em;
 }
 .input-group button {
