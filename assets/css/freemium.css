@@ -2,8 +2,8 @@
     opacity: 1!important;
 }
 .jumbotron{
-    background: #000;
-    padding: 100px 0 80px 0!important;
+    padding: 130px 0 60px 0!important;
+    background:#fff;
 }
 h3{
     opacity: 1!important;
@@ -22,7 +22,6 @@ background-size: cover;
     font-weight: 700!important;
     padding: 40px 0 0 0;
     font-size: 36px!important;
-    color:#fff!important;
 }
 .btn-cta{
     padding: 10px 30px!important;
@@ -128,8 +127,10 @@ margin-bottom: 30px;
 .alternah2{
     font-weight: normal!important;
     margin: 5px 0 35px 0!important;
-    font-size: 20px!important;
+    font-size: 16px!important;
     padding: 5px 0 10px 0!important;
+    opacity: 0.5;
+    color: #333;
 }
 .border-cinza{
     border:2px solid #e8e8e8;
@@ -174,7 +175,7 @@ margin-top: 60px;
     transition: all 0.3s ease-in-out;
 }
 .grande{
-    font-size:40px!important;
+    font-size:34px!important;
 }
 /*iniciando personalização input range*/
 
@@ -266,4 +267,34 @@ input[type=range]:focus::-ms-fill-upper {
 }
 #form-container #conversion {
     background-color:transparent !important;
+}
+.formulario {
+    padding: 30px 40px 20px 40px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
+}
+.formulario-h3 {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #64dd17;
+    opacity: 1;
+    padding-bottom: 30px;
+    margin: 0;
+}
+.formulario .material-icons {
+    color: #e8e8e8;
+    margin-bottom: -34px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.formulario .input-group, .formulario .form-control {
+    padding-left: 55px;
+}
+.formulario .aoclicar {
+    color: #999;
+    font-size: 0.8em;
+    font-style: italic;
+}
+.sombra{
+box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2)
 }

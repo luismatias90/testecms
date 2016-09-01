@@ -2,6 +2,7 @@
 <html lang="pt-br" ng-app="SimuladorApp">
 
 	<head>
+     
 		<!-- Metatags -->
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	    <meta charset="utf-8">
@@ -53,8 +54,7 @@
         
         <link rel="stylesheet" href="/assets/css/2016.css">
 		<link rel="stylesheet" href="/assets/css/migracao.css">
-        <link rel="stylesheet" href="/assets/css/freemium.css">
-        
+        <link rel="stylesheet" href="/assets/css/freemium.css">        
 
 		<!-- Fontes Customizadas -->
         <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -84,25 +84,6 @@
 
 		<!-- Fav and touch icons -->
 	    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
-	    
-        <!--------------------botão rd station-------------------->
-        <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rd/stable/rdforms.min.js"></script>
-        <script type="text/javascript">
-          RdForms.createForm('https://forms.rdstation.com.br/cadastro-freemium-6672621914f582ef7d55', 'form-cadastro-freemium-6672621914f582ef7d55', '100%', '100%');
-        </script>
-
-        <!--segundo botao rd----------------------------->
-        <script type="text/javascript">
-          RdForms.createForm('https://forms.rdstation.com.br/cadastro-freemium-2-5b7763fb7f06d27716f4', 'form-cadastro-freemium-2-5b7763fb7f06d27716f4', '100%', '100%');
-        </script>
-        <!--terceiro botao rd-->
-        <script type="text/javascript">
-          RdForms.createForm('https://forms.rdstation.com.br/cadastro-freemium-3-a80b985f54bac201183d', 'form-cadastro-freemium-3-a80b985f54bac201183d', '100%', '10%');
-        </script>
-        <!--quarto botao rd----------------->
-        <script type="text/javascript">
-          RdForms.createForm('https://forms.rdstation.com.br/cadastro-freemium-4-0fc367799658b9b562ea', 'form-cadastro-freemium-4-0fc367799658b9b562ea', '100%', '100%');
-        </script>
         <script src="//my.hellobar.com/35f2e648daf45626e1931ec3683e451016af0994.js" type="text/javascript" charset="utf-8" async="async"></script>
 	</head>
 
@@ -189,10 +170,10 @@
                       <li><a href="/contabilidade-comercio/" class="linkBotao"><button class="accent menorzin" style="width:100%">Tenho empresa de comércio</button></a></li>
                   </ul>
                 </li>
-                <!--<li class="loginCliente dropdown">
+                <li class="loginCliente dropdown">
                   <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">lock_outline</i> Login <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-<!--                    <li><a href="#">Cadastre-se agora</a></li>
+                <li><a href="#">Cadastre-se agora</a></li>
                     <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
                     
                     <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
@@ -200,94 +181,39 @@
                     <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
                     
                   </ul>
-                </li>-->
+                </li>
                 <li class="cadastre animated fadeIn hidden-xs hidden-sm"> 
-                    <!----------------------Inicio botao inscrição -->
-                        <form id="conversion-form" action="https://www.rdstation.com.br/api/1.2/conversions" method="POST">
-                            <input type="hidden" name="token_rdstation" value="191bb53cc7863a6d696d935b566c4339">
-                            <input type="hidden" name="identificador" value="cadastro-freemium-6a556b0893">
-                            <input type="hidden" name="_is" value="6">
-                            <input type="hidden" name="redirect_to" value="">
-                            <input type="hidden" name="c_utmz" id="c_utmz" value="" />
-                            <input type="hidden" name="traffic_source" id="traffic_source" value="" />
-                            <div class="field"><input type="email" name="email" id="email" value="" class="form-control  cta2" placeholder="Email"></div>
-                            <div class="actions">
-                              <input type="submit" class="accent btn-cta" id="cf_submit" value="Experimente!" >
-                              <img src="//d335luupugsy2.cloudfront.net/images/ajax-loader.gif" id="ajax-loader" alt="#{Enviando...}" style="display: none;">
-                            </div>
-                            <div style="position: absolute; left: -5000px">
-                              <input type="text" name="emP7yF13ld" autocomplete="off" tabindex="-1" value="">
-                              <input type="text" name="sh0uldN07ch4ng3" autocomplete="off" tabindex="-1" value="should_not_change">
-                            </div>
-                            <script type="text/javascript">
-function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0;d<c.length;d++){var e=c[d];while(e.charAt(0)==" ")e=e.substring(1,e.length);if(e.indexOf(b)==0){return e.substring(b.length,e.length)}}return null}try{document.getElementById("c_utmz").value=read_cookie("__utmz");document.getElementById("traffic_source").value=read_cookie("__trf.src");document.getElementById("client_id").value=JSON.parse(decodeURIComponent(read_cookie("rdtrk"))).id}catch(err){}
-</script>
-                        </form>
-                                    
-                        <!--Fim botao inscrição -->                     
+                    <a href="#emissor" class="linkBotao2"><button class="accent menorzin">Experimente</button></a>
                   </li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
       </nav>
         
-      <div class="jumbotron text-center bg-emissor"> 
+      <div class="text-center jumbotron"> 
           <div class="container">
-              <div class="col-md-12">
-                  <h1 class="primary grande" style="padding-top:10px;">Emissor GRATUITO NF-e</h1>
-                  <h2 class="alternah2">Substitua o software da SEFAZ por um emissor gratuito NF-e, fácil de usar e com suporte ilimitado.</h2>
-              </div>
-              <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="margin-bottom:40px">
-                 
-                  <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-01.png" class="img-responsive hidden-xs">
+              <div class="col-md-7 col-xs-12 col-sm-12">                                   
+                  <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-01.png" class="img-responsive hidden-xs sombra">
                         <source src="/assets/img/emissor-gratuito-nfe-demonstracao-01.webm" type="video/webm" alt="Emissor Gratuito NF-e Contabilizei">
                   </video>
                   
-                  <img class="visible-xs img-responsive" src="/assets/img/emissor-gratuito-nfe-01.png" alt="Emissor Gratuito NF-e Contabilizei 01"/>
+                  <img class="visible-xs img-responsive sombra" src="/assets/img/emissor-gratuito-nfe-01.png" alt="Emissor Gratuito NF-e Contabilizei 01"/>
               </div>
-              
-                  
-                 <!--botao antigo <input type="nome" class="form-control cta" name="email" id="email" placeholder="E-mail"/>
-                    <a href="#"><button class="accent btn-cta">É Gratuito. Experimente!</button></a>-->
-                    <!----------------------Inicio botao inscrição -->
-              <div class="col-md-12 col-md-offset-3 col-sm-offset-1">
-                    <form id="conversion-form" action="https://www.rdstation.com.br/api/1.2/conversions" method="POST">
-                        <input type="hidden" name="token_rdstation" value="191bb53cc7863a6d696d935b566c4339">
-                        <input type="hidden" name="identificador" value="cadastro-freemium-2">
-                        <input type="hidden" name="_is" value="6">
-                        <input type="hidden" name="redirect_to" value="https://contabilizei.typeform.com/to/ElGL2e">
-                        <input type="hidden" name="c_utmz" id="c_utmz" value="" />
-                        <input type="hidden" name="traffic_source" id="traffic_source" value="" />
-                        <input type="hidden" id="client_id" name="client_id" value="">
-                        <div class="field"><input style="margin-left:25px;margin-bottom:5px; min-width:210px;" type="email" name="email" id="email" value="" class="form-control cta" placeholder="Email">
-                        </div>
-
-                        <div class="actions col-xs-offset-1">
-                          <input type="submit" class="accent btn-cta" id="cf_submit" value="É gratuito. Experimente!">
-                          <img src="//d335luupugsy2.cloudfront.net/images/ajax-loader.gif" id="ajax-loader" alt="#{Enviando...}" style="display: none;">
-                        </div>
-
-
-
-                        <div style="position: absolute; left: -5000px">
-                          <input type="text" name="emP7yF13ld" autocomplete="off" tabindex="-1" value="">
-                          <input type="text" name="sh0uldN07ch4ng3" autocomplete="off" tabindex="-1" value="should_not_change">
-                        </div>
-                        <script type="text/javascript">
-function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0;d<c.length;d++){var e=c[d];while(e.charAt(0)==" ")e=e.substring(1,e.length);if(e.indexOf(b)==0){return e.substring(b.length,e.length)}}return null}try{document.getElementById("traffic_source").value=read_cookie("__trf.src"); document.getElementById("client_id").value=JSON.parse(decodeURIComponent(read_cookie("rdtrk"))).id;}catch(err){}
-</script>
-                    </form>
+              <div class="col-md-5 col-sm-12" style="margin-bottom:40px;padding:0 0 0 5%">
+                   <h1 class="primary grande" style="padding-top:50px;">Emissor GRATUITO NF-e</h1>
+                  <h2 class="alternah2">Substitua o software da SEFAZ por um emissor gratuito NF-e, fácil de usar e com suporte ilimitado.</h2>
+                  <a href="#descomplicamos"><button align="center" class="accent" style="width:100%;margin:0px; margin-top:10px;">Conheça o Emissor Gratuito NF-e</button></a><br><br>
               </div>
-                    <!--Fim botao inscrição --> 
+            
             </div>
           </div>
       
         
-        <div class="midia text-center bg-branco">
+        <div class="midia text-center bg-cinza">
             <div class="container">
                 <div class="logos col-md-12">
                     
-                    <a href="https://endeavor.org.br/historia-vitor-torres-fabio-bacarin-contabilizei/" target="_blank" data-toggle="tooltip" title='"Na contramão da crise: uma aventura que cresce 700%."' class="hidden-md wow fadeIn"><img class="logosMidia" width="158" height="42" src="/assets/img/logoendeavor.png"></a>
+                <a href="/midia/forbes/2016.07.22.pdf" target="_blank" data-toggle="tooltip" title="" class="hidden-md wow fadeIn animated" data-original-title="&quot;Todos os serviços dos escritórios tradicionais da profissão por um preço menor.&quot;" style="visibility: visible; animation-name: fadeIn;"><img class="logosMidia" width="158" height="42" src="/assets/img/logoforbes.png"></a>
                 
                 <br class="visible-xs">
                 
@@ -320,18 +246,18 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
 
             </div>
         </div>
-        
-        <div class="bg-cinza features">
+        </div>
+        <div class="bg-branco features" id="descomplicamos">
             <div class="container">
                     <h2 class="azul">Descomplicamos a emissão de Nota Fiscal</h2>
                     <h3 class="texto text-center subtitle mb30">Tudo em português claro e com campos preenchidos automaticamente pelo software desenvolvido por nossos contadores</h3>
                 <div class="descomplicando"> 
                     <div class=" col-md-8">
-                            <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-01.png" class="img-responsive hidden-xs">
+                            <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-01.png" class="img-responsive hidden-xs sombra">
                                 <source src="/assets/img/emissor-gratuito-nfe-demonstracao-02.webm" type="video/webm" alt="Emissor Gratuito NF-e Contabilizei">
                             </video>
                         
-                            <img class="visible-xs img-responsive" src="/assets/img/emissor-gratuito-nfe-03.png" alt="Emissor Gratuito NF-e Contabilizei 01"/>
+                            <img class="visible-xs img-responsive sombra" src="/assets/img/emissor-gratuito-nfe-03.png" alt="Emissor Gratuito NF-e Contabilizei 01"/>
                         
                     </div>
                     <div class="col-md-4 wow animated fadeInLeft mt60 movendo" >
@@ -346,12 +272,13 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
                     <div class="col-md-4 wow animated fadeInLeft movendo" data-wow-delay="0.4s">
                         <h3 class="azul">Seleção rápida de produtos</h3>
                         <p>Ganhe tempo ao inserir produtos cadastrados direto na nota fiscal.</p>
+                        <a href="#emissor" class="linkBotao2 col-md-offset-1 col-sm-offset-4 mt30"><button class="accent">Experimente. É gratuito!</button></a>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="bg-branco border-cinza features">
+        <div class="bg-cinza border-cinza features">
             <div class="container">
                     <h2 class="azul text-center">O único Emissor NF-e com suporte ilimitado de contadores fanáticos</h2> 
                     <h3 class="text-center subtitle mb30">Emita notas fiscais com apoio de contadores para preencher códigos CFOP, Substituição Tributária e Impostos</h3>  
@@ -360,13 +287,14 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
                     
                             <h3 class="azul mt30">Tire suas dúvidas online e de graça</h3>
                             <p class="texto">CFOP? Substituição tributária? Nossos contadores dão o suporte necessário ao emitir nota fiscal.</p>
-                    
+                    <a href="#emissor" class="linkBotao2 col-md-offset-1 hidden-xs hidden-sm"><button class="accent">Experimente. É gratuito!</button></a>
                     </div>
                     <div class=" col-md-8">
-                            <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-02.png" class="img-responsive hidden-xs">
+                            <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-02.png" class="img-responsive hidden-xs sombra">
                             <source src="/assets/img/emissor-gratuito-nfe-demonstracao.webm" type="video/webm" alt="Emissor Gratuito NF-e Contabilizei 02">
                             </video>
-                            <img class="visible-xs img-responsive" src="/assets/img/emissor-gratuito-nfe-02.png" alt="Emissor Gratuito NF-e Contabilizei 02"/>
+                            <img class="visible-xs img-responsive sombra" src="/assets/img/emissor-gratuito-nfe-02.png" alt="Emissor Gratuito NF-e Contabilizei 02"/>
+                        <a href="#emissor" class="linkBotao2 visible-xs visible-sm mt30 col-sm-offset-4"><button class="accent">Experimente. É gratuito!</button></a>
                     </div>
                 </div>
                 
@@ -374,16 +302,16 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
         </div>
         
         
-        <div class="features">
+        <div class="features bg-branco">
             <div class="container">
                 <h2 class="azul">Total controle das notas fiscais emitidas</h2> 
                 <h3 class="text-center subtitle mb30">Tenha histórico de todas notas fiscais emitidas e produtos que mais vendem</h3>
                 <div class="descomplicando"> 
                     <div class=" col-md-8">
-                            <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-01.png" class="img-responsive hidden-xs">
+                            <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-01.png" class="img-responsive hidden-xs sombra">
                                 <source src="/assets/img/emissor-gratuito-nfe-demonstracao-03.webm" type="video/webm" alt="Emissor Gratuito NF-e Contabilizei 03">
                             </video>
-                            <img class="visible-xs img-responsive" src="/assets/img/emissor-gratuito-nfe-05.png" alt="Emissor Gratuito NF-e Contabilizei 03"/>
+                            <img class="visible-xs img-responsive sombra" src="/assets/img/emissor-gratuito-nfe-05.png" alt="Emissor Gratuito NF-e Contabilizei 03"/>
                     </div>
                     <div class="col-md-4 wow animated fadeInLeft mt30 movendo">
                         <h3 class="mt60 azul">Consulta fácil e rápida</h3>
@@ -392,12 +320,14 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
                     <div class="col-md-4 wow animated fadeInLeft movendo" style="margin-top:5px;">
                         <h3 class=" azul">Conheça os campeões de venda</h3>
                         <p>Visualize facilmente os produtos que mais vendem.</p>
+                        <a href="#emissor" class="linkBotao2 col-md-offset-1 col-sm-offset-4"><button class="accent">Experimente. É gratuito!</button></a>
                     </div>
+                    
                 </div>
             </div>            
         </div>
         
-        <div class="bg-branco border-cinza features">
+        <div class="bg-cinza border-cinza features">
             <div class="container mb30">
                     <h2 class="azul text-center">Emissão de NF-e rápida e em poucos cliques</h2> 
                     <h3 class="text-center subtitle mb30">Selecione o perfil de nota fiscal eletrônica que deseja emitir e preenchemos a maioria dos campos para você</h3>  
@@ -411,15 +341,19 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
                             <h3 class="azul">Validação automática de dados</h3>
                             <p class="texto">Nosso Emissor Gratuito NF-e auxilia você a diminuir erros na emissão de notas fiscais.</p>
                         </div>
+                        <a href="#emissor" class="linkBotao2 col-md-offset-1 hidden-sm hidden-xs"><button class="accent">Experimente. É gratuito!</button></a>
                     </div>
                     
                     <div class=" col-md-8">
-                            <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-01.png" class="img-responsive hidden-xs">
+                            <video autoplay="autoplay" controls="controls" loop="loop" poster="/assets/img/emissor-gratuito-nfe-01.png" class="img-responsive hidden-xs sombra">
                                 <source src="/assets/img/emissor-gratuito-nfe-demonstracao-04.webm" type="video/webm" alt="Emissor Gratuito NF-e Contabilizei 04">
                             </video>
-                            <img class="visible-xs img-responsive" src="/assets/img/emissor-gratuito-nfe-04.png" alt="Emissor Gratuito NF-e Contabilizei 04"/>
+                            <img class="visible-xs img-responsive sombra" src="/assets/img/emissor-gratuito-nfe-04.png" alt="Emissor Gratuito NF-e Contabilizei 04"/>
+                        <a href="#emissor" class="linkBotao2 col-sm-offset-4 visible-sm visible-xs mt30"><button class="accent">Experimente. É gratuito!</button></a>
                     </div>
                 </div> 
+            </div>
+            <div class="text-center" style="margin-top:50px;">                     
             </div>
         </div>
         <div class="bg-azul-escuro">
@@ -488,8 +422,11 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
                                       <hr>  
                                     <p class="texto">Único emissor NF-e integrado 100% com contabilidade para você economizar em serviços contábeis. </p>
                                     <em><a style="    text-decoration: underline;" class="branco" href="https://www.contabilizei.com.br/contabilidade-comercio/" target="_blank">Saiba mais aqui </a></em>
+ 
                                 </div>
                         </div>
+                     <p style="margin-top:50px;">Gostou? Que tal compartilhar com seus amigos do Facebook?</p>
+                             <p><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.contabilizei.com.br/emissor-gratuito-nf-e/" target="_blank"><img class="hover-opacity" src="/assets//img/botao_recomendar.png"></a></p>
                     </div>
                 </div>
 
@@ -500,36 +437,8 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
             <div class="container">
                 <p class="wow fadeIn">Junte-se agora a mais de <br class="visible-xs"><span class="economiaTotal">50.000</span><br class="visible-xs">micro e pequenas empresas que confiam na Contabilizei.
                 </p>
-                <div class=" col-md-offset-3">
-                    <!----------------------Inicio botao inscrição -->
-                    <div class="col-xs-offset-2">
-                    <form id="conversion-form" action="https://www.rdstation.com.br/api/1.2/conversions" method="POST">
-                        <input type="hidden" name="token_rdstation" value="191bb53cc7863a6d696d935b566c4339">
-                        <input type="hidden" name="identificador" value="cadastro-freemium-3">
-                        <input type="hidden" name="_is" value="6">
-                        <input type="hidden" name="redirect_to" value="https://contabilizei.typeform.com/to/ElGL2e">
-                        <input type="hidden" name="c_utmz" id="c_utmz" value="" />
-                        <input type="hidden" name="traffic_source" id="traffic_source" value="" />
-
-                        <div class="field"><input style="margin-bottom:5px;" type="email" name="email" id="email" value="" class="form-control  cta" placeholder="Email"></div>
-
-                        <div class="actions">
-                          <input type="submit" class="accent btn-cta" id="cf_submit" value="Experimente">
-                          <img src="//d335luupugsy2.cloudfront.net/images/ajax-loader.gif" id="ajax-loader" alt="#{Enviando...}" style="display: none;">
-                        </div>
-
-
-
-                        <div style="position: absolute; left: -5000px">
-                          <input type="text" name="emP7yF13ld" autocomplete="off" tabindex="-1" value="">
-                          <input type="text" name="sh0uldN07ch4ng3" autocomplete="off" tabindex="-1" value="should_not_change">
-                        </div>
-                        <script type="text/javascript">
-function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0;d<c.length;d++){var e=c[d];while(e.charAt(0)==" ")e=e.substring(1,e.length);if(e.indexOf(b)==0){return e.substring(b.length,e.length)}}return null}try{document.getElementById("c_utmz").value=read_cookie("__utmz");document.getElementById("traffic_source").value=read_cookie("__trf.src");document.getElementById("client_id").value=JSON.parse(decodeURIComponent(read_cookie("rdtrk"))).id}catch(err){}
-</script>
-                    </form> 
-                    </div>
-                        <!--Fim botao inscrição --> 
+                <div class=" col-md-offset-0">
+                    <a href="#emissor" class="linkBotao2"><button class="accent menorzin">Experimente. É gratuito!</button></a>
                 </div>
             </div>
         </div>
@@ -542,9 +451,8 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center  wow fadeIn">
-                          <p>Gostou? Que tal compartilhar com seus amigos do Facebook?</p>
-                             <p><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.contabilizei.com.br/emissor-gratuito-nf-e/" target="_blank"><img class="hover-opacity" src="/assets//img/botao_recomendar.png"></a></p>
-						<h2 class="opacidade" style="margin-top:80px;">Dúvidas?</h2>
+
+						<h2 class="opacidade">Dúvidas?</h2>
 						
 					</div>
 				</div>
@@ -734,44 +642,69 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
             </div>
         </section>
         </div>
-        <div class="navlead-novo text-center">
+            <div id="emissor" class="bg-cinza features">
             <div class="container">
-                <p class="wow animated fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">Comece agora a emitir notas fiscais do jeito que você sempre quis.</p>
-                <div class="col-md-offset-3">
-                      <!----------------------Inicio botao inscrição -->
-                    <div class="col-xs-offset-2">    
-                    <form id="conversion-form" action="https://www.rdstation.com.br/api/1.2/conversions" method="POST">
-                            <input type="hidden" name="token_rdstation" value="191bb53cc7863a6d696d935b566c4339">
-                            <input type="hidden" name="identificador" value="cadastro-freemium-4">
-                            <input type="hidden" name="_is" value="6">
-                            <input type="hidden" name="redirect_to" value="https://contabilizei.typeform.com/to/ElGL2e">
-                             <input type="hidden" name="c_utmz" id="c_utmz" value="" />
-                            <input type="hidden" id="traffic_source" name="traffic_source" value="">
+        <div class="formulario col-md-6 col-md-offset-1 col-sm-12 col-xs-12 text-center wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                          
+            <h3 class="formulario-h3" style="font-size:1.6em">Comece a emitir NF-e Gratuitamente</h3>
+							
 
-                            <div class="field"><input style="min-width:230px;margin-bottom:5px;" type="email" name="email" id="email" value="" class="form-control  cta" placeholder="Email"></div>
+						<form class="form-horizontal ng-pristine ng-valid" id="form-migracao" role="form" method="post" novalidate="novalidate">
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<i class="material-icons pull-left">face</i><input type="nome" class="form-control" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<i class="material-icons pull-left">picture_in_picture</i><input type="nome" class="form-control" name="cpf" id="cpf" placeholder="CPF" maxlength="14" autocomplete="off">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
 
-                            <div class="actions">
-                              <input type="submit" class="accent btn-cta" id="cf_submit" value="É gratuito. Experimente!">
-                              <img src="//d335luupugsy2.cloudfront.net/images/ajax-loader.gif" id="ajax-loader" alt="#{Enviando...}" style="display: none;">
-                            </div>
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<i class="material-icons pull-left">phone</i><input type="nome" class="form-control" name="telefone" id="telefone" placeholder="Telefone" maxlength="14" autocomplete="off">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									 <i class="material-icons pull-left">mail_outline</i><input type="nome" class="form-control" name="email" id="email" placeholder="E-mail">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group has-feedback">
+								<div class="col-lg-12">
+									<i class="material-icons pull-left">fingerprint</i><input type="password" class="form-control" name="senha" id="senha" placeholder="Defina sua senha">
+									<span class="glyphicon form-control-feedback"></span>
+								</div>
+							</div>
+							<div class="form-group" style="margin-bottom:0">
+								<div class="col-lg-12" align="center">
+									<button id="btn-iniciar-migracao" align="center" class="accent" style="width:100%;margin:0px; margin-top:10px;">Utilizar Emissor NF-e</button><br><br>
+									<span class="aoclicar">Ao clicar você concorda com os <a href="/termos-de-uso/Termos-de-uso-19032014.pdf" target="blank_">termos de uso</a>.</span>
+								</div>
+							</div>
+						  </form>
 
+					</div>
+                <div class="col-md-4 col-xs-10 col-sm-12" style="padding:1px 0 0 40px;">
+                    <h2 class="opacidade2" style="font-size:1.8em; margin-bottom:30px;">Junte-se às <strong>50.000</strong> empresas<br class="hidden-xs hidden-md"> que querem usar Contabilizei.</h2>
+                    <hr>
+                            <h3 style="text-align:center;margin-top:40px;color:#2987d2;"><i class="material-icons">check_circle</i> 100% Gratuito</h3>
+                    <hr style="width:40px;">
+                            <p style="text-align:center;opacity:0.8">Emita até 500 notas fiscais por mês sem gastar nada. Para sempre! </p>
+                </div>
+                <div class="col-md-4 col-xs-10 col-sm-12" style="padding:60px 0 0 40px;">
 
-
-                            <div style="position: absolute; left: -5000px">
-                              <input type="text" name="emP7yF13ld" autocomplete="off" tabindex="-1" value="">
-                              <input type="text" name="sh0uldN07ch4ng3" autocomplete="off" tabindex="-1" value="should_not_change">
-                            </div>
-                        <script type="text/javascript">
-function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0;d<c.length;d++){var e=c[d];while(e.charAt(0)==" ")e=e.substring(1,e.length);if(e.indexOf(b)==0){return e.substring(b.length,e.length)}}return null}try{document.getElementById("c_utmz").value=read_cookie("__utmz");document.getElementById("traffic_source").value=read_cookie("__trf.src");document.getElementById("client_id").value=JSON.parse(decodeURIComponent(read_cookie("rdtrk"))).id}catch(err){}
-</script>
-                          </form>
-                        
-                    </div>
-                        
-                        <!--Fim botao inscrição --> 
+                            <h3 style="text-align:center;color:#2987d2;"><i class="material-icons">question_answer</i> Suporte ilimitado</h3>
+                    <hr style="width:40px;">
+                            <p style="text-align:center;opacity:0.8">Tire todas suas dúvidas de emissão de NF-e com contadores fanáticos e de graça. </p>
+                </div>
                 </div>
             </div>
-        </div>
 
 		<footer>
         <div class="footer primary-bg">
@@ -878,12 +811,7 @@ function read_cookie(a){var b=a+"=";var c=document.cookie.split(";");for(var d=0
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
-	    <script type="text/javascript" src="/escritorio-contabilidade-online/js/calculadora.js"></script>
-        <script type="text/javascript" src="/emissor-nfe-gratuito/js/input.js"></script>
-        
-        
-        
-        
+	    <script type="text/javascript" src="/escritorio-contabilidade-online/js/calculadora.js"></script>   
        
         <!-- Cadastro -->
         <script type="text/javascript" src="/assets/lib/jquery.mask/jquery.mask.min.js"></script>
