@@ -110,6 +110,6 @@ $(document).ready(function(){
                 $("#btn-iniciar-migracao").attr('disabled','disabled');
     $('#form-migracao').submit();
     
-	
+	});
 	
 });

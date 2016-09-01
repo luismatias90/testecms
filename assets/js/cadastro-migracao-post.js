@@ -109,5 +109,7 @@ $(document).ready(function(){
                 $('#form-migracao').attr("action", baseCadastro + "/login");
                 $("#btn-iniciar-migracao").attr('disabled','disabled');
     $('#form-migracao').submit();
+        
+    });
 	
 });
