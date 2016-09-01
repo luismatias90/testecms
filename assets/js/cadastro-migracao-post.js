@@ -105,11 +105,11 @@ $(document).ready(function(){
 	}, 'CPF inválido');
 	
 	$("#btn-iniciar-migracao").click(function(){
-			if ($("#btn-iniciar-migracao").attr('disabled') == 'disabled') return;
+			if ($("#btn-iniciar-migracao").attr('block') == 'block') return;
                 $('#form-migracao').attr("action", baseCadastro + "/login");
-                $("#btn-iniciar-migracao").attr('disabled','disabled');
+                $("#btn-iniciar-migracao").attr('block','block');
     $('#form-migracao').submit();
         
-    });
+    }); 
 	
 });

@@ -122,9 +122,9 @@ $(document).ready(function() {
 		}, 'CPF inválido');
 	
 		$("#completa-abertura").click(function(){
-			if ($("#completa-abertura").attr('disabled') == 'disabled') return;
+			if ($("#completa-abertura").attr('block') == 'block') return;
                 $('#form-abertura').attr("action", baseCadastro + "/login");
-                $("#completa-abertura").attr('disabled','disabled');
+                $("#completa-abertura").attr('block','block');
         $('#form-abertura').submit();
                     
             
