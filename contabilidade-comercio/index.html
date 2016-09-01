@@ -116,23 +116,8 @@
         
 
 	  	<!-- CUPOM -->
-	  	<div class="splash">
-			<div class="carregando-cupom hide well" align="center" style="background-color:#fff; border:none;">
-				<i class="fa fa-cloud animated infinite pulse" style="font-size:2em; color:rgb(40, 150, 214);"></i><br><span style="font-size: 1.2em;  color:rgb(40, 150, 214); font-weight:600" class="animated fadeIn"><strong>Validando código. Por favor, aguarde.</strong></span>
-			</div>
-
-			<div class="cupom-indicacao well text-center animated fadeIn" align="center" style="display: none; background-color: rgb(40, 150, 214); border:none; border-bottom:1px solid rgb(28, 117, 169);">
-				<div class="row animated bounceInDown" id="alert-cupom">
-					<div class="col-md-12 text-indicacao" style="font-size:1.2em; color:#fff;"></div>
-					<div class="col-md-12 animated" style="color:#B3E6FF;"><i class="fa fa-check-circle" style="padding-right:5px;"></i>Código válido. <a href="#migre" style="color:#B3E6FF; text-decoration:underline;">Finalize seu cadastro</a> para ativar o crédito.</div>
-				</div>
-			</div>
-		</div>
-	  	<!-- FIM CUPOM -->
-
-		<!-- Navbar -->
-		<nav class="navbar navbar-default navbar-fixed-top contabilizei navtopo">
-        <div class="container">
+	  	<nav class="navbar navbar-default navbar-fixed-top contabilizei navtopo">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -182,7 +167,18 @@
                       <li><a href="/contabilidade-comercio/" class="linkBotao"><button class="accent menorzin" style="width:100%">Tenho empresa de comércio</button></a></li>
                   </ul>
                 </li>
-                <li class="loginCliente dropdown">
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">  Emissor NF-e <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+<!--                    <li><a href="#">Cadastre-se agora</a></li>-->
+                    <li><a href="/emissor-nf-e/" >Veja como funciona</a></li>
+                    
+                    <li><hr></li>
+                    <li><a href="/emissor-gratuito-nf-e/" class="linkBotao"><button class="accent menorzin" style="width:100%">Emissor NF-e Grátis</button></a></li>
+                    
+                  </ul>
+                </li>
+                  <li class="loginCliente dropdown hidden-sm">
                   <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">lock_outline</i> Login <span class="caret"></span></a>
                   <ul class="dropdown-menu">
 <!--                    <li><a href="#">Cadastre-se agora</a></li>-->
@@ -191,6 +187,7 @@
                     <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
                     <li><hr></li>
                     <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
+                    <li><a href="https://freemium.contabilizei.com/sistema/" target="_blank">Acesse o emissor gratuito de NF-e</a></li>  
                     
                   </ul>
                 </li>

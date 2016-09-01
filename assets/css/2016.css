@@ -81,7 +81,7 @@ body {
     margin-left:130px;
 }
 .nav .espacador {
-    margin-left:250px;
+    margin-left:159px;
     transition:0.2s ease;
 }
 .navbar-brand {
@@ -120,9 +120,7 @@ body {
     display: none;
 }
 
-.contabilizei2 .espacador {
-    margin-left:28px;
-}
+
 .dropdown:hover .dropdown-menu {
     display: block;
     padding:10px;
@@ -707,7 +705,25 @@ h4 {
         font-size:40px;
         line-height:1.4em;
     }
+    .nav .espacador {
+        margin-left:359px;
+        transition:0.2s ease;
+    }
 }
+
+@media (min-width: 1500px) {
+    
+    .logo {
+        margin-left:200px;
+    }
+}
+@media (min-width: 1800px) {
+    
+    .logo {
+        margin-left:400px;
+    }
+}
+
 
 @media (max-width: 768px) { 
    
@@ -860,7 +876,9 @@ h4 {
     
 }
 
-
+.contabilizei2 .espacador {
+    margin-left:28px;
+}
 .material-icons {
    vertical-align: middle !important;
     margin-top: -3px;

@@ -43,6 +43,8 @@ body {
 
 /* Navbar e Jumbotron */
 
+
+
 .contabilizei {
     border:none;
     display: inline-block;
@@ -93,6 +95,37 @@ body {
     line-height:1.4em;
     margin-bottom:0;
     
+}
+
+@media (min-width: 1400px) {
+    
+    .jumbotron .alternatitulo {
+        font-size:26px;
+        margin:75px 0 0 0;
+    }
+    .jumbotron .alternah2 {
+        font-weight:700;
+        margin:10px 0 80px 0;
+        font-size:40px;
+        line-height:1.4em;
+    }
+    .nav .espacador {
+        margin-left:359px;
+        transition:0.2s ease;
+    }
+}
+
+@media (min-width: 1500px) {
+    
+    .logo {
+        margin-left:200px;
+    }
+}
+@media (min-width: 1800px) {
+    
+    .logo {
+        margin-left:400px;
+    }
 }
 h2 {
     font-size:24px;
