@@ -104,9 +104,12 @@ $(document).ready(function(){
 	    
 	}, 'CPF inválido');
 	
-	$("#btn-iniciar-migracao").click(function(){
-		$('#form-migracao').attr("action", baseCadastro + "/login");
-		$('#form-migracao').submit();
-	});
+    $("#btn-iniciar-migracao").click(function(){
+			if ($("#btn-iniciar-migracao").attr('disabled') == 'disabled') return;
+                $('#form-migracao').attr("action", baseCadastro + "/login");
+                $("#btn-iniciar-migracao").attr('disabled','disabled');
+    $('#form-migracao').submit();
+    
+	
 	
 });

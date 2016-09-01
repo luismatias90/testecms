@@ -122,8 +122,13 @@ $(document).ready(function() {
 		}, 'CPF inválido');
 	
 		$("#completa-abertura").click(function(){
-			$('#form-abertura').attr("action", baseCadastro + "/login");
-			$('#form-abertura').submit();
+			if ($("#completa-abertura").attr('disabled') == 'disabled') return;
+                $('#form-abertura').attr("action", baseCadastro + "/login");
+                $("#completa-abertura").attr('disabled','disabled');
+        $('#form-abertura').submit();
+                    
+            
 		});
+            
 });
 
