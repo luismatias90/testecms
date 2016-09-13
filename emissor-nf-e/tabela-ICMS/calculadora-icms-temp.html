@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+<body>
+
+    <style>
+        body {}
+        
+        .label--1 {
+            display: none !important;
+        }
+        
+        .odd {
+            fill: #2196F3;
+        }
+        
+        .even {
+            fill: #42A5F5
+        }
+        .origem{
+            fill: #424242;
+            color: #424242;
+        }
+        .destino{
+            fill: #757575;
+            color: #757575;
+        }
+    </style>
+
+
+    <div id="wheel" ng-app="myShoppingList">
+        <div style="padding-top:20px; text-align: center;">
+            <span class="mdl-typography--display-1">ICMS</span>
+        </div>
+
+        <div style="display: flex; flex-direction: row" ng-controller="myCtrl">
+            <div>
+                <div style=" position: absolute; margin-top: 300px; margin-left: 225px; width: 200px;  text-align: center;">
+                    <div>
+                        <span class="mdl-typography--display-2">{{estadoHover.chave}}</span>
+                    </div>
+                    <div>
+                        <span class="mdl-typography--display-title" style="opacity: 0.54">{{estadoHover.nome}}</span>
+                    </div>
+                </div>
+                <div style="position: absolute; width: 650px; height: 650px; color: #fff">
+                    <div style="margin-top: 132px; margin-left: 252px; position: absolute; z-index: 99;">TO</div>
+                    <div style="margin-top: 127px; margin-left: 298px; position: absolute; z-index: 99;">EX</div>
+                    <div style="margin-top: 130px; margin-left: 340px; position: absolute; z-index: 99;">AC</div>
+                    <div style="margin-top: 140px; margin-left: 380px; position: absolute; z-index: 99;">AL</div>
+                    <div style="margin-top: 153px; margin-left: 423px; position: absolute; z-index: 99;">AP</div>
+                    <div style="margin-top: 183px; margin-left: 453px; position: absolute; z-index: 99;">AM</div>
+                    <div style="margin-top: 183px; margin-left: 453px; position: absolute; z-index: 99;">AM</div>
+                    <div style="margin-top: 217px; margin-left: 480px; position: absolute; z-index: 99;">BA</div>
+                    <div style="margin-top: 257px; margin-left: 495px; position: absolute; z-index: 99;">CE</div>
+                    <div style="margin-top: 297px; margin-left: 510px; position: absolute; z-index: 99;">DF</div>
+                    <div style="margin-top: 338px; margin-left: 515px; position: absolute; z-index: 99;">GO</div>
+                    <div style="margin-top: 383px; margin-left: 510px; position: absolute; z-index: 99;">ES</div>
+                    <div style="margin-top: 428px; margin-left: 487px; position: absolute; z-index: 99;">MA</div>
+                    <div style="margin-top: 458px; margin-left: 453px; position: absolute; z-index: 99;">MT</div>
+                    <div style="margin-top: 488px; margin-left: 421px; position: absolute; z-index: 99;">MS</div>
+                    <div style="margin-top: 500px; margin-left: 373px; position: absolute; z-index: 99;">MG</div>
+                    <div style="margin-top: 504px; margin-left: 333px; position: absolute; z-index: 99;">PA</div>
+                    <div style="margin-top: 504px; margin-left: 293px; position: absolute; z-index: 99;">PB</div>
+                    <div style="margin-top: 500px; margin-left: 250px; position: absolute; z-index: 99;">PR</div>
+                    <div style="margin-top: 480px; margin-left: 210px; position: absolute; z-index: 99;">PE</div>
+                    <div style="margin-top: 455px; margin-left: 172px; position: absolute; z-index: 99;">PI</div>
+                    <div style="margin-top: 420px; margin-left: 145px; position: absolute; z-index: 99;">RJ</div>
+                    <div style="margin-top: 380px; margin-left: 128px; position: absolute; z-index: 99;">RN</div>
+                    <div style="margin-top: 336px; margin-left: 122px; position: absolute; z-index: 99;">RS</div>
+                    <div style="margin-top: 295px; margin-left: 122px; position: absolute; z-index: 99;">RO</div>
+                    <div style="margin-top: 250px; margin-left: 132px; position: absolute; z-index: 99;">RR</div>
+                    <div style="margin-top: 210px; margin-left: 152px; position: absolute; z-index: 99;">SP</div>
+                    <div style="margin-top: 175px; margin-left: 182px; position: absolute; z-index: 99;">SC</div>
+                    <div style="margin-top: 145px; margin-left: 212px; position: absolute; z-index: 99;">SE</div>
+                </div>
+                <svg style="position: absolute;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 650 650" preserveAspectRatio="xMidYMid meet" width="650" height="650">
+                    <defs>
+                        <filter id="drop-shadow">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="3.2"></feGaussianBlur>
+                            <feOffset dx="0" dy="0" result="offsetblur"></feOffset>
+                            <feFlood flood-color="rgba(0,0,0,1)"></feFlood>
+                            <feComposite in2="offsetblur" operator="in"></feComposite>
+                            <feMerge>
+                                <feMergeNode></feMergeNode>
+                                <feMergeNode in="SourceGraphic"></feMergeNode>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <g class="wheel--maing" transform="translate(325,325)">
+                        <g data-color="Cyan" id="Cyan" transform="rotate({{rotacao * $index+1}})" tabindex="0" ng-repeat="estado in estados" ng-click="escolherEstado(estado)" ng-mouseover="mouseoverEstado(estado)" style="cursor: pointer;">
+                            <g class="polygons">
+                                <polygon points="22.94244769737761,-105.41819284282845 57.35611924344403,-236.0454821070711 0,-243 0,-140" ng-class-odd="'odd'" ng-class-even="'even'"
+                                    ng-class="{'origem': estado.isOrigem, 'destino': estado.isDestino}"
+                                ></polygon>
+                                <polygon points="32.94244769737761,-94.41819284282845 46.11942677632865,-132.1854699799598 0,-140 0,-100" style="fill: #42A5F5;"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div style="position:absolute; margin-left: 620px; padding-top:100px;">
+                <div>
+                    <span class="mdl-typography--title" style="color: #2196F3"><b>{{fraseDeAcao}}</b></span>
+                </div>
+                <div style="margin-top:15px;" ng-show="estadoOrigem">
+                    <div>
+                        <span class="mdl-typography--title origem" ><b>Estado de origem:</b></span>
+                    </div>
+                    <div>
+                        <span class="mdl-typography--title" style="opacity: .54">{{estadoOrigem.nome}}</span>
+                    </div>
+                </div>
+                <div style="margin-top:15px;" ng-show="estadoDestino">
+                    <div>
+                        <span class="mdl-typography--title destino"><b>Estado de destino:</b></span>
+                    </div>
+                    <div>
+                        <span class="mdl-typography--title" style="opacity: .54">{{estadoDestino.nome}}</span>
+                    </div>
+                </div>
+                
+                
+                <div style="margin-top:15px;" ng-show="aliquota">
+                    <div>
+                        <span class="mdl-typography--title"><b>Alíquota:</b></span>
+                    </div>
+                    <div>
+                        <span class="mdl-typography--display-2">{{aliquota}}</span>
+                    </div>
+                </div>
+                <div style="margin-top:15px;" ng-show="aliquota">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" ng-click="reset();">Começar denovo</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var app = angular.module("myShoppingList", []);
+        app.controller("myCtrl", function ($scope) {
+            var fraseOrigem = "Escolha o estado de origem ao lado:";
+            var fraseDestino = "Escolha agora o estado destino ao lado:";
+            var fraseFinal = "Para estes estados a sua aliquóta é:"
+
+            $scope.fraseDeAcao = fraseOrigem;
+            $scope.estadoHover = null;
+            $scope.estadoOrigem = null;
+            $scope.estadoDestino = null;
+
+            $scope.mouseoverEstado = function (estado) {
+                $scope.estadoHover = estado;
+            }
+            function zeraClasses(){
+                for (var i in $scope.estados){
+                    $scope.estados[i].isOrigem = false;
+                    $scope.estados[i].isDestino = false;
+                }
+            }
+            var estadoDeOrigem = null;
+            var countEstado = 0;
+            $scope.reset = function () {
+                $scope.estadoHover = null;
+                $scope.estadoOrigem = null;
+                $scope.estadoDestino = null;
+                $scope.aliquota = null;
+                $scope.fraseDeAcao = fraseOrigem;
+                zeraClasses();
+            }
+            $scope.escolherEstado = function (estado) {
+                if (countEstado == 0) {
+                    zeraClasses();
+                    estado.isOrigem = true;
+                    $scope.estadoOrigem = estado;
+                    $scope.fraseDeAcao = fraseDestino;
+                    countEstado++;
+                } else {
+                    estado.isDestino = true;
+                    $scope.estadoDestino = estado;
+                    $scope.fraseDeAcao = fraseFinal;
+                    mostraImposto();
+                    countEstado = 0;
+                }
+            }
+            
+            function getIndexEstado(estado){
+                for (var i in $scope.estados){
+                    if (estado.chave == $scope.estados[i].chave){
+                        return i;
+                    }
+                }
+                return null;
+            }
+
+            function mostraImposto() {
+                var indexOrigem = getIndexEstado($scope.estadoOrigem);
+                var indexDestino = getIndexEstado($scope.estadoDestino);
+                
+                if (indexDestino ==null || indexDestino ==null){
+                    $scope.aliquota = 'Erro capturando aliquota';
+                    return;
+                }else{
+                    var aliquota = $scope.matriz[parseInt(indexOrigem)][parseInt(indexDestino)];
+                    $scope.aliquota = aliquota;
+                }
+            }
+
+            $scope.rotacao = 12.85714285714286;
+            $scope.matriz = [
+            /*AC*/    [17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*AL*/    [12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*AM*/    [12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*AP*/    [12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*BA*/    [12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*CE*/    [12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*DF*/    [12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*ES*/    [12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*GO*/    [12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*MA*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*MT*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*MS*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*MG*/    [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 18, 07, 07, 12, 07, 07, 07, 12, 12, 07, 07, 12, 12, 07, 07, 04],
+            /*PA*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*PB*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*PR*/    [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 18, 07, 07, 07, 12, 12, 07, 07, 12, 12, 07, 07, 04],
+            /*PE*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*PI*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*PN*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*RS*/    [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 12, 07, 07, 07, 18, 12, 07, 07, 12, 12, 07, 07, 04],
+            /*RJ*/    [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 12, 07, 07, 07, 12, 19, 07, 07, 12, 12, 07, 07, 04],
+            /*RJ*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 04],
+            /*RR*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 04],
+            /*SC*/    [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 12, 07, 07, 07, 12, 12, 07, 07, 17, 12, 07, 07, 04],
+            /*SP*/    [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 12, 07, 07, 07, 12, 12, 07, 07, 12, 18, 07, 07, 04],
+            /*SE*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 04],
+            /*TO*/    [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 04],
+            /*EX*/    [04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04],
+                
+                
+                
+                
+            ]
+            $scope.estados = [{
+                    chave: "AC",
+                    nome: "Acre"
+            }, {
+                    chave: "AL",
+                    nome: "Alagoas"
+            }, {
+                    chave: "AP",
+                    nome: "Amapá"
+            }, {
+                    chave: "AM",
+                    nome: "Amazonas"
+            }, {
+                    chave: "BA",
+                    nome: "Bahia"
+            }, {
+                    chave: "CE",
+                    nome: "Ceará"
+            }, {
+                    chave: "DF",
+                    nome: "Distrito Federal"
+            }, {
+                    chave: "GO",
+                    nome: "Goiás"
+            }, {
+                    chave: "ES",
+                    nome: "Espírito Santo"
+            }, {
+                    chave: "MA",
+                    nome: "Maranhão"
+            }, {
+                    chave: "MT",
+                    nome: "Mato Grosso"
+            }, {
+                    chave: "MS",
+                    nome: "Mato Grosso do Sul"
+            }, {
+                    chave: "MG",
+                    nome: "Minas Gerais"
+            }, {
+                    chave: "PA",
+                    nome: "Pará"
+            }, {
+                    chave: "PB",
+                    nome: "Paraiba"
+            }, {
+                    chave: "PR",
+                    nome: "Paraná"
+            }, {
+                    chave: "PE",
+                    nome: "Pernambuco"
+            }, {
+                    chave: "PI",
+                    nome: "Piauí"
+            }, {
+                    chave: "RJ",
+                    nome: "Rio de Janeiro"
+            }, {
+                    chave: "RN",
+                    nome: "Rio Grande do Norte"
+            }, {
+                    chave: "RS",
+                    nome: "Rio Grande do Sul"
+            }, {
+                    chave: "RO",
+                    nome: "Rondônia"
+            }, {
+                    chave: "RR",
+                    nome: "Roraima"
+            }, {
+                    chave: "SP",
+                    nome: "São Paulo"
+            }, {
+                    chave: "SC",
+                    nome: "Santa Catarina"
+            }, {
+                    chave: "SE",
+                    nome: "Sergipe"
+            }, {
+                    chave: "TO",
+                    nome: "Tocantins"
+            },
+                {
+                    chave: "EX",
+                    nome: "EX"
+            }]
+
+        });
+    </script>
+</body>
+
+</html>
