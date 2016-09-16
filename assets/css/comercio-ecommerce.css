@@ -655,7 +655,7 @@ blockquote {
     box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
 }
 .bg-azul {
-    background-color: #1565c0;
+    background-color: #2196F3;
 }
 .precisa{
     color:#fff;
@@ -725,4 +725,129 @@ figure.jpegcomparison div.resizer {
     -ms-transform-origin: center right;
     transform-origin: center right;
 }
+.pull-left {
+    margin-left: 40%;
+}
+.cardBranco {
+    background-color: #FFF;
+}
 
+.card {
+    background-color: #fdfdfd;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    margin: 60px 0 0px 0;
+}
+.alternah1 {
+    font-weight: 700!important;
+    font-size: 40px!important;
+    line-height: 1.4em!important;
+}
+.alternah2{
+    font-weight: lighter!important;
+    margin: 10px 0 80px 0;
+    font-size: 25px!important;
+    line-height: 1.4em;
+    color:#333!important;
+}
+ .testeOpacity {
+            -webkit-animation: fadeInFromNone 8.0s ease-out;
+            -moz-animation: fadeInFromNone 8.0s ease-out;
+            -o-animation: fadeInFromNone 8.5s ease-out;
+            animation: fadeInFromNone 8.5s ease-out;
+        }
+        
+        @-webkit-keyframes fadeInFromNone {
+            0% {
+                display: none;
+                opacity: 0;
+            }
+            1% {
+                display: block;
+                opacity: 0;
+            }
+            100% {
+                display: block;
+                opacity: .7;
+            }
+        }
+        
+        @-moz-keyframes fadeInFromNone {
+            0% {
+                display: none;
+                opacity: 0;
+            }
+            1% {
+                display: block;
+                opacity: 0;
+            }
+            100% {
+                display: block;
+                opacity: .7;
+            }
+        }
+        
+        @-o-keyframes fadeInFromNone {
+            0% {
+                display: none;
+                opacity: 0;
+            }
+            1% {
+                display: block;
+                opacity: 0;
+            }
+            100% {
+                display: block;
+                opacity: .7;
+            }
+        }
+        
+        @keyframes fadeInFromNone {
+            0% {
+                display: none;
+                opacity: 0;
+            }
+            1% {
+                display: block;
+                opacity: 0;
+            }
+            100% {
+                display: block;
+                opacity: .7;
+            }
+        }
+.border-l-r{
+    border-bottom: 3px solid transparent;    
+    width: 0px;
+    transition: 0.5s ease;
+    white-space: nowrap;
+}
+.border-l-r:hover{
+    border-bottom: 2px solid #2196F3 !important;
+    width: 100%;
+}
+.border-r-l{
+display: inline-block;
+    position: relative;
+    padding-bottom: 1px;
+}
+.border-r-l:hover{
+    border-bottom: 0px solid #2196F3 !important;
+    width: 100%;
+}
+.border-r-l:after{
+ content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.border-r-l:hover:after{
+ width: 100%;
+ background:#2196F3 ;
+}
+}
