@@ -55,6 +55,11 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    
+    <!-- Exclusivos tabela ICMS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    
 </head>
 
   <body>
@@ -144,7 +149,7 @@
                     
                   </ul>
                 </li>
-                 <li class="cadastre animated fadeIn hidden-xs hidden-sm"><a target="_blank" href="https://www.contabilizei.com.br/emissor-gratuito-nf-e/" class="linkBotao2"><button class="accent menorzin">Emissor Gratuito NF-e</button></a></li>
+                 <li class="cadastre animated fadeIn hidden-xs hidden-sm"><a href="/emissor-gratuito-nf-e/" class="linkBotao2"><button class="accent menorzin">Emissor Gratuito NF-e</button></a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
@@ -204,7 +209,7 @@
                   </ul>
                  <p>Todas essas informações, você pode conferir na  <a href="http://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp87.htm" target="_blank">Lei Complementar 87/1996</a> (a chamada “Lei Kandir”), alterada posteriormente pelas Leis Complementares <a href="http://www.camara.gov.br/proposicoesWeb/fichadetramitacao?idProposicao=360082" target="_blank">92/97</a>, <a href="http://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp99.htm" target="_blank">99/99</a> e <a href="http://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp102.htm" target="_blank">102/2000.</a></p>
             </div>
-            <p><a target="_blank" href="https://www.contabilizei.com.br/emissor-gratuito-nf-e/" class="linkBotao2"><button class="accent menorzin">Emissor Gratuito NF-e</button></a></p>
+            <p><a href="/emissor-gratuito-nf-e/" class="linkBotao2"><button class="accent menorzin">Emissor Gratuito NF-e</button></a></p>
             <div id="aliquota-icms">
                  <h3>Qual a alíquota do ICMS no Simples Nacional?</h3>
                  <p>Em cada Estado, a alíquota do ICMS é diferente e, em alguns casos, chega a ser tão alta a ponto de ser a maior fonte de arrecadação estadual.</p>
@@ -234,28 +239,438 @@
                      <li>A aquisição de veículos adaptados para pessoas que são portadoras de síndromes ou deficiências físicas.</li>
                  </ul>
             </div>
-            <p><a target="_blank" href="https://www.contabilizei.com.br/emissor-gratuito-nf-e/" class="linkBotao2"><button class="accent menorzin">Emissor Gratuito NF-e</button></a></p>
+            <p><a href="/emissor-gratuito-nf-e/" class="linkBotao2"><button class="accent menorzin">Emissor Gratuito NF-e</button></a></p>
             <div id="tabela-icms">
                  <h3>Tabela ICMS</h3>
                  <p>É importante que você saiba como utilizar a Tabela ICMS para conferir a alíquota a ser aplicada, tanto no trâmite interestadual quanto no trâmite dentro do próprio Estado.
                  </p>
-                 <p>Quando utilizar a Tabela ICMS: </p>
+                 <p><strong>Quando utilizar a Tabela ICMS:</strong> </p>
                  <ul>
                     <li>Na hora de emitir uma NF-e de venda sem substituição tributária, serão solicitados os campos de “partilha de ICMS”.</li>
                      <li>Ou, ao gerar a guia na compra de produtos para uso de consumo ou de bens para a empresa vindos de outro Estado.</li>
                  </ul>
-                 <p>Como utilizar a Tabela ICMS: </p>
+                <p><strong>Como utilizar a Tabela ICMS convencional:</strong> </p>
                  <ul>
                     <li>O primeiro passo para utilizar a Tabela ICMS é localizar a origem do Estado do remetente.</li>
                      <li>Em seguida, localize na coluna destino o Estado do destinatário do trâmite.</li>
                      <li>Na junção das duas linhas, tanto origem com destino, você terá a alíquota a ser aplicada na operação. Caso a operação seja interna, (dentro do próprio Estado), você pode encontrar a alíquota destacada na transversal.</li>
                  </ul><br>
-                 <img src="/assets/img/tabela-icms-completa-2016.PNG" class="img-responsive" alt="Tabela ICMS 2016">
-                 
-                 <p>O que fazer com a alíquota encontrada na Tabela: </p>
+               
+                <img src="/assets/img/tabela-icms-completa-2016.PNG" class="img-responsive" alt="Tabela ICMS Completa">
+                
+                
+                <p>Caso queira visualizar a tabela icms completa, <a href="/assets/img/tabela-icms-completa-2016.PNG" target="_blank">clique aqui</a></p> 
+                
+                <h3 id="tabela-icms-interativa">Tabela ICMS Interativa</h3>
+                <p><strong>Como utilizar a Tabela ICMS Interativa:</strong></p>
+                <p>A Contabilizei desenvolveu uma tabela ICMS interativa para facilitar sua busca pela alíquota correta. É bem fácil de usar e reduz os erros, com dois cliques você encontra a resposta:</p>
+                <ul>
+                    <li>1 - Clique primeiro no estado de origem.</li>
+                    <li>2 - Depois, clique no estado de destino.</li> 
+                 </ul>
+                <p>Pronto!! Simples, não é? Faça você mesmo:</p>
+                 <style>
+        
+        .label--1 {
+            display: none !important;
+        }
+        
+        .odd {
+            fill: #2196F3;
+        }
+        
+        .even {
+            fill: #42A5F5
+        }
+        
+        .origem {
+            fill: #424242;
+            color: #424242;
+        }
+        
+        .destino {
+            fill: #757575;
+            color: #757575;
+        }
+        .btn-freemium{background: rgb(63,81,181);
+            color: rgb(255,255,255);
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+            border: none;
+            border-radius: 2px;
+            height: 36px;
+            margin: 0;
+            min-width: 64px;
+            padding: 0 16px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .aliquota{
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 48px;
+        }
+        .font-aliquota {
+            font-size: 45px;
+            font-weight: 400;
+            line-height: 48px;
+        }
+        .estado{
+            font-size:45px;
+            font-weight:400;
+            line-height: 30px;
+        }
+        
+    </style>
+
+
+    <div id="wheel" ng-app="myShoppingList" style="height:680px;">
+        <div style="display: flex; flex-direction: row" ng-controller="myCtrl">
+            <div>
+                <div style=" position: absolute; margin-top: 300px; margin-left: 225px; width: 200px;  text-align: center;">
+                    <div class="estado">
+                        <span class="mdl-typography--display-2">{{estadoHover.chave}}</span>
+                    </div>
+                    <div>
+                        <span class="mdl-typography--display-title" style="opacity: 0.54">{{estadoHover.nome}}</span>
+                    </div>
+                </div>
+                <div style="position: absolute; width: 650px; height: 650px; color: #fff;cursor:pointer;">
+                    <div style="margin-top: 132px; margin-left: 252px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('TO')">TO</div>
+                    <div style="margin-top: 127px; margin-left: 298px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('EX')">EX</div>
+                    <div style="margin-top: 130px; margin-left: 340px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('AC')">AC</div>
+                    <div style="margin-top: 140px; margin-left: 380px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('AL')">AL</div>
+                    <div style="margin-top: 153px; margin-left: 423px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('AM')">AM</div>
+                    <div style="margin-top: 183px; margin-left: 453px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('AP')">AP</div>
+                    <div style="margin-top: 217px; margin-left: 480px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('BA')">BA</div>
+                    <div style="margin-top: 257px; margin-left: 495px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('CE')">CE</div>
+                    <div style="margin-top: 297px; margin-left: 510px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('DF')">DF</div>
+                    <div style="margin-top: 338px; margin-left: 515px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('ES')">ES</div>
+                    <div style="margin-top: 383px; margin-left: 510px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('GO')">GO</div>
+                    <div style="margin-top: 428px; margin-left: 487px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('MA')">MA</div>
+                    <div style="margin-top: 458px; margin-left: 453px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('MT')">MT</div>
+                    <div style="margin-top: 488px; margin-left: 421px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('MS')">MS</div>
+                    <div style="margin-top: 500px; margin-left: 373px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('MG')">MG</div>
+                    <div style="margin-top: 504px; margin-left: 333px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('PA')">PA</div>
+                    <div style="margin-top: 504px; margin-left: 293px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('PB')">PB</div>
+                    <div style="margin-top: 500px; margin-left: 250px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('PR')">PR</div>
+                    <div style="margin-top: 480px; margin-left: 210px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('PE')">PE</div>
+                    <div style="margin-top: 455px; margin-left: 172px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('PI')">PI</div>
+                    <div style="margin-top: 420px; margin-left: 145px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('RN')">RN</div>
+                    <div style="margin-top: 380px; margin-left: 128px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('RS')">RS</div>
+                    <div style="margin-top: 336px; margin-left: 122px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('RJ')">RJ</div>
+                    <div style="margin-top: 295px; margin-left: 122px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('RO')">RO</div>
+                    <div style="margin-top: 250px; margin-left: 132px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('RR')">RR</div>
+                    <div style="margin-top: 210px; margin-left: 152px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('SC')">SC</div>
+                    <div style="margin-top: 175px; margin-left: 182px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('SP')">SP</div>
+                    <div style="margin-top: 145px; margin-left: 212px; position: absolute; z-index: 99;" ng-click="escolherEstadoByChave('SE')">SE</div>
+
+                </div>
+                <svg style="position: absolute;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 650 650" preserveAspectRatio="xMidYMid meet" width="650" height="650">
+                    <defs>
+                        <filter id="drop-shadow">
+                            <feGaussianBlur in="SourceAlpha" stdDeviation="3.2"></feGaussianBlur>
+                            <feOffset dx="0" dy="0" result="offsetblur"></feOffset>
+                            <feFlood flood-color="rgba(0,0,0,1)"></feFlood>
+                            <feComposite in2="offsetblur" operator="in"></feComposite>
+                            <feMerge>
+                                <feMergeNode></feMergeNode>
+                                <feMergeNode in="SourceGraphic"></feMergeNode>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    
+                    <g class="wheel--maing" transform="translate(325,325)">
+                        <g data-color="Cyan" id="Cyan" transform="rotate({{rotacao * $index+1}})" tabindex="0" ng-repeat="estado in estados" ng-click="escolherEstado(estado)" ng-mouseover="mouseoverEstado(estado)" style="cursor: pointer; outline: none;">
+                            <g class="polygons">
+                                <polygon points="22.94244769737761,-105.41819284282845 57.35611924344403,-236.0454821070711 0,-243 0,-140" ng-class-odd="'odd'" ng-class-even="'even'" ng-class="{'origem': estado.isOrigem, 'destino': estado.isDestino}"></polygon>
+                                <polygon points="32.94244769737761,-94.41819284282845 46.11942677632865,-132.1854699799598 0,-140 0,-100" style="fill: #42A5F5;"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div style="position:absolute; margin-left: 600px; padding-top:100px;">
+                <div class="wow bounceIn animated">
+                    <span class="mdl-typography--title" style="color: #2196F3"><b>{{fraseDeAcao}}</b></span>
+                </div>
+                <div style="margin-top:15px;" ng-show="estadoOrigem">
+                    <div>
+                        <span class="mdl-typography--title origem"><b>Estado de origem:</b></span>
+                    </div>
+                    <div>
+                        <span class="mdl-typography--title" style="opacity: .54">{{estadoOrigem.nome}}</span>
+                    </div>
+                </div>
+                <div style="margin-top:15px;" ng-show="estadoDestino">
+                    <div>
+                        <span class="mdl-typography--title destino"><b>Estado de destino:</b></span>
+                    </div>
+                    <div>
+                        <span class="mdl-typography--title" style="opacity: .54">{{estadoDestino.nome}}</span>
+                    </div>
+                </div>
+
+
+                <div style="margin-top:15px;" ng-show="aliquota">
+                    <div>
+                        <span class="mdl-typography--title aliquota"><b>Alíquota:</b></span>
+                    </div>
+                    <div>
+                        <span class="mdl-typography--display-2 font-aliquota">{{aliquota}}</span>
+                    </div>
+                </div>
+                <div style="margin-top:15px;" ng-show="aliquota">
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-freemium" ng-click="reset();">NOVO CÁLCULO</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var app = angular.module("myShoppingList", []);
+        app.controller("myCtrl", function ($scope) {
+            var fraseOrigem = "Escolha o estado de origem ao lado:";
+            var fraseDestino = "Escolha agora o estado destino ao lado:";
+            var fraseFinal = "Para estes estados a sua alíquota é:"
+
+            $scope.fraseDeAcao = fraseOrigem;
+            $scope.estadoHover = null;
+            $scope.estadoOrigem = null;
+            $scope.estadoDestino = null;
+
+            $scope.mouseoverEstado = function (estado) {
+                $scope.estadoHover = estado;
+            }
+
+            function zeraClasses() {
+                for (var i in $scope.estados) {
+                    $scope.estados[i].isOrigem = false;
+                    $scope.estados[i].isDestino = false;
+                }
+            }
+            var estadoDeOrigem = null;
+            var countEstado = 0;
+            $scope.reset = function () {
+                $scope.estadoHover = null;
+                $scope.estadoOrigem = null;
+                $scope.estadoDestino = null;
+                $scope.aliquota = null;
+                $scope.fraseDeAcao = fraseOrigem;
+                zeraClasses();
+            }
+
+            $scope.escolherEstadoByChave = function (chave) {
+                var estado = getEstadoByChave(chave);
+                if (!estado) return;
+
+                $scope.escolherEstado(estado);
+            }
+
+            function getEstadoByChave(chave) {
+                for (var i in $scope.estados) {
+                    if ($scope.estados[i].chave == chave) {
+                        return $scope.estados[i];
+                    }
+                }
+                return null;
+            }
+
+
+            $scope.escolherEstado = function (estado) {
+                if (countEstado == 0) {
+                    zeraClasses();
+                    estado.isOrigem = true;
+                    $scope.estadoOrigem = estado;
+                    $scope.fraseDeAcao = fraseDestino;
+                    countEstado++;
+                } else {
+                    estado.isDestino = true;
+                    $scope.estadoDestino = estado;
+                    $scope.fraseDeAcao = fraseFinal;
+                    mostraImposto();
+                    countEstado = 0;
+                }
+            }
+
+            function getIndexEstado(estado) {
+                for (var i in $scope.estados) {
+                    if (estado.chave == $scope.estados[i].chave) {
+                        return i;
+                    }
+                }
+                return null;
+            }
+
+            function mostraImposto() {
+                var indexOrigem = getIndexEstado($scope.estadoOrigem);
+                var indexDestino = getIndexEstado($scope.estadoDestino);
+
+                if (indexDestino == null || indexDestino == null) {
+                    $scope.aliquota = 'Erro capturando aliquota';
+                    return;
+                } else {
+                    var aliquota = $scope.matriz[parseInt(indexOrigem)][parseInt(indexDestino)];
+                    $scope.aliquota = aliquota;
+                }
+            }
+
+            $scope.rotacao = 12.85714285714286;
+            $scope.matriz = [
+            /*AC*/
+                [17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*AL*/
+                [12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*AM*/
+                [12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*AP*/
+                [12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*BA*/
+                [12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*CE*/
+                [12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*DF*/
+                [12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*ES*/
+                [12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*GO*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*MA*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*MT*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*MS*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*MG*/
+                [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 18, 07, 07, 12, 07, 07, 07, 12, 12, 07, 07, 12, 12, 07, 07, 04],
+            /*PA*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*PB*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*PR*/
+                [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 18, 07, 07, 07, 12, 12, 07, 07, 12, 12, 07, 07, 04],
+            /*PE*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*PI*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*RN*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 12, 12, 12, 12, 12, 12, 12, 04],
+            /*RS*/
+                [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 12, 07, 07, 07, 18, 12, 07, 07, 12, 12, 07, 07, 04],
+            /*RJ*/
+                [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 12, 07, 07, 07, 12, 19, 07, 07, 12, 12, 07, 07, 04],
+            /*RO*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 12, 04],
+            /*RR*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 17, 12, 12, 12, 12, 04],
+            /*SC*/
+                [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 12, 07, 07, 07, 12, 12, 07, 07, 17, 12, 07, 07, 04],
+            /*SP*/
+                [07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 07, 12, 07, 07, 12, 07, 07, 07, 12, 12, 07, 07, 12, 18, 07, 07, 04],
+            /*SE*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 12, 04],
+            /*TO*/
+                [12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 18, 04],
+            /*EX*/
+                [04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04, 04],
+
+
+
+
+            ]
+            $scope.estados = [{
+                    chave: "AC",
+                    nome: "Acre"
+            }, {
+                    chave: "AL",
+                    nome: "Alagoas"
+            }, {
+                    chave: "AM",
+                    nome: "Amazonas"
+            },{                              
+                    chave: "AP",
+                    nome: "Amapá"
+            },{
+                    chave: "BA",
+                    nome: "Bahia"
+            }, {
+                    chave: "CE",
+                    nome: "Ceará"
+            }, {
+                    chave: "DF",
+                    nome: "Distrito Federal"
+            }, {
+                    chave: "ES",
+                    nome: "Espírito Santo"
+            }, {
+                    chave: "GO",
+                    nome: "Goiás"
+            }, {
+                    chave: "MA",
+                    nome: "Maranhão"
+            }, {
+                    chave: "MT",
+                    nome: "Mato Grosso"
+            }, {
+                    chave: "MS",
+                    nome: "Mato Grosso do Sul"
+            }, {
+                    chave: "MG",
+                    nome: "Minas Gerais"
+            }, {
+                    chave: "PA",
+                    nome: "Pará"
+            }, {
+                    chave: "PB",
+                    nome: "Paraiba"
+            }, {
+                    chave: "PR",
+                    nome: "Paraná"
+            }, {
+                    chave: "PE",
+                    nome: "Pernambuco"
+            }, {
+                    chave: "PI",
+                    nome: "Piauí"
+            }, {
+                    chave: "RN",
+                    nome: "Rio Grande do Norte"
+            }, {
+                    chave: "RS",
+                    nome: "Rio Grande do Sul"
+            },{                             
+                    chave: "RJ",
+                    nome: "Rio de Janeiro"
+            },{
+                    chave: "RO",
+                    nome: "Rondônia"
+            }, {
+                    chave: "RR",
+                    nome: "Roraima"
+            }, {
+                    chave: "SC",
+                    nome: "Santa Catarina"
+            },{
+                    chave: "SP",
+                    nome: "São Paulo"
+            },{
+                    chave: "SE",
+                    nome: "Sergipe"
+            }, {
+                    chave: "TO",
+                    nome: "Tocantins"
+            },
+                {
+                    chave: "EX",
+                    nome: "EX"
+            }]
+        });
+    </script>
+                <p>Agora, basta você saber como utilizar essa alíquota encontrada.</p>
+                 <h3>O que fazer com a alíquota encontrada na Tabela: </h3>
                  <ul>
                     <li>Caso seja uma NF-e de venda, veja como concluir a emissão seguindo esses passos: <a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/207539463-Como-emitir-NF-e-pelo-emissor-gratuito-da-Receita-Federal" target="_blank">como emitir NF-e pelo emissor gratuito da Receita Federal.</a></li>
-                     <li>No caso de guia gerada na compra de um produto, você vai fazer a seguinte conta: <strong>o valor total da nota X a diferença de alíquotas</strong> (alíquota interna do seu Estado, que é a que está na transversal, menos a alíquota que você encontrou na tabela)
+                     <li>No caso de guia gerada na compra de um produto, você vai fazer a seguinte conta: <strong>o valor total da nota X a diferença de alíquotas</strong> (alíquota interna do seu Estado, que é a que está na transversal, menos a alíquota que você encontrou na tabela).
                      </li>
                  </ul>
             </div>
@@ -263,17 +678,18 @@
         </div>
             
             <div class="col-xs-6 col-md-4 hidden-xs hidden-sm topicos">
-                    <h5 class="text-center">Tópicos da página</h5>
-                    <p class="p15"><a href="#tabela-icms"><strong>Tabela ICMS</strong></a></p>
+                    <h5 class="text-center"><b>ACESSO RÁPIDO</b></h5>
+                    <p class="p15"><a href="#tabela-icms">Tabela ICMS</a></p>
+                    <p class="p15"><a href="#tabela-icms-interativa">Tabela ICMS Interativa</a></p>
                     <p class="p15"><a href="#o-que-e-icms">O que é ICMS?</a></p>
                     <p class="p15"><a href="#incidencia-icms">Qual a incidência do ICMS?</a></p>
                     <p class="p15"><a href="#aliquota-icms">Qual a alíquota do ICMS no Simples Nacional?</a></p>
                     <p class="p15"><a href="#excecoes-e-isencao-icms">Exceções e isenção de ICMS - Substituição Tributária</a></p>
             </div>
         <div class="col-xs-6 col-md-4 hidden-xs hidden-sm">
-                <p style="background: #2196f3;color: #fff;text-align: center;padding: 5px;"><a class="btn-branco" href="https://www.contabilizei.com.br/emissor-gratuito-nf-e/" target="_blank">Conheça o emissor gratuito da Contabilizei.</a> </p>
-                <a class="btn-branco" href="https://www.contabilizei.com.br/emissor-gratuito-nf-e/" target="_blank"><img class="img-responsive" src="/assets/img/conheca-emissor-gratuito-nfe-contabilizei.png" alt="Emissor Gratuito NF-e Contabilizei 01"></a>
-                <p style="background: #08B30F;color: #fff;text-align: center;padding: 5px;"><a class="btn-branco" href="https://www.contabilizei.com.br/emissor-gratuito-nf-e/" target="_blank">Sem mensalidade e o único com <strong>suporte ilimitado</strong> de contadores!</a></p>
+                <p style="background: #2196f3;color: #fff;text-align: center;padding: 5px;"><a class="btn-branco" href="/emissor-gratuito-nf-e/" >Conheça o emissor gratuito da Contabilizei.</a> </p>
+                <a class="btn-branco" href="/emissor-gratuito-nf-e/" ><img class="img-responsive" src="/assets/img/conheca-emissor-gratuito-nfe-contabilizei.png" alt="Emissor Gratuito NF-e Contabilizei 01"></a>
+                <p style="background: #08B30F;color: #fff;text-align: center;padding: 5px;"><a class="btn-branco" href="/emissor-gratuito-nf-e/" >Sem mensalidade e o único com <strong>suporte ilimitado</strong> de contadores!</a></p>
                 <div>
                     <div class="topicos" style="overflow-y: none; overflow-x: hidden;margin-top:30px;">
                         <ul class="nav nav-list">
@@ -302,8 +718,8 @@
                 <div class="jumbotronzes col-xs-12 col-md-12 text-center" style="padding: 62px 0 50px 0;color:#fff ">
                     <h2 style="font-size: 40px;font-weight: 600;color:#fff;opacity:1;">Conheça o <strong>Emissor Gratuito NF-e</strong> da Contabilizei</h2>
                      <p style="color:#fff;">Substitua o software da SEFAZ por um emissor gratuito NF-e, fácil de usar e com suporte ilimitado.</p>
-                    <p style="opacity:1;"><a class="accent btn-branco2 hidden-xs" href="https://www.contabilizei.com.br/emissor-gratuito-nf-e/" target="_blank">É gratuito. Experimente!</a>
-                    <a class="accent btn-branco2 visible-xs" href="https://www.contabilizei.com.br/emissor-gratuito-nf-e/" target="_blank">Experimente!</a></p>
+                    <p style="opacity:1;"><a class="accent btn-branco2 hidden-xs" href="/emissor-gratuito-nf-e/" >É gratuito. Experimente!</a>
+                    <a class="accent btn-branco2 visible-xs" href="/emissor-gratuito-nf-e/" >Experimente!</a></p>
                 </div> 
             </div>
         </div>
@@ -328,12 +744,6 @@
 	</footer>
 </div>
 
-	<div id="slidebox">
-		<a class="close">&nbsp;</a>
-		<a href="/?utm_source=blog&utm_medium=sliderbox&utm_campaign=contabilizeikaszek" target="_blank">
-			<img class="shadow alignCenter" style="width: 90%; height: auto;" src="/assets/img/ctablog.png">
-		</a>
-	</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -355,5 +765,6 @@
     });
     </script> 
  <script src="//my.hellobar.com/35f2e648daf45626e1931ec3683e451016af0994.js" type="text/javascript" charset="utf-8" async="async"></script>
+<link rel="stylesheet" href="/assets/css/animate.min.css">  
 </body>
 </html>
