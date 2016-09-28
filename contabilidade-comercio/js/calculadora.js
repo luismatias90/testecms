@@ -8,10 +8,10 @@ SimuladorApp.controller('SimuladorController', ['$scope', function($scope) {
     $scope.comercio = true;
     $scope.ltFaturamento = [
         "até R$50.000/mês",
-        "de R$50.001 até R$100.000/mês",
-        "de R$100.001 até R$150.000/mês",
-        "de R$150.001 até R$200.000/mês",
-        "de R$200.001 até R$250.000/mês",
+        "de R$50.000 até R$100.000/mês",
+        "de R$100.000 até R$150.000/mês",
+        "de R$150.000 até R$200.000/mês",
+        "de R$200.000 até R$250.000/mês",
         "acima de R$250.000/mês" ];
     
     $scope.indice = 0;
