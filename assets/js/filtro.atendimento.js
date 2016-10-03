@@ -29,11 +29,10 @@ $(document).ready(function () {
     }).bind('typeahead:selected', function (obj, datum) {
         $('.cidadeSelecionada').html(datum);
         esconderFiltros();
+        jsonIntercomMigracao.LEAD_cidade = datum;
         if (testeCidade(datum)) {
             $('#filtro_servico_cidade_atendidada').removeClass('hide');
-            jsonIntercomMigracao.LEAD_cidade = datum;
         } else {
-            jsonIntercomMigracao.LEAD_cidade = datum;
             $('#filtro_servico_cidade_nao_atendidada').removeClass('hide');
         }
     });
@@ -48,8 +47,10 @@ $(document).ready(function () {
     }).bind('typeahead:selected', function (obj, datum) {
         $('.cidadeSelecionada').html(datum);
         esconderFiltros();
+        jsonIntercomMigracao.LEAD_estado = datum;
         if (testeEstado(datum)) {
-            $('#filtro_ramo_abertura').removeClass('hide');
+            //$('#filtro_ramo_abertura').removeClass('hide');
+            $('#filtro_servico_cidade_atendidada').removeClass('hide');
         } else {
             $('#filtro_servico_cidade_nao_atendidada').removeClass('hide');
         }
@@ -161,7 +162,7 @@ $(document).ready(function () {
         esconderFiltros();
         var tipo = $(this).attr('tipo');
         if (tipo == 'servico') {
-            $('#filtro_atendimento').removeClass('hide');
+            $('#filtro_servico_cidade_atendidada').removeClass('hide');
         } else if (tipo == 'comercio') {
             $('#filtro_atividade_nao_atendidada').removeClass('hide');
         } else if (tipo == 'industria') {

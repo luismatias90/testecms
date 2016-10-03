@@ -102,6 +102,281 @@
 	</head>
 
 	<body>
+       <link rel="stylesheet" href="/assets/css/filtro.atendimento.css">
+    <div id="containerGeralFiltros">
+        <div class="card cardBig wow bounceInUp animated filtroCard hide" style="visibility: visible; border:0px;">
+            <div id="filtro_00" class="filtros wow fadeIn animated">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50px" height="50px" class="img-responsive imgSombra fotoFiltro" style="display:inline-table;margin-right:15px;">
+                        <span class="nome">Olá, eu sou o Fábio.</span>
+                    </div>
+                </div>
+
+
+
+                <div class="depoimento" style="padding-bottom: 20px;text-align:center;">
+                    <span class="empresa">Queremos te conhecer melhor.  
+                     </span>
+                    <br><span class="nome">Você já tem empresa?</span>
+                    <div class="row linhaFiltro">
+                        <div class="col-md-6">
+                            <button class="contorno" id="jaTenhoCnpj">Já tenho uma empresa</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="contorno" id="abrirEmpresa">Quero abrir empresa</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="filtro_01" class="filtros hide wow fadeIn animated">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="empresa">Hmm, bacana.</span>
+                    <br><span class="nome">Qual é o tipo da sua empresa?</span>
+                    <div class="row linhaFiltro" style=" margin-left:-30px;">
+                        <div class="col-md-4">
+                            <button class="contorno filtroEmpresa" tipo="me">Empresa ME / EPP</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="contorno filtroEmpresa" tipo="mei">Empresa MEI</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="contorno filtroEmpresa" tipo="ong">ONG, Ingrejas, Associações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_ramo_abertura" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Qual o ramo de atividade da sua empresa?</span>
+                    <div class="row" style="width: 100%; padding-top: 20px;">
+                        <div class="col-md-6">
+                            <button class="contorno filtroRamoAbertura" tipo="servico">Serviço</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="contorno filtroRamoAbertura" tipo="comercio">Comércio</button>
+                        </div>
+                        <div class="col-md-6" style="margin-top:30px">
+                            <button class="contorno filtroRamoAbertura" tipo="comercio" style="margin-left:5px">Comércio
+                                <br>/Serviço</button>
+                        </div>
+                        <div class="col-md-6" style="margin-top:30px">
+                            <button class="contorno filtroRamoAbertura" tipo="industria">Indústria</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filtro_ramo" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Qual o ramo de atividade da sua empresa?</span>
+                    <div class="row" style="width: 100%; padding-top: 20px;">
+                        <div class="col-md-6">
+                            <button class="contorno filtroRamo" tipo="servico">Serviço</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="contorno filtroRamo" tipo="comercio">Comércio</button>
+                        </div>
+                        <div class="col-md-6" style="margin-top:30px">
+                            <button class="contorno filtroRamo" tipo="comercio" style="margin-left:5px;">Comércio
+                                <br>/Serviço</button>
+                        </div>
+                        <div class="col-md-6" style="margin-top:30px">
+                            <button class="contorno filtroRamo" tipo="industria">Indústria</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_abertura" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Em qual cidade você vai abrir sua empresa?</span>
+                    <div class="row" style="padding-bottom: 120px;margin-top:30px">
+                        <input id="cidadeTypeAbertura" type="text" placeholder="Digite a cidade" style="width: 80%;margin: 0px auto;;" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_servico" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Qual a cidade da sua empresa?</span>
+                    <div class="row" style="padding-bottom: 120px;margin-top:30px">
+                        <input id="cidadeType" type="text" placeholder="Digite a cidade" class="form-control" style="width: 80%;margin:0 auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_servico_cidade_atendidada" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="empresa">Já entendi o seu perfil.</span>
+                    <br><span class="nome">Nós podemos te atender!</span>
+                    <!--<div class="row">
+                        <div class="cidadeSelecionada cidadeSelecionadaStyle"></div>
+                    </div>-->
+                    <div class="row" style="text-align: center; margin-top: 20px;">
+                        <button class="contorno" id="iniciarChat">Vamos conversar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_end_mei" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                    <span class="nome">:(</span>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <div class="row" style="padding: 20px;">
+                        <p>Neste momento nossa plataforma ainda não está preparada para atender empresas MEI.</p>
+                        <p>Minha sugestão é que você procure o Sebrae <a href="http://portaldoempreendedor.gov.br" target="_blank">(http://portaldoempreendedor.gov.br/)</a> ou um contador tradicional em sua cidade.
+                            <p>Caso seu MEI ultrapassou o limite de Faturamento, e precisa mudar para um empresa ME (Micro Empresa), basta seguir as instruções <a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/204910959" target="_blank">deste link</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_contato" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                    <span class="nome">Contato!</span>
+                    <br><span class="empresa">Preencha os campos para entrar em contato</span>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <div class="row" style="padding: 20px;">
+                        <div>
+                            <input type="nome" class="form-control" id="nomeCompletoFiltro" placeholder="Nome Completo">
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <input type="nome" class="form-control" id="emailFiltro" placeholder="Email">
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <textarea class="form-control ng-pristine ng-valid" id="textoFiltro" placeholder="Sua Mensagem"></textarea>
+                        </div>
+                    </div>
+                    <div class="row" style="text-align: center; margin-top: 20px;">
+                        <button class="contorno enviarContato">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filtro_comercio" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Qual é o
+                     estado da sua empresa?</span>
+                    <div class="row" style="padding-bottom: 120px;margin-top:30px">
+                        <input id="estadoType" type="text" placeholder="Digite o estado" style="width: 80%;
+    margin: 0px auto;" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filtro_servico_cidade_nao_atendidada" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                    </div>
+                    <span class="nome">:(</span>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <div class="row" style="padding:20px;">
+
+                        <p>Neste momento nossa plataforma ainda não está preparada para atender empresas localizadas em <span class="cidadeSelecionada" style="font-weight: bolder;"></span>.</p>
+                        <p>
+                            Por enquanto, a sugestão é que você realize o cadastro da sua empresa, inserindo o CNPJ para que possamos te avisar quando estivermos prontos para te atender.
+                        </p>
+                        <div class="row" style="text-align: center; margin-top: 50px;">
+                            <a class="accent" target="_blank" href="https://www.contabilizei.com.br/verifique-o-atendimento">Faça o seu cadastro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_atividade_nao_atendidada" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="https://static.intercomassets.com/avatars/683526/square_128/e73458d5-4a21-4b5d-a184-4461cac981b2-1471886312.jpg?1471886312" width="50" height="50" class="img-responsive imgSombra fotoFiltro">
+                        <span class="nome">:(</span>
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <div class="row" style="padding:20px;">
+                        <p>Infelizmente, ainda não estamos prontos para atender o seu perfil.</p>
+                        <p>O motivo é que nosso serviço ainda não está preparado para atender empresas que trabalham no seu ramo.</p>
+                        <p>Por enquanto, o caminho é você utilizar os serviços de contabilidade tradicional.</p>
+                        <p>Um abraço e até mais.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filtro_atendimento" class="filtros hide">
+                <div class="cabecalhoFiltro">
+                    Legal! Quer falar conosco?
+                </div>
+                <div class="container" style="width: 100%; padding-top: 20px;">
+                    <button class="accent" id="iniciarChat">Iniciar chat</button>
+                </div>
+            </div>
+            <div id="filtro_end" class="filtros hide">
+                <div class="cabecalhoFiltro">
+                    ACABOU
+                </div>
+                <div class="container" style="width: 100%; padding-top: 20px;">
+                    FINAL
+                </div>
+            </div>
+        </div>
+
+        <div class="filtroContainer">
+            <div class="intercom-launcher teste" id="filtroAntesIntercom">
+                <div class="intercom-launcher-open-icon"></div>
+                <div class="intercom-launcher-close-icon"></div>
+            </div>
+        </div>
+    </div>
+
         <!-- Google Tag Manager -->
 	  	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9X6Z2"
 	 	 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -1165,6 +1440,7 @@
         });
         </script>
         
+        <script type="text/javascript" src="/assets/js/filtro.atendimento.js"></script>
         
         <script>
         $(function () {

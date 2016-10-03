@@ -62,16 +62,16 @@
 }
 
 .cabecalhoFiltro {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: #0563ab;
 }
 
 .linhaFiltro {
     width: 100%;
-    padding-top: 20px;
+    padding:20px 10px;
     text-align: center;
-    padding-left: 20px;
+    margin: auto;
 }
 
 .headerDepoimento img {
@@ -96,7 +96,6 @@
     margin-left: -4px;
     width: 100%;
     line-height: 30px;
-    border: 1px solid #d0d0d0;
 }
 
 #cidadeTypeAbertura{
@@ -116,10 +115,9 @@
 
 #cidadeType {
     line-height: 30px !important;
-    border: 0px;
-    font-size: 24px;
-    padding: 8px 12px;
     outline: none;
+    font-size: 20px;
+    padding:20px 15px
 }
 
 .tt-query,
@@ -175,4 +173,22 @@
 
 .tt-suggestion p {
     margin: 0;
+}
+.contorno{
+    min-height: 90px;
+    color: #333;
+}
+.contorno:hover{
+background-color: #eaeaea;
+    color: #222;
+}
+.depoimento{
+    text-align: center;
+}
+.form-control{
+    border:1px solid #ccc!important;
+    line-height: 30px !important;
+    outline: none;
+    font-size: 20px!important;
+    padding: 20px 15px!important;
 }
