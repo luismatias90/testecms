@@ -154,10 +154,10 @@
                     <br><span class="nome">Você já tem empresa?</span>
                     <div class="row linhaFiltro">
                         <div class="col-md-6">
-                            <button class="contorno" id="jaTenhoCnpj">Já tenho uma empresa</button>
+                            <button class="contorno-filtro" id="jaTenhoCnpj">Já tenho uma empresa</button>
                         </div>
                         <div class="col-md-6">
-                            <button class="contorno" id="abrirEmpresa">Quero abrir empresa</button>
+                            <button class="contorno-filtro" id="abrirEmpresa">Quero abrir empresa</button>
 
                         </div>
                     </div>
@@ -174,13 +174,13 @@
                     <br><span class="nome">Qual é o tipo da sua empresa?</span>
                     <div class="row linhaFiltro" style=" margin-left:-30px;">
                         <div class="col-md-4">
-                            <button class="contorno filtroEmpresa" tipo="me">Empresa ME / EPP</button>
+                            <button class="contorno-filtro filtroEmpresa" tipo="me">Empresa ME / EPP</button>
                         </div>
                         <div class="col-md-4">
-                            <button class="contorno filtroEmpresa" tipo="mei">Empresa MEI</button>
+                            <button class="contorno-filtro filtroEmpresa" tipo="mei">Empresa MEI</button>
                         </div>
                         <div class="col-md-4">
-                            <button class="contorno filtroEmpresa" tipo="ong">ONG, Ingrejas, Associações</button>
+                            <button class="contorno-filtro filtroEmpresa" tipo="ong">ONG, Ingrejas, Associações</button>
                         </div>
                     </div>
                 </div>
@@ -196,17 +196,17 @@
                     <span class="nome">Qual o ramo de atividade da sua empresa?</span>
                     <div class="row" style="width: 100%; padding-top: 20px;">
                         <div class="col-md-6">
-                            <button class="contorno filtroRamoAbertura" tipo="servico">Serviço</button>
+                            <button class="contorno-filtro filtroRamoAbertura" tipo="servico">Serviço</button>
                         </div>
                         <div class="col-md-6">
-                            <button class="contorno filtroRamoAbertura" tipo="comercio">Comércio</button>
+                            <button class="contorno-filtro filtroRamoAbertura" tipo="comercio">Comércio</button>
                         </div>
                         <div class="col-md-6" style="margin-top:30px">
-                            <button class="contorno filtroRamoAbertura" tipo="comercio" style="margin-left:5px">Comércio
+                            <button class="contorno-filtro filtroRamoAbertura" tipo="comercio" style="margin-left:5px">Comércio
                                 <br>/Serviço</button>
                         </div>
                         <div class="col-md-6" style="margin-top:30px">
-                            <button class="contorno filtroRamoAbertura" tipo="industria">Indústria</button>
+                            <button class="contorno-filtro filtroRamoAbertura" tipo="industria">Indústria</button>
                         </div>
                     </div>
                 </div>
@@ -223,17 +223,17 @@
                     <span class="nome">Qual o ramo de atividade da sua empresa?</span>
                     <div class="row" style="width: 100%; padding-top: 20px;">
                         <div class="col-md-6">
-                            <button class="contorno filtroRamo" tipo="servico">Serviço</button>
+                            <button class="contorno-filtro filtroRamo" tipo="servico">Serviço</button>
                         </div>
                         <div class="col-md-6">
-                            <button class="contorno filtroRamo" tipo="comercio">Comércio</button>
+                            <button class="contorno-filtro filtroRamo" tipo="comercio">Comércio</button>
                         </div>
                         <div class="col-md-6" style="margin-top:30px">
-                            <button class="contorno filtroRamo" tipo="comercio" style="margin-left:5px;">Comércio
+                            <button class="contorno-filtro filtroRamo" tipo="comercio" style="margin-left:5px;">Comércio
                                 <br>/Serviço</button>
                         </div>
                         <div class="col-md-6" style="margin-top:30px">
-                            <button class="contorno filtroRamo" tipo="industria">Indústria</button>
+                            <button class="contorno-filtro filtroRamo" tipo="industria">Indústria</button>
                         </div>
                     </div>
                 </div>
@@ -248,7 +248,7 @@
                 <div class="depoimento" style="padding-bottom: 20px;">
                     <span class="nome">Em qual cidade você vai abrir sua empresa?</span>
                     <div class="row" style="padding-bottom: 120px;margin-top:30px">
-                        <input id="cidadeTypeAbertura" type="text" placeholder="Digite a cidade" style="width: 80%;margin: 0px auto;;" class="form-control">
+                        <input id="cidadeTypeAbertura" type="text" placeholder="Digite a cidade" style="width: 80%;margin: 0px auto;;" class="form-filtro">
                     </div>
                 </div>
             </div>
@@ -262,7 +262,7 @@
                 <div class="depoimento" style="padding-bottom: 20px;">
                     <span class="nome">Qual a cidade da sua empresa?</span>
                     <div class="row" style="padding-bottom: 120px;margin-top:30px">
-                        <input id="cidadeType" type="text" placeholder="Digite a cidade" class="form-control" style="width: 80%;margin:0 auto;">
+                        <input id="cidadeType" type="text" placeholder="Digite a cidade" class="form-filtro" style="width: 80%;margin:0 auto;">
                     </div>
                 </div>
             </div>
@@ -280,7 +280,7 @@
                         <div class="cidadeSelecionada cidadeSelecionadaStyle"></div>
                     </div>-->
                     <div class="row" style="text-align: center; margin-top: 20px;">
-                        <button class="contorno" id="iniciarChat">Vamos conversar</button>
+                        <button class="contorno-filtro" id="iniciarChat">Vamos conversar</button>
                     </div>
                 </div>
             </div>
@@ -312,17 +312,17 @@
                 <div class="depoimento" style="padding-bottom: 20px;">
                     <div class="row" style="padding: 20px;">
                         <div>
-                            <input type="nome" class="form-control" id="nomeCompletoFiltro" placeholder="Nome Completo">
+                            <input type="nome" class="form-filtro" id="nomeCompletoFiltro" placeholder="Nome Completo">
                         </div>
                         <div style="margin-top: 10px;">
-                            <input type="nome" class="form-control" id="emailFiltro" placeholder="Email">
+                            <input type="nome" class="form-filtro" id="emailFiltro" placeholder="Email">
                         </div>
                         <div style="margin-top: 10px;">
-                            <textarea class="form-control ng-pristine ng-valid" id="textoFiltro" placeholder="Sua Mensagem"></textarea>
+                            <textarea class="form-filtro ng-pristine ng-valid" id="textoFiltro" placeholder="Sua Mensagem"></textarea>
                         </div>
                     </div>
                     <div class="row" style="text-align: center; margin-top: 20px;">
-                        <button class="contorno enviarContato">Enviar</button>
+                        <button class="contorno-filtro enviarContato">Enviar</button>
                     </div>
                 </div>
             </div>
@@ -339,7 +339,7 @@
                      estado da sua empresa?</span>
                     <div class="row" style="padding-bottom: 120px;margin-top:30px">
                         <input id="estadoType" type="text" placeholder="Digite o estado" style="width: 80%;
-    margin: 0px auto;" class="form-control">
+    margin: 0px auto;" class="form-filtro">
                     </div>
                 </div>
             </div>
