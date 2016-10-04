@@ -6,7 +6,7 @@
 
       <loc>https://www.contabilizei.com.br/</loc>
 
-      <lastmod>2016-09-01</lastmod>
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -18,7 +18,7 @@
 
       <loc>https://www.contabilizei.com.br/abrir-empresa/</loc>
 
-      <lastmod>2016-09-01</lastmod>
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -30,7 +30,7 @@
 
       <loc>https://www.contabilizei.com.br/escritorio-contabilidade-online/</loc>
 
-      <lastmod>2016-09-01</lastmod>
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -43,7 +43,7 @@
 
       <loc>https://www.contabilizei.com.br/contabilidade-comercio/</loc>
 
-      <lastmod>2016-09-01</lastmod>
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -81,7 +81,7 @@
 
       <loc>https://www.contabilizei.com.br/midia/</loc>
 
-      <lastmod>2016-09-19</lastmod>
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -109,7 +109,7 @@
 
       <loc>https://www.contabilizei.com.br/contabilidade-online/</loc>
 
-      <lastmod>2016-09-01</lastmod>
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -473,7 +473,7 @@
 
       <loc>https://www.contabilizei.com.br/abrir-cnpj/</loc>
 
-      <lastmod>2016-09-01</lastmod>
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -665,7 +665,7 @@
 
       <loc>https://www.contabilizei.com.br/quais-cidades-atendemos/</loc>
 
-      <lastmod>2016-09-01</lastmod>
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -844,6 +844,28 @@
       <loc>https://www.contabilizei.com.br/emissor-nf-e/substituicao-tributaria/</loc>
 
       <lastmod>2016-09-23</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    <url>
+
+      <loc>https://www.contabilizei.com.br/tirar-cnpj/</loc>
+
+      <lastmod>2016-10-04</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+      <url>
+
+      <loc>https://www.contabilizei.com.br/contabilidade-online/o-que-e-o-pro-labore-e-distribuicao-de-dividendos/</loc>
+
+      <lastmod>2016-10-04</lastmod>
 
       <changefreq>monthly</changefreq>
 
