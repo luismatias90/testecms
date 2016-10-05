@@ -761,7 +761,7 @@
 
       <loc>https://www.contabilizei.com.br/emissor-nf-e/</loc>
 
-      <lastmod>2016-09-23</lastmod>
+      <lastmod>2016-10-05</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -773,7 +773,7 @@
 
       <loc>https://www.contabilizei.com.br/emissor-nf-e/alternativas-ao-emissor-nf-e-do-sefaz</loc>
 
-      <lastmod>2016-09-23</lastmod>
+      <lastmod>2016-10-05</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -785,7 +785,7 @@
 
       <loc>https://www.contabilizei.com.br/emissor-nf-e/emitir-nota-fiscal-eletronica</loc>
 
-      <lastmod>2016-09-23</lastmod>
+      <lastmod>2016-10-05</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -797,7 +797,7 @@
 
       <loc>https://www.contabilizei.com.br/emissor-nf-e/fim-do-emissor-gratuito-NF-e-sefaz</loc>
 
-      <lastmod>2016-09-23</lastmod>
+      <lastmod>2016-10-05</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -821,7 +821,7 @@
 
       <loc>https://www.contabilizei.com.br/emissor-nf-e/tabela-cfop-completa/</loc>
 
-      <lastmod>2016-09-23</lastmod>
+      <lastmod>2016-10-05</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -832,7 +832,7 @@
 
       <loc>https://www.contabilizei.com.br/emissor-nf-e/tabela-ICMS/</loc>
 
-      <lastmod>2016-09-23</lastmod>
+      <lastmod>2016-10-05</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -843,7 +843,7 @@
 
       <loc>https://www.contabilizei.com.br/emissor-nf-e/substituicao-tributaria/</loc>
 
-      <lastmod>2016-09-23</lastmod>
+      <lastmod>2016-10-05</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -872,7 +872,18 @@
       <priority>0.8</priority>
 
    </url>
+        <url>
 
+      <loc>https://www.contabilizei.com.br/emissor-nf-e/como-emitir-nfe-sefaz/</loc>
+
+      <lastmod>2016-10-05</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+    
 </urlset> 
 
 
