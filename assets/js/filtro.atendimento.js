@@ -80,6 +80,9 @@ $(document).ready(function () {
          'Americana', 'Barueri', 'Belo Horizonte', 'Curitiba', 'Embu das Artes', 'Fortaleza', 'Goiânia', 'Guarulhos', 'João Pessoa', 'Jundiaí', 'Maceió', 'Natal', 'Niterói', 'Porto Alegre', 'Recife', 'Ribeirão Preto',
         'Rio de Janeiro', 'Santo André', 'Santos', 'Sorocaba', 'S. Bernardo do Campo', 'S. J. dos Campos', 'São Paulo', 'Taboão da Serra', 'Uberlândia', 'Vitória'];
 
+    var cidadesAtendidasAberturaComercio = [
+         'Curitiba', 'Rio de Janeiro', 'São Paulo'];
+
     var cidadesAtendidas = [
                 'Americana', 'Barueri', 'Belo Horizonte', 'Campinas', 'Curitiba', 'Embu das Artes', 'Fortaleza', 'Goiânia', 'Guarulhos', 'João Pessoa', 'Jundiaí', 'Maceió', 'Manaus'
                 , 'Natal', 'Niterói', 'Porto Alegre', 'Recife', 'Ribeirão Preto', 'Rio de Janeiro', 'Salvador', 'Santo André', 'Santos', 'Sorocaba', 'São Bernardo do Campo', 'São José dos Campos',
@@ -164,11 +167,26 @@ $(document).ready(function () {
         if (tipo == 'servico') {
             $('#filtro_servico_cidade_atendidada').removeClass('hide');
         } else if (tipo == 'comercio') {
-            $('#filtro_atividade_nao_atendidada').removeClass('hide');
+            if (testeSeCidadeAtendida()) {
+                $('#filtro_servico_cidade_atendidada').removeClass('hide');
+            } else {
+                $('#filtro_atividade_nao_atendidada').removeClass('hide');
+            }
+
         } else if (tipo == 'industria') {
             $('#filtro_atividade_nao_atendidada').removeClass('hide');
         }
     });
+
+    function testeSeCidadeAtendida() {
+        var cidadeTypeAbertura = $('.cidadeSelecionada').html();
+        for (var i in cidadesAtendidasAberturaComercio){
+            if (cidadesAtendidasAberturaComercio[i].toUpperCase() == cidadeTypeAbertura.toUpperCase()){
+                return true;
+            }
+        }
+        return false;
+    }
 
     $('.iniciarContato').click(function () {
         esconderFiltros();
