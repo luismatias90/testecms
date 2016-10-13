@@ -85,7 +85,7 @@ $(document).ready(function(){
             
             var fonteOrigem = $.cookie("fonteOrigem");
 	        	
-	        if(!fonteOrigem || fonteOrigem.length == 0){
+	        if(fonteOrigem){
 	           var input = document.createElement('input');
 	           input.type = 'hidden';
 	           input.name = "origem";
