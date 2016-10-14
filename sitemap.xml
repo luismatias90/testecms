@@ -30,7 +30,7 @@
 
       <loc>https://www.contabilizei.com.br/escritorio-contabilidade-online/</loc>
 
-      <lastmod>2016-10-04</lastmod>
+      <lastmod>2016-10-14</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -43,7 +43,7 @@
 
       <loc>https://www.contabilizei.com.br/contabilidade-comercio/</loc>
 
-      <lastmod>2016-10-04</lastmod>
+      <lastmod>2016-10-14</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -109,7 +109,7 @@
 
       <loc>https://www.contabilizei.com.br/contabilidade-online/</loc>
 
-      <lastmod>2016-10-05</lastmod>
+      <lastmod>2016-10-14</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -877,6 +877,19 @@
       <loc>https://www.contabilizei.com.br/emissor-nf-e/como-emitir-nfe-sefaz/</loc>
 
       <lastmod>2016-10-05</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   
+    </url>
+        <url>
+
+      <loc>https://www.contabilizei.com.br/contabilidade-online/cnae/</loc>
+
+      <lastmod>2016-10-14</lastmod>
 
       <changefreq>monthly</changefreq>
 
