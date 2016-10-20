@@ -84,14 +84,18 @@ $(document).ready(function(){
         	}
             
             var fonteOrigem = $.cookie("fonteOrigem");
-	        	
-	        if(fonteOrigem){
-	           var input = document.createElement('input');
+            
+            var input = document.createElement('input');
 	           input.type = 'hidden';
 	           input.name = "origem";
+	        	
+	        if(fonteOrigem){
 	           input.value = fonteOrigem;
-	           form.appendChild(input);	        		
-	        }
+	        }else{
+                input.value = "Incapaz de acessar informação fonte origem";
+            }
+            
+            form.appendChild(input);	  
         	
         	var refIndicacao = $.cookie('ctblz-ref');
         	if(refIndicacao){
