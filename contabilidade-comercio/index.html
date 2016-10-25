@@ -803,172 +803,183 @@
 
     <div class="simule" ng-controller="SimuladorController">
 
-            <div class="container">
-                <div class="row">
+        <div class="container">
+            <div class="row">
 
 
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-                        <h2 class="branco text-left hidden-xs">Contabilizei pode economizar até <strong>90%</strong> com serviços de contabilidade online:</h2>
+                    <h2 class="branco text-left hidden-xs">Contabilizei pode economizar até <strong>90%</strong> com serviços de contabilidade online:</h2>
 
-                        <h2 class="branco text-center visible-xs">Contabilizei pode economizar até <strong>90%</strong> com serviços de contabilidade online:</h2>
-
-                    </div>
+                    <h2 class="branco text-center visible-xs">Contabilizei pode economizar até <strong>90%</strong> com serviços de contabilidade online:</h2>
 
                 </div>
-                <div class="row">
 
-                    <div class="calculadora col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6">
+            </div>
+            <div class="row">
 
-                        <div class="col-md-12 col-xs-12 btn-group" data-toggle="buttons">
-                            <label class="col-md-6 col-xs-6 btn btn-primary active" id="tab-sn" ng-click="simples = true">
-                                <a aria-controls="home" role="tab" data-toggle="tab">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>
-                                    <h4>Simples Nacional</h4></a>
-                            </label>
-                            <label class="col-md-6 col-xs-6 btn btn-primary" id="tab-lp" ng-click="simples = false">
-                                <a aria-controls="home" role="tab" data-toggle="tab">
-                                    <input type="radio" name="options" id="option2" autocomplete="off">
-                                    <h4>Lucro Presumido</h4></a>
-                            </label>
-                        </div>
+                <div class="calculadora col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
 
-                        <!-- Tab panes -->
+                    <div class="col-md-12 col-xs-12 btn-group" data-toggle="buttons">
+                        <label class="col-md-6 col-xs-6 btn btn-primary active" id="tab-sn" ng-click="simples = true">
+                            <a aria-controls="home" role="tab" data-toggle="tab">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                <h4>Simples Nacional</h4></a>
+                        </label>
+                        <label class="col-md-6 col-xs-6 btn btn-primary" id="tab-lp" ng-click="simples = false">
+                            <a aria-controls="home" role="tab" data-toggle="tab">
+                                <input type="radio" name="options" id="option2" autocomplete="off">
+                                <h4>Lucro Presumido</h4></a>
+                        </label>
+                    </div>
 
-
-                        <br class="visible-xs">
-                        <p class="text-center" style="padding-top:80px">Quanto você paga de contabilidade por mês? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Valor baseado na metade de um salário mínimo de 2016."></span></p>
+                    <!-- Tab panes -->
 
 
-
-                        <div class="input-group">
-
-                            <span class="input-group-addon">R$</span>
-                            <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="hidden-xs form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
-
-
-                            <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="visible-xs form-control" value="0" style="height:60px; text-align:left; padding-left:85px; font-size:2em; margin:0 auto; font-weight:700">
+                    <br class="visible-xs">
+                    <p class="text-center" style="padding-top:80px">Quanto você paga de contabilidade por mês? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Valor baseado na metade de um salário mínimo de 2016."></span></p>
 
 
 
+                    <div class="input-group">
 
-                        </div>
-                        <br class="visible-xs">
-                        <p class="text-center" style="padding-top:15px;">Quantos sócios têm sua empresa? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Lembre-se que você conta como sócio"></span></p>
+                        <span class="input-group-addon">R$</span>
+                        <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="hidden-xs form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
 
-                        <div class="input-group text-center">
-                            <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; margin:0 auto; font-weight:700">
-                        </div>
-                        <br class="visible-xs">
-                        <p class="text-center" style="padding-top:15px;">Quantos funcionários?</p>
 
-                        <div class="input-group">
+                        <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="visible-xs form-control" value="0" style="height:60px; text-align:left; padding-left:85px; font-size:2em; margin:0 auto; font-weight:700">
 
-                            <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; font-weight:700">
 
-                        </div>
-                        <br class="visible-xs">
-                        <p class="text-center" style="padding-top:20px;">Qual o faturamento mensal?
-                            <br>
-                        </p>
-
-                        <div class="input-group">
-
-                            <div class="dropdownz">
-                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; text-align:center; font-size:1.2em; line-height:2.5em; font-weight:700">
-                                    {{ltFaturamento[indice]}}&nbsp;&nbsp;
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="width:100%; text-align:center; font-size:1em; font-weight:700">
-                                    <li ng-repeat="item in ltFaturamento"><a href ng-click="atualizaFaturamento($index)">{{item}}</a></li>
-                                </ul>
-                                <br class="visible-sm">
-                                <br class="visible-sm">
-                            </div>
-                            <br class="visible-lg visible-md">
-                        </div>
 
 
                     </div>
-                    <!--
+                    <br class="visible-xs">
+                    <p class="text-center" style="padding-top:15px;">Quantos sócios têm sua empresa? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Lembre-se que você conta como sócio"></span></p>
+
+                    <div class="input-group text-center">
+                        <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdSocios')" ng-model="qtdSocios" min="1" max="10" id="valor-socios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; margin:0 auto; font-weight:700">
+                    </div>
+                    <br class="visible-xs">
+                    <p class="text-center" style="padding-top:15px;">Quantos funcionários?</p>
+
+                    <div class="input-group">
+
+                        <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; font-weight:700">
+
+                    </div>
+                    <br class="visible-xs">
+                    <p class="text-center" style="padding-top:20px;">Qual o faturamento mensal?
+                        <br>
+                    </p>
+
+                    <div class="input-group">
+
+                        <div class="dropdownz">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; text-align:center; font-size:1.2em; line-height:2.5em; font-weight:700">
+                                {{ltFaturamento[indice]}}&nbsp;&nbsp;
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="width:100%; text-align:center; font-size:1em; font-weight:700">
+                                <li ng-repeat="item in ltFaturamento"><a href ng-click="atualizaFaturamento($index)">{{item}}</a></li>
+                            </ul>
+                            <br class="visible-sm">
+                            <br class="visible-sm">
+                        </div>
+                        <br class="visible-lg visible-md">
+                    </div>
+
+
+                </div>
+                <!--
                         <div class="col-lg-1 hidden-sm hidden-xs hidden-md" style="font-size: 3em;color: #fff; padding-top:47px; opacity:0.5">
                             <br>
                             
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         </div>
 -->
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs" style="width:5%;"></div>
+                <div class="calculadoraSimule col-lg-4 col-md-5 col-sm-5 col-xs-12 text-center" data-wow-delay="0.2s">
+                    <br class="visible-xs">
+                    <br class="visible-xs">
 
-                    <div class="calculadoraSimule col-lg-4 col-md-5 col-sm-6 col-xs-12 text-center" data-wow-delay="0.2s">
-
-                        <!--
+                    <!--
                             Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>,
                             <br>
 
                             <br>-->
-                        <div class="wow fadeInLeft" style="font-size:1.6em; vertical-align: middle; font-weight:300"><span class="opacidade">Sua mensalidade será:</span>
-                            <br>
-                            <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</div>
-
-
-                        <hr style="width:30%; margin-top:20px; margin-bottom:40px; opacity:0.2">
-                        <div class="wow fadeInDown" data-wow-delay="0.4s"><span style="font-weight:300;" class="opacidade">O que você economiza em um ano:</span>
-                            <br>
-                            <br>
-                            <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual}}</span> / ano</span>
-                        </div>
-
-
+                    <div class="card2 cardBranco2 wow fadeInLeft">
+                        <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra" style="font-size:1.5em;color:#2196F3;margin-bottom:10px">thumb_up</i>
+                        <span class="opacidade">Sua mensalidade será:</span>
                         <br>
-                        <a href="#migre" class="hidden-md hidden-xs">
-                            <button class="accent big" style="font-size:1.4em; width:100%">Comece seu cadastro</button>
-                        </a>
-                        <a href="#migre" class="visible-md">
-                            <button class="accent big" style="font-size:1.4em; padding:12px 30px">Comece seu cadastro</button>
-                        </a>
+                        <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</div>
+                        
+                        <div  class="card2 cardBranco2 wow fadeInLeft" data-wow-delay="0.4s">
+                            <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra" style="font-size:1.5em;color:#ef5350;margin-bottom:10px">event</i>
+                            <span  style="font-weight:300;padding:0 5px" class="opacidade visible-xs visible-sm">Sua mensalidade atual, na contabilizei equivale a:</span>
+                            <span  style="font-weight:300;margin-left:-20px;" class="hidden-xs hidden-sm opacidade">Sua mensalidade atual, na contabilizei equivale a:</span>
+                            <br><br>
+                            <span class="cifrao">  <span class="valor economia">{{qtdMesesContabilizei}}</span> meses </span></div>
 
-
-                        <div class="container visible-xs">
-                            <a href="#migre">
-                                <button class="accent big" style="font-size:1.4em">Comece seu cadastro</button>
-                            </a>
-                        </div>
-
+                    <div class="card2 cardBranco2 wow fadeInLeft" data-wow-delay="0.6s" style="margin-bottom:10px;">
+                        <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra" style="font-size:1.5em;color:#0EDC16;margin-bottom:10px">attach_money</i>
+                        <span style="font-weight:300;" class="opacidade">O que você economiza em um ano:</span>
                         <br>
-                        <br><span class="opacidade">Não precisamos de nenhuma informação do seu contador atual para o cadastro.</span>
+                        <br>
+                        <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual | number:0}} </span> / ano</span>
                     </div>
 
+
+                    <br>
+                    <a href="#migre" class="hidden-md hidden-xs">
+                        <button class="accent big" style="font-size:1.4em; width:100%;margin:0">Comece seu cadastro</button>
+                    </a>
+                    <a href="#migre" class="visible-md">
+                        <button class="accent big" style="font-size:1.4em; padding:12px 30px;margin:0">Comece seu cadastro</button>
+                    </a>
+
+
+                    <div class="container visible-xs">
+                        <a href="#migre">
+                            <button class="accent big" style="font-size:1.4em">Comece seu cadastro</button>
+                        </a>
+                    </div>
+
+                    <br>
+                    <br><span class="opacidade">Não precisamos de nenhuma informação do seu contador atual para o cadastro.</span>
                 </div>
-                <!--
+
+            </div>
+            <!--
                     <div class="row text-center">
                         <br>
                         <br class="hidden-xs hidden-sm"><small><p style="padding:5px 15px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna  com clientes <br class="visible-sm">sobre o custo do serviço de contabilidade anterior (R$440/mês).</span></p></small>
                     </div>
 -->
-                <br class="hidden-xs">
-                <br class="hidden-xs">
-                <br class="hidden-xs">
-                <br class="hidden-xs">
-                <section id="migre"></section>
-            </div>
-
-
+            <br class="hidden-xs">
+            <br class="hidden-xs">
+            <br class="hidden-xs">
+            <br class="hidden-xs">
+            <section id="migre"></section>
         </div>
 
-        <!-- Migre hoje sua empresa -->
 
-        <div class="migre">
-            <div class="container">
-                <div class="row">
+    </div>
+
+    <!-- Migre hoje sua empresa -->
+
+    <div class="migre">
+        <div class="container">
+            <div class="row">
 
 
-                    <div class="formEsquerda col-md-5 col-md-offset-1 col-xs-12 text-left  wow fadeIn">
+                <div class="formEsquerda col-md-5 col-md-offset-1 col-xs-12 text-left  wow fadeIn">
 
-                        <h2 class="opacidade2" style="font-size:1.8em">Junte-se à <strong>milhares</strong> de empresas<br class="hidden-xs hidden-md"> que usam Contabilizei.</h2>
-                        <br>
+                    <h2 class="opacidade2" style="font-size:1.8em">Junte-se à <strong>milhares</strong> de empresas<br class="hidden-xs hidden-md"> que usam Contabilizei.</h2>
+                    <br>
 
-                        <hr style="width:30%; margin-top:20px; margin-bottom:10px">
+                    <hr style="width:30%; margin-top:20px; margin-bottom:10px">
 
-                        <!--<div class="row text-center wow fadeIn">
+                    <!--<div class="row text-center wow fadeIn">
                             <p class="opacidade">O que você economiza em um ano:</p>
                             <span class="cifrao">R$  <span class="valor economia" style="font-size: 6em;font-weight: 400;vertical-align: middle;line-height: 1.1em;">{{valorDescontoAnual}}</span> / ano</span>
                         </div>
@@ -977,109 +988,109 @@
                             <p class="opacidade" style="margin-bottom:15px;">Após inserir seus dados no formulário ao lado, a migração é simples:</p>
                             <img class="img-responsive" src="/assets/img/passo-a-passo.png" style="width:80%;margin:0 auto">
                         </div>-->
-                        <br>
-                        <div class="wow fadeIn" data-wow-delay="0.2s">
-                            <div>
-                                <img src="/assets/img/sergio.png" class="img-responsive imgSombra" style="float:left; margin-left:o;">
-                                <span class="opacidade2">Sergio Moschioni<br>Visual Project</span>
-                            </div>
-                            <div class="depoimento">
-                                <blockquote>
-                                    <p class="textoLongo">
-                                        A Contabilizei inovou a contabilidade. Por intermédio de um canal simples permite que você atue de maneira participativa e colaborativa na contabilidade de uma empresa, possibilitando melhor gestão do negócio.
-                                        <br><small class="opacidade">cliente desde 2013</small>
-                                    </p>
-                                </blockquote>
+                    <br>
+                    <div class="wow fadeIn" data-wow-delay="0.2s">
+                        <div>
+                            <img src="/assets/img/sergio.png" class="img-responsive imgSombra" style="float:left; margin-left:o;">
+                            <span class="opacidade2">Sergio Moschioni<br>Visual Project</span>
+                        </div>
+                        <div class="depoimento">
+                            <blockquote>
+                                <p class="textoLongo">
+                                    A Contabilizei inovou a contabilidade. Por intermédio de um canal simples permite que você atue de maneira participativa e colaborativa na contabilidade de uma empresa, possibilitando melhor gestão do negócio.
+                                    <br><small class="opacidade">cliente desde 2013</small>
+                                </p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <hr style="width:30%; margin-top:20px; margin-bottom:10px">
+                    <!--<img src="/assets/img/equipe.jpg" class="hidden-sm hidden-xs">-->
+                    <br class="visible-xs visible-sm">
+                    <br class="visible-xs visible-sm">
+                </div>
+
+                <div class="formulario col-md-5 col-sm-10 col-xs-12 text-center wow fadeIn">
+
+                    <h3 style="font-size:1.4em"><a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/206806850" target="_blank" style="text-decoration:underline;color:#64dd17" title='É isso! Se não ficar satisfeito, devolvemos seu dinheiro.'>100% de satisfação</a> ou seu dinheiro de volta</h3>
+
+
+                    <form class="form-horizontal" id="form-migracao" role="form" method="post">
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">face</i>
+                                <input type="nome" class="form-control" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
+                                <span class="glyphicon form-control-feedback"></span>
                             </div>
                         </div>
-                        <hr style="width:30%; margin-top:20px; margin-bottom:10px">
-                        <!--<img src="/assets/img/equipe.jpg" class="hidden-sm hidden-xs">-->
-                        <br class="visible-xs visible-sm">
-                        <br class="visible-xs visible-sm">
-                    </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">picture_in_picture</i>
+                                <input type="nome" class="form-control" name="cpf" id="cpf" placeholder="CPF">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">store</i>
+                                <input type="nome" class="form-control" name="cnpj" id="cnpj" placeholder="CNPJ">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
 
-                    <div class="formulario col-md-5 col-sm-10 col-xs-12 text-center wow fadeIn">
-
-                        <h3 style="font-size:1.4em"><a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/206806850" target="_blank" style="text-decoration:underline;color:#64dd17" title='É isso! Se não ficar satisfeito, devolvemos seu dinheiro.'>100% de satisfação</a> ou seu dinheiro de volta</h3>
-
-
-                        <form class="form-horizontal" id="form-migracao" role="form" method="post">
-                            <div class="form-group has-feedback">
-                                <div class="col-lg-12">
-                                    <i class="material-icons pull-left">face</i>
-                                    <input type="nome" class="form-control" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
-                                    <span class="glyphicon form-control-feedback"></span>
-                                </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">phone</i>
+                                <input type="nome" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
+                                <span class="glyphicon form-control-feedback"></span>
                             </div>
-                            <div class="form-group has-feedback">
-                                <div class="col-lg-12">
-                                    <i class="material-icons pull-left">picture_in_picture</i>
-                                    <input type="nome" class="form-control" name="cpf" id="cpf" placeholder="CPF">
-                                    <span class="glyphicon form-control-feedback"></span>
-                                </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">mail_outline</i>
+                                <input type="nome" class="form-control" name="email" id="email" placeholder="E-mail">
+                                <span class="glyphicon form-control-feedback"></span>
                             </div>
-                            <div class="form-group has-feedback">
-                                <div class="col-lg-12">
-                                    <i class="material-icons pull-left">store</i>
-                                    <input type="nome" class="form-control" name="cnpj" id="cnpj" placeholder="CNPJ">
-                                    <span class="glyphicon form-control-feedback"></span>
-                                </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">fingerprint</i>
+                                <input type="password" class="form-control" name="senha" id="senha" placeholder="Defina sua senha">
+                                <span class="glyphicon form-control-feedback"></span>
                             </div>
-
-                            <div class="form-group has-feedback">
-                                <div class="col-lg-12">
-                                    <i class="material-icons pull-left">phone</i>
-                                    <input type="nome" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
-                                    <span class="glyphicon form-control-feedback"></span>
-                                </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom:0">
+                            <div class="col-lg-12" align="center">
+                                <button id="btn-iniciar-migracao" align="center" class="accent big" style="width:100%;margin:0px; margin-top:10px;">Verificar Atendimento</button>
+                                <br>
+                                <br>
+                                <span class="aoclicar">Ainda não tem CNPJ?<a href="/abrir-empresa/?utm_source=cadastro-comercio" target="blank_"> Abrir empresa grátis</a>.</span>
+                                <hr style="width:30%;">
+                                <br>
+                                <p>Migre sua empresa em <b>3 minutos</b></p>
+                                <span class="aoclicar">Ao clicar você concorda com os <a href="/termos-de-uso/Termos-de-uso-19032014.pdf" target="blank_">termos de uso</a>.</span>
                             </div>
-                            <div class="form-group has-feedback">
-                                <div class="col-lg-12">
-                                    <i class="material-icons pull-left">mail_outline</i>
-                                    <input type="nome" class="form-control" name="email" id="email" placeholder="E-mail">
-                                    <span class="glyphicon form-control-feedback"></span>
-                                </div>
-                            </div>
-                            <div class="form-group has-feedback">
-                                <div class="col-lg-12">
-                                    <i class="material-icons pull-left">fingerprint</i>
-                                    <input type="password" class="form-control" name="senha" id="senha" placeholder="Defina sua senha">
-                                    <span class="glyphicon form-control-feedback"></span>
-                                </div>
-                            </div>
-                            <div class="form-group" style="margin-bottom:0">
-                                <div class="col-lg-12" align="center">
-                                    <button id="btn-iniciar-migracao" align="center" class="accent big" style="width:100%;margin:0px; margin-top:10px;">Verificar Atendimento</button>
-                                    <br>
-                                    <br>
-                                    <span class="aoclicar">Ainda não tem CNPJ?<a href="/abrir-empresa/?utm_source=cadastro-comercio" target="blank_"> Abrir empresa grátis</a>.</span>
-                                    <hr style="width:30%;">
-                                    <br>
-                                    <p>Migre sua empresa em <b>3 minutos</b></p>
-                                    <span class="aoclicar">Ao clicar você concorda com os <a href="/termos-de-uso/Termos-de-uso-19032014.pdf" target="blank_">termos de uso</a>.</span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="row" style="margin-top:80px">
-                    <div class="col-md-4 col-sm-4 text-center wow animated fadeInDown">
-                        <h5>Investidores:</h5>
-                        <a href="http://www.kaszek.com" target="_blank"><img style="width:100%" src="/assets/img/kaszek-t.png" class="img-responsive escala-cinza"></a>
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-3 col-sm-4 wow animated fadeInDown text-center" data-wow-delay="0.3s">
-                        <h5>Apoio:</h5>
-                        <a href="/contabilidade-online/contabilizei-apoiada-pela-endeavor/" target="_blank"><img style="width:100%" src="/assets/img/logo_endeavor.png" class="img-responsive escala-cinza"></a>
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-3 col-sm-4 wow animated fadeInDown text-center" data-wow-delay="0.5s">
-                        <h5>Prêmio:</h5>
-                        <a href="http://exame.abril.com.br/pme/noticias/veja-os-vencedores-do-oscar-das-startups-na-america-latina" target="_blank" alt="Contabilizei eleita melhor empresa B2B da América Latina"><img src="/assets/img/badge-t.png" style="width:100%" class="img-responsive escala-cinza"></a>
-                    </div>
+            </div>
+            <div class="row" style="margin-top:80px">
+                <div class="col-md-4 col-sm-4 text-center wow animated fadeInDown">
+                    <h5>Investidores:</h5>
+                    <a href="http://www.kaszek.com" target="_blank"><img style="width:100%" src="/assets/img/kaszek-t.png" class="img-responsive escala-cinza"></a>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 col-sm-4 wow animated fadeInDown text-center" data-wow-delay="0.3s">
+                    <h5>Apoio:</h5>
+                    <a href="/contabilidade-online/contabilizei-apoiada-pela-endeavor/" target="_blank"><img style="width:100%" src="/assets/img/logo_endeavor.png" class="img-responsive escala-cinza"></a>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3 col-sm-4 wow animated fadeInDown text-center" data-wow-delay="0.5s">
+                    <h5>Prêmio:</h5>
+                    <a href="http://exame.abril.com.br/pme/noticias/veja-os-vencedores-do-oscar-das-startups-na-america-latina" target="_blank" alt="Contabilizei eleita melhor empresa B2B da América Latina"><img src="/assets/img/badge-t.png" style="width:100%" class="img-responsive escala-cinza"></a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Produto -->
@@ -1507,6 +1518,7 @@
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
         <script type="text/javascript" src="/contabilidade-comercio/js/calculadora.js"></script>
         <script src="/assets/js/typeahead.bundle.min.js"></script>
+        <script type="text/javascript" src="/assets/js/angular-locale_pt-br.js"></script>
 
 
 

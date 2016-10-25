@@ -621,17 +621,17 @@
                             <br>
                             <span class="cifrao">R$  </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</div>
                             
-                            <div  class="card cardBranco wow fadeInDown" data-wow-delay="0.4s">
+                            <div  class="card cardBranco wow fadeInLeft" data-wow-delay="0.4s">
                             <i class="material-icons img-responsive pull-left imgSombra" style="font-size:1.5em;color:#ef5350;margin-bottom:10px">event</i>
                             <span  style="font-weight:300;margin-left:-20px;" class="opacidade">Sua mensalidade atual, na contabilizei equivale a:</span>
                             <br><br>
                             <span class="cifrao">  <span class="valor economia">{{qtdMesesContabilizei}}</span> meses </span></div>
 
-                            <div  class="card cardBranco wow fadeInDown" data-wow-delay="0.4s" style="margin-bottom: 15px;">
+                            <div  class="card cardBranco wow fadeInLeft" data-wow-delay="0.6s" style="margin-bottom: 15px;">
                             <i class="material-icons img-responsive pull-left imgSombra" style="font-size:1.5em;color:#0EDC16;margin-bottom:10px">attach_money</i>
                             <span  style="font-weight:300;" class="opacidade">O que você economiza em um ano:</span>
                             <br><br>
-                            <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual}}</span> / ano</span></div>
+                            <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual | number:0}}</span> / ano</span></div>
                             
                                                                                     
                             <br><a href="#migre" class="hidden-md hidden-xs"><button class="accent big" style="font-size:1.4em; width:100%;margin:0;">Migrar empresa</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px;">Migrar empresa</button></a>
@@ -1237,6 +1237,7 @@
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+        <script type="text/javascript" src="/assets/js/angular-locale_pt-br.js"></script>
 	    <script type="text/javascript" src="/escritorio-contabilidade-online/js/calculadora.js"></script>
         <script src="/assets/js/typeahead.bundle.min.js"></script>
         
