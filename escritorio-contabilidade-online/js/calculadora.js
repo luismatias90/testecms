@@ -14,9 +14,10 @@ SimuladorApp.controller('SimuladorController', ['$scope', function($scope) {
 		"acima de R$200.000/mês" ];
 	
 	$scope.indice = 0;
-	$scope.valorContadorAtual = 440;
+	$scope.valorContadorAtual = 490;
 	$scope.valorDescontoAnual = 0;
 	$scope.valorMensalidade = 0;
+	$scope.qtdMesesContabilizei = 10;
 	
 	$scope.valorAdicionalSocios = 0;
 	$scope.valorAdicionalFuncionarios = 0;
@@ -91,7 +92,8 @@ $scope.verificaValor = function(event, qntToCompare, model){
 		if ($scope.valorDescontoAnual < 0) {
 			$scope.valorDescontoAnual = 0;
 		}
-		
+		$scope.qtdMesesContabilizei = parseInt($scope.valorContadorAtual / $scope.valorMensalidade);
+        
 	}
 
 	$scope.calculaValor();

@@ -495,11 +495,6 @@
       </div> 
 
 
-
-
-
-
-
 		<div class="navlead text-center">
             <div class="container">
                 <p class="wow fadeIn">Junte-se à mais de <br class="visible-xs"><span class="economiaTotal">50.000</span><br class="visible-xs"> empresas que querem Contabilizei.
@@ -531,7 +526,7 @@
                     </div>
                     <div class="row">
                        
-                            <div class="calculadora col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6">
+                            <div class="calculadora col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5">
 
                                 <div class="col-md-12 col-xs-12 btn-group" data-toggle="buttons">
                                     <label class="col-md-6 col-xs-6 btn btn-primary active" id="tab-sn" ng-click="simples = true">
@@ -596,43 +591,57 @@
                                     <br class="visible-sm"><br class="visible-sm">
                                 </div>
                                 <br class="visible-lg visible-md">
+                                <br><p class="opacidade text-center">Preencha com os dados de sua empresa e veja ao lado sua economia.</p>
                             </div>
 
                         
                         </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+                        <br class="visible-xs">
+                        <br class="visible-xs">
 <!--
                         <div class="col-lg-1 hidden-sm hidden-xs hidden-md" style="font-size: 3em;color: #fff; padding-top:47px; opacity:0.5">
                             <br>
                             
                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         </div>
--->
-
-                        <div class="calculadoraSimule col-lg-4 col-md-5 col-sm-6 col-xs-12 text-center" data-wow-delay="0.2s">
+<--></-->
+                 
+                        <div class="calculadoraSimule col-lg-4 col-md-5 col-sm-5 col-xs-12 text-center" data-wow-delay="0.2s">
                             
 <!--
                             Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>,
                             <br>
 
                             <br>-->
-                            <div class="wow fadeInLeft" style="font-size:1.6em; vertical-align: middle; font-weight:300"><span class="opacidade">Sua mensalidade será:</span>
+  
+                            <div class="card cardBranco wow fadeInLeft" >
+                            <i class="material-icons img-responsive pull-left imgSombra" style="font-size:1.5em;color:#2196F3;margin-bottom:10px">thumb_up</i>
+                            <span style="font-weight:300;line-height:1.2em" class="opacidade">Sua mensalidade será:</span>
                             <br>
                             <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</div>
+                            
+                            <div  class="card cardBranco wow fadeInDown" data-wow-delay="0.4s">
+                            <i class="material-icons img-responsive pull-left imgSombra" style="font-size:1.5em;color:#ef5350;margin-bottom:10px">event</i>
+                            <span  style="font-weight:300;margin-left:-20px;" class="opacidade">Sua mensalidade atual, na contabilizei equivale a:</span>
+                            <br><br>
+                            <span class="cifrao">  <span class="valor economia">{{qtdMesesContabilizei}}</span> meses </span></div>
 
-                           
-                            <hr style="width:30%; margin-top:20px; margin-bottom:40px; opacity:0.2"><div  class="wow fadeInDown" data-wow-delay="0.4s"><span  style="font-weight:300;" class="opacidade">O que você economiza em um ano:</span>
+                            <div  class="card cardBranco wow fadeInDown" data-wow-delay="0.4s" style="margin-bottom: 15px;">
+                            <i class="material-icons img-responsive pull-left imgSombra" style="font-size:1.5em;color:#0EDC16;margin-bottom:10px">attach_money</i>
+                            <span  style="font-weight:300;" class="opacidade">O que você economiza em um ano:</span>
                             <br><br>
                             <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual}}</span> / ano</span></div>
-
                             
-                            <br><a href="#migre" class="hidden-md hidden-xs"><button class="accent big" style="font-size:1.4em; width:100%">Migrar empresa</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px">Migrar empresa</button></a>
+                                                                                    
+                            <br><a href="#migre" class="hidden-md hidden-xs"><button class="accent big" style="font-size:1.4em; width:100%;margin:0;">Migrar empresa</button></a><a href="#migre" class="visible-md"><button class="accent big" style="font-size:1.4em; padding:12px 30px;">Migrar empresa</button></a>
                             
                             
                             <div class="container visible-xs">
-                                <a href="#migre"><button class="accent big" style="font-size:1.4em">Migrar empresa</button></a>
+                                <a href="#migre"><button class="accent big" style="font-size:1.4em;">Migrar empresa</button></a>
                             </div>
+                            <br><br><span class="opacidade" style="color:#fff;">Não precisamos de nenhuma informação do seu contador atual para o cadastro.</span>
                             
-                            <br><br><span class="opacidade">Não precisamos de nenhuma informação do seu contador atual para o cadastro.</span>
                         </div>
 
                     </div>
