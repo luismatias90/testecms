@@ -623,11 +623,13 @@ blockquote {
     padding: 15px 0;
     margin: 0 0 25px 0;
 }
-.imgSombra{
+.imgSombra2{
     z-index: 1;
     position: relative;
     left: -20px;
     margin-top: 9%;
     background: #fff;
     padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 7px rgba(0,0,0,.2);
 }

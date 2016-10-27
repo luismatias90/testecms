@@ -212,3 +212,6 @@ div#containerGeralFiltros .accent:hover {
     color: #ffffff;
     text-decoration: none;
 }
+.card{
+    padding: 0;
+}
