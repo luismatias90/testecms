@@ -818,18 +818,18 @@
             </div>
             <div class="row">
 
-                <div class="calculadora col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1">
+                <div class="calculadora col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6">
 
                     <div class="col-md-12 col-xs-12 btn-group" data-toggle="buttons">
-                        <label class="col-md-6 col-xs-6 btn btn-primary active" id="tab-sn" ng-click="simples = true">
+                        <label class="col-md-6 col-xs-6 btn btn-primary active" id="tab-sn" ng-click="comercio = true">
                             <a aria-controls="home" role="tab" data-toggle="tab">
                                 <input type="radio" name="options" id="option1" autocomplete="off" checked>
-                                <h4>Simples Nacional</h4></a>
+                                <h4>Comércio</h4></a>
                         </label>
-                        <label class="col-md-6 col-xs-6 btn btn-primary" id="tab-lp" ng-click="simples = false">
+                        <label class="col-md-6 col-xs-6 btn btn-primary" id="tab-lp" ng-click="comercio = false">
                             <a aria-controls="home" role="tab" data-toggle="tab">
                                 <input type="radio" name="options" id="option2" autocomplete="off">
-                                <h4>Lucro Presumido</h4></a>
+                                <h4>Comércio + Serviço</h4></a>
                         </label>
                     </div>
 
@@ -837,7 +837,7 @@
 
 
                     <br class="visible-xs">
-                    <p class="text-center" style="padding-top:80px">Quanto você paga de contabilidade por mês? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Valor baseado na metade de um salário mínimo de 2016."></span></p>
+                    <p class="text-center" style="padding-top:80px">Quanto você paga de contabilidade por mês? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Valor baseado no salário mínimo de 2016."></span></p>
 
 
 
@@ -848,8 +848,6 @@
 
 
                         <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="visible-xs form-control" value="0" style="height:60px; text-align:left; padding-left:85px; font-size:2em; margin:0 auto; font-weight:700">
-
-
 
 
                     </div>
@@ -912,13 +910,15 @@
                         <span class="opacidade">Sua mensalidade será:</span>
                         <br>
                         <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</div>
-                        
-                        <div  class="card2 cardBranco2 wow fadeInLeft" data-wow-delay="0.4s">
-                            <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra2" style="font-size:1.5em;color:#ef5350;margin-bottom:10px">event</i>
-                            <span  style="font-weight:300;padding:0 5px" class="opacidade visible-xs visible-sm">Sua mensalidade atual, na contabilizei equivale a:</span>
-                            <span  style="font-weight:300;margin-left:-20px;" class="hidden-xs hidden-sm opacidade">Sua mensalidade atual, na Contabilizei equivale a:</span>
-                            <br><br>
-                            <span class="cifrao">  <span class="valor economia">{{qtdMesesContabilizei}}</span> meses </span></div>
+
+                    <div class="card2 cardBranco2 wow fadeInLeft" data-wow-delay="0.4s">
+                        <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra2" style="font-size:1.5em;color:#ef5350;margin-bottom:10px">event</i>
+                        <span style="font-weight:300;padding:0 5px" class="opacidade visible-xs visible-sm">Sua mensalidade atual, na contabilizei equivale a:</span>
+                        <span style="font-weight:300;margin-left:-20px;" class="hidden-xs hidden-sm opacidade">Sua mensalidade atual, na Contabilizei equivale a:</span>
+                        <br>
+                        <br>
+                        <span class="cifrao">  <span class="valor economia">{{qtdMesesContabilizei}}</span> meses </span>
+                    </div>
 
                     <div class="card2 cardBranco2 wow fadeInLeft" data-wow-delay="0.6s" style="margin-bottom:10px;">
                         <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra2" style="font-size:1.5em;color:#0EDC16;margin-bottom:10px">attach_money</i>
