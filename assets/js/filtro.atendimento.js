@@ -66,6 +66,7 @@ $(document).ready(function () {
     }).bind('typeahead:selected', function (obj, datum) {
         $('.cidadeSelecionada').html(datum);
         esconderFiltros();
+        jsonIntercomAbertura.LEAD_cidade = datum;
         if (testeCidade(datum, cidadesAtendidasAbertura)) {
             $('#filtro_ramo_abertura').removeClass('hide');
         } else {
@@ -165,8 +166,10 @@ $(document).ready(function () {
         esconderFiltros();
         var tipo = $(this).attr('tipo');
         if (tipo == 'servico') {
+            jsonIntercomAbertura.LEAD_ramo = "servico";
             $('#filtro_servico_cidade_atendidada').removeClass('hide');
         } else if (tipo == 'comercio') {
+            jsonIntercomAbertura.LEAD_ramo = "comercio";
             if (testeSeCidadeAtendida()) {
                 $('#filtro_servico_cidade_atendidada').removeClass('hide');
             } else {
