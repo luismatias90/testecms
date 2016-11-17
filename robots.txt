@@ -7,3 +7,4 @@ Disallow: /simples-2015/
 Disallow: /termos-de-uso/
 Disallow: /tutoriais/
 Disallow: /bem-vindo/*
+Disallow: /consulta.html
