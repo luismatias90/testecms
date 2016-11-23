@@ -109,7 +109,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/</loc>
 
-            <lastmod>2016-10-14</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>daily</changefreq>
 
@@ -229,7 +229,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/lucro-presumido-para-simples/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -241,7 +241,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/tabela-simples-nacional/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -253,7 +253,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/tabela-simples-nacional-completa/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -266,7 +266,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/agendamento-simples-nacional/</loc>
 
-            <lastmod>2016-11-14</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -279,7 +279,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/anexo-1-simples-nacional/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -291,7 +291,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/anexo-2-simples-nacional/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -303,7 +303,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/anexo-3-simples-nacional/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -315,7 +315,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/anexo-4-simples-nacional/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -327,7 +327,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/anexo-5-simples-nacional/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -339,7 +339,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/anexo-6-simples-nacional/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -351,7 +351,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/como-solicitar-enquadramento-simples-nacional/</loc>
 
-            <lastmod>2016-03-04</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -587,7 +587,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/codigo-de-acesso-simples-nacional/</loc>
 
-            <lastmod>2015-11-16</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -653,7 +653,7 @@
 
             <loc>https://www.contabilizei.com.br/contabilidade-online/enquadramento-anexo-iii-ou-anexo-vi-simples-nacional/</loc>
 
-            <lastmod>2016-02-16</lastmod>
+            <lastmod>2016-11-22</lastmod>
 
             <changefreq>monthly</changefreq>
 
@@ -930,4 +930,17 @@
 
         </url>
 
+                <url>
+
+            <loc>https://www.contabilizei.com.br/contabilidade-online/novo-simples-nacional/</loc>
+
+            <lastmod>2016-11-22</lastmod>
+
+            <changefreq>monthly</changefreq>
+
+            <priority>0.9</priority>
+
+        </url>
+
+        
     </urlset>

@@ -931,4 +931,39 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 50px;
     box-shadow: 0px 2px 7px rgba(0,0,0,.2);
 }
+.bolinhaAzul {
+    background: #2196F3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    float: left;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    border: 2px solid #eaeaea;
+}
+.bolinhaCinza {
+    background: #dddddd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    float: left;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    border: 2px solid #eaeaea;
+}
+.separacao {
+    margin-top: 20px;
+    float: left;
+    width: 20%;
+    height: 1px;
+    background: #d0d0d0;
+}
 
