@@ -3,9 +3,11 @@ var SimuladorApp = angular.module('SimuladorApp', []);
 
 SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', function ($scope, $timeout) {
 
-    $scope.comercio = true;
+    //$scope.comercio = true;//
+    $scope.comercio = false;
     
-    setDadosCalculadoraComercio();
+    //setDadosCalculadoraComercio();
+    setDadosCalculadoraServico();
     
     $scope.$watch('comercio', function (newValue, oldValue) {
         if (newValue == oldValue) return;
