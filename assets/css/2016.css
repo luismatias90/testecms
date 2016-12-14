@@ -193,3 +193,5 @@ h3{font-size:20px;line-height:1.5em;}
 .material-icons{vertical-align:middle !important;margin-top:-3px;}
 .opacidade{opacity:0.8;}
 .opacidade2{opacity:0.5;}
+.escala-cinza {  -webkit-filter: grayscale(100%);}
+.escala-cinza:hover {-webkit-filter: grayscale(0%);transition: .5s all ease;}

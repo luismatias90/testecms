@@ -1,0 +1,21 @@
+.sublinhado{
+    background-position:21% 50%!important;
+}
+.splash{
+    padding: 140px 0 70px 0;
+}
+.splash h1{
+    margin-bottom: 80px;
+}
+
+@media (max-width:480px){
+  .sublinhado{
+    background:none!important;
+}  
+}
+@media (max-width: 768px) {
+      .sublinhado{
+    background-position:1% 40%!important;
+}
+    
+}

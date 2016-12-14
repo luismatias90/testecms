@@ -419,6 +419,9 @@ blockquote {
     width:100%; 
     margin:0;
 }
+.azul {
+    color: #2196F3 !important;
+}
 @media (min-width: 1400px) {
     .jumbotron {
         padding:224px 0 180px 0;    
