@@ -934,7 +934,7 @@
 
         <loc>https://www.contabilizei.com.br/contabilidade-online/novo-simples-nacional/</loc>
 
-        <lastmod>2016-11-22</lastmod>
+        <lastmod>2016-12-21</lastmod>
 
         <changefreq>monthly</changefreq>
 
@@ -959,6 +959,32 @@
         <loc>https://www.contabilizei.com.br/contabilidade-online/lucro-presumido/</loc>
 
         <lastmod>2016-12-07</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+
+    <url>
+
+        <loc>https://www.contabilizei.com.br/abrir-empresa-de-consultoria/</loc>
+
+        <lastmod>2016-12-21</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    
+  
+
+    <url>
+
+        <loc>https://www.contabilizei.com.br/contabilidade-online/proposta-comercial/</loc>
+
+        <lastmod>2016-12-21</lastmod>
 
         <changefreq>monthly</changefreq>
 
