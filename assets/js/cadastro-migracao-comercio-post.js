@@ -102,10 +102,12 @@ $(document).ready(function () {
             }
             
             var origemGenerica = document.getElementById('origemGenerica');
-            if (origemGenerica != null){
+            if (origemGenerica != null) {
                 input.value = origemGenerica.value;
             }
-            conose.info('Iniciando cadastro Contabilizei com origem: ', input.value);
+            try {
+                console.info('Iniciando cadastro Contabilizei com origem: ', input.value);
+            } catch (e) {}
 
             form.appendChild(input);
 

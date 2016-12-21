@@ -94,7 +94,7 @@ $(document).ready(function () {
                 input.value = "abertura";
                 form.appendChild(input);
             }
-            
+
             var fonteOrigem = $.cookie("fonteOrigem");
 
             var input = document.createElement('input');
@@ -106,13 +106,15 @@ $(document).ready(function () {
             } else {
                 input.value = "Incapaz de acessar informação fonte origem";
             }
-            
+
             var origemGenerica = document.getElementById('origemGenerica');
-            if (origemGenerica != null){
+            if (origemGenerica != null) {
                 input.value = origemGenerica.value;
             }
-            conose.info('Iniciando cadastro Contabilizei com origem: ', input.value);
-            
+            try {
+                console.info('Iniciando cadastro Contabilizei com origem: ', input.value);
+            } catch (e) {}
+
 
             form.appendChild(input);
 
