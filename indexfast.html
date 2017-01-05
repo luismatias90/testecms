@@ -189,10 +189,11 @@ textarea { overflow: auto; }
 </head>
 
 <body>
-      <link rel="stylesheet" href="/assets/css/all.css">
+   
     <!-- Google Tag Manager -->
     <noscript>
         <iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9X6Z2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <link rel="stylesheet" href="/assets/css/all.css">
     </noscript>
     <script>
         (function (w, d, s, l, i) {
@@ -1317,13 +1318,25 @@ textarea { overflow: auto; }
             })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
 -->
-            <!-- CSS -->
+    <!-- defer loading css -->
+    
+    <script>
+    var giftofspeed = document.createElement('link'); 
+giftofspeed.rel = 'stylesheet';
+giftofspeed.href = '/assets/js/all.css';
+giftofspeed.type = 'text/css'; 
+var godefer = document.getElementsByTagName('link')[0]; 
+godefer.parentNode.insertBefore(giftofspeed, godefer);
+    </script>
+    
+    <!-- CSS and JS -->
+    
     <script async type="text/javascript" src="/assets/js/all.js"></script>
     <script>
         new WOW().init();
     </script>
 
-
+    <link rel="stylesheet" href="/assets/css/all.css">
 
    
 
