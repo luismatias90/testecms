@@ -42,7 +42,9 @@
         <loc>https://www.contabilizei.com.br/contabilidade-comercio/index.html</loc>
         <priority>0.9</priority>
     </url>
-    <loc>https://www.contabilizei.com.br/contabilidade-de-bolso/index.html</loc>
+    <url>
+        <loc>https://www.contabilizei.com.br/contabilidade-de-bolso/index.html</loc>
+    </url>
     <url>
         <loc>https://www.contabilizei.com.br/contabilizei-contabilidade-online/index.html</loc>
     </url>
