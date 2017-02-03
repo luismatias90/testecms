@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="SimuladorApp">
+
+<head>
+
+    <!-- Metatags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <!-- Google author -->
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2196F3">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2196F3">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2196F3">
+    <link rel="author" href="https://plus.google.com/u/0/110264168711669397191/" />
+    <link rel="publisher" href="https://plus.google.com/u/0/110264168711669397191/">
+
+    <!-- Geral -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property='og:type' content='website' />
+    <meta property="og:site_name" content="Contabilizei">
+
+    <title>Contabilidade Online | Contabilizei </title>
+    <meta name="robots" content="noindex, nofollow">
+    <!-- CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/css/2016.css">
+    <link rel="stylesheet" href="/assets/css/comercio.css">
+    <link rel="stylesheet" href="/assets/css/comercio-ecommerce.css">
+    <link rel="stylesheet" href="/assets/css/img-compare.css">
+    <link rel="stylesheet" href="/assets/css/migracao.css">
+    <style>
+        #intercom-container{
+            display: none;
+        }
+    </style>
+
+
+    <!-- Fontes Customizadas -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+
+
+
+    <script>
+        window.intercomSettings = {
+            app_id: "co2eot0g"
+        };
+    </script>
+    <script>
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/co2eot0g';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })()
+    </script>
+
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+</head>
+
+<body>
+
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9X6Z2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N9X6Z2');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- CUPOM -->
+    <nav class="navbar navbar-default navbar-fixed-top contabilizei navtopo">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="/assets/img/logo2016.png" class="img-responsive logo hidden-sm hidden-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"><img src="/assets/img/logo2016.png" class="img-responsive visible-sm visible-md" width="140" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="espacador hidden-xs hidden-sm">&nbsp;</li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contabilizei <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/quais-cidades-atendemos/">Quais cidades atendemos</a></li>
+                            <li><a href="/contabilizei-contabilidade-online/">Sobre a empresa</a></li>
+                            <!--                    <li><a href="/funcionalidades/">Nosso produto</a></li>-->
+                            <li><a href="/midia/">Nós na mídia</a></li>
+                            <li><a href="/contabilidade-online/" target="_blank">Blog</a></li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Trabalhe conosco</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Abrir empresa <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="/abrir-empresa-gratis/">Escolhendo as atividades</a></li>
+
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <a href="/abrir-empresa/" class="linkBotao">
+                                    <button class="accent menorzin" style="width:100%">Abrir empresa grátis</button>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Já tem empresa? <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+
+
+
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <a href="/escritorio-contabilidade-online/" class="linkBotao">
+                                    <button class="accent menorzin" style="width:100%">Tenho empresa de serviços</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/contabilidade-comercio/" class="linkBotao">
+                                    <button class="accent menorzin" style="width:100%">Tenho empresa de comércio</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">  Emissor NF-e <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--                    <li><a href="#">Cadastre-se agora</a></li>-->
+                            <li><a href="/emissor-nf-e/">Veja como funciona</a></li>
+
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <a href="/emissor-gratuito-nf-e/" class="linkBotao">
+                                    <button class="accent menorzin" style="width:100%">Emissor gratuito NF-e</button>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="loginCliente dropdown hidden-sm">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">lock_outline</i> Login <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--                    <li><a href="#">Cadastre-se agora</a></li>-->
+                            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
+
+                            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
+                            <li><a href="https://freemium.contabilizei.com/sistema/" target="_blank">Acesse o emissor gratuito de NF-e</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+    <div class="migre">
+        <div class="container" style="padding-top:50px;">
+            <div class="row">
+
+
+                <!--<div class="formEsquerda col-md-5 col-md-offset-1 col-xs-12 text-left  wow fadeIn">
+
+ 
+                </div>-->
+
+                <div class="formulario col-md-5 col-sm-10 col-xs-12 text-center wow fadeIn">
+
+                    <h3 style="font-size:1.4em">Cadastro de cliente interessado</h3>
+
+
+                    <form class="form-horizontal" id="form-interesse" role="form" method="post">                    
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">face</i>
+                                <input type="nome" class="form-control" name="nomeCompleto" id="nomeCompletoInteresse" placeholder="Nome Completo">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">mail_outline</i>
+                                <input type="nome" class="form-control" name="email" id="emailInteresse" placeholder="E-mail">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">phone</i>
+                                <select class="form-control"  id="cmbOperadorInteresse">
+                                    <option value="">Selecione seu Callcenter</option>
+                                    <option value="callcenter1">Callcenter 1</option>
+                                    <option value="callcenter2">Callcenter 2</option>
+                                    <option value="callcenter3">Callcenter 3</option>
+                                    <option value="callcenter4">Callcenter 4</option>
+                                    <option value="callcenter5">Callcenter 5</option>
+                                    <option value="callcenter6">Callcenter 6</option>
+                                    <option value="callcenter7">Callcenter 7</option>
+                                    <option value="callcenter8">Callcenter 8</option>
+                                    <option value="callcenter9">Callcenter 9</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group" style="margin-bottom:0">
+                            <div class="col-lg-12" align="center">
+                                <button id="btn-iniciar-interesse" align="center" class="accent big" style="width:100%;margin:0px; margin-top:10px;">Cadastrar cliente</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <br>
+
+
+                </div>
+
+
+
+                <div class="col-md-2 col-xs-12 text-left  wow fadeIn"></div>
+
+                <div class="formulario col-md-5 col-sm-10 col-xs-12 text-center wow fadeIn">
+
+                    <h3 style="font-size:1.4em">Cadastro completo do cliente</h3>
+
+
+                    <form class="form-horizontal" id="form-migracao" role="form" method="post">
+                        <input type="hidden" id="origemGenerica" value="callcenter" name="processo">
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">face</i>
+                                <input type="nome" class="form-control" name="nomeCompleto" id="nomeCompleto" placeholder="Nome Completo">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">picture_in_picture</i>
+                                <input type="nome" class="form-control" name="cpf" id="cpf" placeholder="CPF">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">store</i>
+                                <input type="nome" class="form-control" name="cnpj" id="cnpj" placeholder="CNPJ">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">phone</i>
+                                <input type="nome" class="form-control" name="telefone" id="telefone" placeholder="Telefone">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">mail_outline</i>
+                                <input type="nome" class="form-control" name="email" id="email" placeholder="E-mail">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">fingerprint</i>
+                                <input type="password" class="form-control" name="senha" id="senha" placeholder="Defina sua senha">
+                                <span class="glyphicon form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <div class="col-lg-12">
+                                <i class="material-icons pull-left">phone</i>
+                                <select class="form-control"  id="operador" name="operador">
+                                    <option value="">Selecione seu Callcenter</option>
+                                    <option value="callcenter1">Callcenter 1</option>
+                                    <option value="callcenter2">Callcenter 2</option>
+                                    <option value="callcenter3">Callcenter 3</option>
+                                    <option value="callcenter4">Callcenter 4</option>
+                                    <option value="callcenter5">Callcenter 5</option>
+                                    <option value="callcenter6">Callcenter 6</option>
+                                    <option value="callcenter7">Callcenter 7</option>
+                                    <option value="callcenter8">Callcenter 8</option>
+                                    <option value="callcenter9">Callcenter 9</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom:0">
+                            <div class="col-lg-12" align="center">
+                                <button id="btn-iniciar-migracao" align="center" class="accent big" style="width:100%;margin:0px; margin-top:10px;">Cadastrar cliente</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSS -->
+    <!-- <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--    <link rel="stylesheet" href="/assets/css/botao2016.css">-->
+
+    <!-- Javascripts -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/contabilidade-comercio/js/jquery-2.1.1.js"></script>
+    <script src="/contabilidade-comercio/js/main.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+    <script type="text/javascript" src="/contabilidade-comercio/js/calculadora.js"></script>
+    <script src="/assets/js/typeahead.bundle.min.js"></script>
+    <script type="text/javascript" src="/assets/js/angular-locale_pt-br.js"></script>
+
+
+
+    <!-- Cadastro -->
+    <script type="text/javascript" src="/assets/lib/jquery.mask/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/jquery.datetimepicker/jquery.datetimepicker.js"></script>
+    <script type="text/javascript" src="/assets/lib/placeholders/placeholders.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/jquery/jquery.cookie.js"></script>
+    <script type="text/javascript" src="/assets/lib/jquery.validate/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/jquery.validate/localization/messages_pt_BR.min.js"></script>
+    <script type="text/javascript" src="/assets/lib/accounting/accounting.min.js"></script>
+
+    <script type="text/javascript" src="/assets/js/parametros.js"></script>
+
+    <script type="text/javascript" src="/assets/js/cupom.js"></script>
+
+    <script type="text/javascript" src="/assets/js/app.js"></script>
+    <script type="text/javascript" src="/assets/js/cadastro-callcenter.js"></script>
+
+
+
+    <!--    <script async type="text/javascript" src="/assets/js/botao-ajuda.js"></script>-->
+
+    <script src="/assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="//my.hellobar.com/35f2e648daf45626e1931ec3683e451016af0994.js" type="text/javascript" charset="utf-8" async="async"></script>
+
+    <script type="text/javascript" async="true" src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/40bbe6d9-bf4c-4139-8258-af4a415c65d7-loader.js"></script>
+
+    <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/integration/beta/rd-js-integration.min.js"></script>
+    <script type="text/javascript">
+        var meus_campos = {
+            "nomeCompleto": "nome",
+        }
+        options = {
+            elementSubmit: '#btn-iniciar-migracao',
+        }
+        RdIntegration.integrate('191bb53cc7863a6d696d935b566c4339', 'FORM-MIGRACAO-COMERCIO', options);
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 60) {
+                    $(".navbar-fixed-top").addClass("contabilizei2");
+                } else {
+                    $(".navbar-fixed-top").removeClass("contabilizei2");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            //            $('.comHover').hover(function (){
+            //                var tipo = $(this).attr('tipo');
+            //                var classeFlecha = "flechas_" + tipo;
+            //                $('.flechas').removeClass('flechas_emissor  flechas_nfeEntrada flechas_imposto flechas_notificacao').addClass(classeFlecha);
+            //            })
+            $('.comHover').hover(function () {
+
+                $('.funcao_hover').removeClass('funcao_hover');
+                var tipo = $(this).attr('tipo');
+                var imgSrc = $(this).attr('imgSrc');
+                var eleTexto = $('#comHoverTexto');
+                var eleImg = $('#comHoverImg');
+                var classeFlecha = "flechas_" + tipo;
+
+
+                $(this).addClass('active');
+                $('.flechas').removeClass('flechas_emissor  flechas_nfeEntrada flechas_imposto flechas_notificacao').addClass(classeFlecha);
+
+
+                eleImg.attr('src', imgSrc);
+                eleTexto.hide();
+                eleImg.parent().hide();
+
+                console.log(tipo);
+
+                setTimeout(function () {
+                    eleTexto.show();
+                    eleImg.parent().show();
+                }, 100);
+
+                if (tipo == 'emissor') {
+                    eleTexto.html('Emita NFe gratuitamente diretamente na nossa plataforma e deixe o resto conosco.');
+                    return;
+                } else if (tipo == 'nfeEntrada') {
+                    eleTexto.html('Buscamos automaticamente as notas fiscais emitidas contra seu CNPJ.');
+                    return;
+                } else if (tipo == 'imposto') {
+                    eleTexto.html('DAS, IRPJ, GPS, FGTS, GNRE, DCFT, IRPJ etc. Geramos todas as guias de impostos (inclusive Substituição Tributária).');
+                    return;
+                } else if (tipo == 'notificacao') {
+                    eleTexto.html('Fale com seu contador sempre que precisar e seja notificado sobre vencimento de impostos, outros compromissos contábeis e ações necessárias.');
+                    return;
+                }
+
+            })
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script type="text/javascript" src="/assets/js/scroll.js"></script>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+
+    <style rel="stylesheet" type="text/css">
+        ._hj-f5b2a1eb-9b07_widget ._hj-f5b2a1eb-9b07_pull_left {
+            display: none !important
+        }
+    </style>
+
+
+</body>
+
+</html>
