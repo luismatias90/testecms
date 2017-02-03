@@ -162,8 +162,13 @@ $(document).ready(function () {
                 app_id: 'co2eot0g',
                 email: document.getElementById('emailInteresse').value,
                 name: document.getElementById('nomeCompletoInteresse').value,
-                "operador": document.getElementById('cmbOperadorInteresse').value
+                "operador": document.getElementById('cmbOperadorInteresse').value,
+                "origemcadastro": "callcenter"
             });
+            alert('Cliente cadastrado com sucesso!');
+            document.getElementById('emailInteresse').value='';
+            document.getElementById('nomeCompletoInteresse').value='';
+            document.getElementById('cmbOperadorInteresse').value='';
         }
     });
 
