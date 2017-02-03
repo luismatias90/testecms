@@ -163,7 +163,7 @@ $(document).ready(function () {
                 email: document.getElementById('emailInteresse').value,
                 name: document.getElementById('nomeCompletoInteresse').value,
                 "operador": document.getElementById('cmbOperadorInteresse').value,
-                "origemcadastro": "callcenter"
+                "origemCadastro": "callcenter"
             });
             alert('Cliente cadastrado com sucesso!');
             document.getElementById('emailInteresse').value='';
