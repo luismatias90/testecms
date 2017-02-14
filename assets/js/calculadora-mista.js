@@ -115,7 +115,7 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
                 ) -
                 (
                     (12 * $scope.valorMensalidade) + (12 * $scope.valorAdicionalSocios) + (12 * $scope.valorAdicionalFuncionarios)
-                ) + economiaVR
+                ) + economiaVR;
 
             if ($scope.valorDescontoAnual < 0) {
                 $scope.valorDescontoAnual = 0;
@@ -133,7 +133,7 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
         $scope.$watch("qtdSocios", function () {
             $scope.calculaValor();
         });
-        $scope.$watch("qtdFuncionarios", function () 
+        $scope.$watch("qtdFuncionarios", function () {
             $scope.calculaValor();
         });
         $scope.$watch("valorFacial", function () {

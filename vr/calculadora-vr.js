@@ -6,11 +6,9 @@ $( document ).ready(function() {
 				$("#txtValorFacialRefeicao").maskMoney('mask');
 				$("#txtTaxaAtualRefeicao").maskMoney('mask');
 				
-				atualizaValores();
 			});
 		
             function validarValorFacialRefeicao() {
-                console.log($("#txtValorFacialRefeicao").maskMoney("unmasked")[0]);
                 if ($("#txtValorFacialRefeicao").maskMoney("unmasked")[0] < 180) {
                     $("#txtValorFacialRefeicao").val(18000);
                     $("#txtValorFacialRefeicao").maskMoney('mask');
