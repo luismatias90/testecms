@@ -630,13 +630,17 @@
                     <p class="text-center" style="padding-top:15px;">Quanto você paga de Vale Refeição por funcionário?</p>
 <input type="hidden" ng-model="valorEconomiaVR" id="valorEconomiaVR" value="0">
                     <div class="input-group">
-
-                       <input type="text" id="txtValorFacialRefeicao" value="35000" ng-model="valorFacial" class="form-control" style="height:60px; text-align:center; font-size:2em; font-weight:700" onchange="validarValorFacialRefeicao();" /> 
+                       
+                       <span class="input-group-addon">R$</span>
+                       <input type="number" ng-model="valorFacial" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'txtValorFacialRefeicao')" id="txtValorFacialRefeicao" class="hidden-xs form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
+                        <span class="input-group-addon">/mês</span>
+                       
                     </div>
                     <p class="text-center" style="padding-top:15px;">Qual a taxa administrativa de Vale Refeição cobrada pelo seu fornecedor?</p>
 
                     <div class="input-group">
-                        <input type="text" id="txtTaxaAtualRefeicao" value="200" class="form-control" ng-model="taxa" style="height:60px; text-align:center; font-size:2em; font-weight:700"  />
+                       <input type="number" ng-model="taxa" min="0" max="100" ng-keyUp="verificaValor($event, 100, 'txtTaxaAtualRefeicao')" id="txtTaxaAtualRefeicao" class="hidden-xs form-control" value="0" style="height:60px; text-align:center; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
+                        <span class="input-group-addon">%</span>
                     </div>
                     
                     <br class="visible-xs">
@@ -685,16 +689,16 @@
                     </div>
                     
                     <div class="card2 cardBranco2 wow fadeInLeft">
-                        <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra2" style="font-size:1.5em;color:#0EDC16;margin-bottom:10px">attach_money</i>
+                        <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra2" style="font-size:1.5em;color:#0EDC16;margin-bottom:10px;margin-top:15%;">attach_money</i>
                         <span class="opacidade">Você irá economizar:</span>
                         <br>
                         <br>
                         <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual | number:0}} </span> / ano</span>
                         <br>
                         <br>
-                        <span class="cifrao">economia com contador:  <span class="">{{valorDescontoAnual | number:0}} </span> / ano</span>
+                        <span class="cifrao">economia com contador:  <span class="">{{valorDescontoAnualContabilidade | number:0}} </span> / ano</span>
                          <br>
-                        <span class="cifrao">economia com vale refeição:  <span class="">{{valorDescontoAnual | number:0}} </span> / ano</span>
+                        <span class="cifrao">economia com vale refeição:  <span class="">{{valorDescontoAnualVR | number:0}} </span> / ano</span>
                     </div>
                     
                     <div class="card2 cardBranco2 wow fadeInLeft" data-wow-delay="0.2s">
@@ -1019,7 +1023,7 @@
     <script src="/contabilidade-comercio/js/main.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
-    <script type="text/javascript" src="/assets/js/calculadora-mista.js"></script>
+    <script type="text/javascript" src="/assets/js/calculadora-mista-vr.js"></script>
     <script src="/assets/js/typeahead.bundle.min.js"></script>
     <script type="text/javascript" src="/assets/js/angular-locale_pt-br.js"></script>
 
@@ -1041,13 +1045,6 @@
     <script type="text/javascript" src="/assets/js/app.js"></script>
     <script type="text/javascript" src="/assets/js/cadastro-migracao-mista-post.js"></script>
     
-    <!-- script para calculadora vr-->
-<!--    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
-	<script type="text/javascript" src="/vr/jquery.masks.js"></script>
-	<script type="text/javascript" src="/vr/calculadora-vr.js"></script>
-
-
-
     <!--    <script async type="text/javascript" src="/assets/js/botao-ajuda.js"></script>-->
 
     <script src="/assets/js/wow.min.js"></script>

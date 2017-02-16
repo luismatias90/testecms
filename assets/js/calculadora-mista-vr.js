@@ -23,7 +23,7 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
         
         
         $scope.qtdSocios = 1;
-        $scope.qtdFuncionarios = 0;
+        $scope.qtdFuncionarios = 5;
         $scope.simples = true;
         $scope.ltFaturamento = [
 	    "até R$25.000/mês",
@@ -36,8 +36,12 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
         $scope.indice = 0;
         $scope.valorContadorAtual = 490;
         $scope.valorDescontoAnual = 0;
+        $scope.valorDescontoAnualContabilidade = 0;
+        $scope.valorDescontoAnualVR = 0;
         $scope.valorMensalidade = 0;
         $scope.qtdMesesContabilizei = 10;
+        $scope.valorFacial = 350;
+        $scope.taxa = 2;
 
         $scope.valorAdicionalSocios = 0;
         $scope.valorAdicionalFuncionarios = 0;
@@ -95,16 +99,33 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
             }
 
             $scope.valorMensalidade = valores[$scope.indice];
+            
+            var economiaMes = 0;
+            
+            if ($scope.valorFacial >= 180) {
+                var totalSemTaxaRefeicao = 0;
+                var custototalRefeicao = 0;
+                custototalRefeicao = $scope.qtdFuncionarios * $scope.valorFacial;
+                totalSemTaxaRefeicao = custototalRefeicao;
+                custototalRefeicao *= 1 + ($scope.taxa / 100);
 
-            $scope.valorDescontoAnual =
-                (
-                    (12 * $scope.valorContadorAtual)
+                var descontoRefeicao = $scope.qtdFuncionarios > 4 ? -1.2 : 1;
 
+                var custoTotalVRRefeicao;
+                if (descontoRefeicao < 0) {
+                    custoTotalVRRefeicao = totalSemTaxaRefeicao * (1 + (descontoRefeicao / 100));
+                } else {
+                    custoTotalVRRefeicao = totalSemTaxaRefeicao + descontoRefeicao;
+                }
 
-                ) -
-                (
-                    (12 * $scope.valorMensalidade) + (12 * $scope.valorAdicionalSocios) + (12 * $scope.valorAdicionalFuncionarios)
-                )
+                economiaMes = custototalRefeicao - custoTotalVRRefeicao;
+            }
+            
+            $scope.valorDescontoAnualVR = economiaMes * 12;
+            
+            $scope.valorDescontoAnualContabilidade = ((12 * $scope.valorContadorAtual)) - ((12 * $scope.valorMensalidade) + (12 * $scope.valorAdicionalSocios) + (12 * $scope.valorAdicionalFuncionarios));
+
+            $scope.valorDescontoAnual = $scope.valorDescontoAnualContabilidade + $scope.valorDescontoAnualVR;
 
             if ($scope.valorDescontoAnual < 0) {
                 $scope.valorDescontoAnual = 0;
@@ -125,6 +146,12 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
         $scope.$watch("qtdFuncionarios", function () {
             $scope.calculaValor();
         });
+        $scope.$watch("valorFacial", function () {
+            $scope.calculaValor();
+        });
+        $scope.$watch("taxa", function () {
+            $scope.calculaValor();
+        });
         $scope.$watch("simples", function () {
             $scope.calculaValor();
         });
@@ -141,7 +168,7 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
 
     function setDadosCalculadoraComercio() {
         $scope.qtdSocios = 1;
-        $scope.qtdFuncionarios = 0;
+        $scope.qtdFuncionarios = 5;
         $scope.simples = true;
         $scope.ltFaturamento = [
         "até R$50.000/mês",
@@ -155,7 +182,11 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
         $scope.valorContadorAtual = 990;
         $scope.valorDescontoAnual = 0;
         $scope.valorMensalidade = 0;
+        $scope.valorDescontoAnualContabilidade = 0;
+        $scope.valorDescontoAnualVR = 0;
         $scope.qtdMesesContabilizei = 10;
+        $scope.valorFacial = 350;
+        $scope.taxa = 2;
 
         $scope.valorAdicionalSocios = 0;
         $scope.valorAdicionalFuncionarios = 0;
@@ -212,16 +243,32 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
             }
 
             $scope.valorMensalidade = valores[$scope.indice];
+            
+            var economiaMes = 0;
+            
+            if ($scope.valorFacial >= 180) {
+                var totalSemTaxaRefeicao = 0;
+                var custototalRefeicao = 0;
+                custototalRefeicao = $scope.qtdFuncionarios * $scope.valorFacial;
+                totalSemTaxaRefeicao = custototalRefeicao;
+                custototalRefeicao *= 1 + ($scope.taxa / 100);
 
-            $scope.valorDescontoAnual =
-                (
-                    (12 * $scope.valorContadorAtual)
+                var descontoRefeicao = $scope.qtdFuncionarios > 4 ? -1.2 : 1;
 
+                var custoTotalVRRefeicao;
+                if (descontoRefeicao < 0) {
+                    custoTotalVRRefeicao = totalSemTaxaRefeicao * (1 + (descontoRefeicao / 100));
+                } else {
+                    custoTotalVRRefeicao = totalSemTaxaRefeicao + descontoRefeicao;
+                }
 
-                ) -
-                (
-                    (12 * $scope.valorMensalidade) + (12 * $scope.valorAdicionalSocios) + (12 * $scope.valorAdicionalFuncionarios)
-                )
+                economiaMes = custototalRefeicao - custoTotalVRRefeicao;
+            }
+            $scope.valorDescontoAnualVR = economiaMes * 12;
+
+            $scope.valorDescontoAnualContabilidade = ((12 * $scope.valorContadorAtual)) - ((12 * $scope.valorMensalidade) + (12 * $scope.valorAdicionalSocios) + (12 * $scope.valorAdicionalFuncionarios));
+            
+            $scope.valorDescontoAnual = $scope.valorDescontoAnualContabilidade + $scope.valorDescontoAnualVR;
 
             if ($scope.valorDescontoAnual < 0) {
                 $scope.valorDescontoAnual = 0;
@@ -242,6 +289,12 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
         $scope.$watch("qtdFuncionarios", function () {
             $scope.calculaValor();
         });
+        $scope.$watch("valorFacial", function () {
+            $scope.calculaValor();
+        });
+        $scope.$watch("taxa", function () {
+            $scope.calculaValor();
+        });
         $scope.$watch("comercio", function () {
             $scope.calculaValor();
         });
@@ -251,6 +304,10 @@ SimuladorApp.controller('SimuladorMistoController', ['$scope', '$timeout', funct
         $scope.$watch("valorContadorAtual", function () {
             $scope.calculaValor();
         });
+        $scope.$watch("valorEconomiaVR", function () {
+            $scope.calculaValor();
+        });
+
     }
 
 }]);
