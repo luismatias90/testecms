@@ -627,16 +627,13 @@
                         <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios"  class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; font-weight:700">
 
                     </div>
-                    <p class="text-center" style="padding-top:15px;">Valor facial</p>
+                    <p class="text-center" style="padding-top:15px;">Quanto você paga de Vale Refeição por funcionário?</p>
 <input type="hidden" ng-model="valorEconomiaVR" id="valorEconomiaVR" value="0">
                     <div class="input-group">
-                       
-                       
-
 
                        <input type="text" id="txtValorFacialRefeicao" value="35000" ng-model="valorFacial" class="form-control" style="height:60px; text-align:center; font-size:2em; font-weight:700" onchange="validarValorFacialRefeicao();" /> 
                     </div>
-                    <p class="text-center" style="padding-top:15px;">Taxa atual</p>
+                    <p class="text-center" style="padding-top:15px;">Qual a taxa administrativa de Vale Refeição cobrada pelo seu fornecedor?</p>
 
                     <div class="input-group">
                         <input type="text" id="txtTaxaAtualRefeicao" value="200" class="form-control" ng-model="taxa" style="height:60px; text-align:center; font-size:2em; font-weight:700"  />
@@ -693,6 +690,11 @@
                         <br>
                         <br>
                         <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual | number:0}} </span> / ano</span>
+                        <br>
+                        <br>
+                        <span class="cifrao">economia com contador:  <span class="">{{valorDescontoAnual | number:0}} </span> / ano</span>
+                         <br>
+                        <span class="cifrao">economia com vale refeição:  <span class="">{{valorDescontoAnual | number:0}} </span> / ano</span>
                     </div>
                     
                     <div class="card2 cardBranco2 wow fadeInLeft" data-wow-delay="0.2s">
