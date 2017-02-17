@@ -145,7 +145,7 @@ h4{padding:15px 0 5px 0px;font-size:22px;line-height:1.5em;}
 }
 @media (min-width:1500px){.logo{margin-left:200px;}
 }
-@media (min-width:1800px){.logo{margin-left:400px;}
+@media (min-width:1800px){.logo{margin-left:370px;}
 }
 @media (max-width:768px){.navbar-collapse.in{overflow-y:visible;box-shadow:0 6px 12px rgba(0,0,0,.175);}
 .modal-dialog{width:100%;padding-right:17px;}
