@@ -161,6 +161,7 @@ $(document).ready(function () {
             Intercom('boot', {
                 app_id: 'co2eot0g',
                 email: document.getElementById('emailInteresse').value,
+                "email_antigo": document.getElementById('emailAntigo').value,
                 name: document.getElementById('nomeCompletoInteresse').value,
                 "operador": document.getElementById('cmbOperadorInteresse').value,
                 "origemCadastro": "callcenter"
@@ -169,6 +170,7 @@ $(document).ready(function () {
             document.getElementById('emailInteresse').value='';
             document.getElementById('nomeCompletoInteresse').value='';
             document.getElementById('cmbOperadorInteresse').value='';
+            document.getElementById('emailAntigo').value='';
         }
     });
 
