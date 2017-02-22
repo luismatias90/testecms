@@ -911,3 +911,6 @@ h4 {
     background-position: center;
     margin-top: 40px;
 }
+body > nav > div > div.navbar-header > a > img.logo{
+    width: 170px!important;
+}
