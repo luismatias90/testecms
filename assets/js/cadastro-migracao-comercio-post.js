@@ -105,9 +105,6 @@ $(document).ready(function () {
             if (origemGenerica != null) {
                 input.value = origemGenerica.value;
             }
-            try {
-                console.info('Iniciando cadastro Contabilizei com origem: ', input.value);
-            } catch (e) {}
 
             form.appendChild(input);
 

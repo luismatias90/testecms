@@ -92,6 +92,11 @@ $(document).ready(function () {
             } else {
                 input.value = "Incapaz de acessar informação fonte origem";
             }
+            
+            var origemGenerica = document.getElementById('origemGenerica');
+            if (origemGenerica != null) {
+                input.value = origemGenerica.value;
+            }
 
             form.appendChild(input);
 
