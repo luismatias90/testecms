@@ -104,7 +104,7 @@ $(document).ready(function () {
                 var input = document.createElement('input');
                 input.type = 'hidden';
                 input.name = "processo";
-                input.value = "migracaoservico";
+                input.value = "servico";
                 form.appendChild(input);
             }
 
