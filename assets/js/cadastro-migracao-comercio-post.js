@@ -100,7 +100,7 @@ $(document).ready(function () {
             } else {
                 input.value = "Incapaz de acessar informação fonte origem";
             }
-            
+
             var origemGenerica = document.getElementById('origemGenerica');
             if (origemGenerica != null) {
                 input.value = origemGenerica.value;
@@ -114,6 +114,15 @@ $(document).ready(function () {
                 input.type = 'hidden';
                 input.name = "refindicacao";
                 input.value = refIndicacao;
+                form.appendChild(input);
+            }
+
+            var primeiroAcessoPeloFreemium = $.cookie('primeiroAcessoPeloFreemium');
+            if (primeiroAcessoPeloFreemium) {
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = "primeiroAcessoPeloFreemium";
+                input.value = primeiroAcessoPeloFreemium;
                 form.appendChild(input);
             }
 

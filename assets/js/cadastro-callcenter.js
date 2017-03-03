@@ -43,7 +43,7 @@ $(document).ready(function () {
             "senha": {
                 required: true
             },
-            "operador":{
+            "operador": {
                 required: true
             }
         },
@@ -124,10 +124,19 @@ $(document).ready(function () {
                 form.appendChild(input);
             }
 
+            var primeiroAcessoPeloFreemium = $.cookie('primeiroAcessoPeloFreemium');
+            if (primeiroAcessoPeloFreemium) {
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = "primeiroAcessoPeloFreemium";
+                input.value = primeiroAcessoPeloFreemium;
+                form.appendChild(input);
+            }
+
             return true;
         }
     });
-    
+
     $('#form-interesse').validate({
         rules: {
             "nomeCompleto": {
@@ -167,10 +176,10 @@ $(document).ready(function () {
                 "origemCadastro": "callcenter"
             });
             alert('Cliente cadastrado com sucesso!');
-            document.getElementById('emailInteresse').value='';
-            document.getElementById('nomeCompletoInteresse').value='';
-            document.getElementById('cmbOperadorInteresse').value='';
-            document.getElementById('emailAntigo').value='';
+            document.getElementById('emailInteresse').value = '';
+            document.getElementById('nomeCompletoInteresse').value = '';
+            document.getElementById('cmbOperadorInteresse').value = '';
+            document.getElementById('emailAntigo').value = '';
         }
     });
 

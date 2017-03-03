@@ -108,6 +108,15 @@ $(document).ready(function () {
                 form.appendChild(input);
             }
 
+            var primeiroAcessoPeloFreemium = $.cookie('primeiroAcessoPeloFreemium');
+            if (primeiroAcessoPeloFreemium) {
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = "primeiroAcessoPeloFreemium";
+                input.value = primeiroAcessoPeloFreemium;
+                form.appendChild(input);
+            }
+
             return true;
         }
     });
