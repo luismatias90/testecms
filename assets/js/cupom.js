@@ -57,7 +57,7 @@
 		// Armazena em cookie apenas se a indicação for válida
 		// ---------------------------
 							$.cookie('ctblz-ref', ref, {
-								expires : 7,
+								expires : 60,
 								path : '/'
 							});
 
