@@ -538,7 +538,7 @@
                     </li>
                     <li class="cadastre animated fadeIn hidden-xs hidden-sm">
                         <a href="#migre" class="linkBotao2">
-                            <button onclick="mudarEstado('email')" class="accent menorzin">Vamos começar?</button>
+                            <button onclick="mudarEstado('')" class="accent menorzin">Vamos começar?</button>
                         </a>
                     </li>
                 </ul>
@@ -929,7 +929,7 @@
                         <p class="" style="padding:5px">Para quem tem
                             <br> até R$50 mil / mês de faturamento</p>
                         <a href="#migre">
-                            <button class="accent" onclick="mudarEstado('email')">Escolher
+                            <button class="accent" onclick="mudarEstado('Plano 1')">Escolher
                             </button>
                         </a>
                     </li>
@@ -957,7 +957,7 @@
                         <p class="" style="padding:5px">Para quem tem
                             <br> até R$100 mil / mês de faturamento</p>
                         <a href="#migre">
-                            <button class="accent" onclick="mudarEstado('email')">Escolher
+                            <button class="accent" onclick="mudarEstado('Plano 2')">Escolher
                             </button>
                         </a>
                     </li>
@@ -989,7 +989,7 @@
                         <h3 class="text-center azul" style="font-weight:600;">Plano 3</h3>
                         <p class="" style="padding:5px;min-height:70px;">Para quem possui funcionário e precisa de suporte para crescer rápido</p>
                         <a href="#migre">
-                            <button class="accent" onclick="mudarEstado('email')">Escolher
+                            <button class="accent" onclick="mudarEstado('Plano 3')">Escolher
                             </button>
                         </a>
                     </li>
@@ -1019,7 +1019,7 @@
                         <h3 class="text-center azul" style="font-weight:600;">Plano 4</h3>
                         <p style="padding:5px;">Para quem já possui uma pequena equipe e quer o máximo de eficiência</p>
                         <a href="#migre">
-                            <button class="accent" onclick="mudarEstado('email')">Escolher
+                            <button class="accent" onclick="mudarEstado('Plano 4')">Escolher
                             </button>
                         </a>
                     </li>
@@ -1055,23 +1055,19 @@
                 </script>
             </div>
             <script>
-                function mudarEstado(el) {
-                    //              if (el == 'email') {
-                    //                    document.getElementById("telefone").style.display = 'none';
-                    //                  }
-                    //
-                    //                if (el == 'telefone') {
-                    //                      document.getElementById("email").style.display = 'none';
-                    //                    }
-
-                    //    document.getElementById(el).style.display = 'block';
-
-                    var display = document.getElementById(el).style.display;
-                    if (display == "none")
-                        document.getElementById(el).style.display = 'block';
-                    else
-                        document.getElementById(el).style.display = 'block';
+                function mudarEstado(el) {               
+                    
+                    var display = document.getElementById('email').style.display;
+                    if (display == "none"){
+                        document.getElementById('email').style.display = 'block';
+                    }
+                    else{
+                        document.getElementById('email').style.display = 'block';
+                    }
+                    document.getElementById("custom_fields_128018").value=el;
                 }
+                
+
             </script>
 
         </div>
