@@ -599,7 +599,7 @@ blockquote {
 
 @media (max-width:1399px) {
     .comercio {
-        padding: 180px 0 180px 0;
+        padding: 180px 0 80px 0;
         background: url('/contabilidade-comercio/bg-com.jpg') no-repeat;
         background-size: cover;
         border-bottom: 2px solid #d0d0d0;
@@ -608,7 +608,7 @@ blockquote {
 
 @media (min-width: 1400px) {
     .comercio {
-        padding: 200px 0 200px 0;
+        padding: 200px 0 100px 0;
         background: url('/contabilidade-comercio/bg-com.jpg') no-repeat;
         background-size: cover;
         border-bottom: 2px solid #d0d0d0;
