@@ -289,7 +289,7 @@
                     <button class="accent">Saiba mais
                     </button>
                 </a>
-                <a class="visible-xs" href="#valor">
+                <a class="visible-xs" href="#preco">
                     <button class="accent">Ver preço
                     </button>
                 </a>
@@ -368,15 +368,166 @@
             </div>
         </div>
     </div>
+        
+    <section id="preco"></section>
 
+    <div class="simule" ng-controller="SimuladorController">
 
-
-
-    <!--NOVO TEMPLATE PRICE -->
-
-    <div class="features bg-branco hidden-xs" style="padding-bottom:0px">
         <div class="container">
-            <h2 class="primary">Modernizar sua contabilidade nunca foi tão fácil. <br>Conheça os passos:</h2>
+            <div class="row">
+
+
+                <div class="col-lg-8 col-lg-offset-3 col-md-10 col-md-offset-1">
+
+                    <h2 class="branco text-left hidden-xs">Serviço feito para você economizar e sua empresa ficar regularizada</h2>
+
+                    <h2 class="branco text-center visible-xs">Serviço feito para você economizar e sua empresa ficar regularizada</h2>
+
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="calculadora col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6">
+
+                    <!-- Tab panes -->
+
+
+                    <br class="visible-xs">
+                    <p class="text-center" style="padding-top:30px">Quanto você paga de contabilidade por mês? <span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="font-size:0.9em; padding:0 5px; color:#0097F6;" data-toggle="tooltip" title="Valor baseado no salário mínimo de 2016."></span></p>
+
+
+
+                    <div class="input-group">
+
+                        <span class="input-group-addon">R$</span>
+                        <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="hidden-xs form-control" value="0" style="height:60px; text-align:left; padding-left:60px; font-size:2em; margin:0 auto; font-weight:700">
+
+
+                        <input type="number" ng-model="valorContadorAtual" min="0" max="4000" ng-keyUp="verificaValor($event, 4000, 'valorContadorAtual')" id="valorAtualCont" class="visible-xs form-control" value="0" style="height:60px; text-align:left; padding-left:85px; font-size:2em; margin:0 auto; font-weight:700">
+
+
+                    </div>
+
+                    <br class="visible-xs">
+                    <p class="text-center" style="padding-top:15px;">Quantos funcionários?</p>
+
+                    <div class="input-group">
+
+                        <input type="number" ng-keyUp="verificaValor($event, 10, 'qtdFuncionarios')" ng-model="qtdFuncionarios" min="0" max="10" id="valor-funcionarios" class="form-control" value="0" style="height:60px; text-align:center; font-size:2em; font-weight:700">
+
+                    </div>
+                    <br class="visible-xs">
+                    <p class="text-center" style="padding-top:20px;">Qual o faturamento mensal?
+                        <br>
+                    </p>
+
+                    <div class="input-group">
+
+                        <div class="dropdownz">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="width:100%; text-align:center; font-size:1.2em; line-height:2.5em; font-weight:700">
+                                {{ltFaturamento[indice]}}&nbsp;&nbsp;
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="width:100%; text-align:center; font-size:1em; font-weight:700">
+                                <li ng-repeat="item in ltFaturamento"><a href ng-click="atualizaFaturamento($index)">{{item}}</a></li>
+                            </ul>
+                            <br class="visible-sm">
+                            <br class="visible-sm">
+                        </div>
+                        <br class="visible-lg visible-md">
+                    </div>
+                       <br class="visible-xs">
+                        <p class="opacidade" style="text-align:center;">*Valores da mensalidade válidos para empresas enquadradas no Simples Nacional.</p>
+
+                </div>
+                <!--
+                        <div class="col-lg-1 hidden-sm hidden-xs hidden-md" style="font-size: 3em;color: #fff; padding-top:47px; opacity:0.5">
+                            <br>
+                            
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </div>
+-->
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs" style="width:5%;"></div>
+                <div class="calculadoraSimule col-lg-4 col-md-5 col-sm-5 col-xs-12 text-center" data-wow-delay="0.2s">
+                    <br class="visible-xs">
+                    <br class="visible-xs">
+
+                    <!--
+                            Com <strong>{{qtdSocios}} {{ (qtdSocios == 0 || qtdSocios > 1) ? "sócios" : "sócio" }}</strong>, <strong>{{qtdFuncionarios}} {{ (qtdFuncionarios == 0 || qtdFuncionarios > 1) ? "funcionários" : "funcionário" }}</strong>, dentro do enquadramento <strong>{{simples ? "Simples Nacional" : "Lucro Presumido"}}</strong>, com faturamento <strong>{{ltFaturamento[indice]}}</strong>,
+                            <br>
+
+                            <br>-->
+                    <div class="card2 cardBranco2 wow fadeInLeft">
+                        <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra2" style="font-size:1.5em;color:#2196F3;margin-bottom:10px">thumb_up</i>
+                        <span class="opacidade">Sua mensalidade será:</span>
+                        <br>
+                        <span class="cifrao">R$ </span> <span class="valor mensalidade">{{ valorMensalidade + valorAdicionalSocios + valorAdicionalFuncionarios }}</span> / mês</div>
+
+                    <div class="card2 cardBranco2 wow fadeInLeft" data-wow-delay="0.6s" style="margin-bottom:10px;">
+                        <i class="hidden-xs hidden-sm material-icons img-responsive pull-left imgSombra2" style="font-size:1.5em;color:#0EDC16;margin-bottom:10px">attach_money</i>
+                        <span style="font-weight:300;" class="opacidade">O que você economiza em um ano:</span>
+                        <br>
+                        <br>
+                        <span class="cifrao">R$  <span class="valor economia">{{valorDescontoAnual | number:0}} </span> / ano</span>
+                    </div>
+                       
+                        <!-- SELO DE 13° --> 
+                    <!--<div class="wow fadeInLeft animated text-center animated" style="margin: 20px 0px; visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;" data-wow-delay="0.6s">
+                                <img class="img-responsive" style="margin:10px auto;" width="50px" src="/assets/img/selo-13.png" alt="CRC">
+                                <h3 class="text-center" style="margin-bottom:20px;font-weight:500;opacity:1;color:#fff">Não cobramos 13°</h3>
+                    </div>-->
+
+                    <br>
+                    <a href="#migre" class="hidden-md hidden-xs">
+                        <button class="accent big" style="font-size:1.4em; width:100%;margin:0">Comece seu cadastro</button>
+                    </a>
+                    <a href="#migre" class="visible-md">
+                        <button class="accent big" style="font-size:1.4em; padding:12px 30px;margin:0">Comece seu cadastro</button>
+                    </a>
+
+
+                    <div class="container visible-xs">
+                        <a href="#migre">
+                            <button class="accent big" style="font-size:1.4em">Comece seu cadastro</button>
+                        </a>
+                    </div>
+
+                    <br>
+                    <br><span class="opacidade" style="color:#fff">Não precisamos de nenhuma informação do seu contador atual para o cadastro.</span>
+                </div>
+
+            </div>
+            <!--
+                    <div class="row text-center">
+                        <br>
+                        <br class="hidden-xs hidden-sm"><small><p style="padding:5px 15px; font-size:1em;"><span style="color:#B7DEFF">Valor da economia calculado considerando a pesquisa interna  com clientes <br class="visible-sm">sobre o custo do serviço de contabilidade anterior (R$440/mês).</span></p></small>
+                    </div>
+-->
+            <br class="hidden-xs">
+            <br class="hidden-xs">
+            <br class="hidden-xs">
+            <br class="hidden-xs">
+            <section id="migre"></section>
+        </div>
+
+
+    </div>
+         
+        <div id="info-mobile" class="visible-xs features bg-branco text-center">
+          <div class="container">
+           <h3 class="azul">Cadastre-se sem compromisso para receber mais informações</h3>
+            <div id="comercio-mobile-ce08abfada87009bf883"></div>
+            <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+            <script type="text/javascript">
+            new RDStationForms('comercio-mobile-ce08abfada87009bf883-html', 'UA-43025829-1').createForm();
+            </script>
+            </div>
+        </div>
+
+         <div class="features bg-branco hidden-xs">
+            <div class="container">
+               <h2 class="primary">Modernizar sua contabilidade nunca foi tão fácil. <br>Conheça os passos:</h2>
 
             <div class="col-md-9 col-md-offset-2 col-lg-9 col-lg-offset-2 col-sm-9 col-sm-offset-2" style="margin-top:40px">
                 <div class="bolinhaAzul wow animated fadeInDown">
@@ -399,7 +550,7 @@
                 </div>
             </div>
 
-            <div class="col-md-2 col-lg-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" style="margin-bottom:60px">
+            <div class="col-md-2 col-lg-2 col-sm-2 col-lg-offset-1 col-md-offset-1 col-sm-offset-1" style="margin-bottom:20px">
                 <p style="margin-left:57px" class="text-center">Realize o cadastro sem compromisso</p>
             </div>
             <div class="col-md-2 col-lg-2 col-sm-2" style="margin-left:50px">
@@ -412,177 +563,7 @@
                 <p class="text-center">Com os nossos contadores, configure sua conta e defina o mês de início</p>
             </div>
             <br>
-            <br>
-        </div>
-    </div>
-    <div class="features bg-branco">
-        <div class="container">
-            <h2 class="primary" style="margin-bottom:0px;"> Serviço feito para você economizar e sua empresa ficar regularizada</h2>
-        </div>
-            <div id="valor" class="features bg-branco visible-xs">
-            <div class="container">
-                
-                    <div class="card cardBranco wow fadeInLeft animated text-center" style="margin:10px;padding:0 0 15px 0">
-                            <br>
-                            <span class="cifrao">R$  <span class="valor economia ng-binding">149</span>/ mês</span>
-                            <p><b>0</b> funcionários</p>
-                            <p><b>Até R$100 mil/mês</b> de faturamento</p>
-                    </div>
-                    <div class="card cardBranco wow fadeInLeft animated text-center" style="margin:10px;padding:0 0 15px 0">
-                            <br>
-                            <span class="cifrao">R$  <span class="valor economia ng-binding">199</span>/ mês</span>
-                            <p><b>1</b> funcionário</p>
-                            <p><b>Até R$100 mil/mês</b> de faturamento</p>
-                    </div>
-                    <div class="card cardBranco wow fadeInLeft animated text-center" style="margin:10px;padding:0 0 15px 0">
-                            <br>
-                            <span class="cifrao">R$  <span class="valor economia ng-binding">399</span>/ mês</span>
-                            <p><b>5</b> funcionários</p>
-                            <p><b>Até R$200 mil/mês</b> de faturamento</p>
-                    </div>
-                       <br>
-
-                <div class="z-padding text-center" style="margin-top:10px;">
-                    <a href="#info-mobile">
-                        <button class="accent">Receber mais informações
-                        </button>
-                    </a>
-                    <br>
-                    <br>
-                    <p class="opacidade">*Valores da mensalidade válidos para empresas enquadradas no Simples Nacional.</p>
-                </div>
-            </div>
-        </div>
-        <div id="info-mobile" class="visible-xs">
-            <div id="comercio-mobile-ce08abfada87009bf883"></div>
-            <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
-            <script type="text/javascript">
-            new RDStationForms('comercio-mobile-ce08abfada87009bf883-html', 'UA-43025829-1').createForm();
-            </script>
-        </div>
-
-        <div id="preco" class="features bg-branco hidden-xs">
-            <div class="container">
-                <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2 hidden-xs hidden-sm">
-                    <ul class="tabela-pricing opacidade">
-                        <li class="planos" style="height:110px;list-style:none;"></li>
-                        <li class="planos">
-                            <p class="right">Funcionários</p>
-                        </li>
-                        <li class="planos">
-                            <p class="right">Faturamento</p>
-                        </li>
-                        <li class="planos">
-                            <p class="right">At. via Chat e E-mail</p>
-                        </li>
-                        <li class="planos">
-                            <p class="right">Notas Fiscais Vendas</p>
-                        </li>
-                        <li class="planos">
-                            <p class="right">Notas Fiscais de Compra</p>
-                        </li>
-                        <li class="planos">
-                            <p class="right">Lançamentos</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 col-sm-4 z-padding">
-                    <ul class="tabela-pricing borda" style="border-right:none;">
-                        <li class="planos" style="list-style:none;border-right:1px solid #d9e5ec;">
-                            <span class="cifrao">R$  <span class="valor economia ng-binding">149</span>/ mês</span>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Funcionários</b></p>0</li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Faturamento</b></p>Até R$100 mil/mês</li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>At. via Chat e E-mail</b><br>Respostas em até 2 horas comerciais </p>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Notas Fiscais Vendas</b><br>ILIMITADO</p>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Notas Fiscais de Compra</b><br>ILIMITADO</p>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Lançamentos</b><br>ILIMITADO</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <br class="visible-xs">
-                <br class="visible-xs">
-                <br class="visible-xs">
-
-                <div class="col-md-2 col-sm-4 z-padding">
-                    <ul class="tabela-pricing borda" style="border-left:none;border-right:none;">
-                        <li class="planos" style="list-style:none;border-right:1px solid #d9e5ec;">
-                            <span class="cifrao">R$  <span class="valor economia ng-binding">199</span>/ mês</span>
-
-                        </li>
-                        <li class="planos borda-top">
-                            <p class="visible-xs visible-sm"><b>Funcionários</b></p>Até 1</li>
-                        <li class="planos borda-top">
-                            <p class="visible-xs visible-sm"><b>Faturamento</b></p>Até R$100 mil/mês</li>
-                        <li class="planos planos2 borda-top2">
-                            <p class="visible-xs visible-sm"><b>At. via Chat e E-mail</b><br>Respostas em até 2 horas comerciais </p><b class="hidden-xs hidden-sm">Respostas em até 2 horas comerciais </b>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Notas Fiscais Vendas</b><br>ILIMITADO</p><b class="hidden-xs hidden-sm">ILIMITADO</b>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Notas Fiscais de Compra</b><br>ILIMITADO</p><b class="hidden-xs hidden-sm">ILIMITADO</b>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Lançamentos</b><br>ILIMITADO</p><b class="hidden-xs hidden-sm">ILIMITADO</b>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="col-md-2 col-sm-4 z-padding">
-                    <ul class="tabela-pricing borda" style="border-left:none;">
-                        <li class="planos" style="list-style:none;">
-                            <span class="cifrao">R$  <span class="valor economia ng-binding">399</span>/ mês</span>
-                        </li>
-                        <li class="planos borda-top">
-                            <p class="visible-xs visible-sm"><b>Funcionários</b></p>Até 5</li>
-                        <li class="planos borda-top">
-                            <p class="visible-xs visible-sm"><b>Faturamento</b></p>Até R$200 mil/mês</li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>At. via Chat e E-mail</b><br>Respostas em até 2 horas comerciais </p>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Notas Fiscais Vendas</b><br>ILIMITADO</p>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Notas Fiscais Vendas</b><br>ILIMITADO</p>
-                        </li>
-                        <li class="planos borda-top2">
-                            <p class="visible-xs visible-sm"><b>Notas Fiscais Vendas</b><br>ILIMITADO</p>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div class="col-md-6 col-md-offset-4 col-sm-10 col-sm-offset-1 z-padding text-center" style="margin-top:10px;">
-                    <a href="#migre">
-                        <button class="accent">Iniciar cadastro sem compromisso
-                        </button>
-                    </a>
-                    <br>
-                    <br>
-                    <p class="opacidade">*Valores da mensalidade válidos para empresas enquadradas no Simples Nacional.</p>
-                </div>
-            </div>
-        </div>
-         <div class="features bg-branco hidden-xs">
-            <div class="container">
-                <div id="email" class="col-md-6 col-md-offset-4 col-lg-6 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-12 wow animated fadeIn">
+                <div id="email" class="col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 wow animated fadeIn">
                     <section id="migre"></section>
                     <div id="comercio-dd137b1a3fdbf278f769" style="margin-top:60px;"></div>
                     <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
@@ -910,68 +891,6 @@
 
 
     </div>
-
-
-    <style>
-        .tabela-pricing {
-            list-style: none;
-            padding: 0!important;
-        }
-        
-        .right {
-            text-align: right;
-            margin-bottom: 0;
-        }
-        
-        .planos {
-            padding: 16px 0;
-            text-align: center;
-            opacity: 0.8;
-            border-top: 1px solid white;
-            min-height: 55px;
-        }
-        
-        .borda {
-            border: 1px solid #d9e5ec;
-        }
-        
-        .borda-top {
-            border-top: 1px solid #d9e5ec;
-            border-left: 1px solid #d9e5ec;
-        }
-        
-        .borda-right {
-            border-right: 1px solid #d9e5ec;
-        }
-        
-        .borda-top2 {
-            border-top: 1px solid #d9e5ec;
-            border-left: none;
-        }
-        
-        .z-padding {
-            padding-left: 0;
-            padding-right: 0;
-        }
-        
-        .mensalidade {
-            background: #0869AB;
-            color: white;
-            font-weight: bold;
-        }
-         .valor {
-            font-size: 5em;
-            font-weight: 400;
-            vertical-align: middle;
-            line-height: 1.1em;
-        }
-        @media(min-width:1100px){
-            .planos2{
-               width: 275px!important;
-                margin-left: -40px;
-            }
-        }
-    </style>
 
     <!-- Perguntas Frequentes -->
     <section id="perguntas">

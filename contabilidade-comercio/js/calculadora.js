@@ -7,15 +7,12 @@ SimuladorApp.controller('SimuladorController', ['$scope', function($scope) {
     $scope.simples = true;
     $scope.comercio = true;
     $scope.ltFaturamento = [
-        "até R$50.000/mês",
-        "de R$50.000 até R$100.000/mês",
-        "de R$100.000 até R$150.000/mês",
-        "de R$150.000 até R$200.000/mês",
-        "de R$200.000 até R$250.000/mês",
-        "acima de R$250.000/mês" ];
+        "até R$100.000/mês",
+        "de R$100.000/mês até R$150.000/mês",
+        "acima de R$150.000/mês" ];
     
     $scope.indice = 0;
-    $scope.valorContadorAtual = 990;
+    $scope.valorContadorAtual = 937;
     $scope.valorDescontoAnual = 0;
     $scope.valorMensalidade = 0;
     $scope.qtdMesesContabilizei = 10;
@@ -64,14 +61,12 @@ SimuladorApp.controller('SimuladorController', ['$scope', function($scope) {
 
         if ($scope.qtdFuncionarios > 0) {
             for (i = 0; i < $scope.qtdFuncionarios; i++) {
-                $scope.valorAdicionalFuncionarios = $scope.valorAdicionalFuncionarios + 29;
+                $scope.valorAdicionalFuncionarios = $scope.valorAdicionalFuncionarios + 49;
             }
         }
         
         if ($scope.comercio) {
-            var valores = [99, 198, 495, 693, 891, 1089];
-        } else {
-            var valores = [129, 258, 645, 903, 1161, 1419];
+            var valores = [149, 249, 349];
         }
         
         $scope.valorMensalidade = valores[$scope.indice];
