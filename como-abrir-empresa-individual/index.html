@@ -1217,15 +1217,37 @@ Veja como funciona abaixo.</p><br class="hidden-xs">
         <script src="//my.hellobar.com/35f2e648daf45626e1931ec3683e451016af0994.js" type="text/javascript" charset="utf-8" async="async"></script>
         
 		<script type="text/javascript" async="true" src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/40bbe6d9-bf4c-4139-8258-af4a415c65d7-loader.js"></script>
-        <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/integration/beta/rd-js-integration.min.js"></script>
+
+        <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"></script>
         <script type="text/javascript">
-            var meus_campos = {
+          var meus_campos = {
             "nomeCompleto": "nome",
-            }
-            options = {
-            elementSubmit: '#completa-abertura',
-            }
-            RdIntegration.integrate('191bb53cc7863a6d696d935b566c4339', 'FORM-ABERTURA-EMPRESA-INDIVIDUAL', options);
+          };
+
+          function sendToRd(event){
+            event.preventDefault();
+            var form = jQuery(event.target).closest('form');
+            var data_array = form.find(':input').serializeArray();//
+            jQuery.each(data_array, function(){
+              if(meus_campos[this.name]){
+                this.name = meus_campos[this.name];
+              }
+            });
+            data_array.push(
+              {name: "token_rdstation", value: '191bb53cc7863a6d696d935b566c4339'},
+              {name: 'identificador', value: 'FORM-ABERTURA-EMPRESA-INDIVIDUAL'}
+              );
+            //console.log(data_array);
+            RdIntegration.post(data_array, function(){
+              buttonForm.unbind('click', sendToRd).click();
+              buttonForm.bind('click', sendToRd);
+              return false;
+            });
+          }
+
+          var buttonForm = jQuery('#completa-abertura');
+          buttonForm.bind('click', sendToRd);
+
         </script>
         
         <script>
