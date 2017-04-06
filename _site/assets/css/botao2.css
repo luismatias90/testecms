@@ -1,0 +1,142 @@
+/* Etapa 1 */
+
+.botaoajuda {
+	z-index:9999999;
+	position:fixed;
+	bottom:11px;
+	right:38px;
+	width:115px;
+	height:46px;
+	background-color:#002f5c;
+	color:#fff !important;	
+	text-align:center;
+	border-radius:25px;
+}
+.botaoajuda:hover {
+	background-color:#00376b;
+	text-decoration:none !important;
+	color:#fff;
+}
+.botaoajuda:active {
+	text-decoration:none !important;
+	color:#fff;
+}
+.botaoajuda:focus {
+	text-decoration:none !important;
+	color:#fff;
+}
+.botaoajuda:visited {
+	text-decoration:none !important;
+}
+.botaoajuda p {
+	padding:8px 10px 10px 10px;
+	font-size:1.1em;
+	font-weight:600;
+	letter-spacing:0.6px;
+	color:#fff;
+}
+
+
+/* Etapa 2 */
+
+.geralajuda {
+	z-index:999999;
+	position:fixed;
+	bottom:11px;
+	right:38px;
+}
+.boxajuda {
+	background-color:#fff;
+	width:400px;
+	height:95px;
+	border:1px solid #d6d6d6;
+	border-radius:10px;
+	box-shadow:0 0 1em 0 rgba(0,0,0,0.2);
+	margin-bottom:75px;
+}
+.boxajuda input {
+	border:1px solid #e4e4e4;
+	padding:10px 20px;
+	border-radius:5px;
+	width:78%;
+	margin:6% 3%;
+}
+.boxajuda input:focus {
+	border:1px solid #c8c8c8;
+	outline: none;
+	box-shadow:none !important;
+}
+
+.help-search-ajuda {
+	cursor: pointer;
+}
+
+.boxajuda{
+	bottom: -25px;
+	position: absolute;
+	right: 0px;
+}
+
+.boxflecha {
+	position: absolute;
+	width: 0;
+	height: 0;
+	top:93px;
+	right:30px;
+	border: 10px solid;
+	border-color: #d6d6d6 transparent transparent transparent;
+}
+.boxx {
+	position:absolute;
+	bottom:0;
+	right:17px;
+	width:47px;
+	height:47px;
+	background-color:#8e8e8e;
+	color:#fff;	
+	text-align:center;
+	border-radius:50%;
+	color:#e8e8e8;
+}
+.boxx:hover {
+	text-decoration:none !important;
+	color:#fff;
+}
+.boxx:active {
+	text-decoration:none !important;
+	color:#fff;
+}
+.boxx:focus {
+	text-decoration:none !important;
+	color:#fff;
+}
+.boxx:visited {
+	text-decoration:none !important;
+}
+.boxx .iconbox {
+	padding:13px 5px 5px 5px;
+	font-size:1.5em;
+}
+
+@media (max-width: 500px) {
+	.botaoajuda {
+	right:23px;
+	bottom:33px;
+	}
+	.geralajuda {
+	width:87%;
+	margin:0 auto;
+	right:5%;
+	left:5%;
+	right:23px;
+	bottom:33px;
+	}
+	.boxajuda {
+	width:100%;
+	right:0;
+	}
+	.boxajuda input {
+	height:50%;
+	}
+	
+}

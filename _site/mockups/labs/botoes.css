@@ -1,0 +1,69 @@
+body {
+	background-color:#fafafa;
+	font-size:1.5em;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight:400;
+}
+
+.teste {
+	border-bottom:1px solid #e8e8e8;
+	background-color:#f1f1f1;
+	box-shadow:0 1px 0 0 #fff;
+}
+.teste .bg {
+	background-color:#0092dc;
+	padding:0 5px;
+}
+.teste ul {
+	list-style:none;
+	padding:12px 0 5px 0;
+}
+.glyphicon {
+	padding-right:10px;
+	font-size:0.7em;
+}
+button {
+	border:1px solid #ddd;
+	border-radius:6px;
+	padding:10px 20px;
+	background-color:#f2f2f2;
+	background-image:linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.1) 100%);
+	color:#888;
+	box-shadow:0px 2px 3px 0px rgba(0,0,0,.1);
+}
+button:hover {
+	background-color:rgba(255,255,255,0.2);
+	box-shadow:0px 2px 3px 0px rgba(0,0,0,.15);
+	color:#666;
+	text-shadow:0px 1px 1px rgba(255,255,255,.9);
+	border-color:#80d6ff;
+}
+button:active {
+	color:#888;
+	background-image:none;
+	transition:none;
+	box-shadow:none;
+}
+.segundo {
+	transition:all 0.15s ease;
+}
+.segundo:hover {
+	background-color:#80d6ff;
+}
+.terceiro:hover {
+	background-color:#aeffae;
+}
+.janela {
+	padding:10px 0;
+}
+.janela h2 {
+	color:#666;
+	text-shadow:0px 1px 1px rgba(255,255,255,.9);
+}
+.janela2 {
+	background-color:#fff;
+	height:300px;
+	border-radius:6px;
+	padding:30px 0;
+	border:1px solid #f1f1f1;
+}

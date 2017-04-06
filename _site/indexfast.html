@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+    * { box-sizing: border-box; }
+html { font-family: sans-serif; text-size-adjust: 100%; font-size: 10px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+body { background-color: rgb(255, 255, 255); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; font-size: 14px; overflow-x: hidden; margin: 0px; line-height: 1.42857; color: rgb(51, 51, 51); }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+.contabilizei { border: 0px; display: inline-block; vertical-align: middle; background: transparent; font-weight: 300; height: 70px; transition: 0.2s ease; }
+.navtopo { padding-top: 12px; }
+.navbar { position: relative; min-height: 50px; margin-bottom: 20px; border: 1px solid transparent; border-radius: 4px; }
+.navbar-fixed-top, .navbar-fixed-bottom { position: fixed; right: 0px; left: 0px; z-index: 1030; border-radius: 0px; }
+.navbar-fixed-top { top: 0px; border-width: 0px 0px 1px; }
+.navbar-default { background-color: rgb(248, 248, 248); border-color: rgb(231, 231, 231); }
+.container-fluid { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+.navbar-header { float: left; }
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse { margin-right: 0px; margin-left: 0px; }
+button, input, optgroup, select, textarea { margin: 0px; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; color: inherit; }
+button { overflow: visible; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
+.navbar-toggle { position: relative; float: right; padding: 9px 10px; margin-top: 8px; margin-right: 15px; margin-bottom: 8px; background-color: transparent; background-image: none; border: 1px solid transparent; border-radius: 4px; display: none; }
+.navbar-default .navbar-toggle { border-color: rgb(221, 221, 221); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px 0px 0px 0px); border: 0px; }
+.navbar-toggle .icon-bar { display: block; width: 22px; height: 2px; border-radius: 1px; }
+.navbar-default .navbar-toggle .icon-bar { background-color: rgb(136, 136, 136); }
+.navbar-toggle .icon-bar + .icon-bar { margin-top: 4px; }
+a { background-color: transparent; color: rgb(51, 122, 183); text-decoration: none; }
+.navbar-brand { padding: 15px; float: left; height: 50px; font-size: 18px; line-height: 20px; }
+.navbar-default .navbar-brand { color: rgb(119, 119, 119); }
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand { margin-left: -15px; }
+img { border: 0px; vertical-align: middle; }
+.logo { margin-left: 130px; }
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img { display: block; max-width: 100%; height: auto; }
+.navbar img { display: inline-block; vertical-align: middle; }
+.navbar-brand > img { display: block; }
+.visible-xs, .visible-sm, .visible-md, .visible-lg { display: none !important; }
+.collapse { display: none; }
+.navbar-collapse { padding-right: 15px; padding-left: 15px; overflow-x: visible; border-top: 0px; box-shadow: none; width: auto; }
+.navbar-collapse.collapse { padding-bottom: 0px; display: block !important; height: auto !important; overflow: visible !important; }
+.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse { padding-right: 0px; padding-left: 0px; }
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse { max-height: 340px; }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { border-color: rgb(231, 231, 231); }
+ul, ol { margin-top: 0px; margin-bottom: 10px; }
+.nav { padding-left: 0px; margin-bottom: 0px; list-style: none; }
+.navbar-nav { margin: 0px; float: left; }
+.nav > li { position: relative; display: block; }
+.navbar-nav > li { float: left; }
+.nav .espacador { margin-left: 159px; transition: 0.2s ease; }
+.dropup, .dropdown { position: relative; }
+[role="button"] { cursor: pointer; }
+.nav > li > a { position: relative; display: block; padding: 10px 15px; }
+.navbar-nav > li > a { padding-top: 15px; padding-bottom: 15px; line-height: 20px; }
+.navbar-default .navbar-nav > li > a { color: rgb(119, 119, 119); font-weight: 400; padding-bottom: 22px; }
+.caret { display: inline-block; width: 0px; height: 0px; margin-left: 2px; vertical-align: middle; border-top: 4px dashed; border-right: 4px solid transparent; border-left: 4px solid transparent; }
+ul ul, ol ul, ul ol, ol ol { margin-bottom: 0px; }
+.dropdown-menu { background-color: rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.14902); margin-left: -1px; position: absolute; top: 100%; left: 0px; z-index: 1000; display: none; float: left; min-width: 160px; padding: 5px 0px; margin: 2px 0px 0px; font-size: 14px; text-align: left; list-style: none; -webkit-background-clip: padding-box; background-clip: padding-box; border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.172549) 0px 6px 12px; }
+.navbar-nav > li > .dropdown-menu { margin-top: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; }
+.dropdown-menu > li > a { padding: 3px 20px; transition: 0.2s ease; display: block; clear: both; font-weight: normal; line-height: 1.42857; color: rgb(51, 51, 51); white-space: nowrap; }
+.dropdown .dropdown-menu a, .dropdown .dropdown-menu:hover a { color: gray !important; }
+hr { height: 0px; box-sizing: content-box; margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-right-style: initial; border-bottom-style: initial; border-left-style: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: initial; border-image: initial; border-top-style: solid; border-top-color: rgb(238, 238, 238); }
+.dropdown-menu hr { margin: 5px auto; width: 92%; opacity: 0.5; }
+.accent { background-color: rgb(8, 179, 15); border: 0px; padding: 10px 60px; border-radius: 6px; box-shadow: rgba(255, 255, 255, 0.0980392) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0901961) 0px 2px 6px; margin: 0px 10px; transition: 0.5s ease; font-weight: 500; color: rgb(255, 255, 255); }
+.menorzin { padding: 10px 30px; margin: 3px 0px 0px; box-shadow: rgba(255, 255, 255, 0.0980392) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0901961) 0px 2px 2px; }
+.material-icons { font-family: "Material Icons"; font-weight: normal; font-style: normal; font-size: 24px; display: inline-block; line-height: 1; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-feature-settings: 'liga' 1; margin-top: -3px; vertical-align: middle !important; }
+.contabilizei .material-icons { font-size: 14px; }
+.animated { animation-duration: 1s; animation-fill-mode: both; }
+.fadeIn { animation-name: fadeIn; }
+.contabilizei .cadastre { display: none; }
+.linkBotao2 { padding: 0px !important; box-shadow: none !important; }
+.jumbotron { background: radial-gradient(rgb(255, 255, 255) 30%, rgb(250, 250, 250) 70%); padding-bottom: 48px; padding-top: 48px; margin-bottom: 30px; color: inherit; background-color: rgb(238, 238, 238); }
+.text-center { text-align: center; }
+.container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; width: 1170px; }
+.jumbotron .container { max-width: 100%; }
+.row { margin-right: -15px; margin-left: -15px; }
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; }
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 { float: left; }
+.col-md-5 { width: 41.6667%; }
+h3 { margin: 0px; vertical-align: middle; opacity: 0.54; font-weight: 300; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
+h1, .h1, h2, .h2, h3, .h3 { margin-top: 20px; margin-bottom: 10px; }
+h3, .h3 { font-size: 24px; }
+b, strong { font-weight: bold; }
+.jumbotron img { margin: 0px auto; }
+.col-md-1 { width: 8.33333%; }
+.col-md-6 { width: 50%; }
+.bg-cinza { background-color: rgba(240, 240, 240, 0.360784); }
+.nav-tabs { border: 0px; border-radius: 0px; border-bottom: 1px solid rgb(221, 221, 221); }
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 { float: left; }
+.col-xs-4 { width: 33.3333%; }
+.nav-tabs > li { float: left; margin-bottom: -1px; border-bottom: 1px solid rgb(232, 232, 232); }
+.nav-tabs a { color: rgb(198, 198, 198); border: 0px; border-radius: 0px; transition: 0.2s ease; }
+.nav-tabs > li > a { border: 1px solid transparent; border-radius: 4px 4px 0px 0px; margin-right: 2px; line-height: 1.42857; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border: 0px; border-radius: 0px; background-color: rgb(33, 150, 243); color: rgb(255, 255, 255); width: 100%; }
+.card .nav > li > a { padding: 10px 30px; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus { color: rgb(85, 85, 85); cursor: default; background-color: rgb(255, 255, 255); border-width: 1px; border-style: solid; border-color: rgb(221, 221, 221) rgb(221, 221, 221) transparent; border-image: initial; }
+.nav-tabs .material-icons { font-size: 3em; line-height: 2.05em; }
+.tab-pane { padding-top: 8px; padding-left: 0px; transition: 0.5s ease; }
+.tab-content > .tab-pane { display: none; }
+.col-md-12 { width: 100%; }
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 { float: left; }
+.col-lg-9 { width: 75%; }
+.card .col-md-12 { padding: 0px; }
+h4 { padding: 15px 0px 5px; font-size: 22px; line-height: 1.5em; }
+h4, .h4, h5, .h5, h6, .h6 { margin-top: 10px; margin-bottom: 10px; }
+h4, .h4 { font-size: 18px; }
+.primary { color: rgb(33, 150, 243) !important; }
+p { margin: 0px 0px 10px; }
+.texto { opacity: 0.87; }
+.feat { line-height: 2.5em; font-size: 16px; font-weight: 300; }
+.col-lg-3 { width: 25%; }
+.fadeInLeft { animation-name: fadeInLeft; }
+.card .col-lg-3 img { margin-left: 36px; width: 126px; margin-top: -9px; height: 312px; }
+.filtroCard { position: fixed; width: 400px; bottom: 85px; right: 22px; z-index: 2147483010 !important; min-height: inherit !important; }
+.card { background-color: rgb(253, 253, 253); box-shadow: rgba(0, 0, 0, 0.14902) 0px 2px 4px 0px; border-radius: 6px; margin: 60px 0px 0px; }
+.cardBig { min-height: 400px; border: 1px solid rgb(232, 232, 232); margin: 60px 0px; }
+.bounceInUp { animation-name: bounceInUp; }
+.hide { display: none !important; }
+#containerGeralFiltros > div.card.cardBig.wow.bounceInUp.animated.filtroCard.animated { padding: 0px; }
+.cabecalhoFiltro { padding-top: 10px; padding-bottom: 10px; background: rgb(5, 99, 171); }
+.headerDepoimento { border-top-left-radius: 6px; border-top-right-radius: 6px; min-height: 50px; color: rgb(255, 255, 255); padding: 8px 0px; vertical-align: middle !important; }
+.bg-azul { background-color: rgb(33, 150, 243); }
+.fotoFiltro { margin: auto; }
+.imgSombra { border-radius: 50px; box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px; }
+.headerDepoimento img { margin-bottom: 15px; margin-top: 5px; }
+.nome { font-size: 1.3em; font-weight: 500; }
+.depoimento { text-align: center; padding: 15px 15px 10px 20px; }
+.empresa { opacity: 0.7; font-weight: 300; }
+.linhaFiltro { width: 100%; padding: 20px 10px; text-align: center; margin: auto; }
+.contorno-filtro { min-height: 90px; min-width: 105px; color: rgb(51, 51, 51); background-color: transparent; border: 2px solid rgb(198, 198, 198); padding: 10px 20px; border-radius: 6px; margin: 0px 10px; transition: 0.5s ease; font-weight: 500; }
+.col-md-4 { width: 33.3333%; }
+.twitter-typeahead { position: relative; display: inline-block; margin-left: -4px; width: 100%; line-height: 30px; }
+input { line-height: normal; }
+.tt-query, .tt-hint { display: none; }
+.tt-hint { color: rgb(153, 153, 153); }
+.form-filtro { line-height: 30px; outline: 0px; font-size: 20px; padding: 15px; width: 100%; height: 50px; margin: 0px auto; box-shadow: none; border-radius: 4px; border: 2px solid rgb(232, 232, 232); }
+#cidadeTypeAbertura { font-size: 24px; padding: 8px 12px; outline: 0px; line-height: 30px !important; }
+pre { overflow: auto; display: block; padding: 9.5px; margin: 0px 0px 10px; font-size: 13px; line-height: 1.42857; color: rgb(51, 51, 51); word-break: break-all; word-wrap: break-word; background-color: rgb(245, 245, 245); border: 1px solid rgb(204, 204, 204); border-radius: 4px; }
+code, kbd, pre, samp { font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 1em; }
+.tt-menu { width: 393px; margin-top: 2px; padding: 8px 0px; height: 150px; overflow: auto; background-color: rgb(255, 255, 255); }
+#cidadeType { outline: 0px; font-size: 20px; padding: 20px 15px; line-height: 30px !important; }
+textarea { overflow: auto; }
+#estadoType { border: 0px; font-size: 24px; padding: 8px 12px; outline: 0px; line-height: 30px !important; }
+.filtroContainer { z-index: 2147483010 !important; position: fixed !important; bottom: 20px !important; right: 20px !important; width: 60px !important; height: 60px !important; border-radius: 50% !important; transition: box-shadow 80ms ease-in-out !important; box-shadow: rgba(0, 0, 0, 0.0588235) 0px 1px 6px, rgba(0, 0, 0, 0.156863) 0px 2px 32px !important; }
+.teste { position: absolute; top: 0px; left: 0px; width: 60px; height: 60px; background: rgb(5, 99, 171); border-radius: 50%; cursor: pointer; transform-origin: center center 0px; backface-visibility: hidden; overflow: hidden; font-family: intercom-font, "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+.teste .intercom-launcher-open-icon { width: 60px; height: 60px; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAr5JREFUWAntVz2MEkEUluXnTuGQwxAwV2ihMRcLicTSaywwdhZezsbKmtrKikQajN0lhsLC2JlcYujBGEJBIZ5iAwnEkJCYEORfWBa/b8Pc7S23d7kTttqXPObtvDfv++bN7DJju3Aotpkp2kPPYq3pLJ1o1UeCSv1+f1tRlO/T6VSGLlpk5N4HxhNiQQ8mqoJ3Op3tRSMa5QPWERIk4JxMJvtGAxbdD6xvxGQV1NnzASBdtA6oGSLbbDYPgMZcCwpbs8CJRywVWxA42BD0miQqpiBgEuY8jEXAqoBVAasCVgWsChhWQJblOs4I8vzfx9l7cABpGI06lsB4PC47nc576XT64Wg0+mE0+LR+5KkVCoWnDofjLuyKUTxJXNIeu8D4TyaTuY9+XygUCpRKpec4TH5mRbRxBrYyHA4L5XI5FolEriLHejab3WJObTwxoWoB5gjMAv92u93k7u7uBgIvQ6/EYrGbxWLxWb1ef9VsNt+32+096CfYHxqNxmsSTSQStxkL9aVSqWvI8Qb5Rlpw2vCfSkAdg6N0ezAYvK1UKg/C4bAPA0mGrV+n6/RFo1F/tVp9hDHvMLanBxbPiFUJiEPpKhw9dJ4oiGmhlF+xQX9Cf8PuYIAdsoZ1DkE3Yd/BgdN9YiI4ZzFDQWAFyX5JksTSmSKCgHgLpr1eb88UZB0ICXBDKPF4/CV27xedf+mPXAKxDC7Yq/l8fisYDN5Cic5zT7B7vd5Nt9sdcblcN5BPVHhuImIJBAEGMJjXJXFpoO+sIiYjJZPJjR1IIBDYwUftuj6RICD6BRGSIAESOY+yiivQi1BevXwejyeQy+Uet1qtj3gtB/rXEDFHRBD5n5aTEBMhIZJZg/r5IavVai/weefllP0SgZYh2ryCkCBlB6ACHUFlbeAyiDCnwGBLJREKSSjCqfYs+edYrH/16LJPC4LGtQAAAABJRU5ErkJggg=="); background-size: 32px 36px; background-repeat: no-repeat; background-position: center 14px; opacity: 1; transform: rotate(0deg) scale(1); }
+.intercom-app { display: none !important; }
+#intercom-container a, #intercom-container abbr, #intercom-container acronym, #intercom-container address, #intercom-container applet, #intercom-container article, #intercom-container aside, #intercom-container audio, #intercom-container b, #intercom-container big, #intercom-container blockquote, #intercom-container button, #intercom-container canvas, #intercom-container caption, #intercom-container center, #intercom-container cite, #intercom-container code, #intercom-container dd, #intercom-container del, #intercom-container details, #intercom-container dfn, #intercom-container div, #intercom-container div.form, #intercom-container dl, #intercom-container dt, #intercom-container em, #intercom-container fieldset, #intercom-container figcaption, #intercom-container figure, #intercom-container footer, #intercom-container form, #intercom-container h1, #intercom-container h2, #intercom-container h3, #intercom-container h4, #intercom-container h5, #intercom-container h6, #intercom-container header, #intercom-container hgroup, #intercom-container i, #intercom-container iframe, #intercom-container img, #intercom-container input, #intercom-container input[type], #intercom-container ins, #intercom-container kbd, #intercom-container label, #intercom-container legend, #intercom-container li, #intercom-container mark, #intercom-container menu, #intercom-container nav, #intercom-container object, #intercom-container ol, #intercom-container p, #intercom-container pre, #intercom-container q, #intercom-container s, #intercom-container samp, #intercom-container section, #intercom-container small, #intercom-container span, #intercom-container strike, #intercom-container strong, #intercom-container sub, #intercom-container summary, #intercom-container sup, #intercom-container table, #intercom-container tbody, #intercom-container td, #intercom-container textarea, #intercom-container tfoot, #intercom-container th, #intercom-container thead, #intercom-container time, #intercom-container tr, #intercom-container tt, #intercom-container u, #intercom-container ul, #intercom-container var, #intercom-container video { letter-spacing: normal; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 100%; font-family: intercom-font, "Helvetica Neue", Helvetica, Arial, sans-serif; text-align-last: auto; text-decoration: none; -webkit-text-emphasis: none; text-indent: 0px; text-shadow: none; text-transform: none; alignment-baseline: baseline; animation-play-state: running; backface-visibility: visible; background-color: transparent; background-image: none; baseline-shift: baseline; border: 0px none transparent; border-radius: 0px; bottom: auto; -webkit-box-decoration-break: slice; box-shadow: none; box-sizing: content-box; caption-side: top; clear: none; clip: auto; color: inherit; column-fill: balance; column-gap: normal; columns: auto auto; content: normal; counter-increment: none; counter-reset: none; cursor: auto; direction: ltr; display: inline; dominant-baseline: auto; empty-cells: show; float: none; height: auto; hyphens: manual; image-rendering: auto; left: auto; line-height: inherit; list-style: disc outside none; margin: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 0px; opacity: 1; orphans: 2; outline-offset: 0px; overflow: visible; padding: 0px; page: auto; break-after: auto; break-before: auto; break-inside: auto; perspective: none; perspective-origin: 50% 50%; position: static; quotes: none; resize: none; right: auto; size: auto; table-layout: auto; top: auto; transform: none; transform-origin: 50% 50% 0px; transform-style: flat; unicode-bidi: normal; vertical-align: baseline; white-space: normal; widows: 2; width: auto; word-break: normal; word-spacing: normal; word-wrap: normal; z-index: auto; text-align: start; -webkit-font-smoothing: antialiased; }
+#intercom-container address, #intercom-container article, #intercom-container aside, #intercom-container blockquote, #intercom-container canvas, #intercom-container center, #intercom-container dd, #intercom-container details, #intercom-container dir, #intercom-container div, #intercom-container div.form, #intercom-container dl, #intercom-container dt, #intercom-container fieldset, #intercom-container figcaption, #intercom-container figure, #intercom-container footer, #intercom-container form, #intercom-container frame, #intercom-container frameset, #intercom-container h1, #intercom-container h2, #intercom-container h3, #intercom-container h4, #intercom-container h5, #intercom-container h6, #intercom-container header, #intercom-container hgroup, #intercom-container hr, #intercom-container menu, #intercom-container nav, #intercom-container noframes, #intercom-container ol, #intercom-container p, #intercom-container pre, #intercom-container section, #intercom-container summary, #intercom-container ul { display: block; }
+#intercom-container .intercom-launcher-frame { z-index: 2147483000 !important; position: fixed !important; bottom: 20px !important; right: 20px !important; width: 60px !important; height: 60px !important; border-radius: 50% !important; transition: box-shadow 80ms ease-in-out !important; box-shadow: rgba(0, 0, 0, 0.0588235) 0px 1px 6px, rgba(0, 0, 0, 0.156863) 0px 2px 32px !important; animation: intercom-launcher-frame-appear 0.25s ease !important; }
+    </style>
+    <!-- Metatags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="description" content="Escritório de Contabilidade Online a partir de R$49/mês. O contador online para você abrir sua empresa grátis e economizar tempo e dinheiro.">
+    <meta name="keywords" content="contabilidade online, abertura de empresa, contabilidade, contador online, escritório contabilidade on-line, nfs-e, contador, assessoria contabil, abrir empresa">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2196F3">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2196F3">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2196F3">
+
+    <!-- Geral -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property='og:type' content='website' />
+    <meta property="og:site_name" content="Contabilizei">
+    <meta property="og:url" content="https://www.contabilizei.com.br">
+    <meta property='article:publisher' content='https://facebook.com/contabilizei' />
+    <meta property="og:title" content="Contabilizei Contabilidade Inteligente">
+    <meta property="og:description" content="Contabilidade inteligente e online para micro e pequenas empresas a partir de R$ 49,00 por mês.">
+    <meta property="og:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/thumbhome2016.png">
+
+    <!-- Twitter -->
+
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="@contabilizei">
+    <meta name="twitter:creator" content="@contabilizei">
+    <meta name="twitter:title" content="Contabilizei Contabilidade Online">
+    <meta name="twitter:description" content="Contabilidade inteligente e online para micro e pequenas empresas a partir de R$ 49,00 por mês.">
+    <meta name="twitter:image" content="https://www.contabilizei.com.br/assets/img/thumbnail/thumbhome2016.png">
+
+    <title>Contabilidade Online | Contabilizei Escritório | Contador Online</title>
+</head>
+
+<body>
+   
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9X6Z2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <link rel="stylesheet" href="/assets/css/all.css">
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N9X6Z2');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <!-- CUPOM -->
+    <!--
+	  	<div class="splash">
+			<div class="carregando-cupom hide well" align="center" style="background-color:#fff; border:none;">
+				<i class="fa fa-cloud animated infinite pulse" style="font-size:2em; color:rgb(40, 150, 214);"></i><br><span style="font-size: 1.2em;  color:rgb(40, 150, 214); font-weight:600" class="animated fadeIn"><strong>Validando código. Por favor, aguarde.</strong></span>
+			</div>
+
+			<div class="cupom-indicacao well text-center animated fadeIn" align="center" style="display: none; background-color: rgb(40, 150, 214); border:none; border-bottom:1px solid rgb(28, 117, 169);">
+				<div class="row animated bounceInDown" id="alert-cupom">
+					<div class="col-md-12 text-indicacao" style="font-size:1.2em; color:#fff;"></div>
+					<div class="col-md-12 animated" style="color:#B3E6FF;"><i class="fa fa-check-circle" style="padding-right:5px;"></i>Código válido. <a href="#migre" style="color:#B3E6FF; text-decoration:underline;">Finalize seu cadastro</a> para ativar o crédito.</div>
+				</div>
+			</div>
+		</div>
+-->
+    <!-- FIM CUPOM -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top contabilizei navtopo" style="background:#fff">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="/assets/img/logo2017.png" class="img-responsive logo hidden-sm hidden-md" width="170" height="22" alt="Sua empresa regularizada a partir de R$49/mês"><img src="/assets/img/logo2017.png" class="img-responsive visible-sm visible-md" width="170" height="22" alt="Sua empresa regularizada a partir de R$49/mês"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="espacador hidden-xs hidden-sm">&nbsp;</li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Contabilizei <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/quais-cidades-atendemos/">Quais cidades atendemos</a></li>                     <li><a href="/contabilidade/">Especialidades de atendimento</a></li> <li><a href="/contabilizei-contabilidade-online/">Sobre a empresa</a></li>
+                            <!--                    <li><a href="/funcionalidades/">Nosso produto</a></li>-->
+                            <li><a href="/midia/">Nós na mídia</a></li>
+                            <li><a href="/contabilidade-online/" target="_blank">Blog</a></li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li><a href="https://jobs.lever.co/contabilizei" target="_blank">Trabalhe conosco</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Abrir empresa <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                             
+                            <li><a href="/abrir-empresa-gratis/">Escolhendo as atividades</a></li>
+
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <a href="/abrir-empresa/" class="linkBotao">
+                                    <button class="accent menorzin" style="width:100%">Abrir empresa grátis</button>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Já tem empresa? <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                             
+                             
+
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <a href="/escritorio-contabilidade-online/" class="linkBotao">
+                                    <button class="accent menorzin" style="width:100%">Tenho empresa de serviços</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/contabilidade-comercio/" class="linkBotao">
+                                    <button class="accent menorzin" style="width:100%">Tenho empresa de comércio</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">  Emissor NF-e <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--                    <li><a href="#">Cadastre-se agora</a></li>-->
+                            <li><a href="/emissor-nf-e/">Veja como funciona</a></li>
+
+                            <li>
+                                <hr>
+                            </li>
+                            <li>
+                                <a href="/emissor-gratuito-nf-e/" class="linkBotao">
+                                    <button class="accent menorzin" style="width:100%">Emissor gratuito NF-e</button>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="loginCliente dropdown hidden-sm">
+                        <a href="javascript:void(0)" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="material-icons">lock_outline</i> Login <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!--                    <li><a href="#">Cadastre-se agora</a></li>-->
+                            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Continue seu cadastro</a></li>
+
+                            <li><a href="https://cadastro.contabilizei.com.br/cadastro/" target="_blank">Consulte o processo de abertura</a></li>
+                            <li>
+                                <hr>
+                            </li>
+                            <li><a href="https://app.contabilizei.com.br/sistema/" target="_blank">Acesse o sistema de contabilidade</a></li>
+                            <li><a href="https://freemium.contabilizei.com/sistema/" target="_blank">Acesse o emissor gratuito de NF-e</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="cadastre animated fadeIn hidden-xs hidden-sm">
+                        <a href="#migre" class="linkBotao2">
+                            <button class="accent menorzin">Cadastre-se já</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="jumbotron text-center" style="padding-top:100px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 style="text-align:left; margin-bottom:40px;font-size:28px;">Sua contabilidade não precisa ser <b>complicada</b>.</h3>
+                    <img class="hidden-xs hidden-sm" style="height:400px" src="/assets/img/sem-contabilizei.png" alt="Antes Pessoa confusa sobre contabilidade">
+                    <img class="visible-xs visible-sm img-responsive" src="/assets/img/sem-com-contabilizei2.png" alt="Pessoa confusa ao lado de pessoa tranquila sobre contabilidade">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <img class="hidden-xs hidden-sm" style="height:260px;" src="/assets/img/com-contabilizei.png" alt="Pessoa feliz com o serviço contratado">
+                    <h1 style="text-align:center;margin-top:40px;font-size:28px;opacity:0.8; font-weight:normal">Escritório de Contabilidade Online.</h1>
+                    <p style="font-size:17px">Todas obrigações legais para sua empresa estar em dia</p>
+                    <h2 style="font-size:22px;margin-bottom:10px!important">A partir de <b>R$ 49/mês</b>.</h2>
+                    <a href="#junte">
+                        <button style="width:75%;padding:12px 60px;" class="accent big">Venha para a Contabilizei</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div style="height:50px" id="junte"></div>
+    <div class="navlead text-center primary-bg hidden-xs">
+        <div class="container">
+
+            <h2 class="opacidade text-center animated fadeIn">Junte-se a milhares de empresas que utilizam nosso escritório de contabilidade com todas obrigações legais inclusas.</h2>
+
+            <div class="hidden-sm">
+                <div class="col-md-3">
+                    <a href="/abrir-empresa/">
+                        <button class="accent animated fadeIn">Abrir empresa grátis</button>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="/escritorio-contabilidade-online/">
+                        <button class="accent animated fadeIn">Migrar empresa de serviços</button>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="/contabilidade-comercio/">
+                        <button class="accent animated fadeIn">Migrar empresa de comércio</button>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="/emissor-gratuito-nf-e/">
+                        <button class="accent animated fadeIn">Emissor gratuito NF-e</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="visible-sm">
+                <a href="#migre">
+                    <button class="accent">Faça já seu cadastro</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="features text-center hidden-sm">
+        <div class="container">
+            <h2 class="primary">Adeus burocracia. <br class="visible-xs">Olá, contabilidade online.</h2>
+            <p class="texto" style="opacity:0.5">Simplificamos a contabilidade para
+                <br class="visible-xs">você ganhar tempo e dinheiro.</p>
+
+
+            <div class="col-md-8 col-md-offset-2">
+
+                <div class="card cardBig wow fadeIn">
+                    <div class="inteligente">
+                        <h3 class="padding-vert">Conheça nossos serviços de contabilidade</h3>
+                    </div>
+                    <div class="col-md-2">
+
+                        <div class="bg-cinza hidden-xs">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#pc" aria-controls="home" role="tab" data-toggle="tab"><i class="material-icons">store</i></a></li>
+
+                                <li role="presentation"><a href="#tablet" aria-controls="profile" role="tab" data-toggle="tab"><i class="material-icons">account_balance_wallet</i></a></li>
+
+                                <li role="presentation"><a href="#smartphone" aria-controls="messages" role="tab" data-toggle="tab"><i class="material-icons">local_grocery_store</i></a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="bg-cinza visible-xs">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="col-xs-4 active" role="presentation"><a href="#pc" aria-controls="home" role="tab" data-toggle="tab"><i class="material-icons">store</i></a></li>
+
+                                <li class="col-xs-4" role="presentation"><a href="#tablet" aria-controls="profile" role="tab" data-toggle="tab"><i class="material-icons">account_balance_wallet</i></a></li>
+
+                                <li class="col-xs-4" role="presentation"><a href="#smartphone" aria-controls="messages" role="tab" data-toggle="tab"><i class="material-icons">local_grocery_store</i></a></li>
+
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-lg-10 col-md-9">
+                        <div class="tab-content text-left">
+
+
+                            <div role="tabpanel" class="tab-pane active animated fadeIn" id="pc">
+                                <div class="col-lg-9 col-md-12">
+                                    <h4 class="primary">Abertura de empresa grátis</h4>
+
+                                    <p class="texto feat wow fadeIn" data-wow-delay="0.1s">Não cobramos honorários no serviço de abertura para ajudar no seu sonho. Contratando nosso serviço de contabilidade, você paga apenas as taxas do governo e protocola a documentação nos órgãos públicos para abrir sua empresa.</p>
+                                </div>
+
+                                <div class="col-lg-3 hidden-xs hidden-md">
+                                    <img src="/assets/img/i-regularidade.png" width="126" height="312" class="animated fadeInLeft" alt="Regularidade">
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div role="tabpanel" class="tab-pane animated fadeIn" id="tablet">
+                                <div class="col-lg-9 col-md-12">
+                                    <h4 class="primary">Contabilidade online para empresas prestadoras de serviço</h4>
+
+                                    <p class="texto feat wow fadeIn" data-wow-delay="0.1s">Já pensou economizar R$4.000 ao ano utilizando um serviço inteligente com atendimento campeão? Inicie seu cadastro conosco, não precisamos de nenhuma informação de seu contador atual.</p>
+                                </div>
+
+                                <div class="col-lg-3 hidden-xs hidden-md">
+                                    <img src="/assets/img/i-impostos.png" width="126" height="312" class="animated fadeInLeft" alt="Impostos">
+                                </div>
+
+
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane animated fadeIn" id="smartphone">
+
+                                <div class="col-lg-9 col-md-12">
+                                    <h4 class="primary">Contabilidade online para empresas de comércio e varejo</h4>
+
+                                    <p class="texto feat wow fadeIn" data-wow-delay="0.1s">Já pensou economizar R$9.000 ao ano utilizando um serviço inteligente com atendimento campeão? Inicie seu cadastro conosco, não precisamos de nenhuma informação de seu contador atual.</p>
+                                </div>
+
+                                <div class="col-lg-3 hidden-xs hidden-md">
+                                    <img src="/assets/img/i-notas.png" width="126" height="312" class="animated fadeInLeft" alt="Notas Fiscais">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-md-offset-5 divider"></div>
+
+
+            <div class="col-md-8 col-md-offset-2">
+
+                <div class="card cardBig wow fadeIn">
+                    <div class="inteligente">
+                        <h3 class="padding-vert">Sua empresa regularizada de forma inteligente<span class="hidden-md"> e acessível</span></h3>
+                    </div>
+                    <div class="col-md-2">
+
+                        <div class="bg-cinza hidden-xs">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#notas" aria-controls="home" role="tab" data-toggle="tab"><i class="material-icons">list</i></a></li>
+
+                                <li role="presentation"><a href="#impostos" aria-controls="profile" role="tab" data-toggle="tab"><i class="material-icons">account_balance</i></a></li>
+
+                                <li role="presentation"><a href="#rotinas" aria-controls="messages" role="tab" data-toggle="tab"><i class="material-icons">check_circle</i></a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="bg-cinza visible-xs">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="col-xs-4 active" role="presentation"><a href="#notas" aria-controls="home" role="tab" data-toggle="tab"><i class="material-icons">list</i></a></li>
+
+                                <li class="col-xs-4" role="presentation"><a href="#impostos" aria-controls="profile" role="tab" data-toggle="tab"><i class="material-icons">account_balance</i></a></li>
+
+                                <li class="col-xs-4" role="presentation"><a href="#rotinas" aria-controls="messages" role="tab" data-toggle="tab"><i class="material-icons">check_circle</i></a></li>
+
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-lg-10 col-md-9">
+                        <div class="tab-content text-left">
+
+
+                            <div role="tabpanel" class="tab-pane active animated fadeIn" id="notas">
+                                <div class="col-lg-9 col-md-12">
+                                    <h4 class="primary">Notas fiscais em segundos</h4>
+
+                                    <p class="texto feat wow fadeIn" data-wow-delay="0.1s">
+
+
+                                        Importe suas notas fiscais em segundos. Nossa plataforma é compatível com os formatos utilizados pelas prefeituras (NFS-e) e pelos estados (NF-e). Você também pode emitir as notas diretamente na plataforma, poupando seu tempo.
+                                        <!--                                        Importe uma vez por mês as notas fiscais emitidas no site da prefeitura ou adquira um certificado digital e emita suas notas com segurança direto em nossa plataforma.-->
+
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-3 hidden-xs hidden-md">
+                                    <img src="/assets/img/i-notas.png" width="126" height="312" class="animated fadeInLeft" alt="Notas Fiscais">
+                                </div>
+
+
+                            </div>
+
+
+
+                            <div role="tabpanel" class="tab-pane animated fadeIn" id="impostos">
+                                <div class="col-lg-9 col-md-12">
+                                    <h4 class="primary">Impostos em tempo real</h4>
+
+                                    <p class="texto feat wow fadeIn" data-wow-delay="0.1s">
+
+
+
+                                        <span class="hidden-md">Importou ou emitiu suas notas fiscais?</span> Geramos as guias de impostos da sua empresa. Disponibilizamos online, em tempo hábil para pagamento e com lembretes sobre a data de vencimento. Além disso, dividimos cada imposto para que você saiba exatamente o que está pagando.
+
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-3 hidden-xs hidden-md">
+                                    <img src="/assets/img/i-impostos.png" width="126" height="312" class="animated fadeInLeft" alt="Impostos">
+                                </div>
+
+
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane animated fadeIn" id="rotinas">
+
+                                <div class="col-lg-9 col-md-12">
+                                    <h4 class="primary">Você seguro da sua regularidade</h4>
+
+                                    <p class="texto feat wow fadeIn" data-wow-delay="0.1s" style="padding-top:10px;">
+
+
+                                        De forma intuitiva e fácil, você controla as atividades para sua contabilidade permanecer sempre em dia. Alertamos você sempre que sua empresa precisar de sua atenção.
+                                    </p>
+                                </div>
+
+                                <div class="col-lg-3 hidden-xs hidden-md">
+                                    <img src="/assets/img/i-regularidade.png" width="126" height="312" class="animated fadeInLeft" alt="Regularidade">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="quemSomos bg-azul text-center">
+        <div class="container">
+
+
+            <h2 class="branco">Contabilizei em números:</h2>
+
+            <div class="notas">
+                <div class="row">
+                    <div class="col-md-4 wow fadeIn">
+
+                        <h3><i class="material-icons">power_settings_new</i> Tecnologia</h3>
+                        <hr>
+                        <p><span class="grande">+ R$100 milhões</span>
+                            <br>faturados na plataforma </p>
+
+
+                    </div>
+
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
+
+                        <h3><i class="material-icons">local_atm</i> Economia</h3>
+                        <hr>
+                        <p><span class="grande">+ R$25 milhões</span>
+                            <br> economia para os clientes</p>
+
+
+                    </div>
+
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.2s">
+
+                        <h3><i class="material-icons">people</i> Equipe</h3>
+                        <hr>
+                        <p><span class="grande">92 pessoas</span>
+                            <br>fanáticas no que fazem </p>
+
+                    </div>
+
+                </div>
+                <div class="row espaco">
+
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
+
+                        <h3><i class="material-icons">chat</i> Sempre com você</h3>
+                        <hr>
+                        <p><span class="grande">+100 mil chamados</span>
+                            <br>atendidos e resolvidos online</p>
+
+
+                    </div>
+
+
+
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.4s">
+
+                        <h3><i class="material-icons">sentiment_very_satisfied</i> Atendimento uau</h3>
+                        <hr>
+                        <p><span class="grande">95% satisfação</span>
+                            <br>com o atendimento</p>
+
+
+                    </div>
+
+                    <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
+
+                        <h3><i class="material-icons">check_circle</i> Confiança</h3>
+                        <hr>
+                        <p><span class="grande">+ 50.000 empresas</span>
+                            <br>já cadastraram na Contabilizei</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="depoimentos">
+        <div class="container">
+            <h2 class="primary">Quem usa nossa contabilidade online:</h2>
+
+
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="card cardBranco wow fadeIn">
+                        <div class="headerDepoimento text-center bg-azul">
+                            <img src="/assets/img/angelo.png" alt="Angelo" width="76" height="76" class="img-responsive pull-left imgSombra marginEsquerda">
+                            <span class="nome">Angelo Nunes</span>
+                            <br><span class="empresa">RedFire Tecnologia</span>
+                        </div>
+                        <div class="depoimento">
+                            <p class="textoLongo">
+                                A <span class="primary">Contabilizei</span> proporcionou para nós uma drástica redução nos custos, suporte com uma qualidade significativa, atenção e cuidado com a minha empresa. Em resumo: é show!
+                                <br><small>- cliente desde 2014</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card cardBranco wow fadeIn">
+                        <div class="headerDepoimento text-center bg-azul">
+                            <img src="/assets/img/sergio.png" alt="Sergio" width="76" height="76" class="img-responsive pull-right imgSombra marginDireita">
+                            <span class="nome">Sergio Moschioni</span>
+                            <br><span class="empresa">Visual Project</span>
+
+                        </div>
+                        <div class="depoimento">
+                            <p class="textoLongo">
+                                A <span class="primary">Contabilizei</span> inovou a contabilidade. Por intermédio de um canal simples permite que você atue de maneira participativa e colaborativa na contabilidade de uma empresa, possibilitando melhor gestão do negócio. <small>- cliente desde 2013</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="card cardBranco wow fadeIn" data-wow-delay="0.1s">
+                        <div class="headerDepoimento text-center bg-azul">
+                            <img src="/assets/img/daniela.png" width="76" height="76" class="img-responsive pull-left imgSombra marginEsquerda" alt="Daniela">
+                            <span class="nome">Daniela P. da Silva</span>
+                            <br><span class="empresa">R&D Informática</span>
+                        </div>
+                        <div class="depoimento">
+                            <p class="textoLongo">
+                                Eu sou fã de ousadia, praticidade e principalmente da criatividade! Eu encontrei a <span class="primary">Contabilizei</span> numa busca feita pelo Google quando decidi abrir minha empresa. Agradeço a atenção da equipe e a organização com que tratam tudo, me deixa realmente muito tranquila e satisfeita!
+                                <br><small>- cliente desde 2014</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <br>
+            <br>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="midia text-center bg-branco">
+        <div class="container">
+            <div class="logos col-md-12">
+                <br><span class="textoPequeno">Contabilizei na mídia:</span>
+                <br>
+
+                <a href="/midia/forbes/2016.07.22.pdf" target="_blank" data-toggle="tooltip" title='"Todos os serviços dos escritórios tradicionais da profissão por um preço menor."' class="hidden-md wow fadeIn"><img class="logosMidia" width="158" height="42" src="/assets/img/logoforbes.png" alt="Forbes"></a>
+
+                <br class="visible-xs">
+
+                <a href="http://techcrunch.com/2016/05/25/tech-in-brazil-is-booming-despite-the-countrys-political-troubles/" target="_blank" data-toggle="tooltip" title='"Contabilizei ganha na categoria melhor B2B da América Latina. (matéria em inglês)"' class="wow fadeIn" data-wow-delay="0.1s"><img class="logosMidia" width="152" height="21" src="/assets/img/logotechcrunch.png" alt="TechCrunch"></a>
+
+                <br class="visible-xs">
+
+                <a href="http://classificados.folha.uol.com.br/negocios/2015/11/1703284-ex-militar-aplica-tatica-de-guerra-para-criar-negocio-de-servicos-contabeis.shtml" target="_blank" data-toggle="tooltip" title='"Ex-militar aplica tática de guerra para criar negócio de serviços contábeis."' class="wow fadeIn" data-wow-delay="0.2s"><img class="logosMidia" width="152" height="31" src="/assets/img/logofolha.png" alt="Folha"></a>
+
+                <br class="visible-xs">
+
+                <a href="http://exame.abril.com.br/pme/veja-os-vencedores-do-oscar-das-startups-na-america-latina/" target="_blank" data-toggle="tooltip" title='Contabilizei no Oscar das startups: Melhor empresa B2B na América Latina.' class="wow fadeIn" data-wow-delay="0.3s"><img class="logosMidia" width="127" height="22" src="/assets/img/logoexame.png" alt="Exame"></a>
+
+                <br class="visible-xs">
+
+                <a href="https://www.contabilizei.com.br/midia/valor-economico-a-democratizacao-da-contabilidade/" target="_blank" data-toggle="tooltip" title='"Contabilizei: "Democratização da Contabilidade."' class="wow fadeIn" data-wow-delay="0.4s"><img class="logosMidia" width="107" height="31" src="/assets/img/logovalor.png" alt="Valor"></a>
+
+                <br class="visible-xs">
+
+                <a href="http://revistapegn.globo.com/Noticias/noticia/2014/03/empreendedores-inovam-e-criam-servico-contabil-online.html" target="_blank" data-toggle="tooltip" title='"Conseguiram inovar em uma das áreas mais tradicionais do mercado."' class="wow fadeIn" data-wow-delay="0.5s"><img class="logosMidia" width="96" height="43" src="/assets/img/logopegn.png" alt="Pequenas Empresas e Grandes Negócios"></a>
+
+            </div>
+
+        </div>
+        <section id="migre"></section>
+    </div>
+
+
+
+
+
+
+    <div class="facaParte text-center bg-azul">
+        <div class="container">
+            <h2 class="branco">Faça parte da revolução com a Contabilizei.</h2>
+            <br>
+            <br>
+            <div class="wow fadeIn">
+                <p class="opacity">Até o momento já geramos</p>
+                <span class="economiaTotal">+ R$ 25.000.000,00</span>
+                <p class="opacity">de economia para nossos clientes.</p>
+            </div>
+
+            <div class="botoes">
+                <br>
+                <br>
+
+                <div class="col-md-3 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="/abrir-empresa/">
+                        <button class="accent big">Abrir empresa
+                            <br class="visible-md">grátis</button>
+                    </a>
+                </div>
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <div class="col-md-3 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="/escritorio-contabilidade-online/">
+                        <button class="accent big">Migrar empresa de serviços</button>
+                    </a>
+                </div>
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <div class="col-md-3 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="/contabilidade-comercio/">
+                        <button class="accent big">Migrar empresa de comércio</button>
+                    </a>
+                </div>
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <br class="visible-sm">
+                <div class="col-md-3 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="/emissor-gratuito-nf-e/">
+                        <button class="accent big">Emissor gratuito NF-e</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<div id="containerGeralFiltros">
+        <div class="card cardBig wow bounceInUp animated filtroCard hide" style="visibility: visible; border:0px;">
+            <div id="filtro_00" class="filtros wow fadeIn animated">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50px" height="50px" class="img-responsive imgSombra fotoFiltro" style="display:inline-table;margin-right:15px;" alt="Eduardo">
+                        <span class="nome">Olá, eu sou o Eduardo.</span>
+                    </div>
+                </div>
+
+
+
+                <div class="depoimento" style="padding-bottom: 20px;text-align:center;">
+                    <span class="empresa">Queremos te conhecer melhor.  
+                     </span>
+                    <br><span class="nome">Você já tem empresa?</span>
+                    <div class="row linhaFiltro">
+                        <div class="col-md-6">
+                            <button class="contorno-filtro" id="jaTenhoCnpj">Já tenho uma empresa</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="contorno-filtro" id="abrirEmpresa">Quero abrir empresa</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="filtro_01" class="filtros hide wow fadeIn animated">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="empresa">Hmm, bacana.</span>
+                    <br><span class="nome">Qual é o tipo da sua empresa?</span>
+                    <div class="row linhaFiltro" style=" margin-left:-30px;">
+                        <div class="col-md-4">
+                            <button class="contorno-filtro filtroEmpresa" tipo="me">Empresa ME / EPP</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="contorno-filtro filtroEmpresa" tipo="mei">Empresa MEI</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="contorno-filtro filtroEmpresa" tipo="ong">ONG, Igrejas, Associações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_ramo_abertura" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Qual o ramo de atividade da sua empresa?</span>
+                    <div class="row" style="width: 100%; padding-top: 20px;">
+                        <div class="col-md-6">
+                            <button class="contorno-filtro filtroRamoAbertura" tipo="servico">Serviço</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="contorno-filtro filtroRamoAbertura" tipo="comercio">Comércio</button>
+                        </div>
+                        <div class="col-md-6" style="margin-top:30px">
+                            <button class="contorno-filtro filtroRamoAbertura" tipo="comercio" style="margin-left:5px">Comércio
+                                <br>/Serviço</button>
+                        </div>
+                        <div class="col-md-6" style="margin-top:30px">
+                            <button class="contorno-filtro filtroRamoAbertura" tipo="industria">Indústria</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filtro_ramo" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Qual o ramo de atividade da sua empresa?</span>
+                    <div class="row" style="width: 100%; padding-top: 20px;">
+                        <div class="col-md-6">
+                            <button class="contorno-filtro filtroRamo" tipo="servico">Serviço</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="contorno-filtro filtroRamo" tipo="comercio">Comércio</button>
+                        </div>
+                        <div class="col-md-6" style="margin-top:30px">
+                            <button class="contorno-filtro filtroRamo" tipo="comercio" style="margin-left:5px;">Comércio
+                                <br>/Serviço</button>
+                        </div>
+                        <div class="col-md-6" style="margin-top:30px">
+                            <button class="contorno-filtro filtroRamo" tipo="industria">Indústria</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_abertura" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Em qual cidade você vai abrir sua empresa?</span>
+                    <div class="row" style="padding-bottom: 120px;margin-top:30px">
+                        <input id="cidadeTypeAbertura" type="text" placeholder="Digite a cidade" style="width: 80%;margin: 0px auto;;" class="form-filtro">
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_servico" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Qual a cidade da sua empresa?</span>
+                    <div class="row" style="padding-bottom: 120px;margin-top:30px">
+                        <input id="cidadeType" type="text" placeholder="Digite a cidade" class="form-filtro" style="width: 80%;margin:0 auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_servico_cidade_atendidada" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="empresa">Já entendi o seu perfil.</span>
+                    <br><span class="nome">Nós podemos te atender!</span>
+                    <!--<div class="row">
+                        <div class="cidadeSelecionada cidadeSelecionadaStyle"></div>
+                    </div>-->
+                    <div class="row" style="text-align: center; margin-top: 20px;">
+                        <button class="contorno-filtro" id="iniciarChat">Vamos conversar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_end_mei" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                    <span class="nome">:(</span>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <div class="row" style="padding: 20px;">
+                        <p>Neste momento nossa plataforma ainda não está preparada para atender empresas MEI.</p>
+                        <p>Minha sugestão é que você procure o Sebrae <a href="http://portaldoempreendedor.gov.br" target="_blank">(http://portaldoempreendedor.gov.br/)</a> ou um contador tradicional em sua cidade.
+                            <p>Caso seu MEI ultrapassou o limite de Faturamento, e precisa mudar para um empresa ME (Micro Empresa), basta seguir as instruções <a href="http://suporte.contabilizei.com.br/hc/pt-br/articles/204910959" target="_blank">deste link</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_contato" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                    <span class="nome">Contato!</span>
+                    <br><span class="empresa">Preencha os campos para entrar em contato</span>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <div class="row" style="padding: 20px;">
+                        <div>
+                            <input type="nome" class="form-filtro" id="nomeCompletoFiltro" placeholder="Nome Completo">
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <input type="nome" class="form-filtro" id="emailFiltro" placeholder="Email">
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <textarea class="form-filtro ng-pristine ng-valid" id="textoFiltro" placeholder="Sua Mensagem"></textarea>
+                        </div>
+                    </div>
+                    <div class="row" style="text-align: center; margin-top: 20px;">
+                        <button class="contorno-filtro enviarContato">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filtro_comercio" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <span class="nome">Qual é o
+                     estado da sua empresa?</span>
+                    <div class="row" style="padding-bottom: 120px;margin-top:30px">
+                        <input id="estadoType" type="text" placeholder="Digite o estado" style="width: 80%;
+    margin: 0px auto;" class="form-filtro">
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filtro_servico_cidade_nao_atendidada" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                    </div>
+                    <span class="nome">:(</span>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <div class="row" style="padding:20px;">
+
+                        <p>Neste momento nossa plataforma ainda não está preparada para atender empresas localizadas em <span class="cidadeSelecionada" style="font-weight: bolder;"></span>.</p>
+                        <p>
+                            Por enquanto, a sugestão é que você realize o cadastro da sua empresa, inserindo o CNPJ para que possamos te avisar quando estivermos prontos para te atender.
+                        </p>
+                        <div class="row" style="text-align: center; margin-top: 50px;">
+                            <a class="accent" target="_blank" href="https://www.contabilizei.com.br/verifique-o-atendimento">Faça o seu cadastro</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="filtro_atividade_nao_atendidada" class="filtros hide">
+                <div class="headerDepoimento text-center bg-azul cabecalhoFiltro">
+                    <div style="text-align: center;">
+                        <img src="/assets/img/equipe/edu.jpg" width="50" height="50" class="img-responsive imgSombra fotoFiltro" alt="Edu">
+                        <span class="nome">:(</span>
+                    </div>
+                </div>
+                <div class="depoimento" style="padding-bottom: 20px;">
+                    <div class="row" style="padding:20px;">
+                        <p>Infelizmente, ainda não estamos prontos para atender o seu perfil.</p>
+                        <p>O motivo é que nosso serviço ainda não está preparado para atender empresas que trabalham no seu ramo.</p>
+                        <p>Por enquanto, o caminho é você utilizar os serviços de contabilidade tradicional.</p>
+                        <p>Um abraço e até mais.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="filtro_atendimento" class="filtros hide">
+                <div class="cabecalhoFiltro">
+                    Legal! Quer falar conosco?
+                </div>
+                <div class="container" style="width: 100%; padding-top: 20px;">
+                    <button class="accent" id="iniciarChat">Iniciar chat</button>
+                </div>
+            </div>
+            <div id="filtro_end" class="filtros hide">
+                <div class="cabecalhoFiltro">
+                    ACABOU
+                </div>
+                <div class="container" style="width: 100%; padding-top: 20px;">
+                    FINAL
+                </div>
+            </div>
+        </div>
+
+        <div class="filtroContainer">
+            <div class="intercom-launcher teste" id="filtroAntesIntercom">
+                <div class="intercom-launcher-open-icon"></div>
+                <div class="intercom-launcher-close-icon"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer primary-bg">
+            <div class="container">
+                <div class="menuFooter">
+                    <div class="row">
+                        <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                            <h3> Contabilizei </h3>
+                            <hr>
+                            <ul>
+                                <li><a href="/quais-cidades-atendemos/">Quais cidades atendemos</a></li>                     <li><a href="/contabilidade/">Especialidades de atendimento</a></li> <li><a href="/contabilizei-contabilidade-online/">Sobre a empresa</a></li>
+                                <!--                                <li><a href="/funcionalidades/">Nosso produto</a></li>-->
+                                <li><a href="/midia/">Nós na mídia</a></li>
+                                <li><a href="/contabilidade-online/" target="_blank">Blog</a></li>
+
+                                <li> <a href="/contabilizei-e-confiavel/" target="_blank"> Contabilizei é confiável? </a> </li>
+                                <li> <a href="/documentos/politica-de-privacidade.pdf" target="_blank"> Política de privacidade </a> </li>
+                                <li> <a href="https://jobs.lever.co/contabilizei" target="_blank"> Trabalhe conosco </a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4  col-md-3 col-sm-4 hidden-xs">
+                            <h3> Contabilidade Online </h3>
+                            <hr>
+                            <ul>
+                                <li role="presentation"> <a href="/escritorio-contabilidade-online/"> Como funciona </a> </li>
+                                <li role="presentation"> <a href="/escritorio-contabilidade-online/"> Quanto custa </a> </li> 		                        <li role="presentation"> <a href="/quais-cidades-atendemos/"> Quais cidades atendemos </a> </li>
+                                 
+                                <li role="presentation"> <a href="/depoimentos-contabilidade-online/" target="_blank"> Depoimentos de quem usa </a> </li>
+                                <li role="presentation"> <a href="/seguranca-contabilidade-online/"> Segurança na contabilidade online </a> </li>
+                                <li role="presentation"> <a href="http://suporte.contabilizei.com.br/hc/pt-br" target="_blank"> Central de atendimento </a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12">
+                            <br class="visible-xs">
+                            <h3> Últimas no Blog </h3>
+                            <hr>
+                            <ul>
+                                <li> <a href="/contabilidade-online/simples-nacional-2017-investidor-anjo/" target="_blank">Alteração no Simples Nacional para 2017: Investidor Anjo</a> </li>
+
+                                <li> <a href="/contabilidade-online/novo-simples-nacional/" target="_blank">O Novo Simples Nacional: o que muda em 2017 e 2018</a> </li>
+                                <li> <a href="/contabilidade-online/lucro-presumido/" target="_blank">Lucro Presumido: Alíquotas, Tabela e Comparação</a> </li>
+                                <li> <a href="/contabilidade-online/enquadramento-anexo-iii-ou-anexo-vi-simples-nacional/" target="_blank">Enquadramento anexo III ou anexo VI? </a> </li>
+                                <li> <a href="/contabilidade-online/tabela-simples-nacional/" target="_blank"> Guia completo do simples nacional </a> </li>
+                                <li> <a href="/contabilidade-online/como-solicitar-enquadramento-simples-nacional/" target="_blank"> Solicitando enquadramento no simples </a> </li>
+
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-md-9 col-xs-12 about">
+
+                    <br class="visible-xs">
+                    <h3>Sobre a Contabilizei</h3>
+                    <hr>
+                    <p>Contabilizei Contabilidade é um escritório de Contabilidade Online a partir de R$49/mês. O contador online para você abrir sua empresa grátis e economizar tempo e dinheiro. Conosco você tem disponível sua contabilidade online, emite Notas fiscais eletrônicas (NFS-e), gerencia folha de pagamentos, impostos e relatórios gerenciais.</p>
+
+                    <p>Conforme determinação legal, as atividades contábeis são prestadas unicamente pela empresa Contabilizei Contabilidade através de seus contadores fanáticos. A Contabilizei Tecnologia é empresa parceira que viabiliza o software inteligente e realiza inovações tecnológicas possibilitando sempre a melhor plataforma contábil online. O termo "Contabilizei" utilizado neste site faz referência ora à Contabilizei Contabilidade ora à Contabilizei Tecnologia, as quais atuam em parceria e atendem a todas as exigências legais.</p>
+
+                    <p>Endereço: Alameda Dr. Carlos de Carvalho, 603, 5º andar - Centro, Curitiba - PR, 80430-180.
+                        <br>CNPJ: 20.182.807/0001-08 - Contabilizei Tecnologia Ltda.
+                        <br>CNPJ: 19.322.789/0001-25 - Contabilizei Contabilidade Ltda.
+
+                        <br>Conselho Regional de Contabilidade: PR-007940/O-0 e PR 054502/O-4.</p>
+
+                </div>
+                <div class="col-md-3  col-xs-12 final">
+                    <div class="socialMedia">
+                        <br class="visible-xs">
+                        <h3>Conecte-se</h3>
+                        <hr>
+                        <a href="https://www.facebook.com/Contabilizei/" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/contabilizei/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/3318452/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCNAlIbSjWxrDLDllQUug8dA" target="_blank"><i class="fa fa-youtube"></i></a>
+                    </div>
+
+                    <div class="alignBottom">
+                        <br class="visible-xs">
+                        <h3>Feito com <i class="material-icons" style="font-size:0.8em">favorite_border</i><br>
+                            em Curitiba</h3>
+                        <hr>
+                        <p>Apoiando a abertura de empresas e o empreendedorismo desde 2012.</p>
+                        <br class="visible-xs">
+                    </div>
+                </div>
+            </div>
+
+            <div class="reservado text-center">
+                <p>© Contabilizei Contabilidade Online. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Start of contabilizei Zendesk Widget script -->
+    <!--
+        <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contabilizei.zendesk.com");
+        /*]]>*/</script>
+-->
+
+    <!-- End of contabilizei Zendesk Widget script -->
+    <script>
+        window.intercomSettings = {
+            app_id: "co2eot0g"
+        };
+    </script>
+    <script>
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/co2eot0g';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })()
+    </script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <!-- Hotjar Tracking Code for www.contabilizei.com.br -->
+    <!--
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:21654,hjsv:5};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+-->
+    <!-- defer loading css -->
+    
+    <script>
+    var giftofspeed = document.createElement('link'); 
+giftofspeed.rel = 'stylesheet';
+giftofspeed.href = '/assets/css/all.css';
+giftofspeed.type = 'text/css'; 
+var godefer = document.getElementsByTagName('link')[0]; 
+godefer.parentNode.insertBefore(giftofspeed, godefer);
+    </script>
+    
+    <!-- CSS and JS -->
+    
+    <script async type="text/javascript" src="/assets/js/all.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/all.css">
+
+   
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 60) {
+                    $(".navbar-fixed-top").addClass("contabilizei2");
+                } else {
+                    $(".navbar-fixed-top").removeClass("contabilizei2");
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+
+
+
+
+    <!-- Google author -->
+    <link rel="author" href="https://plus.google.com/u/0/110264168711669397191/" />
+    <link rel="publisher" href="https://plus.google.com/u/0/110264168711669397191/">
+    
+    <!-- Fontes Customizadas -->
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    
+    <!-- tracking -->
+    
+
+</body>
+
+</html>

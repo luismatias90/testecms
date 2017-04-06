@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Disallow: /documentos/
+Disallow: /assets-old/
+Disallow: /contabilidade-on-line/
+Disallow: /mockups/
+Disallow: /simples-2015/
+Disallow: /termos-de-uso/
+Disallow: /tutoriais/
+Disallow: /bem-vindo/*
+Disallow: /consulta.html

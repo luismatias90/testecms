@@ -1,0 +1,43 @@
+body {
+	font-family: 'Nunito', sans-serif;
+}
+.indicar h4 {
+	font-weight:700;
+	font-size:2.5em;
+	line-height:1.5em;
+}
+.indicar {
+	padding:80px 0 30px 0;
+}
+.indicar p {
+	line-height:2em;
+}
+.link {
+	color:#8da87d;
+	font-weight:700;
+}
+.hyper {
+	margin-top:10px;
+	padding:10px 0 10px 23px;
+	border:1px dashed #8da87d;
+	font-weight:300;
+	background-color:#e4ffd4;
+	font-size:0.9em;
+}
+.hyper a {
+	color:#8da87d;
+}
+.rodape .voltar {
+	background-color:#fff;
+	border:1px solid #e8e8e8;
+	color:#999;
+	text-shadow:none;
+	font-weight:300;
+}
+.rodape .voltar:hover {
+	background-color:#fff;
+	border:1px solid #e8e8e8;
+	color:#999;
+	text-shadow:none;
+	font-weight:300;
+}

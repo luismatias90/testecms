@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <sitemap>
+
+      <loc>https://www.contabilizei.com.br/mainsitemap.xml</loc>
+
+      <lastmod>2017-01-19T18:23:17+00:00</lastmod>
+
+   </sitemap>
+
+   <sitemap>
+
+      <loc>https://www.contabilizei.com.br/contabilidade-online/sitemap.xml</loc>
+
+      <lastmod>2017-01-19T18:23:17+00:00</lastmod>
+
+   </sitemap>
+   
+    <sitemap>
+
+      <loc>https://www.contabilizei.com.br/emissor-nf-e/sitemap.xml</loc>
+
+      <lastmod>2017-01-19T18:23:17+00:00</lastmod>
+
+   </sitemap>
+    
+
+</sitemapindex>

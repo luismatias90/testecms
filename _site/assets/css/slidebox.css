@@ -1,0 +1,33 @@
+/*SLIDE-IN CTA
+--------------------------------------------- */
+#slidebox {
+    padding: 0px 16px 0px 0px;
+    background-color: #ddf0fb;
+    border-top: 3px solid #F7761F;
+    position: fixed;
+    bottom: 130px;
+    right: -430px;
+    -moz-box-shadow: -2px 0 5px #aaa;
+    -webkit-box-shadow: -2px 0 5px #aaa;
+    box-shadow: -2px 0 5px #aaa;
+}
+
+a.close {
+    background: transparent url("/../../assets/img/close.gif") no-repeat top left;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 40px;
+}
+
+a.close:hover {
+    background-position: 0 -13px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #slidebox {
+       width: 100%;
+    }
+}

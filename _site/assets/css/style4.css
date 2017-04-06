@@ -1,0 +1,208 @@
+/* Jumbotron */
+body {
+	margin:0;
+}
+p  {
+	color:#494949;
+	line-height:2.0em;
+}
+
+.navbar {
+	border:none;
+	background:transparent;
+}
+.navbar-default .navbar-nav>li>a {
+	color:#fff;
+	font-weight:700;
+
+}
+.navbar-default .navbar-nav>li:hover,.navbar-nav>li:focus,.navbar-nav>li>a:active {
+	color:#0f6da3;
+	background-color:#fff;
+	border-top-right-radius:20px;
+	border-top-left-radius:20px;
+	
+}
+.navbar img {
+	width:80%;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color:#fff;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color:#094e76;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu  {
+    display: block;    
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	color:#0f6da3;
+	background-color:#fafafa;
+	border-top-right-radius:20px;
+	border-top-left-radius:20px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+	color: #fff;
+}
+
+#dropdrop {
+	border:none; 
+	background-color:#fff;
+	border-radius:20px;
+	border-top-right-radius:0px;
+	padding:0px 0 10px 0;
+	font-size:0.9em;
+	text-align:center;
+}
+#dropdrop .textodrop {
+	text-align:left !important;
+	width:350px; 
+	font-size:1em; 
+	color:#000; 
+	line-height:2em; 
+	padding:10px 25px 0 25px;
+	font-weight:400;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border:0;
+}
+.nav>li>a {
+	padding:15px 14px;
+}
+.dropdown-menu>li>a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: 400;
+	line-height: 1.8;
+	
+}
+.dropdown-menu>li:last-child>a:hover, .dropdown-menu>li>a:focus {
+	background-color:transparent;
+}
+.dropdown-menu .dropz {
+	color:#999;
+	font-size:1em;
+	line-height:1.5em;
+	margin:0 50px;
+} 
+.dropdown:hover a {
+	color:#000 !important;
+	text-decoration:none !important;
+}
+.modal-content {
+	width:700px;
+}
+
+.botaosupremob {
+	font-weight:600;
+	padding:5px 33px 8px 33px;
+	border-radius:25px;
+	background-color:#8acb00;
+	color:#fff;
+	text-decoration:none;
+	text-shadow:1px 1px #82b515;
+	border:none;
+	font-size:1.2em;
+	border-bottom:4px solid #92c32b;
+}
+.botaosupremob:hover {
+	background-color:#92d700;
+	color:#fff;
+	text-decoration:none;
+}
+@media (max-width: 600px) {
+	#dropdrop { 
+	border-radius:0;
+	color:#094e76;
+	width:100%;
+	text-align:center;
+	}
+	.navbar-default .navbar-nav>li>a {
+	color:#094e76 !important;
+	background-color:#fff !important;  
+	width:100%;
+	text-align:center;
+	}
+	
+	.navbar-default .navbar-nav>li:hover {
+	border-radius:0;  
+	width:100%;
+	height:100%;
+	}
+	.navbar-default .navbar-nav>li:hover,.navbar-nav>li:focus,.navbar-nav>li:visited,.navbar-nav>li:active {
+	color:#0f6da3;
+	background-color:#fff !important;
+	border-radius:0;
+	width:100%;
+	}
+	ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display:block;
+    width:100%;
+	}
+	
+	.dropdown-menu>li>a {
+	display: block;
+	}
+}
+
+.jumbotron {
+	background-image: url("../img/bgcabe.png");
+	padding-top:0;
+	padding-left:0;
+	padding-right:0;
+	margin-bottom:0;
+}
+
+.jumbotron h1 {
+	font-size:2.4em;
+	font-weight:600;
+	color:#fff;
+	padding-top:45px;
+	line-height:50px;
+}
+.jumbotron p {
+	clear:left;
+	font-size:1.2em;
+	color:#fff;
+	padding-bottom:7px;
+}
+.jumbotron .botao {
+	font-weight:600;
+	padding:5px 55px 8px 55px;
+	border-radius:20px;
+	background-color:#8acb00;
+	color:#fff;
+	text-decoration:none;
+	font-size:1.3em;
+	text-shadow:1px 1px #82b515;
+	border:none;
+}
+.jumbotron .botao:hover {
+	background-color:#92d700;
+	color:#fff;
+}
+.precos {
+	border-top:1px solid #e1e1e1;
+	padding:13px 0 5px 0;
+	text-align:center;
+	background-image: url("../img/bgvideo.png");
+	background-color:#f2f2f2;
+}
+.atividadeatendida {
+    visibility: hidden;
+    display:inline;
+}
+    
+.atividadehover:hover .atividadeatendida {
+    visibility: visible;
+}
+.menu.affix-top {
+    position: static;
+    margin-top: 22px;
+    padding: 0 15px;
+}
+.menu.affix {
+    position: fixed;
+    top: 20px;
+}

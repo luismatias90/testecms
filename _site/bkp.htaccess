@@ -1,0 +1,61 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
+
+ErrorDocument 404 http://www.contabilizei.com.br/404.html
+ErrorDocument 410 http://www.contabilizei.com.br/410.html
+
+redirect 410 https://www.contabilizei.com.br/como-abrir-empresa/
+redirect 410 https://www.contabilizei.com.br/alterar-mei-para-me/
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-advogado/
+redirect 410 https://www.contabilizei.com.br/mensalidade-contabilidade-online/
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-startup/
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-designer/
+redirect 410 https://www.contabilizei.com.br/alterar-mei-para-me/?PageSpeed=noscript
+redirect 410 https://www.contabilizei.com.br/como-abrir-empresa
+redirect 410 https://www.contabilizei.com.br/blog
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-empreendedoras/
+redirect 410 https://www.contabilizei.com.br/alterar-mei-para-me/?utm_source=blog&utm_medium=meiparame&utm_campaign=solicitarsn
+redirect 410 https://www.contabilizei.com.br/como-abrir-empresa/?PageSpeed=noscript
+redirect 410 https://www.contabilizei.com.br/emissor-nf-e/substituicao-tributaria/www.receita.fazenda.gov.br/publico/tipi/TIPI.doc
+redirect 410 https://www.contabilizei.com.br/emissor-nf-e/substituicao-tributaria/www2.correios.com.br/sistemas/efi/consulta/ncm/
+redirect 410 https://www.contabilizei.com.br/emissor-nf-e/substituicao-tributaria/emissor-nf-e/tabela-CFOP-completa/
+redirect 410 https://www.contabilizei.com.br/contabilidade-on-line
+redirect 410 https://www.contabilizei.com.br/emitir-nota-fiscal-eletronica/
+redirect 410 https://www.contabilizei.com.br/IRPF-2015-imposto-de-renda/
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-ti/
+redirect 410 https://www.contabilizei.com.br/contabilidade-online/quanto-custa-um-contador/
+redirect 410 https://www.contabilizei.com.br/.well-known/apple-app-site-association
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-empreendedoras/%20
+redirect 410 https://www.contabilizei.com.br/conta.
+redirect 410 https://www.contabilizei.com.br/blog/bia-kunze-garota-sem-fio.html
+redirect 410 https://www.contabilizei.com.br/escritorio/escritorio-contabilizei.pdf
+redirect 410 https://www.contabilizei.com.br/abertura-de-empresa-cnpj/
+redirect 410 https://www.contabilizei.com.br/%20http:/www.fazenda.sp.gov.br/publicacao/noticia.aspx?id=4795
+redirect 410 https://www.contabilizei.com.br/funcionalidades-contabilidade-on-line/
+redirect 410 https://www.contabilizei.com.br/empresa-contabilidade-economica/?utm_source=Facebook&utm_campaign=StaticTab
+redirect 410 https://www.contabilizei.com.br/apple-app-site-association
+redirect 410 https://www.contabilizei.com.br/.well-known/assetlinks.json
+redirect 410 https://www.contabilizei.com.br/como-abrir-empresa/
+redirect 410 https://www.contabilizei.com.br/alterar-mei-para-me/
+redirect 410 https://www.contabilizei.com.br/emitir-nota-fiscal-eletronica/
+redirect 410 https://www.contabilizei.com.br/emissor-nf-e/substituicao-tributaria/www.receita.fazenda.gov.br/publico/tipi/TIPI.doc
+redirect 410 https://www.contabilizei.com.br/emissor-nf-e/substituicao-tributaria/www2.correios.com.br/sistemas/efi/consulta/ncm/
+redirect 410 https://www.contabilizei.com.br/emissor-nf-e/substituicao-tributaria/emissor-nf-e/tabela-CFOP-completa/
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-ti/?PageSpeed=noscript
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-designer/?PageSpeed=noscript
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-advogado/?PageSpeed=noscript
+redirect 410 https://www.contabilizei.com.br/contabilidade-para-startup/?PageSpeed=noscript
+redirect 410 https://www.contabilizei.com.br/tutoriais/prefeitura-curitiba/Requerimento-Contabilizei-Prefeitura-Curitiba.pdf

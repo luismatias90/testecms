@@ -1,0 +1,303 @@
+/* Space out content a bit */
+
+body {
+  padding-bottom: 20px;
+  font-family: 'Open Sans',Helvetica,sans-serif;
+  color:#314046;
+  -webkit-font-smoothing: antialiased;
+  line-height: 30px;
+  margin:0;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Space out content a bit */
+
+
+
+/* Custom page header */
+.header {
+  border-bottom: 0px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotronzes {
+  text-align: center;
+  padding: 0px;
+}
+
+.jumbotronzes h1{
+	font-size: 40px;
+	font-weight: 600;
+}
+
+h3 {
+font-size: 24px;
+font-weight: 700;
+margin-top: 50px;
+line-height: 35px;
+}
+
+
+.jumbotronzes p {
+	margin-bottom: 15px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.jumbotronzes .preco {
+	/*color:#0563AB;*/
+	font-size: 50px;
+	border-bottom: 1px dotted #AAAAAA;
+    text-decoration: none;
+}
+
+.jumbotronzes .centavos {
+	/*color:#0563AB;*/
+	font-size: 20px;
+}
+
+.jumbotronzes .glyphicon{
+	margin-right: 10px;
+}
+
+.jumbotronzes .saiba-mais a:hover, a:focus{
+	color:#000;
+	text-decoration: none;
+}
+
+.jumbotronzes .saiba-mais a{
+	color:#8b8b8b;
+	text-decoration: none;
+}
+
+sup { 
+    vertical-align: baseline;
+    font-size: smaller;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+.marketing p {
+font-size: 18px;
+color: #999;
+margin-top: 20px;
+line-height: 24px;
+}
+
+/* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+  /* jumbotron iphone e demais */
+  .jumbotronzes {
+    border-bottom: 0;
+    margin-top: 0px;
+  }
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+  /* jumbotron iphone e demais */
+  .jumbotronzes {
+    border-bottom: 0;
+    margin-top: 0px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+
+
+
+
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+color: #fff;
+background-color: #0563AB;
+border-color: #0563AB;
+}
+.btn:hover, .btn:focus {
+color: #FFF;
+text-decoration: none;
+}
+.btn-outline {
+color: #0563AB;
+background-color: transparent;
+border-color: #0563AB;
+}
+
+.btn-outline-green:hover, .btn-outline-green:focus, .btn-outline-green:active {
+color: #fff;
+background-color: #51a351;
+border-color: #51a351;
+}
+
+.btn-outline-green {
+color: #51a351;
+background-color: transparent;
+border-color: #51a351;
+}
+
+
+
+
+
+h2 {
+font-size: 20px;
+color: #999;
+margin-top: 20px;
+line-height: 35px;
+}
+
+.btn-migrar:hover, .btn-migrar:focus, .btn-migrar:active {
+color: #51a351;
+background-color: transparent;
+border-color: #51a351;
+}
+
+.btn-migrar {
+color: #fff;
+background-color: #5bb75b;
+border-color: #51a351;
+}
+
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active {
+color: #0563AB;
+background-color: transparent;
+border-color: #0563AB;
+}
+
+.btn-blue {
+color: #fff;
+background-color: #0563AB;
+border-color: #0563AB;
+}
+
+.post p {
+margin: 25px 0 0px;
+font-size: 20px;
+line-height: 30px;
+}
+
+.menu.affix-top {
+    position: static;
+    margin-top: 50px;
+    padding:0 15px;
+}
+
+.menu.affix {
+  position: fixed;
+  top: 50px;
+}
+
+.post .obs {
+font-style: italic;
+font-weight: 300;
+font-size: 18px;
+}
+
+.modal h3 {
+font-size: 24px;
+font-weight: 700;
+margin-top: 50px;
+line-height: 35px;
+margin-bottom: 30px;
+}
+
+.navbar.navbar-footer {
+  background-color: #F5F5F5;
+}
+
+.navbar.navbar-footer .botoes{
+  margin-top: 20px;
+}
+
+.navbar.navbar-footer .texto{
+  font-size: 11px;
+}
+
+.post .footer p{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.post .footer {
+padding-top: 0px;
+color: #777;
+border-top: 0px solid #e5e5e5;
+}
+
+.post .footer h3{
+font-size: 17px;
+font-weight: 700;
+margin-top: 33px;
+line-height: 0px;
+}
+
+.post .facebook {
+  margin-bottom: 50px;
+}
+
+.footer{
+  margin-bottom: 100px;
+}
+
+.titulo-nav h2{
+color:#314046;
+}
+
+.btn-xs {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 2px 8px;
+  font-size: 10px;
+  line-height: 1.1;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,272 @@
+/* Header */
+.headerseg {
+	background-color:#fafafa;
+	border-bottom:1px solid #e8e8e8;
+	background-image: url("../img/bgvideo.png");
+	padding-top:40px;
+}
+.headerseg .img {
+	padding-top:15px;
+}
+.headerseg h1 {
+	font-size:2.4em;
+	line-height:1.5em;
+	font-weight:700;
+	padding-top:50px;
+}
+
+/* Divs de Info */
+.crc,.plataforma {
+	padding:70px 0;
+	border-bottom:1px solid #e8e8e8;
+}
+.ssl,.contador {
+	padding:70px 0;
+	background-color:#fafafa;
+}
+.contador {
+	padding-bottom:85px;
+}
+.crc,.plataforma,.ssl,.contador, h2 {
+	font-size:1.5em;
+	line-height:1.6em;
+	font-weight:700;
+	padding-top:40px;
+}
+.crc,.plataforma,.ssl,.contador, .img {
+	padding-top:85px;
+}
+.plataforma {
+	border-top:1px solid #e8e8e8;
+}
+.plataforma .img {
+	margin-top:65px;
+	padding:5px;
+	margin-bottom:20px;
+}
+.plataforma h2 {
+	padding-top:40px;
+}
+.plataforma .espaco {
+	padding-right:50px;
+}
+.crc,.plataforma,.ssl,.contador, .p {
+	padding-top:20px;
+	font-size:1em;
+	line-height:2.2em;
+	font-weight:500;
+}
+.ssl h2 {
+	padding-top:60px;
+}
+
+.contador .img {
+	padding-top:45px;
+}
+.contador h2 {
+	padding-top:45px;
+}
+
+/* Faça Parte */
+.facaparte {
+	margin-top:25px;
+	padding-top:100px;
+	height:245px;
+	background-color:#fff;
+	background-image: url("../img/nuvem.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	text-align:center;
+}
+.facaparte h3 {
+	margin-top:-30px;
+	color:#1c94d9;
+	font-weight:600;
+	line-height:1.5em;
+	padding-bottom:7px;
+}
+.facaparte p {
+	color:#aaa9a9;
+	font-weight:600;
+	padding-bottom:40px;
+}
+
+/* Último CTA */
+.ultimocta {
+	border-top:8px solid #007dc5;
+	background-image: url("../img/bgvideo.png");
+	background-color:#1c94d9;
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:center;
+}
+.ultimocta img {
+	margin-top:-60px;
+}
+
+.botaosupremob {
+	font-weight:600;
+	padding:8px 33px 12px 33px;
+	border-radius:25px;
+	background-color:#8acb00;
+	color:#fff;
+	text-decoration:none;
+	text-shadow:1px 1px #82b515;
+	border:none;
+	font-size:1.1em;
+}
+.botaosupremob:hover {
+	background-color:#92d700;
+	color:#fff;
+	text-decoration:none;
+}
+
+/* Simule */
+
+.simule {
+	padding:60px 0 10px 0;
+	text-align:center;
+	border-radius:20px;
+}
+
+ 
+.simule .btn-primary:active, .btn-primary.active {
+    background: #0096ed;
+    border:none;
+}
+
+.simule .col-md-4 {
+	padding:30px 0 30px 0;
+
+	background-color:#fff;
+	border-bottom:5px solid #e8e8e8;
+
+}
+.simule2 .input-group,.form-control {
+	width:87%;
+	margin:0 auto;
+}
+.simule h2 {
+	padding-bottom:40px;
+}
+.simule .brutal {
+	font-size:2em;
+	font-weight:600;
+}
+.simule a {
+	text-decoration:none;
+	color:#fff;
+}
+.simule .cifrao {
+	font-size:1.2em;
+	font-weight:800;
+	color:#7eb52f;
+}
+.simule .valor {
+	font-size:5em;
+	font-weight:600;
+	color:#7eb52f;
+}
+.simule p {
+	font-weight:600;
+	color:#999;
+}
+.simule .col-md-5 {
+	padding-top:50px;
+}
+.simule h4 {
+	font-size:17px;
+	text-shadow:1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Simule2 */
+
+.migre .btn-primary {
+	background:#b5b5b5;
+	border:none;
+}
+ 
+.migre .btn-primary:active, .btn-primary.active {
+    background: #0096ed;
+    border:none;
+}
+
+.migre .col-md-7  .input-group,.form-control {
+	width:50%;
+
+}
+
+.migre .col-md-7  .brutal {
+	font-size:2em;
+	font-weight:600;
+}
+.migre .col-md-7  a {
+	text-decoration:none;
+	color:#fff;
+}
+.migre .col-md-7 .cifrao {
+	font-size:1.2em;
+	font-weight:800;
+}
+.migre .col-md-7 .valor {
+	font-size:6em;
+	font-weight:600;
+}
+.migre .btn-group {
+	padding-top:50px;
+}
+.contorno {
+	background-color:#fff;
+	border-radius:25px;
+	border-bottom:4px solid #e8e8e8;
+	padding:15px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+	.headerseg {
+	padding:0 30px 30px 30px;
+	}
+	.headerseg img {
+	padding-top:30px;
+	}
+	.headerseg h1 {
+	font-size:2.3em;
+	line-height:1.4em;
+	padding-top:20px;
+	padding-left:0;
+	}
+	.crc,.ssl,.plataforma,.contador {
+	padding:20px 30px;
+	}
+	.crc,.ssl,.plataforma,.contador h2 {
+	padding-top:0px;
+	}
+	.crc,.ssl,.plataforma,.contador, .imgresp {
+	padding-top:40px;
+	padding-bottom:40px;
+	}
+	.crc {
+	padding-top:10px;
+	}
+	.crc .img {
+	padding-top:40px;
+	padding-bottom:30px;
+	}
+	.plataforma h2 {
+	padding-top:0;
+	}
+	.plataforma .img {
+	margin-top:30px;
+	}
+	.ssl h2 {
+	padding-top:20px;
+	}
+	.migre .btn-primary {
+	padding:12px;
+	}
+	.migre h4 {
+	font-size:15px;
+	}
+	
+}

@@ -1,0 +1,61 @@
+/* CSS for the public satisfaction display */
+.zd_satisfaction, .zd_plug {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.zd_satisfaction div {
+  background-color: #F2F2F2;
+  -webkit-box-shadow: inset 0 0px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: inline-block;
+  margin: 0 1em;
+  text-align: center;
+  width: 13em;
+}
+
+.zd_satisfaction div:first-of-type {
+  margin-left: 0;
+}
+
+.zd_satisfaction div:last-of-type {
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0;
+  -moz-box-shadow: inset 0 0 0;
+  box-shadow: inset 0 0 0;
+}
+
+.zd_rating_number {
+  font-size: 6em;
+  font-weight: bold;
+  margin: 0!important;
+  padding: 0;
+  text-shadow: 2px 2px 1px #DDD;
+}
+
+.zd_rating_number:last-of-type {
+  text-shadow: 0;
+}
+
+.zd_rating_string {
+  background-color: #EBEBEB;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 1.3em;
+  margin: 0!important;
+  padding: 0.6em 0;
+}
+
+.zd_satisfaction_score .zd_rating_number {
+  text-shadow: none;
+}
+
+.zd_satisfaction_score .zd_rating_string {
+  background-color: #fff;
+}
+
+.zd_plug {
+  margin: 8px 0 0 8px;
+}

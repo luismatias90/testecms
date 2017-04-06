@@ -1,0 +1,28 @@
+<div class="modal-dialog modalIndique"><div class="modal-content"> <div class="modal-body"> <div class="row" ng-hide="access_token"> <div class="titulo" style="padding:20px 45px"> <h2><img src="/mockups/img/feliz.png" class="pull-left"> Você nos ajuda, se ajuda e ainda ajuda o amigo! :)</h2> </div>
+
+<p style="font-size:1.2em">Parceria é assim: a cada amigo que se tornar<br>cliente, vocês recebem R$99 cada um!</p>
+<br>
+
+
+   <div class="linkbox text-center" style="margin:0 100px; border-top-right-radius:10px; border-top-left-radius:10px;"> <a href="/?ref=9bdef906c7a325c7ff04f271e446a8ac&amp;utm_source=cadastro" onclick="return false" data-clipboard-target="linhaDigitavelText" id="copiarBtn" class=""><p id="linhaDigitavelText" class="ng-binding">https://www.contabilizei.com.br/?ref=9bdef906c7a325c7ff04f271e446a8ac&amp;utm_source=cadastro</p></a> </div>
+<div style="background-color: #B0B0B0; color:#fff; margin:0 100px; border-bottom-right-radius:10px; border-bottom-left-radius:10px; font-size:0.9em;">este é seu código exclusivo, clique para copiá-lo.</div> </div>
+
+<hr>
+
+
+
+
+
+
+
+
+
+  <div class="botoes">
+
+
+
+
+
+
+
+  <a href="https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/contacts.readonly&amp;state=%2Fprofile&amp;redirect_uri=https://cadastro.contabilizei.com.br/oauth/gc_migracao/&amp;response_type=token&amp;client_id=209058191176.apps.googleusercontent.com"> <button class="gmail" style="margin-top: 20px"><img src="/mockups/img/gmail.png">Envie o código via Gmail</button><br> </a>   <a href="https://www.facebook.com/dialog/feed?app_id=762339350531681&amp;link=https://www.contabilizei.com.br/?ref=9bdef906c7a325c7ff04f271e446a8ac&amp;utm_source=cadastro&amp;name=Saia da idade do papel com Contabilizei&amp;description=Contabilidade inteligente e 100% online que já ajuda milhares de empresas a economizarem tempo e dinheiro. Saiba mais.&amp;redirect_uri=https://www.facebook.com" target="_blank"> <button class="facebook"><img src="/mockups/img/facebook.png">Envie o código via Facebook</button><br> </a>   </div>  <div class="row ng-hide" ng-show="access_token"> <div class="col-md-6 esquerda"> <table class="table"> <thead> <tr> <th><input type="checkbox" value="todos" ng-click="marcar()" ng-model="checkAll" class="ng-pristine ng-valid"> </th><th class="ng-binding">Marcar todos   </th></tr></thead><tbody> <!-- ngRepeat: contato in ltContatos --></tbody></table> </div> <div class="col-xs-6 direita"> <p class="mensagem">Ficou algum amigo de fora? <br>-&nbsp;&nbsp;<a href="" ng-click="mostraEmailsAdicionais = true"><strong>Adicione manualmente</strong></a></p> <div ng-show="mostraEmailsAdicionais" class="ng-hide"> <input type="email" class="form-control ng-pristine ng-valid ng-valid-email" placeholder="Digite o e-mail desejado" style="display:inline" ng-model="emailNovo">&nbsp;&nbsp;&nbsp;<a href="" ng-click="adicionarEmailAdicional()"><span class="glyphicon glyphicon-plus" style="color:#337ab7"></span></a> </div> <br> <!-- ngRepeat: emailAdicional in ltEmailsAdicionais --> <hr> <p class="mensagem">Mensagem a ser enviada para seus amigos, customize-a como quiser:</p> <textarea rows="8" cols="27" ng-model="mensagem" class="ng-pristine ng-valid"></textarea> </div> </div> </div> <div class="modal-footer ng-hide" ng-show="access_token"> <span class="pull-left"> <button class="reiniciaConvite" ng-click="reiniciaConvite()">Voltar</button> </span> <button class="gmail2" ng-click="convidar()"><img src="/mockups/img/gmail.png">convidar</button> </div> </div></div>

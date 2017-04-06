@@ -1,0 +1,94 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+</head>
+
+<body style="background: #f0f0f0; padding-top: 50px; padding-bottom:0;text-align: center; font-family: 'Roboto','Helvetica','Arial',sans-serifsans-serif; min-height:400px;font-size: 14px;font-weight: 400;">
+
+    
+
+    <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+        <div class="mdl-snackbar__text"></div>
+        <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+        (function () {
+            'use strict';
+           	var snackbarContainer = document.querySelector('#demo-toast-example');
+            var showToastButton = document.querySelector('#demo-show-toast');
+            var text = document.querySelector('#error_message').innerHTML;
+            if (!text || text == "") return;
+            setTimeout(function () {
+                    
+                'use strict';
+                var data = {
+                    message: text,
+                    timeout: 30000000,
+                };
+                snackbarContainer.MaterialSnackbar.showSnackbar(data);
+            }, 1000);
+        }());
+        
+        function logarComGoogle() {
+        	var url = '/loginGoogle?token=${param.token}';
+        	if(document.querySelector('#remember_me').className.indexOf('is-checked') > 0) {
+        		url = url + '&remember_me=true';	
+        	}
+        	
+        	window.location = url;
+        }
+        
+    </script>
+
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="margin: auto; width: 600px;">
+        <div class="mdl-card__title" style="background: rgb(21,101,192); text-align: center; ">
+            <h2 class="mdl-card__title-text" style="margin: auto;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAAjCAMAAADmBbXtAAAAeFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////GqOSsAAAAJ3RSTlMAIPHBsOFw/OlQ96DPWw6WLhQIjrx/yLc+dwOp1jZjGtxMJodqR6P7V9bLAAAEV0lEQVRYw+2W6dqaMBBGQwgmRhZZBAQEXN/7v8NKQjC06Ne9tU/PH82jycwhkyHkXyV27pB/gCg6nwvyD7ApCfEg8rQk70zQoB1EBvqAvCtxAYgjIazQKllH3pKTJ/YmdafNAIgteUM6z43tKsMd8YYNrMqb0B6nGPAT8m6scFWf2+DSXjtSeVDsyZuRCM/aCPgRNDSqo9WJ/CrW2JAZ+zRQZxSuGh7S9HVNmCkTLZhqXFgk2/6E2v0qEQ8bW2QFhOQDPDBrxBDpBZbhAflBgstXieQ0tUUCKj4UcWlkjShueiE8YU1+iCNfPReZY0S+ixjI9ZdIYhEakx9hh98jsgW4MzrteyyRkrCr/nKRMuPA48hU66UCoz3A61kDO2x6Kb3sqss5E1zUpbntrIgTeRBMtYmaNWgYY4d7iptGcNmk3SRy8SX3opP2ZYxZItv78Dj8jRlqlWCbD7EOummpKYoVh2KTEMO1xzLyOHtnelnmy/b+PczA86IB0vGJspLC8ynkYCKohKSUHodfRF64FOKkRW4MMs/luDCjgCVypVLt5J5q9PKhO8Tqgcs0RRHA0LeTSuxjGV4+qsVTwZNh0g2uM+yRp1d34NO+vP9WI/ustFQFhwWYFuHYhff/RRDx2ExnpbWySzJAY8U6UpTWFBJTPPD2sYnHsYw3yp64PD2KDGOb3HIa6jYuOpWxRLh0RmIuKyVi7g4Zdh+JdJQfdKx49MpskT1myM2YXo0ntKawUjIRmXwIQ6BFLnrs4rB42Bt0SoRWY3+G/5FIgfMsViV4Yonk+AyuU2jxhIwofBzstLbTFSFSifBQj2+4fi5SdU6XuHCUSGG2CPwDkRZNMg9cYGuJSHyODPUjegIlComETNBpUCpRBz3RbLCeixwYxR0OZ95+JcKXIo4qLBUrdzUCpSWCL1HFdcUziAKcPAAebyRfJZI/EQk4+lsa1fRbRVzsTCx/wt4Rgc+hiYr4vTvi6kSWRTrJgzGvuUjyQWmt4FcmVkhsjEht8sugkTpShGVMVffYLp+RzSuRCyKyKHJ9fdhPkm8fsRZFTAnVJD6uzuk50L0tpHhCYE7xbqlr1WhfiaRol0UYzi9EqvwRbYP9oghxTX6G1xvSVKaGqGO9R7xkeo8siexHkT3OiyIBZDcTyWcie1VYJrCIF0VOAgMOsdnjCXLaVwahcqxCtRFuN3j098BLIgGyShvTciZyU9u/47jYWcWgoSWylVNYFaspVeAysUXUvQLgduFtCzxBlMQQFoAoWE7P4/3HZT4QkUWRUKBn/lHtdFOwrDftF17BXAl5mT9eFx7bGJHKB6eaYflkCJyxfH5FUf7nQaWJgvLk3CWDHE/w0tmmXmvBIfJW30hdCsGu44pZarbWPYzPhnJvKN8jE4Doi3R45N0uEwB1d9O6t0x3t9qj7mDqrgk5sQldoMchsPQjZ5oy57Reb+6/nck/QFo6Tk3+AS7p+bwj//lzfAIYAcT3BmOOuwAAAABJRU5ErkJggg==" ></h2>
+        </div>
+        
+<!--
+        <form action="/login" method="post">
+            <div style="padding: 20px;">
+                
+                
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" name="user" id="user" />
+                    <label class="mdl-textfield__label" for="user">Usuário (email ou CPF)</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="password" name="password" id="password" />
+                    <label class="mdl-textfield__label" for="password">Senha</label>
+                </div>
+
+                <div style="width: 205px;margin-left: 32px;">
+                    <div>
+                        <label id="remember_me" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                            <input type="checkbox" name="remember_me" id="checkbox-1" value="true" class="mdl-checkbox__input">
+                            <span class="mdl-checkbox__label">Mantenha-me conectado</span>
+                        </label>
+                        <input type="hidden" name="token" value="${param.token}" />
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="mdl-card__actions mdl-card--border" style="padding-top:20px;">
+                <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-button--accent" style="width: 300px;">
+                    Entrar
+                </button>
+            </div>
+        </form>
+--> <p style="padding:20px 20px 0 20px; font-weight:bold; font-size:18px; line-height:35px">No momento nossos ninjas estão trabalhando para trazer uma grande atualização do sistema para vocês. Por favor, acesse novamente mais tarde. Obrigado pela compreensão.
+       </p>
+        <img src="http://www.lovethisgif.com/uploaded_images/12067-In-Other-Words-Rest-Assured.-We-Keep-It-Ninja..gif" width="375" height="275" style="margin:0 auto">
+        <p style="opacity:0.8">PS: Não consegue vê-los? Exato, eles são ninjas. :)</p>
+    </div>
+<!--
+    <div style="margin-top: 10px;">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="javascript:logarComGoogle();">Logar com Google</a>
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="view-recuperar-senha.jsp">Esqueci minha senha</a>
+    </div>
+-->
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+</body>
+
+</html>

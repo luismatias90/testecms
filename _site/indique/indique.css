@@ -1,0 +1,81 @@
+body {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
+	background-color: #1392ff;
+	background-image: url("/assets/img/bgvideo.png");
+}
+
+.geral {
+	padding:5px 0;
+	text-align:center;
+}
+h1 {
+	font-size:1.8em;
+	color:#fff;
+	line-height:1.3em;
+}
+.logo {
+	background-color:rgba(0,0,0,.15);
+	text-align:center;
+	padding:20px;
+	border-bottom:1px solid rgba(255,255,255,0.4);
+}
+.input-group {
+	width:100%;
+}
+.input-group .form-control:not(:first-child):not(:last-child), .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child) {
+	border-radius:6px;
+	border:none;
+	border-bottom:4px solid #0075d5;
+}
+.input-group input {
+	margin:20px 0;
+/*	padding:30px;*/
+    padding:15px;
+    height:60px !important;
+	font-size:1.6em;
+}
+.input-group button {
+	margin:20px 0;
+	width:100%;
+	font-size:1.6em;
+	padding:20px;
+	border-radius:6px;
+	border:none;
+	box-shadow:0px 4px rgba(0,0,0,.1);
+	background-color:#8acb00;
+	color:#fff;
+	text-shadow:0px 2px rgba(0,0,0,.1);
+}
+.input-group button:hover {
+	background-color:#8ed200;
+}
+.input-group button:disabled {
+	background-color:#666;
+}
+.link {
+	margin:0 auto;
+	margin-top:20px;
+	border-top-right-radius:6px;
+	border-top-left-radius:6px;
+	background-color:#fff;
+	padding:15px 20px;
+	color:#666;
+	box-shadow:0px 4px rgba(0,0,0,.1);
+	width: 300px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size:0.9em;
+}
+.copie {
+	margin:0 auto;
+	background-color:rgba(0,0,0,.2);
+	color:#fff;
+	border-bottom-right-radius:6px;
+	border-bottom-left-radius:6px;
+	width:300px;
+	padding:5px 0;
+	font-size:0.9em;
+}

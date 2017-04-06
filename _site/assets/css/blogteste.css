@@ -1,0 +1,23 @@
+.precos {
+	padding:20px 0px 10px 0;
+}
+.entrevista p {
+	font-size:1.2em;
+}
+.entrevista h3 {
+	margin-top:20px;
+}
+.menu.affix-top {
+	margin-top:20px;
+}
+.menu.affix {
+	background-color:#fafafa;
+	padding:20px 25px;
+	border:1px dashed #e8e8e8;
+}
+.menu.affix .nav a {
+	padding:5px 0;
+}
+.menu.affix .nav > li > a:hover, .nav > li > a:focus {
+	background-color:transparent;
+}

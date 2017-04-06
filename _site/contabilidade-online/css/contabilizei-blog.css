@@ -1,0 +1,290 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Open Sans', 'Average Sans', sans-serif;
+  color:#314046;
+  -webkit-font-smoothing: antialiased;
+  line-height: 30px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: 'Average Sans', sans-serif;
+font-weight: 500;
+line-height: 1.1;
+color: inherit;
+}
+
+h2{
+font-size: 20px;
+color: #999;
+margin-top: 20px;
+line-height: 35px;
+}
+
+h3{
+font-size: 26px;
+margin-top: 50px;
+line-height: 35px;
+font-weight: bold;
+}
+
+h4, .h4 {
+font-size: 25px;
+}
+
+.entrevista h2 {
+font-size: 26px;
+margin-top: 50px;
+line-height: 35px;
+font-weight: bold;
+color: #0563AB;
+}
+
+.marketing {
+  margin-bottom: 40px;
+}
+
+.marketing h3{ 
+margin-bottom: 40px;
+margin-top:0px;
+}
+
+
+p {
+margin: 25px 0 0px;
+font-size: 22px;
+}
+
+.jumbotron p{
+  font-size: 20px;
+  color: #999;
+  margin-top: 20px;
+}
+
+.jumbotron h1 {
+font-size: 40px;
+}
+
+.autor{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.autor h3{
+  text-align: left;
+  margin-top:20px;
+  font-size: 22px;
+}
+.autor p{
+  font-size:18px;
+  margin:10px 0 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.entrevista,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+/*.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}*/
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 980px;
+   /* max-width: 730px;*/
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 0px solid #e5e5e5;
+  padding: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-color: #FFF;
+}
+
+.jumbotron .btn {
+font-size: 17px;
+padding: 4px 15px;
+}
+/* Supporting marketing content */
+.entrevista {
+}
+.entrevista p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .entrevista,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.jumbotron p {
+font-size: 15px;
+}
+
+.lead {
+font-size: 20px;
+color: #999;
+margin-top:20px;
+}
+
+.contato p{
+font-size: 17px;
+text-align: center;
+line-height: 22px;
+}
+
+.contato h4{
+  text-align: center;
+}
+
+.contato li{
+  display: inline-block;
+  padding-left: 10px;
+}
+
+hr {
+margin-top: 45px;
+margin-bottom: 45px;
+}
+
+.next li{
+  line-height: 55px;
+  font-size: 22px;
+}
+
+.signup h3{
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.footer li{
+  display: inline-block;
+  padding-left: 10px;
+}
+.footer p{
+margin: 25px 0 0px;
+font-size: 14px;
+line-height: 22px;
+}
+.copyright{
+  text-align: center;
+}
+.menu{
+  line-height: 18px;
+}
+
+.menu.affix-top {
+    position: static;
+}
+
+.menu.affix {
+    position: fixed;
+	top: 0px;
+}
+
+.modal-footer p{
+  font-size: 15px;
+text-decoration: underline;
+}
+
+.modal-footer a {
+color: #314046;
+text-decoration: underline;
+}
+
+
+.modal-footer {
+text-align: center;
+padding: 0px 0px 5px;
+margin-top: 0px;
+border-top: 0px solid #e5e5e5;
+}
+
+.modal-header {
+min-height: 16.428571429px;
+padding: 15px;
+border-bottom: 0px solid #e5e5e5;
+}
+
+.modal-dialog .form-control {
+display: block;
+width: 68%;
+height: 40px;
+padding: 6px 12px;
+font-size: 22px;
+line-height: 1.428571429;
+color: #555555;
+vertical-align: middle;
+background-color: #ffffff;
+background-image: none;
+border: 1px solid #cccccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+text-align: center;
+}
+
+.form-control {
+margin-bottom: 15px;
+width: 45%;
+text-align: center;
+}
+
+.jumbotron .form-group {
+  margin-bottom: 0px;
+}
+
+.jumbotron .form-control {
+margin-bottom: 5px;
+width: 98%;
+text-align: center;
+}
+
+/*MOBILE*/
+@media (max-width: 989px) {
+	.menu{
+		display: none!important;
+	}	
+}

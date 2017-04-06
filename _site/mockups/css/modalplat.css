@@ -1,0 +1,107 @@
+body {
+	background-color:#666;
+	font-family: 'Nunito', sans-serif;
+}
+
+/* Modal Inicial */
+
+.modalIndique {
+	background-color:#fff;
+    width: 900px;
+    height: 600px;
+    margin-top: 25px;
+    margin-left: 15%;
+    color:#000;
+    border-radius: 25px;
+    position: relative;
+}
+.modalIndique .titulo {
+	padding:10px 25px;
+	background-image:url('../img/bgcabe.png');
+	border-radius:20px 20px 0 0;
+}
+.modalIndique h2 {
+	font-weight:600;
+	font-size:2em;
+	line-height:1.5em;
+	color:#fff;
+}
+.modalIndique img {
+	padding-top:12px;
+	padding-left:20px;
+	padding-right:30px;
+}
+.modalIndique .conteudo {
+	padding:0 30px;
+}
+.modalIndique .conteudo h3 {
+	font-size:1.8em;
+	line-height:1.5em;
+	padding-top:20px;
+}
+.modalIndique .conteudo p {
+	padding-top:25px;
+	font-size:1em;
+	line-height:1.8em;
+	color:#000;
+	font-weight:300;
+}
+.modalIndique .conteudo small {
+	color:#999;
+}
+.modalIndique .botoes {
+	padding-top:10px;
+}
+.modalIndique button {
+	padding:15px 75px;
+	border-radius:55px;
+	border:none;
+	font-size:1.4em;
+}
+
+.modalIndique .sim {
+	color:#fff;
+	text-decoration:none;
+	background-color:#a2d92e;
+	border:none;
+	border-bottom:4px solid #92c32b;
+	text-shadow:1px 1px #82b515;
+}
+.modalIndique .sim:hover {
+	border:none;
+	background-color:#aee930;
+	border-bottom:4px solid #a2d92e;
+	color:#fff;
+}
+
+.modalIndique .sim small {
+	color:#66881e;
+	text-shadow:1px 1px #c5e77c;
+	text-transform:uppercase;
+	font-size:0.65em;
+}
+.modalIndique .nao {
+	color:#bcbcbc;
+	text-decoration:none;
+	background-color:#f4f4f4;
+	border:none;
+	border-bottom:4px solid #e8e8e8;
+}
+.modalIndique .nao:hover {
+	border:none;
+	background-color:#fafafa;
+	border-bottom:4px solid #e8e8e8;
+}
+.modalIndique .nao small {
+	color:#d2d2d2;
+	text-transform:uppercase;
+	font-size:0.65em;
+}
+.modalIndique .sim:active {
+	margin-top:4px;
+	border-bottom:none;
+}
+.modalIndique .nao:active {
+	margin-top:8px;
+	border-bottom:none;
+}
